@@ -1,0 +1,120 @@
+.container{
+   max-width: 1170px;
+   margin: auto;
+}
+.footer{
+    background-color: rgba(204, 204, 214, 0.792);
+    padding: 70px 4%;
+  
+ }
+
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .footer__col{
+    width: 25%;
+    padding: 0 15px;
+ }
+
+ .footer__col h4{
+   font-size: 18px;
+   color: #2d2c2c; 
+   text-transform: capitalize;
+   margin-bottom: 30px;
+   position: relative;
+ }
+ .footer__col h4::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  background-color: #939b94;
+  width: 50px;
+  box-sizing: border-box;
+  }
+  .footer__col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+  }
+  .footer__col ul li{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #2d2c2c;
+    display: block;
+  }
+
+  .footer__link{
+    font-size: 16px;
+    text-transform: none;
+    text-decoration: none;
+    color: #2d2c2c;
+    display: block;
+  }
+
+  .footer__link:hover{
+    color: #ffffff;
+    padding-left: 10px;
+     
+  }
+  .logo{
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+    pointer-events: none;
+  }
+
+
+
+  @media(max-width:767px){
+    .footer__col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+  }
+  @media(max-width:574px){
+    .footer__col{
+        width: 100%;
+    }
+  }
+
+  /* <div class="form-row">
+  <div class="input-data">
+     <input type="text" required>
+     <div class="underline"></div>
+     <label for="">First Name</label>
+  </div>
+  <div class="input-data">
+     <input type="text" required>
+     <div class="underline"></div>
+     <label for="">Last Name</label>
+  </div>
+</div>
+<div class="form-row">
+  <div class="input-data">
+     <input type="text" required>
+     <div class="underline"></div>
+     <label for="">Email Address</label>
+  </div>
+  <div class="input-data">
+     <input type="text" required>
+     <div class="underline"></div>
+     <label for="">Website Name</label>
+  </div>
+</div>
+<div class="form-row">
+<div class="input-data textarea">
+  <textarea rows="8" cols="80" required></textarea>
+  <br />
+  <div class="underline"></div>
+  <label for="">Write your message</label>
+  <br />
+  <div class="form-row submit-btn">
+     <div class="input-data">
+        <div class="inner"></div>
+        <input type="submit" value="submit">
+     </div>
+  </div> */

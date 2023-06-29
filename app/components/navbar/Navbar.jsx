@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import React, { useState } from 'react'
 import Link from 'next-intl/link';
+import Dropdown from '../dropdown/Dropdown';
 
 function Navbar() {
     const t = useTranslations('Index');
@@ -72,19 +73,9 @@ function Navbar() {
                             <li>
                                 <Link href='/contact' className={styles.navbar__link}>{t('contact')}</Link>
                             </li>
-                            <div className={styles.navbar__link__lang}>
-                                <li>
-                                    <Link className={styles.navbar__link} href="/" locale='uk'>
-                                        <Image src='/ua.png' width={20} height={15} /> Українська</Link>
-                                    <ul className={styles.sub__navbar__list}>
-                                        <li>
-                                            <Link href='/' className={styles.sub__navbar__link}>
-
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </div>
+                         <li className={styles.lang__menu}>
+                         <Dropdown/>
+                         </li>
                         </ul>
                     </nav>
                     <div

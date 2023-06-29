@@ -53,7 +53,9 @@
    z-index: 2;
 }
 
-
+.lang__menu{
+   padding-right: 30px;
+}
 
 .navbar__list li {
    margin: 0px 0px 0px 30px;

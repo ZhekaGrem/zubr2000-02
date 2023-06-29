@@ -1,0 +1,40 @@
+
+.menu__list li:hover .sub__menu__list {
+    display: block;
+ }
+
+ .sub__menu__list {
+   
+    position: absolute;
+    top: 30px;
+    display: none;
+ padding: 10px 0px 0px 0px;
+ }
+
+.menu__link__lang {
+    margin: 0px 15px 0px 20px;
+ }
+ .menu__link {
+    text-transform: uppercase;
+    font-size: 24px;
+    text-decoration: none;
+ }
+ .menu__link:hover {
+    color: #ffffff;
+ }
+
+ .menu__list li {
+    margin: 0px 0px 0px 30px;
+    list-style: none;
+ }
+
+
+ @media(max-width:964px) {
+
+    .menu__link {
+        font-size: 35px;
+     }
+    .menu__link__lang {
+        margin: 0px 0px 0px 0px;
+     }
+ }

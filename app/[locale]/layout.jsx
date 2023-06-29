@@ -34,21 +34,22 @@ export default async function LocaleLayout({ children, params: { locale } }) {
 
     <html lang={locale}>
       <head>
-<meta name='viewport' content='width=device-width' />
+        
+        <meta name='viewport' content='width=device-width' />
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
-               <div className='wrapper'>
-               <nav>
-            <Navbar />
-          </nav>  
+          <div className='wrapper'>
+            <nav>
+              <Navbar />
+            </nav>
             <main className='content'>
               {children}
             </main>
           </div>
-            <footer>
-              <Footer />
-            </footer>
+          <footer>
+            <Footer />
+          </footer>
         </NextIntlClientProvider>
       </body>
     </html>

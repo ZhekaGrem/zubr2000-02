@@ -73,10 +73,10 @@ function Navbar() {
                             <li>
                                 <Link href='/contact' className={styles.navbar__link}>{t('contact')}</Link>
                             </li>
-                         <li className={styles.lang__menu}>
+
                          <Dropdown/>
-                         </li>
                         </ul>
+                        
                     </nav>
                     <div
 

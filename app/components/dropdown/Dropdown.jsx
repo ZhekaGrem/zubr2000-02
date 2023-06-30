@@ -21,39 +21,39 @@ return (
 
           <li className={styles.sub__menu__link}>
             <Link href="/uk" locale='uk'>
-              <Image src='/ua.png' width={20} height={15} /> Українська</Link>{''}</li>
+              <Image src='/ua.png' width={20} height={16} />UK</Link>{''}</li>
           <li className={styles.sub__menu__link}>
           <Link href="/" locale='en' >
-          <Image src='/gb.png' width={20} height={15} />
-          English </Link> </li>
+          <Image src='/gb.png' width={20} height={16} />
+          EN </Link> </li>
           <li className={styles.sub__menu__link}>
             <Link href="/" locale='da'>
-              <Image src='/dk.png' width={20} height={15} />
-              Dania </Link>{''} </li>
+              <Image src='/dk.png' width={20} height={16} />
+              DA </Link>{''} </li>
           <li className={styles.sub__menu__link}>
             <Link href="/" locale='de'>
-              <Image src='/de.png' width={20} height={15} />
-              German </Link>{''} </li>
+              <Image src='/de.png' width={20} height={16} />
+              DE </Link>{''} </li>
           <li className={styles.sub__menu__link}>
             <Link href="/" locale='ru'>
-              <Image src='/ru.png' width={20} height={15} />
-              Російська </Link>{''} </li>
+              <Image src='/ru.png' width={20} height={16} />
+              RU </Link>{''} </li>
           <li className={styles.sub__menu__link}>
             <Link href="/" locale='fr'>
-              <Image src='/fr.png' width={20} height={15} />
-              French </Link>{''} </li>
+              <Image src='/fr.png' width={20} height={16} />
+              FR </Link>{''} </li>
           <li className={styles.sub__menu__link}>
             <Link href="/" locale='it'>
-              <Image src='/it.png' width={20} height={15} />
-              Italy </Link>{''} </li>
+              <Image src='/it.png' width={20} height={16} />
+              IT </Link>{''} </li>
           <li className={styles.sub__menu__link}>
             <Link href="/" locale='sv'>
-              <Image src='/se.png' width={20} height={15} />
-              Sweden </Link> </li>
+              <Image src='/se.png' width={20} height={16} />
+              SW </Link> </li>
           <li className={styles.sub__menu__link}>
             <Link href="/" locale='pl'>
-              <Image src='/pl.png' width={20} height={15} />
-              Poland </Link>{''} </li>
+              <Image src='/pl.png' width={20} height={16} />
+              PL </Link>{''} </li>
 
 
         </ul>

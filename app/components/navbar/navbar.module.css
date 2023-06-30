@@ -57,7 +57,7 @@
    padding-right: 30px;
 }
 
-.navbar__list li {
+.navbar__list>li {
    margin: 0px 0px 0px 30px;
    list-style: none;
 }
@@ -67,11 +67,13 @@
 }
 
 .sub__navbar__list {
-   
    position: absolute;
    top: 30px;
    display: none;
 padding: 10px 0px 0px 0px;
+}
+.sub__navbar__list>li {
+margin: 0;
 }
 
 .navbar__link {

@@ -10,8 +10,6 @@ export default function Home() {
   return (
     <>
       <div className={styles.link}>
-        
-
         <div>
           <h1>{t("aboutus")}</h1>
           <div>

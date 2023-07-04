@@ -20,7 +20,7 @@ function Navbar() {
                                 
                         <Link className={styles.navbar__logo} href="/">
                             <Image src="/Zubr-logo.png" width={100} height={90} alt="Logo zubr 2000" />
-                            <Image src="/text-zubr-02.webp" width={100} height={75} alt="Logo zubr 2000" />
+                            <Image src="/text-zubr-02.webp" width={210} height={80} alt="Logo zubr 2000" />
                                 
                    
                         </Link>

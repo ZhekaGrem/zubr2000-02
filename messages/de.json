@@ -5,6 +5,12 @@
     "product": "Produkte",
     "contact": "Kontakt",
     "lang":"Sprachen",
-    "title": "Hej världen!"
+    "title": "Hej världen!",
+    "language" : "Deutschland",
+    "certificates" : "Bescheinigungen",
+    "manufacturing":"Herstellungsprozess",
+    "quality":"Qualitätsstandards",
+    "lumber":"Schnittholz",
+    "log":"Holz"
     }
   }

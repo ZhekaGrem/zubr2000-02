@@ -85,7 +85,6 @@ form .form__row .textarea{
   transform: scale(1);
 }
 .submit__btn .input__data{
-  overflow: hidden;
   height: 45px!important;
   width: 25%!important;
 }

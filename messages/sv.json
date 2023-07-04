@@ -5,6 +5,12 @@
       "product": "Vår produkt",
       "contact": "Kontakt",
       "lang":"Språk",
-      "title": "Hej världen!"
+      "title": "Hej världen!",
+      "language" : "Schweiz",
+      "certificates" : "Certifikat",
+      "manufacturing":"Tillverkningsprocess",
+      "quality":"Kvalitetsstandarder",
+      "lumber":"Virke",
+      "log":"Timmer"
     }
   }

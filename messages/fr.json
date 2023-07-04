@@ -5,6 +5,12 @@
       "product": "Produits",
       "contact": "Contact",
       "lang":"Langues",
-      "title": "Hej världen!"
+      "title": "Hej världen!",
+    "language" : "France",
+    "certificates" : "certificats",
+    "manufacturing":"processus de fabrication",
+    "quality":"normes de qualité",
+    "lumber":"bois d'œuvre",
+    "log":"grume"
     }
   }

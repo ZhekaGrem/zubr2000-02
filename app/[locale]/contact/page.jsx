@@ -21,7 +21,7 @@ function Contact() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
-            </div> 
+            </div>
             <div className={styles.contact}>
 
                 <div className={styles.contact__info}>
@@ -32,23 +32,25 @@ function Contact() {
                         <p>Director:+38 067 674-58-43 </p>
 
                         <li>
-                            <a href="mailto:gremroman@gmail.com">gremroman@gmail.com</a>
+                            <p href="mailto:gremroman@gmail.com">gremroman@gmail.com</p>
                         </li>
                         <li>
-                            <a href="mailto:grem_roman@icloud.com">grem_roman@icloud.com </a>
+                            <p href="mailto:grem_roman@icloud.com">grem_roman@icloud.com </p>
                         </li>
                         <li>
-                            <a href="mailto:zubrzubr2000@gmail.com ">zubrzubr2000@gmail.com </a>
+                            <p href="mailto:zubrzubr2000@gmail.com ">zubrzubr2000@gmail.com </p>
                         </li>
                     </ul>
-<div>
-<a href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html"> <h1>FORDAQ.COM</h1> <Image src='/fordack-logo.gif' width={120} height={108} /></a>
-
-</div>
+                    <div>
+                        <Link href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html">
+                             <h1>FORDAQ.COM</h1>
+                              <Image src='/fordack-logo.gif' width={120} height={108} /></Link>
+                    </div>
                 </div>
                 <div className={styles.contact__findus}>
                     <ul>
-                        <div><h1>FIND US</h1></div>
+                        <div>
+                            <h1>FIND US</h1></div>
                         <p>79024</p>
                         <p>Ukraine</p>
                         <p>m.Lviv</p>
@@ -56,11 +58,10 @@ function Contact() {
                     </ul>
                 </div>
                 <div className={styles.contact__form}>
-                <Form />
+                    <Form />
                 </div>
-                
             </div>
-             </>
+        </>
     )
 }
 

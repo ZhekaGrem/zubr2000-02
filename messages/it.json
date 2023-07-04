@@ -5,5 +5,12 @@
       "product": "Prodotti",
       "contact": "Contatti",
       "lang":"Lingue",
-      "title": "Hej världen!"    }
+      "title": "Hej världen!",
+      "language" : "Italia",
+      "certificates" : "Certificati",
+    "manufacturing":"Processo di produzione",
+    "quality":"Standard di qualità",
+    "lumber":"Legname",
+    "log":"Tronco"
+      }
   }

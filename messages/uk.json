@@ -5,6 +5,12 @@
       "product": "Продукт",
       "contact": "Контакти",
       "lang":"Мова",
-      "title": "Hej världen!"
+      "title": "Hej världen!",
+      "language" : "Українська",
+      "certificates" : "Сертифікати",
+      "manufacturing":"Процес виробництва",
+      "quality":"Стандарти якості",
+      "lumber":"Пиломатеріали",
+      "log":"Колоди"
     }
   }

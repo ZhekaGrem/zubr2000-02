@@ -5,6 +5,12 @@
     "product": "Produkter",
     "contact": "Kontakt",
     "lang":"Sprog",
-    "title": "Hej världen!"
+    "title": "Hej världen!",
+    "language" : "Danmark",
+    "certificates" : "Certifikater",
+    "manufacturing":"Fremstillingsproces",
+    "quality":"Kvalitetsstandarder",
+    "lumber":"Tømmer",
+    "log":"Træstamme"
   }
 }

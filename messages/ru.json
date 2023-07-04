@@ -5,6 +5,12 @@
       "product": "Продукция",
       "contact": "Контакт",
       "lang":"Языки",
-      "title": "Hej världen!"
+      "title": "Hej världen!",
+      "language" : "руский",
+      "certificates" : "Сертификаты",
+      "manufacturing":"Производственный процесс",
+      "quality":"Стандарты качества",
+      "lumber":"Пиломатериалы",
+      "log":"Бревно"
     }
   }

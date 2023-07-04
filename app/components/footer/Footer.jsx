@@ -29,8 +29,8 @@ function Footer() {
                                           <ul>
                                           <h4>CERTIFICATES</h4>
                                           <li>
-                                                      <Link className={styles.footer__link} href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html"> <Image className={styles.logo} src='/mini-fsc.png' 
-                                                      alt='' width={111} height={150} /></Link>
+                                                      <Link className={styles.footer__link} href="/contact/certificates"> <Image   className={styles.logo} src='/mini-fsc.webp' 
+                                                      alt='FSC' width={111} height={150} /></Link>
                                                 </li>
                                                 <li>
                                                       <Link className={styles.footer__link}href="/ " >####</Link>
@@ -57,8 +57,8 @@ function Footer() {
                                                       <Link className={styles.footer__link}href="zubrzubr2000@gmail.com ">zubrzubr2000@gmail.com </Link>
                                                 </li>
                                                 <li>
-                                                      <Link className={styles.footer__link} href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html"> <Image src='/fordaq-logo-02.gif' 
-                                                      alt='' width={100} height={30} /></Link>
+                                                      <Link className={styles.footer__link} href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html"> <Image src='/fordaq-logo-02.webp' 
+                                                      alt='fordaq' width={100} height={30} /></Link>
                                                 </li>
                                           </ul>
                                     </div>

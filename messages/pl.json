@@ -5,6 +5,12 @@
       "product": "Wyroby",
       "contact": "Kontakt",
       "lang":"Jezuki",
-      "title": "Hej världen!"
+      "title": "Hej världen!",
+      "language" : "Polska",
+      "certificates" : "Certyfikaty",
+      "manufacturing":"Proces produkcyjny",
+      "quality":"Standardy jakości",
+      "lumber":"Tarcica",
+      "log":"Kłoda"
     }
   }

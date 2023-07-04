@@ -5,7 +5,13 @@
       "product": "Prodycts",
       "contact": "Contact",
       "lang":"Languages",
-      "title": "Hej världen!"
+      "title": "Hej världen!",
+      "language" : "Great Britain",
+      "certificates" : "certificates",
+    "manufacturing":"manufacturing prcess",
+    "quality":"quality standarts",
+    "lumber":"lumber",
+    "log":"log"
 
     }
   }

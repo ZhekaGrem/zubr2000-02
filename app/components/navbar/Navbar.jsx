@@ -18,18 +18,19 @@ function Navbar() {
                 <div className={styles.navbar__body}>
                     <div className={styles.navbar__logo__text}>
                                 
-                                ZUBR-2000
                         <Link className={styles.navbar__logo} href="/">
-                            <Image src="/zubr-2000-02.png" width={120} height={110} alt="" />
+                            <Image src="/Zubr-logo.png" width={100} height={90} alt="Logo zubr 2000" />
+                            <Image src="/text-zubr-02.webp" width={100} height={75} alt="Logo zubr 2000" />
+                                
+                   
                         </Link>
+                        
                             </div>
                     <div className={styles.navbar__zubr}>
                     </div>
 
                     <nav
-                        className={`${menuActive ? [styles.navbar__menu] : [styles.close__navbar__menu]}`}
-                    // className={styles.close__navbar__menu}
-                    >
+                        className={`${menuActive ? [styles.navbar__menu] : [styles.close__navbar__menu]}`}                    >
                         <ul className={styles.navbar__list}>
                             <li>
                                 <Link href='/' className={styles.navbar__link}>{t('home')}</Link>

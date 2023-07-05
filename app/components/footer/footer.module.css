@@ -3,7 +3,8 @@
    margin: auto;
 }
 .footer{
-    background-color: rgba(204, 204, 214, 0.792);
+  background-image: url("../../img/footer-beckground.jpg");
+    /* background-color: rgba(204, 204, 214, 0.792); */
     padding: 70px 4%;
   
  }
@@ -20,7 +21,7 @@
 
  .footer__col h4{
    font-size: 18px;
-   color: #2d2c2c; 
+   color: var(--color_green); 
    text-transform: capitalize;
    margin-bottom: 30px;
    position: relative;
@@ -43,7 +44,7 @@
     font-size: 16px;
     text-transform: capitalize;
     text-decoration: none;
-    color: #2d2c2c;
+    color: #ffffff;
     display: block;
   }
 
@@ -51,12 +52,12 @@
     font-size: 16px;
     text-transform: none;
     text-decoration: none;
-    color: #2d2c2c;
+    color: #ffffff;
     display: block;
   }
 
   .footer__link:hover{
-    color: #ffffff;
+    color: var(--color_green);
     padding-left: 10px;
      
   }

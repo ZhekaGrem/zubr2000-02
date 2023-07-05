@@ -60,7 +60,7 @@ function Footer() {
                 <li>
                   <Link
                     className={styles.footer__link}
-                    href="gremroman@gmail.com"
+                    href="mailto:gremroman@gmail.com"
                   >
                     gremroman@gmail.com
                   </Link>
@@ -68,7 +68,7 @@ function Footer() {
                 <li>
                   <Link
                     className={styles.footer__link}
-                    href="grem_roman@icloud.com"
+                    href="mailto:grem_roman@icloud.com"
                   >
                     grem_roman@icloud.com{" "}
                   </Link>
@@ -76,7 +76,7 @@ function Footer() {
                 <li>
                   <Link
                     className={styles.footer__link}
-                    href="zubrzubr2000@gmail.com "
+                    href="mailto:zubrzubr2000@gmail.com "
                   >
                     zubrzubr2000@gmail.com{" "}
                   </Link>

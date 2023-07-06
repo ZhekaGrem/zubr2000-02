@@ -30,7 +30,7 @@ function Footer() {
                 <li>
                   <Link
                     className={styles.footer__link}
-                    href="/contact/certificates"
+                    href="/aboutus/certificates"
                   >
                     <Image
                       className={styles.logo}
@@ -41,11 +41,7 @@ function Footer() {
                     />
                   </Link>
                 </li>
-                <li>
-                  <Link className={styles.footer__link} href="/ ">
-                    ####
-                  </Link>
-                </li>
+               
               </ul>
             </div>
             <div className={styles.footer__col}>

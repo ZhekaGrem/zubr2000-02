@@ -39,7 +39,7 @@ function Navbar() {
                                 <Link href='/aboutus' className={styles.navbar__link}>{t('aboutus')}</Link>
                                 <ul className={styles.sub__navbar__list}>
                                     <li>
-                                        <Link href='/certificates' className={styles.sub__navbar__link}>
+                                        <Link href='/aboutus/certificates' className={styles.sub__navbar__link}>
                                         certificates
                                         </Link>
                                     </li>

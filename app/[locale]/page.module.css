@@ -94,11 +94,28 @@ margin-right: 44px;
     background: var(--color_green);
 }
 
-.selction__title{
-    font-size: 3em;
-    margin-bottom: 80px;
-}
 
-.info__title{
-    font-size: 1.8em;
-}
+.container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .sec__01{
+    margin: 20px;
+  }
+  .container .info__img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container p {
+    width: 100%;
+    max-width: 400px; /* Можете настроить максимальную ширину текста по своему усмотрению */
+    margin: 0 auto;
+  }
+  .info__content{
+    display: flex;
+  }

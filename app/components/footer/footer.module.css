@@ -3,7 +3,7 @@
    margin: auto;
 }
 .footer{
-  background-image: url("../../img/footer-beckground.jpg");
+  background-image: url("../../img/wood-1.jpg");
     /* background-color: rgba(204, 204, 214, 0.792); */
     padding: 70px 4%;
   
@@ -58,7 +58,6 @@
 
   .footer__link:hover{
     color: var(--color_green);
-    padding-left: 10px;
      
   }
   .logo{

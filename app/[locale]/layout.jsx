@@ -7,6 +7,9 @@ import Footer from '../components/footer/Footer';
 
 
 export const metadata = {
+  icons: {
+    icon: '/app/favicon.ico',
+  },
   title: 'ZUBR-2000 ',
   description: 'ZUBR-2000',
 
@@ -34,7 +37,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
 
     <html lang={locale}>
       <head>
-        
+      <link rel="icon" type="image/x-icon" href="/app/favicon.ico" />
         <meta name='viewport' content='width=device-width' />
       </head>
       <body>

@@ -49,12 +49,22 @@
    transition: all 0.5s ease 0s;
 
 }
+nav.navbar__menu{float: left;}
+nav.navbar__menu li{list-style: none;}
+nav.navbar__menu ul.first-level > li{
+	float: left;
+	margin-right: 20px;
+	position: relative;
+}
 
 .navbar__list {
    display: flex;
    position: relative;
    z-index: 2;
 }
+
+
+
 
 .lang__menu {
    padding-right: 30px;
@@ -81,6 +91,7 @@
 }
 
 .navbar__link {
+transition: all 0.3s ease 0s;
    text-transform: uppercase;
    font-size: 24px;
    text-decoration: none;
@@ -90,12 +101,15 @@
    color: var(--color_green);
 }
 
+
 .navbar__link__lang {
    margin: 0px 15px 0px 20px;
 }
 
 
-
+.logo__text{
+   margin: 0px 0 -10px 10px;
+}
 .navbar__logo__text {
    justify-self: start;
    margin-left: 20px;
@@ -106,6 +120,7 @@
 
 
 }
+
 
 @media(max-width:964px) {
 

@@ -1,7 +1,8 @@
+'use client'
 import React from "react";
 import styles from "./footer.module.css";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "next-intl/link";
 
 function Footer() {
   return (
@@ -54,28 +55,26 @@ function Footer() {
                   <p>Manager: +38 097 136-20-00</p>
                 </li>
                 <li>
-                  <Link
+                  <p
                     className={styles.footer__link}
-                    href="mailto:gremroman@gmail.com"
                   >
                     gremroman@gmail.com
-                  </Link>
+                  </p>
                 </li>
                 <li>
-                  <Link
+                  <p
                     className={styles.footer__link}
-                    href="mailto:grem_roman@icloud.com"
                   >
                     grem_roman@icloud.com{" "}
-                  </Link>
+                  </p>
                 </li>
                 <li>
-                  <Link
+                  <p
                     className={styles.footer__link}
-                    href="mailto:zubrzubr2000@gmail.com "
+                    
                   >
                     zubrzubr2000@gmail.com{" "}
-                  </Link>
+                  </p>
                 </li>
                 <li>
                   <Link

@@ -22,7 +22,7 @@ export default function Home() {
         radioElement.checked = true;
         setCounter((prevCounter) => (prevCounter % 4) + 1);
       }
-    }, 5000);
+    }, 10000);
     //clean up the interval
     return () => {
       clearInterval(interval);
@@ -31,6 +31,7 @@ export default function Home() {
 
   return (
     <>
+      <div className={styles.content}>
       <div className={styles.slider}>
         <div className={styles.sliders}>
           <input
@@ -100,54 +101,85 @@ export default function Home() {
           ></label>
         </div>
       </div>
-<section className={styles.sec__01}>
+
+      <section className={`${styles.container} ${styles.test}`}>
+		<div className={styles.block}>
+			<div className={styles.col__5}>
+				<div className={styles.row}>
+                <Image className={styles.info__img} src="/test02.jpg" width={400} height={400}/>
+				</div>
+			</div>
+			<div className={`${styles.col} `}>
+				<div className={`${styles.row} ${styles.test} `}>
+					<div className={styles.section__title}>
+						<span>Відбір сировини</span>
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor nisi ut aliquip ex ea commodo
+						consequat. in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. 
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+  <section>
+		<div className={styles.container}>
+			<div className={styles.row}>
+				<div className={styles.section__title}>
+					<span>what we do11TEST</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+
+			<div className={styles.row}>
+				<div className={styles.col}>
+					<p >
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.
+					</p>
+					<div >
+						<div className={styles.row}>
+							<ul className={styles.list}>
+								<li>Stunning on all screens</li>
+								<li>Easy to customize</li>
+								<li>Make a difference</li>
+								<li>Imagine and create</li>
+								<li>Unlimited possibilities</li>
+							</ul>
+						</div>
+					</div>
+					<div className={styles.col} >
+						<div className={styles.row}>
+							<ul className={styles.list}>
+								<li>Remarkable style1</li>
+								<li>Captivating presentations</li>
+								<li>Make a difference</li>
+								<li>Make a difference</li>
+								<li>Imagine and create</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div className={styles.col}>
+                <Image src="/test02.jpg" width={555} height={365} />
+
+				</div>
+			</div>
+		</div>
+                   </section>
   
-<div className={styles.container}>
-        <div className={styles.info__content}>
-          <Image className={styles.info__img} src="/foto-director.jpeg"  width={400} height={400}/>
-            <h3 className={styles.selction__title}>{t("aboutus")}</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              impedit quos ut est, nisi nam necessitatibus itaque reprehenderit
-              quod nulla fugiat maxime porro totam autem officia dolor.
-              Pariatur, explicabo. Facilis sit dicta porro aspernatur tempore,
-              aliquam aperiam itaque consequatur a sequi repellat aut? Quo
-              facere odio dolorum corporis velit aut consequatur id culpa
-              ducimus non, expedita quisquam praesentium deleniti possimus
-              aspernatur sint quibusdam consectetur, atque nemo distinctio.
-            </p>
-          
-        </div>
-          <div className={styles.info}>
-            <h4 className={styles.info__title}> </h4>
-          </div>
-        </div>
-          <div>
-            <h2>{t("certificates")}</h2>
-          </div>
-          <div>
-            <div></div>
-            <h2>{t("manufacturing")}</h2>
-          </div>
-          <div>
-            <h2>{t("quality")}</h2>
-          </div>
-</section>
-        <div>
-          {" "}
-          <div></div>
-          <h1>{t("product")}</h1>
-          <div>
-            {" "}
-            <div></div>
-            <h2>{t("lumber")}</h2>
-          </div>
-          <div>
-            {" "}
-            <div></div>
-            <h2>{t("log")}</h2>
-          </div>
-        </div>
+
+        
+      </div>
         
     </>
   );

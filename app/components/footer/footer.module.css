@@ -1,13 +1,12 @@
+.footer{
+  background-image: url("../../img/wood-1.jpg");
+    padding: 70px 4%;
+  margin-top: 5%;
+ }
 .container{
    max-width: 1170px;
    margin: auto;
 }
-.footer{
-  background-image: url("../../img/wood-1.jpg");
-    /* background-color: rgba(204, 204, 214, 0.792); */
-    padding: 70px 4%;
-  
- }
 
  .row{
     display: flex;
@@ -42,7 +41,6 @@
   }
   .footer__col ul li{
     font-size: 16px;
-    text-transform: capitalize;
     text-decoration: none;
     color: #ffffff;
     display: block;

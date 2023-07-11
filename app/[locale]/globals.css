@@ -18,7 +18,32 @@ ul{
     margin: 0;
     padding: 0;
 }
-
+a{
+	color:#60606e;
+	-webkit-transition:all .2s ease-in-out;
+			transition:all .2s ease-in-out;
+}
+a.link{
+	position: relative;
+}
+a.link:after{
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background-color: #7beec7;
+	-webkit-transition:all .2s ease-in-out;
+			transition:all .2s ease-in-out;
+}
+a:hover, a:focus{
+	color:#60606e;
+	text-decoration: none;
+}
+a:hover:after{
+	width: 50%;
+}
 a,
 li {
     list-style-type: none;

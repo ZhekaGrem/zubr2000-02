@@ -22,7 +22,7 @@ export default function Home() {
         radioElement.checked = true;
         setCounter((prevCounter) => (prevCounter % 4) + 1);
       }
-    }, 10000);
+    }, 100000);
     //clean up the interval
     return () => {
       clearInterval(interval);
@@ -58,10 +58,56 @@ export default function Home() {
             id="radio4"
             className={styles.radio4}
           />
-          {/* <div className={`${styles.divkek} ${styles.otherClass} ${isActive ? styles.otherClass2 : ""}`} onClick={handleClick} > kek</div> */}
-          <div className={`${styles.slide} ${styles.first}`}>
-            {" "}
-            <Image src="/wood-2.jpg" width={2000} height={600} />{" "}
+          <div className={`${styles.slide} ${styles.first} `}>
+            <div className={` ${styles.row}`}> 
+            <div className={styles.kek}>
+					<div className={`${styles.pricing__plan}`}>
+          <div className={`${styles.plan__title}`}>basic</div>
+						<div className= {`${styles.plan__price}`}>$35.99 monthly</div>
+						<ul className={`${styles.list}`}>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Consectetuer adipiscing elit</li>
+							<li>Sed diam nonummy</li>
+							<li>Nibh euismod tincidunt</li>
+							<li>Ut laoreet dolore</li>
+							<li>Magna aliquam erat volutpat</li>
+						</ul>
+						<a href="" className={styles.btn}><span>get started</span></a>
+					</div>
+				</div>
+            <div className={styles.kek}>
+					<div className={`${styles.pricing__plan}`}>
+          <div className={`${styles.plan__title}`}>basic</div>
+						<div className= {`${styles.plan__price}`}>$35.99 monthly</div>
+						<ul className={`${styles.list}`}>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Consectetuer adipiscing elit</li>
+							<li>Sed diam nonummy</li>
+							<li>Nibh euismod tincidunt</li>
+							<li>Ut laoreet dolore</li>
+							<li>Magna aliquam erat volutpat</li>
+						</ul>
+						<a href="" className={styles.btn}><span>get started</span></a>
+					</div>
+				</div>
+            <div className={styles.kek}>
+					<div className={`${styles.pricing__plan}`}>
+          <div className={`${styles.plan__title}`}>basic</div>
+						<div className= {`${styles.plan__price}`}>$35.99 monthly</div>
+						<ul className={`${styles.list}`}>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Consectetuer adipiscing elit</li>
+							<li>Sed diam nonummy</li>
+							<li>Nibh euismod tincidunt</li>
+							<li>Ut laoreet dolore</li>
+							<li>Magna aliquam erat volutpat</li>
+						</ul>
+						<a href="" className={styles.btn}><span>get started</span></a>
+					</div>
+				</div>
+        
+         </div>
+        
           </div>
           <div className={`${styles.slide} `}>
             {" "}
@@ -69,7 +115,7 @@ export default function Home() {
           </div>
           <div className={`${styles.slide} `}>
             {" "}
-            <Image src="/work-men-1.jpg" width={2000} height={600} />{" "}
+            <Image src="/work-men-1.jpg" width={2000} height={600} /> 
           </div>
           <div className={`${styles.slide} `}>
             {" "}
@@ -170,7 +216,7 @@ export default function Home() {
 				</div>
 
 				<div className={styles.col}>
-                <Image src="/test02.jpg" width={555} height={365} />
+                <Image className={styles.info__img} src="/test02.jpg" width={555} height={365} />
 
 				</div>
 			</div>

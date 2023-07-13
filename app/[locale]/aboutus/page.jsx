@@ -14,16 +14,11 @@ function AboutUs() {
 			<div className={styles.row}>
 				<div className={styles.wi__41}>
 					<div className={styles.section__title} >
-						<span>about us</span>
+						<span>{t("aboutus")}</span>
 						<p class="montserrat-text uppercase">we are awesome</p>
 					</div>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Компанія “ЗУБР-2000” була заснована у 2000 році і працює на ринку вже 23 роки. Ми спеціалізуємось на деревині твердих порід та можемо запропонувати як свіжопиляні, так і сухі пиломатеріали. Наша компанія ретельно підходить до відбору деревини, тому вона повністю відповідає всім вимогам Державного управління лісового господарства України та є еквівалентною до європейських стандартів.</p>
 				</div>
         <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
 					<div className={`${styles.pricing__plan}`}>

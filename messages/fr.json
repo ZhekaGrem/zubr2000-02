@@ -1,16 +1,39 @@
 {
-    "Index": {
-      "home": "Accueil",
-      "aboutus": "A propos de nous",
-      "product": "Produits",
-      "contact": "Contact",
-      "lang":"Langues",
-      "title": "Hej världen!",
-    "language" : "FR",
-    "certificates" : "certificats",
-    "manufacturing":"processus de fabrication",
-    "quality":"normes de qualité",
-    "lumber":"bois d'œuvre",
-    "log":"grume"
-    }
+  "Index": {
+    "home": "Accueil",
+    "aboutus": "A propos de nous",
+    "product": "Produits",
+    "contact": "Contact",
+    "lang": "Langues",
+    "title": "Hej världen!",
+    "language": "FR",
+    "certificates": "certificats",
+    "manufacturing": "processus de fabrication",
+    "quality": "normes de qualité",
+    "lumber": "bois d'œuvre",
+    "log": "grume",
+    "title1": "La société 'ZUBR-2000' a été fondée en 2000 et a acquis une reconnaissance sur le marché du bois dur.",
+    "title2": "Nous visons l'excellence de la qualité de nos produits et respectons toutes les normes de l'Administration forestière d'Ukraine. De plus, nous sommes certifiés selon la chaîne de traçabilité forestière (FSC).",
+    "title3": "Cette certification atteste notre conformité aux normes européennes et notre engagement en faveur d'une gestion forestière durable.",
+    "title4": "Nos principales activités comprennent :",
+    "list1": "Le commerce du bois ;",
+    "list2": "La production de différents types de matériaux de sciage ;",
+    "list3": "La découpe de matériaux de sciage bruts et dépareillés ;",
+    "list4": "Le séchage des matériaux de sciage ;",
+    "list5": "Le rabotage des matériaux de sciage après séchage selon les spécifications des clients.",
+    "title5": "Nos entrepôts sont toujours remplis d'un large assortiment de bois et de matériaux de sciage. Nous fournissons à nos clients des produits de la plus haute qualité, en tenant pleinement compte de leurs besoins et exigences.",
+    "title6": "La politique de notre entreprise 'ZUBR-2000' est flexible et axée sur les besoins du marché et des clients. Nous nous développons en permanence, en tenant compte de la dynamique du monde moderne, et sommes toujours prêts à fabriquer des produits selon les exigences individuelles des clients.",
+    "title7": "Nous vous invitons à collaborer avec nous, 'ZUBR-2000', votre partenaire fiable dans le domaine de la transformation du bois et du commerce du bois.",
+    "contactus": "Contactez-nous",
+  "findus": "Trouvez-nous",
+  
+ 
+"ourproduct": "Nos produits",
+  
+ 
+"director": "Directeur",
+  
+ 
+"Manager": "Manager"
   }
+}

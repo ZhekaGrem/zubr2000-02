@@ -59,7 +59,7 @@
      
   }
   .logo{
-    mix-blend-mode: color-burn;
+    mix-blend-mode:lighten;
     object-fit: contain;
     aspect-ratio: 3/2;
     pointer-events: none;
@@ -79,4 +79,7 @@
     }
   }
 
- 
+ .logo:hover{
+    filter: invert(52%) sepia(94%) saturate(707%) hue-rotate(32deg) brightness(91%) contrast(102%);
+
+ }

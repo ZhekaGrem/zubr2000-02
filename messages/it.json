@@ -11,6 +11,29 @@
     "manufacturing":"Processo di produzione",
     "quality":"Standard di qualità",
     "lumber":"Legname",
-    "log":"Tronco"
+    "log":"Tronco",
+    "title1": "La società 'ZUBR-2000' è stata fondata nel 2000 ed è diventata riconosciuta nel mercato del legno duro.",
+  "title2": "Miriamo all'eccellenza nella qualità dei prodotti e rispettiamo tutti gli standard dell'Ente statale per la Gestione delle Foreste dell'Ucraina; inoltre, disponiamo della certificazione Forest Stewardship Council (FSC).",
+  "title3": "Questa certificazione conferma la nostra conformità agli standard europei e il nostro impegno per un'attività forestale sostenibile.",
+  "title4": "Le principali attività che svolgiamo includono:",
+  "list1": "commercio del legno;",
+  "list2": "produzione di legname segato in varie dimensioni;",
+  "list3": "taglio del legname con e senza bordi;",
+  "list4": "essiccazione del legname;",
+  "list5": "piallatura del legname dopo l'essiccazione per soddisfare le specifiche richieste dei nostri clienti.",
+  "title5": "I nostri magazzini sono sempre forniti di una vasta gamma di legname e materiali segati. Ci assicuriamo che i nostri clienti ricevano prodotti della massima qualità, tenendo conto delle loro esigenze e richieste.",
+  "title6": "La politica di 'ZUBR-2000' è flessibile e orientata alle esigenze del mercato e dei clienti. Ci sviluppiamo costantemente e ci adattiamo alla dinamicità del mondo moderno, pertanto siamo aperti alla collaborazione e pronti a realizzare prodotti secondo le specifiche richieste individuali dei clienti.",
+  "title7":"Vi invitiamo a collaborare con noi - la società ZUBR-2000, il vostro partner affidabile nel campo della lavorazione del legno e del commercio di legname.",
+  "contactus": "Contattaci",
+  
+ 
+"findus": "Trova noi",
+  
+ 
+"ourproduct": "I nostri prodotti",
+  
+ 
+"director": "Direttore",
+  "Manager": "Manager"
       }
   }

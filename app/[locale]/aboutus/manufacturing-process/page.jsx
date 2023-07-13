@@ -11,10 +11,10 @@ function Certificates() {
 		<ul className={styles.manual__title__mini}>
 			<li>
 				<div><span className={`${styles.small__title} ${styles.uppercase} ${styles.montserrat__text}`} >we're</span></div>
-				<div className={`${styles.big__title} ${styles.uppercase} ${styles.montserrat__text}`}>Manufacturing process</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime doloribus sunt nesciunt neque officia perspiciatis natus blanditiis? Voluptas nobis voluptatum officiis earum? Id, itaque! Assumenda explicabo voluptates illum tenetur modi labore ea doloribus eius quis iusto? Quaerat, sit reprehenderit sapiente sequi, quidem esse accusamus, et tempore pariatur itaque quibusdam iusto dolores commodi quo aliquid nisi aliquam explicabo ipsum tempora nostrum voluptas ut repellendus earum quos! Eveniet rem error cum voluptatem sint accusamus reiciendis, dicta fugiat ipsum recusandae labore culpa! Officia culpa autem sapiente ipsa fugit tenetur quidem necessitatibus. Quas aperiam minima veritatis cupiditate sit quo velit sapiente, et doloremque similique.</p>
+				<div className={`${styles.big__title} ${styles.uppercase} ${styles.montserrat__text}`}>Виробничий процес</div>
+				<p>	
+У виробничому процесі ми використовуємо сучасне обладнання, передові технології обробки деревини та контролю якості.
+Контроль за якістю нашої продукції починається з моменту відбору дерева висококваліфікованими спеціалістами та триває протягом усього процесу обробки та сушіння.</p>
 			</li>
 			
 		</ul>
@@ -37,12 +37,7 @@ function Certificates() {
 						<span>Відбір сировини</span>
 					</div>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor nisi ut aliquip ex ea commodo
-						consequat. in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. 
+					Вхідний контроль якості
 					</p>
 					<a href="#" className="btn green" ><span>read more</span></a>
 				</div>
@@ -59,15 +54,10 @@ function Certificates() {
 			<div className="col-md-offset-1 col-md-6 col-sm-12">
 				<div className="row">
 					<div className="section-title">
-						<span>Відбір сировини</span>
+						<span>Склад сировини</span>
 					</div>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor nisi ut aliquip ex ea commodo
-						consequat. in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. 
+					Після поступлення на склад, колоди розпилюють відповідно до потрібних розмірів на сучаних деревообробних лініях, зберігаючи оригінальну структуру самої деревини.
 					</p>
 					<a href="#" className="btn green" ><span>read more</span></a>
 				</div>
@@ -84,15 +74,13 @@ function Certificates() {
 			<div className="col-md-offset-1 col-md-6 col-sm-12">
 				<div className="row">
 					<div className="section-title">
-						<span>Відбір сировини</span>
+						<span>Деревообробна
+лінія
+SYC-520G</span>
 					</div>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor nisi ut aliquip ex ea commodo
-						consequat. in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. 
+					Контроль якості
+процесу обробки
 					</p>
 					<a href="#" className="btn green" ><span>read more</span></a>
 				</div>
@@ -109,15 +97,12 @@ function Certificates() {
 			<div className="col-md-offset-1 col-md-6 col-sm-12">
 				<div className="row">
 					<div className="section-title">
-						<span>Відбір сировини</span>
+						<span>Сушка</span>
 					</div>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor nisi ut aliquip ex ea commodo
-						consequat. in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. 
+					свіжорозпиляні пиломатеріали подаються в сушку, де комп’ютеризована система контролює процес сушіння.
+
+Через приблизно 50 днів пиломатеріали високої якості поступають на склад та готові для відправки замовнику.
 					</p>
 					<a href="#" className="btn green" ><span>read more</span></a>
 				</div>
@@ -134,15 +119,11 @@ function Certificates() {
 			<div className="col-md-offset-1 col-md-6 col-sm-12">
 				<div className="row">
 					<div className="section-title">
-						<span>Відбір сировини</span>
+						<span>Пакування</span>
 					</div>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor nisi ut aliquip ex ea commodo
-						consequat. in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. 
+					Контроль якості
+пакування
 					</p>
 					<a href="#" className="btn green" ><span>read more</span></a>
 				</div>
@@ -159,15 +140,12 @@ function Certificates() {
 			<div className="col-md-offset-1 col-md-6 col-sm-12">
 				<div className="row">
 					<div className="section-title">
-						<span>Відбір сировини</span>
+						<span>Склад
+готової продукції</span>
 					</div>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor nisi ut aliquip ex ea commodo
-						consequat. in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. 
+					Контроль якості
+зберігання
 					</p>
 					<a href="#" className="btn green" ><span>read more</span></a>
 				</div>
@@ -179,14 +157,17 @@ function Certificates() {
      <section >
         <div className={styles.container}>
             
-<div><h1>tree species</h1></div>
+<div><h1>Ми використовуємо наступні породи дерев:</h1></div>
 <ul  className={styles.Ol}>
-<li >Первый пункт</li>
-<li >Второй пункт</li>
-<li >Третий пункт</li>
+<li >дуб</li>
+<li >ясин</li>
+<li >береза</li>
 </ul>
-<div><h1>About standarts</h1></div>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo magnam adipisci similique quidem omnis consequatur ducimus, provident quod expedita modi vero nihil, facere voluptatum sed molestiae consequuntur? In, possimus sint.</p>
+<div><h1>Готові пиломатеріали пакуються на палєти за допомогою пластикових стяжок (стрічок) та фолій.</h1></div>
+<p>Ми суворо дотримуємось стандартів якості виробництва, зберігання та траспортування, зокрема
+ДСТУ EN 1315-2-2001 (ГОСТ-9462-88. "Вимоги до якості та розмірів лісоматеріалів") та інших технічних умов на пиломатеріали та сировину, забезпечуючи наших клієнтів високоякісною продукцією.
+
+Детальніше ознайомитись зі стандартами якості Ви можете завітавши в розділ стандарти якості.</p>
 
         </div>
      </section>

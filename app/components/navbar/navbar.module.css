@@ -21,17 +21,26 @@
    position: relative;
    display: flex;
    justify-content: space-between;
-   height: 110px;
+   height: 100px;
    align-items: center;
-   
+   font-family: "Montserrat", sans-serif;
+   font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
+
+@media(max-width:574px){
+   
+.navbar__body{
+   height: 80px;
+}
+ }
 
 .navbar__body a {
    color: #ffffff;
 }
 
 .navbar__logo {
-
    flex: 0 0 120px;
    position: relative;
    z-index: 3;
@@ -41,17 +50,20 @@
    max-width: 100%;
 }
 
+.logo__text:hover{
+   filter: invert(52%) sepia(94%) saturate(707%) hue-rotate(32deg) brightness(91%) contrast(102%);
+
+}
+
+
 .navbar__burger {
    display: none;
 }
 
-.navbar__menu {
-   transition: all 0.5s ease 0s;
 
-}
-nav.navbar__menu{float: left;}
-nav.navbar__menu li{list-style: none;}
-nav.navbar__menu ul.first-level > li{
+nav.open__navbar__menu{float: left;}
+nav.open__navbar__menu li{list-style: none;}
+nav.open__navbar__menu ul.first-level > li{
 	float: left;
 	margin-right: 20px;
 	position: relative;
@@ -80,20 +92,54 @@ nav.navbar__menu ul.first-level > li{
 }
 
 .sub__navbar__list {
-   position: absolute;
-   top: 30px;
+   text-align: center;
    display: none;
-   padding: 10px 0px 0px 0px;
+	z-index: 999;
+	position: absolute;
+	top: 20px;
+	min-width: 200px;
+	background-color: var(--color_green);
 }
+
+.navbar__link__1{
+   left: 10%;
+}
+
+.navbar__link__2{
+   left: 30%;
+}
+
+ul.sub__navbar__list > li > a{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	color:#fff;
+}
+
+
+
+
+
+
+.sub__navbar__list > li > a:hover{
+   background-color: #404051;
+}
+
+
+
 
 .sub__navbar__list>li {
    margin: 0;
 }
 
+.navbar___list__lang{
+   padding-right: 20px;
+}
+
 .navbar__link {
 transition: all 0.3s ease 0s;
    text-transform: uppercase;
-   font-size: 24px;
+   font-size: 20px;
    text-decoration: none;
 }
 
@@ -102,9 +148,7 @@ transition: all 0.3s ease 0s;
 }
 
 
-.navbar__link__lang {
-   margin: 0px 15px 0px 20px;
-}
+
 
 
 .logo__text{
@@ -123,8 +167,6 @@ transition: all 0.3s ease 0s;
 
 
 @media(max-width:964px) {
-
-
 
    .navbar__logo {
       flex: 0 0 110px;
@@ -206,7 +248,8 @@ transition: all 0.3s ease 0s;
       width: 100%;
       height: 3px;
       left: 0;
-      transition: all 0.3s ease 0s;
+      -webkit-transition:all .2s ease-in-out;
+      transition:all .2s ease-in-out;
    }
 
    .navbar__burger__exit::before {
@@ -221,8 +264,7 @@ transition: all 0.3s ease 0s;
       transition: all 0.3s ease 0s;
    }
 
-   .navbar__menu {
-      text-align: center;
+   .open__navbar__menu {
       position: fixed;
       top: 0;
       left: 0;
@@ -230,7 +272,7 @@ transition: all 0.3s ease 0s;
       height: 100%;
       background-image: url("../../img/wood-1.jpg");
       z-index: 1;
-      padding: 120px 10px 20px 20px;
+      padding: 100px 10px 20px 20px;
       transition: all 0.5s ease 0s;
       overflow: auto;
    }
@@ -245,7 +287,7 @@ transition: all 0.3s ease 0s;
       z-index: 1;
    }
 
-   .navbar__menu .navbar__list {
+   .open__navbar__menu .navbar__list {
       display: block;
       z-index: 1;
    }
@@ -254,13 +296,51 @@ transition: all 0.3s ease 0s;
       font-size: 35px;
    }
 
-   .navbar__link__lang {
-      margin: 0px 0px 0px 0px;
-   }
 
-   .navbar__list li {
+
+
+   .navbar__list > li  {
+      display: inline-block;
+      text-decoration: none;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color:white;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
       margin: 0px 0px 30px 0px;
    }
 
+   .navbar__list > li a:hover{
+      background-color: #404051;
+   }
+   .navbar__list > li > .sub__navbar__list{
+      display: none;
+      background-color: var(--color_green__02);
+   }
+   .navbar__link__2{
+      top: 180px;
+      left: 38%;
 
+   }
+   .navbar__link__1{
+      top: 110px;
+   right: 250px;
+   left: 38%;
+   }
 }
+
+@media (max-width: 425px) {
+   .navbar__link__2{
+      top: 180px;
+      left: 25%;
+
+   }
+   .navbar__link__1{
+      top: 110px;
+   right: 250px;
+   left: 20%;
+   }
+ }

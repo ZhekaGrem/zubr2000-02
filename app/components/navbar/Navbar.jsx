@@ -19,24 +19,23 @@ function Navbar() {
             <Link className={styles.navbar__logo} href="/">
               <Image
                 src="/Zubr-logo.png"
-                width={100}
-                height={90}
+                width={80}
+                height={75}
                 alt="Logo zubr 2000"
               />
               <Image
                 className={styles.logo__text}
                 src="/text-zubr-03.png"
-                width={200}
-                height={90}
+                width={180}
+                height={80}
                 alt="Logo zubr 2000"
               />
             </Link>
           </div>
           <div className={styles.navbar__zubr}></div>
           <nav
-            className={`${
-              menuActive ? [styles.navbar__menu] : [styles.close__navbar__menu]
-            }`}
+            className={`${styles.close__navbar__menu} 
+            ${ menuActive ? '' : styles.open__navbar__menu}`}
           >
             <ul className={styles.navbar__list}>
               <li>
@@ -45,16 +44,16 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/aboutus" className={styles.navbar__link}>
+                <Link href="/aboutus" className={`${styles.navbar__link} ${styles.navbar__link__1}`}>
                   {t("aboutus")}
                 </Link>
-                <ul className={styles.sub__navbar__list}>
+                <ul className={` ${styles.sub__navbar__list} ${styles.navbar__link__1}`}>
                   <li>
                     <Link
                       href="/aboutus/certificates"
                       className={styles.sub__navbar__link}
                     >
-                      certificates
+                      {t("certificates")}
                     </Link>
                   </li>
                   <li>
@@ -62,30 +61,28 @@ function Navbar() {
                       href="/aboutus/manufacturing-process"
                       className={styles.sub__navbar__link}
                     >
-                      manufacturing-process
+                      {t("manufacturing")}
                     </Link>
                   </li>
                   <li className={styles.test}>
                     <Link
                       href="/aboutus/quality-standarts"
-                      className={styles.sub__navbar__link}
-                    >
-                      quality-standarts
+                      className={styles.sub__navbar__link}>
+                      {t("quality")}
                     </Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <Link href="/products" className={styles.navbar__link}>
+                <Link href="/products" className={`${styles.navbar__link}`}>
                   {t("product")}
                 </Link>
-                <ul className={styles.sub__navbar__list}>
+                <ul className={` ${styles.sub__navbar__list} ${styles.navbar__link__2}`}>
                   <li>
                     <Link
                       href="/products/logs"
-                      className={styles.sub__navbar__link}
-                    >
-                      Logs
+                      className={styles.sub__navbar__link}>
+                      {t("log")}
                     </Link>
                   </li>
                   <li>
@@ -93,7 +90,7 @@ function Navbar() {
                       href="/products/lumber"
                       className={styles.sub__navbar__link}
                     >
-                      Lumber
+                      {t("lumber")}
                     </Link>
                   </li>
                 </ul>
@@ -103,17 +100,18 @@ function Navbar() {
                   {t("contact")}
                 </Link>
               </li>
+              <ul className={styles.navbar__list}>
 
-              <div className={styles.navbar___list__lang}>
-                <Dropdown />
-              </div>
+                <li><Dropdown  /></li>
+              </ul>
+             
             </ul>
           </nav>
           <div
             className={`${
               menuActive
-                ? [styles.navbar__burger__exit]
-                : [styles.navbar__burger]
+                ? [styles.navbar__burger]
+                : [styles.navbar__burger__exit]
             }`}
             onClick={() => setMenuActive(!menuActive)}
           >

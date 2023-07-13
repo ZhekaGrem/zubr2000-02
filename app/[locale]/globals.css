@@ -19,7 +19,7 @@ ul{
     padding: 0;
 }
 a{
-	color:#60606e;
+	color:#8ca600;
 	-webkit-transition:all .2s ease-in-out;
 			transition:all .2s ease-in-out;
 }
@@ -38,7 +38,7 @@ a.link:after{
 			transition:all .2s ease-in-out;
 }
 a:hover, a:focus{
-	color:#60606e;
+	color:#8ca600;
 	text-decoration: none;
 }
 a:hover:after{
@@ -74,9 +74,19 @@ input:focus-visible{
   }
  
   main{
-    padding-top:110px
+    padding-top:100px
   }
 
+
+  @media(max-width:574px){
+   
+    main{
+        padding-top:80px
+      }
+     }
+
   :root {
+    --color_green__02: #677903;
     --color_green: #8ca600;
+
   }

@@ -3,8 +3,12 @@ import React from "react";
 import styles from "./footer.module.css";
 import Image from "next/image";
 import Link from "next-intl/link";
+import { useTranslations } from "next-intl";
+
 
 function Footer() {
+  const t = useTranslations("Index");
+
   return (
     <>
       <div className={styles.footer}>
@@ -12,22 +16,22 @@ function Footer() {
           <div className={styles.row}>
             <div className={styles.footer__col}>
               <ul>
-                <h4>OUR PRODUCTS</h4>
+                <h4>{t("ourproduct")}</h4>
                 <li>
                   <Link className={styles.footer__link} href="/ ">
-                    LOGS
+                    {t("log")}
                   </Link>
                 </li>
                 <li>
                   <Link className={styles.footer__link} href="/ ">
-                    LAMBER
+                  {t("lumber")}
                   </Link>
                 </li>
               </ul>
             </div>
             <div className={styles.footer__col}>
               <ul>
-                <h4>CERTIFICATES</h4>
+                <h4>{t("certificates")}</h4>
                 <li>
                   <Link
                     className={styles.footer__link}
@@ -35,10 +39,10 @@ function Footer() {
                   >
                     <Image
                       className={styles.logo}
-                      src="/mini-fsc.webp"
+                      src="/fsc__mini2.png"
                       alt="FSC"
-                      width={111}
-                      height={150}
+                      width={121}
+                      height={180}
                     />
                   </Link>
                 </li>
@@ -47,12 +51,12 @@ function Footer() {
             </div>
             <div className={styles.footer__col}>
               <ul>
-                <h4>CONTACT US</h4>
+                <h4>{t('contactus')}</h4>
                 <li>
-                  <p>Director: +38 067 674-58-43</p>
+                  <p>{t('director')}: +38 067 674-58-43</p>
                 </li>
                 <li>
-                  <p>Manager: +38 097 136-20-00</p>
+                  <p>{t('Manager')}: +38 097 136-20-00</p>
                 </li>
                 <li>
                   <p
@@ -94,7 +98,7 @@ function Footer() {
             </div>
             <div className={styles.footer__col}>
               <ul>
-                <h4>FIND US</h4>
+                <h4>{t('findus')}</h4>
                 <li>
                   <p>79024</p>
                 </li>

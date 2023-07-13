@@ -1,7 +1,7 @@
 {
     "Index": {
       "home": "Home",
-      "aboutus": "AboutUs",
+      "aboutus": "About Us",
       "product": "Prodycts",
       "contact": "Contact",
       "lang":"Languages",
@@ -11,7 +11,31 @@
     "manufacturing":"manufacturing prcess",
     "quality":"quality standarts",
     "lumber":"lumber",
-    "log":"log"
-
+    "log":"log",
+    "title1": "The company 'ZUBR-2000' was founded in 2000 and has gained recognition in the market of hardwood timber.",
+    "title2": "We strive for the highest quality of products and adhere to all standards of the State Forest Management of Ukraine, and we also hold a Forest Stewardship Council (FSC) certification.",
+    "title3": "This certification confirms our compliance with European standards and our commitment to sustainable forestry.",
+    "title4": "The main directions of our activities include:",
+    "list1": "timber trading;",
+    "list2": "production of sawn timber in various dimensions;",
+    "list3": "cutting of both edged and unedged timber;",
+    "list4": "timber drying;",
+    "list5": "planing of timber after drying to meet the specific requirements of our clients.",
+    "title5": "Our warehouses are always stocked with a wide range of timber and sawn materials. We ensure that our clients receive products of the highest quality, considering their needs and requirements.",
+    "title6": "The policy of 'ZUBR-2000' is flexible and customer-oriented. We constantly develop and adapt to the dynamics of the modern world, therefore, we are open to collaboration and ready to manufacture products according to individual client's demands.",
+    "title7": "We invite you to collaborate with us - 'ZUBR-2000' company, your reliable partner in the field of wood processing and timber trading.",
+    "contactus": "Contact Us",
+  
+ 
+"findus": "Find Us",
+  
+ 
+"ourproduct": "Our Products",
+  
+ 
+"director": "Director",
+  
+ 
+"Manager": "Manager"
     }
   }

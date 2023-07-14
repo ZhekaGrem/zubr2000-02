@@ -22,7 +22,7 @@ export default function Home() {
         radioElement.checked = true;
         setCounter((prevCounter) => (prevCounter % 4) + 1);
       }
-    }, 5000);
+    }, 500000);
     //clean up the interval
     return () => {
       clearInterval(interval);
@@ -62,58 +62,56 @@ export default function Home() {
               <div className={` ${styles.row}`}>
                 <div className={styles.kek}>
                   <div className={`${styles.pricing__plan}`}>
-                    <div className={`${styles.plan__title}`}>basic</div>
-                    <div className={`${styles.plan__price}`}>
+                    <div className={`${styles.plan__title}`}>OAK Board</div>
+                    {/* <div className={`${styles.plan__price}`}>
                       $35.99 monthly
-                    </div>
+                    </div> */}
                     <ul className={`${styles.list}`}>
-                      <li>Lorem ipsum dolor sit amet</li>
-                      <li>Consectetuer adipiscing elit</li>
-                      <li>Sed diam nonummy</li>
-                      <li>Nibh euismod tincidunt</li>
-                      <li>Ut laoreet dolore</li>
-                      <li>Magna aliquam erat volutpat</li>
+                    <Image
+                  className={styles.info__img}
+                  src="/test02.jpg"
+                  width={270}
+                  height={300}
+                />
                     </ul>
                     <a href="" className={styles.btn}>
-                      <span>get started</span>
+                      <span>SPECIFICATION</span>
+                    </a>
+                  </div>
+                </div>
+                <div className={`${styles.kek}`}>
+                  <div className={`${styles.pricing__plan} `}>
+                    <div className={`${styles.plan__title}`}>ASH Board</div>
+                    
+                    <ul className={`${styles.list}`}>
+                    <Image
+                  className={styles.info__img}
+                  src="/test02.jpg"
+                  width={270}
+                  height={300}
+                />
+                    </ul>
+                    <a href="" className={styles.btn}>
+                      <span>SPECIFICATION</span>
                     </a>
                   </div>
                 </div>
                 <div className={styles.kek}>
                   <div className={`${styles.pricing__plan}`}>
-                    <div className={`${styles.plan__title}`}>basic</div>
-                    <div className={`${styles.plan__price}`}>
+                    <div className={`${styles.plan__title}`}>BIRCH board</div>
+                    {/* <div className={`${styles.plan__price}`}>
                       $35.99 monthly
-                    </div>
+                    </div> */}
                     <ul className={`${styles.list}`}>
-                      <li>Lorem ipsum dolor sit amet</li>
-                      <li>Consectetuer adipiscing elit</li>
-                      <li>Sed diam nonummy</li>
-                      <li>Nibh euismod tincidunt</li>
-                      <li>Ut laoreet dolore</li>
-                      <li>Magna aliquam erat volutpat</li>
+                    <Image
+                  className={styles.info__img}
+                  src="/test02.jpg"
+                  width={270}
+                  height={300}
+                />
                     </ul>
                     <a href="" className={styles.btn}>
-                      <span>get started</span>
-                    </a>
-                  </div>
-                </div>
-                <div className={styles.kek}>
-                  <div className={`${styles.pricing__plan}`}>
-                    <div className={`${styles.plan__title}`}>basic</div>
-                    <div className={`${styles.plan__price}`}>
-                      $35.99 monthly
-                    </div>
-                    <ul className={`${styles.list}`}>
-                      <li>Lorem ipsum dolor sit amet</li>
-                      <li>Consectetuer adipiscing elit</li>
-                      <li>Sed diam nonummy</li>
-                      <li>Nibh euismod tincidunt</li>
-                      <li>Ut laoreet dolore</li>
-                      <li>Magna aliquam erat volutpat</li>
-                    </ul>
-                    <a href="" className={styles.btn}>
-                      <span>get started</span>
+                      <span>SPECIFICATION</span>
                     </a>
                   </div>
                 </div>

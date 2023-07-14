@@ -10,13 +10,15 @@ function Navbar() {
   const t = useTranslations("Index");
 
   const [menuActive, setMenuActive] = useState(false);
-
+  const handleClick = () => {
+    setMenuActive(true);
+  };
   return (
     <>
       <div className={styles.container}>
         <div className={styles.navbar__body}>
           <div className={styles.navbar__logo__text}>
-            <Link className={styles.navbar__logo} href="/">
+            <Link className={styles.navbar__logo} onClick={handleClick} href="/">
               <Image
                 src="/Zubr-logo.png"
                 width={80}
@@ -32,25 +34,25 @@ function Navbar() {
               />
             </Link>
           </div>
-          <div className={styles.navbar__zubr}></div>
           <nav
             className={`${styles.close__navbar__menu} 
             ${ menuActive ? '' : styles.open__navbar__menu}`}
           >
             <ul className={styles.navbar__list}>
               <li>
-                <Link href="/" className={styles.navbar__link}>
+                <Link href="/" onClick={handleClick} className={styles.navbar__link}>
                   {t("home")}
                 </Link>
               </li>
               <li>
-                <Link href="/aboutus" className={`${styles.navbar__link} ${styles.navbar__link__1}`}>
+                <Link href="/aboutus" onClick={handleClick} className={`${styles.navbar__link} ${styles.navbar__link__1}`}>
                   {t("aboutus")}
                 </Link>
                 <ul className={` ${styles.sub__navbar__list} ${styles.navbar__link__1}`}>
                   <li>
                     <Link
                       href="/aboutus/certificates"
+                      onClick={handleClick}
                       className={styles.sub__navbar__link}
                     >
                       {t("certificates")}
@@ -58,6 +60,7 @@ function Navbar() {
                   </li>
                   <li>
                     <Link
+                    onClick={handleClick}
                       href="/aboutus/manufacturing-process"
                       className={styles.sub__navbar__link}
                     >
@@ -66,6 +69,7 @@ function Navbar() {
                   </li>
                   <li className={styles.test}>
                     <Link
+                    onClick={handleClick}
                       href="/aboutus/quality-standarts"
                       className={styles.sub__navbar__link}>
                       {t("quality")}
@@ -74,12 +78,14 @@ function Navbar() {
                 </ul>
               </li>
               <li>
-                <Link href="/products" className={`${styles.navbar__link}`}>
+                <Link 
+                onClick={handleClick} href="/products" className={`${styles.navbar__link}`}>
                   {t("product")}
                 </Link>
                 <ul className={` ${styles.sub__navbar__list} ${styles.navbar__link__2}`}>
                   <li>
                     <Link
+                    onClick={handleClick}
                       href="/products/logs"
                       className={styles.sub__navbar__link}>
                       {t("log")}
@@ -87,6 +93,7 @@ function Navbar() {
                   </li>
                   <li>
                     <Link
+                    onClick={handleClick}
                       href="/products/lumber"
                       className={styles.sub__navbar__link}
                     >
@@ -96,7 +103,7 @@ function Navbar() {
                 </ul>
               </li>
               <li>
-                <Link href="/contact" className={styles.navbar__link}>
+                <Link onClick={handleClick} href="/contact" className={styles.navbar__link}>
                   {t("contact")}
                 </Link>
               </li>

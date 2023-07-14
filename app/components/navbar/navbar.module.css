@@ -7,6 +7,7 @@
 }
 
 .container::before {
+   
    content: '';
    position: absolute;
    top: 0;
@@ -18,9 +19,8 @@
 }
 
 .navbar__body {
-   position: relative;
+   
    display: flex;
-   justify-content: space-between;
    height: 100px;
    align-items: center;
    font-family: "Montserrat", sans-serif;
@@ -28,6 +28,8 @@
 	font-weight: 700;
 	text-transform: uppercase;
 }
+
+
 
 @media(max-width:574px){
    
@@ -170,7 +172,6 @@ transition: all 0.3s ease 0s;
 
    .navbar__logo {
       flex: 0 0 110px;
-      justify-content: start
    }
 
    .navbar__burger {

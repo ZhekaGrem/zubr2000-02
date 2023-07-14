@@ -2,6 +2,8 @@
 import React, { useState } from 'react'
 import {useTranslations} from 'next-intl';
 import styles from './aboutus.module.css'
+import Image from "next/image";
+
 
 function AboutUs() {
   const[add, setAdd]=useState();
@@ -9,6 +11,38 @@ function AboutUs() {
 
   return (
     <>
+	  <section>
+		<div className={`${styles.container} ${styles.test}`}> 
+          <div className={styles.block}>
+            <div className={styles.col__5}>
+              <div className={styles.row}>
+                <Image
+                  className={styles.info__img}
+                  src="/test02.jpg"
+                  width={400}
+                  height={400}
+                />
+              </div>
+            </div>
+            <div className={`${styles.col} `}>
+              <div className={`${styles.row} ${styles.test} `}>
+                <div className={styles.section__title}>
+                  <span>{t("aboutus")}</span>
+                </div>
+                <p>
+                {t("title1")}
+                </p>
+                <p>
+                {t("title2")}
+                </p>
+                <p>
+                {t("title3")}
+                </p>
+              </div>
+            </div>
+          </div>
+		  </div>
+        </section>
     <section>
 		<div className={styles.container}>
 			<div className={styles.row}>

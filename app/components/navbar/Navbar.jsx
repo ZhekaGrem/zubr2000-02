@@ -9,7 +9,7 @@ import Dropdown from "../dropdown/Dropdown";
 function Navbar() {
   const t = useTranslations("Index");
 
-  const [menuActive, setMenuActive] = useState(false);
+  const [menuActive, setMenuActive] = useState(true);
   const handleClick = () => {
     setMenuActive(true);
   };
@@ -51,6 +51,15 @@ function Navbar() {
                 <ul className={` ${styles.sub__navbar__list} ${styles.navbar__link__1}`}>
                   <li>
                     <Link
+                      href="/aboutus/news"
+                      onClick={handleClick}
+                      className={styles.sub__navbar__link}
+                    >
+                      news
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href="/aboutus/certificates"
                       onClick={handleClick}
                       className={styles.sub__navbar__link}
@@ -86,15 +95,23 @@ function Navbar() {
                   <li>
                     <Link
                     onClick={handleClick}
-                      href="/products/logs"
+                      href="/products/birch-lumber"
                       className={styles.sub__navbar__link}>
-                      {t("log")}
+                      {t("lumber")}
                     </Link>
                   </li>
                   <li>
                     <Link
                     onClick={handleClick}
-                      href="/products/lumber"
+                      href="/products/oak-lumber"
+                      className={styles.sub__navbar__link}>
+                      {t("lumber")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                    onClick={handleClick}
+                      href="/products/ash-lumber"
                       className={styles.sub__navbar__link}
                     >
                       {t("lumber")}
@@ -114,7 +131,8 @@ function Navbar() {
              
             </ul>
           </nav>
-          <div
+       
+        <div
             className={`${
               menuActive
                 ? [styles.navbar__burger]

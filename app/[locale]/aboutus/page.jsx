@@ -1,152 +1,105 @@
-"use client"
-import React, { useState } from 'react'
-import {useTranslations} from 'next-intl';
-import styles from './aboutus.module.css'
+"use client";
+import React, { useState } from "react";
+import { useTranslations } from "next-intl";
+import styles from "./aboutus.module.css";
 import Image from "next/image";
 
-
 function AboutUs() {
-  const[add, setAdd]=useState();
-  const t = useTranslations('Index');
+  const [add, setAdd] = useState();
+  const t = useTranslations("Index");
 
   return (
     <>
-	  <section>
-		<div className={`${styles.container} ${styles.test}`}> 
-          <div className={styles.block}>
-            <div className={styles.col__5}>
-              <div className={styles.row}>
-                <Image
-                  className={styles.info__img}
-                  src="/test02.jpg"
-                  width={400}
-                  height={400}
-                />
+      <section>
+        <div className={styles.container}>
+          <div className={styles.row}>
+            <div className={styles.wi__41}>
+              <div className={`${styles.big__title} ${styles.section__title} `}>
+                <span>{t("aboutus")}</span>
+              </div>
+
+              <p>
+                Фірма "ЗУБР-2000" - ваш надійний постачальник деревини твердих
+                порід Компанія "ЗУБР-2000" є лідером у галузі постачання
+                деревини твердих порід з сертифікатом ланцюга постачання FSC.
+                Завдяки нашому досвіду та високій якості продукції, ми
+                здійснюємо успішну співпрацю з країнами, такими як Італія,
+                Швеція, Словаччина, Польща, Естонія та Данія.
+              </p>
+
+              <h3>Наша компанія спеціалізується:</h3>
+              <ul className={`${styles.list}`}>
+                <li>торгівля деревиною </li>
+                <li>виробництві різноманітних типорозмірів пиломатеріалів</li>
+                <li>пропонуємо послуги з розпилу</li>
+                <li>сушки пиломатеріалів</li>
+                <li>простругування пиломатеріалів за індивідуальними розмірами клієнтів.
+                </li>
+              </ul>
+              <p>
+                Ми пильно відбираємо деревину, щоб вона повністю відповідала
+                вимогам Державного управління лісового господарства України та є
+                еквівалентною до європейських стандартів. На наших складах
+                завжди є значний запас деревини та пиломатеріалів, що гарантує
+                швидку поставку замовлень.
+              </p>
+              <p>
+                Наша політика - гнучкість до вимог ринку та клієнтів. Ми завжди
+                готові відповідати на ваші потреби та пропозиції, а також
+                виготовляти продукцію на замовлення.
+              </p>
+            </div>
+            <div className="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+              <div className={`${styles.pricing__plan}`}>
+                <div className={`${styles.plan__title}`}>Сертиікати</div>
+                <ul className={`${styles.list}`}>
+                  <li>FSC</li>
+                  <li>Trade Leaders</li>
+                </ul>
               </div>
             </div>
-            <div className={`${styles.col} `}>
-              <div className={`${styles.row} ${styles.test} `}>
-                <div className={styles.section__title}>
-                  <span>{t("aboutus")}</span>
+            <div className="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+              <div className={`${styles.pricing__plan}`}>
+                <div className={`${styles.plan__title}`}>
+                  Процес виробництва
                 </div>
-                <p>
-                {t("title1")}
-                </p>
-                <p>
-                {t("title2")}
-                </p>
-                <p>
-                {t("title3")}
-                </p>
+                <ul className={`${styles.list}`}>
+                  <li>Відбір сировини</li>
+                  <li>Склад сировини</li>
+                  <li>Деревообробна лінія SYC-520G</li>
+                  <li>Сушка</li>
+                  <li>Пакування</li>
+                  <li>Склад готової продукції</li>
+                </ul>
               </div>
+            </div>
+            <div className="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+              <div className={`${styles.pricing__plan}`}>
+                <div className={`${styles.plan__title}`}>Стандарти якості</div>
+                <ul className={`${styles.list}`}>
+                  <li>ФАНСИРОВИНА</li>
+                  <li>ТЕХНІЧНІ УМОВИ НА ПИЛОМАТЕРІАЛИ</li>
+                  <li>ДУБ (КРУГЛЯК) СОРТ А</li>
+                  <li>ДУБ (КРУГЛЯК) ФАНЕРНОЇ ЯКОСТІ.</li>
+                  <li>ТЕХНІЧНІ УМОВИ НА ПАЛЄТИ ТА ПАЛЄТНЕ ПАКУВАННЯ.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className={styles.wi__41}>
+              <p>
+                Обирайте компанію "ЗУБР-2000" як надійного партнера у галузі
+                деревообробки. Ми забезпечимо вас продукцією високої якості та
+                надійними поставками з урахуванням сертифікату FSC, що
+                підтверджує нашу відповідальність до збереження лісових ресурсів
+                та сталого розвитку.
+              </p>
             </div>
           </div>
-		  </div>
-        </section>
-    <section>
-		<div className={styles.container}>
-			<div className={styles.row}>
-				<div className={styles.wi__41}>
-					<div className={styles.section__title} >
-						<span>{t("aboutus")}</span>
-						<p class="montserrat-text uppercase">we are awesome</p>
-					</div>
-
-					<p>Компанія “ЗУБР-2000” була заснована у 2000 році і працює на ринку вже 23 роки. Ми спеціалізуємось на деревині твердих порід та можемо запропонувати як свіжопиляні, так і сухі пиломатеріали. Наша компанія ретельно підходить до відбору деревини, тому вона повністю відповідає всім вимогам Державного управління лісового господарства України та є еквівалентною до європейських стандартів.</p>
-				</div>
-        <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-					<div className={`${styles.pricing__plan}`}>
-          <div className={`${styles.plan__title}`}>basic</div>
-						<div className= {`${styles.plan__price}`}>$35.99 monthly</div>
-						<ul className={`${styles.list}`}>
-							<li>Lorem ipsum dolor sit amet</li>
-							<li>Consectetuer adipiscing elit</li>
-							<li>Sed diam nonummy</li>
-							<li>Nibh euismod tincidunt</li>
-							<li>Ut laoreet dolore</li>
-							<li>Magna aliquam erat volutpat</li>
-						</ul>
-						<a href="" className={styles.btn}><span>get started</span></a>
-					</div>
-				</div>
-        <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-					<div className={`${styles.pricing__plan}`}>
-          <div className={`${styles.plan__title}`}>basic</div>
-						<div className= {`${styles.plan__price}`}>$35.99 monthly</div>
-						<ul className={`${styles.list}`}>
-							<li>Lorem ipsum dolor sit amet</li>
-							<li>Consectetuer adipiscing elit</li>
-							<li>Sed diam nonummy</li>
-							<li>Nibh euismod tincidunt</li>
-							<li>Ut laoreet dolore</li>
-							<li>Magna aliquam erat volutpat</li>
-						</ul>
-						<a href="" className={styles.btn}><span>get started</span></a>
-					</div>
-				</div>
-        <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-					<div className={`${styles.pricing__plan}`}>
-          <div className={`${styles.plan__title}`}>basic</div>
-						<div className= {`${styles.plan__price}`}>$35.99 monthly</div>
-						<ul className={`${styles.list}`}>
-							<li>Lorem ipsum dolor sit amet</li>
-							<li>Consectetuer adipiscing elit</li>
-							<li>Sed diam nonummy</li>
-							<li>Nibh euismod tincidunt</li>
-							<li>Ut laoreet dolore</li>
-							<li>Magna aliquam erat volutpat</li>
-						</ul>
-						<a href="" className={styles.btn}><span>get started</span></a>
-					</div>
-				</div>
-        <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-					<div className={`${styles.pricing__plan}`}>
-          <div className={`${styles.plan__title}`}>basic</div>
-						<div className= {`${styles.plan__price}`}>$35.99 monthly</div>
-						<ul className={`${styles.list}`}>
-							<li>Lorem ipsum dolor sit amet</li>
-							<li>Consectetuer adipiscing elit</li>
-							<li>Sed diam nonummy</li>
-							<li>Nibh euismod tincidunt</li>
-							<li>Ut laoreet dolore</li>
-							<li>Magna aliquam erat volutpat</li>
-						</ul>
-						<a href="" className={styles.btn}><span>get started</span></a>
-					</div>
-				</div>
-        
-				<div className={styles.wi__41}>
-					<div className={styles.section__title} >
-						<span>what we do</span>
-						<p class="montserrat-text uppercase">creative & digital</p>
-					</div>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-        <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-					<div className={`${styles.pricing__plan}`}>
-          <div className={`${styles.plan__title}`}>basic</div>
-						<div className= {`${styles.plan__price}`}>$35.99 monthly</div>
-						<ul className={`${styles.list}`}>
-							<li>Lorem ipsum dolor sit amet</li>
-							<li>Consectetuer adipiscing elit</li>
-							<li>Sed diam nonummy</li>
-							<li>Nibh euismod tincidunt</li>
-							<li>Ut laoreet dolore</li>
-							<li>Magna aliquam erat volutpat</li>
-						</ul>
-						<a href="" className={styles.btn}><span>get started</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section></>
-  )
+        </div>
+      </section>
+    </>
+  );
 }
 
-export default AboutUs
+export default AboutUs;

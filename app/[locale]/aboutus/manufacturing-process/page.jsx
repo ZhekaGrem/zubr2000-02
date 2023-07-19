@@ -10,8 +10,7 @@ function Certificates() {
 <div className={styles.manual__title}>
 		<ul className={styles.manual__title__mini}>
 			<li>
-				<div><span className={`${styles.small__title} ${styles.uppercase} ${styles.montserrat__text}`} >we're</span></div>
-				<div className={`${styles.big__title} ${styles.uppercase} ${styles.montserrat__text}`}>Виробничий процес</div>
+				<div className={`${styles.big__title}`}>Виробничий процес</div>
 				<p>	
 У виробничому процесі ми використовуємо сучасне обладнання, передові технології обробки деревини та контролю якості.
 Контроль за якістю нашої продукції починається з моменту відбору дерева висококваліфікованими спеціалістами та триває протягом усього процесу обробки та сушіння.</p>

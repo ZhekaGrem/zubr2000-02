@@ -90,3 +90,7 @@ input:focus-visible{
     --color_green: #8ca600;
 
   }
+
+   th {
+    border: 1px solid #000;
+  }

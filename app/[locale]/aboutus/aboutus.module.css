@@ -68,16 +68,7 @@
 	display: inline-block;
 	margin-bottom: 20px;
 }
-.section__title span:after{
-	content: "";
-	background-color: var(--color_green);
-	position: absolute;
-	top:20px;
-	left:0;
-	z-index: -1;
-	width: 60px;
-	height: 20px;
-}
+
 .section__title p{
 	line-height: 24px;
 	color:#60606e;
@@ -149,4 +140,13 @@ ul.list li:before{
 	.btn{
 		margin: 20px 0;
 	}
+}
+
+.big__title{
+	font-size: 48px;
+	color:#60606e;
+	padding: 10px 40px;
+	border:solid 10px #60606e;
+	display: inline-block;
+	margin-bottom: 30px;
 }

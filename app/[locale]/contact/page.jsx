@@ -32,19 +32,19 @@ function Contact() {
                         <p>Director:+38 067 674-58-43 </p>
 
                         <li>
-                            <p href="mailto:gremroman@gmail.com">gremroman@gmail.com</p>
+                            <a href="mailto:gremroman@gmail.com">gremroman@gmail.com</a>
                         </li>
                         <li>
-                            <p href="mailto:grem_roman@icloud.com">grem_roman@icloud.com </p>
+                            <a href="mailto:grem_roman@icloud.com">grem_roman@icloud.com </a>
                         </li>
                         <li>
-                            <p href="mailto:zubrzubr2000@gmail.com ">zubrzubr2000@gmail.com </p>
+                            <a href="mailto:zubrzubr2000@gmail.com ">zubrzubr2000@gmail.com </a>
                         </li>
                     </ul>
                     <div>
-                        <Link href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html">
+                        <a href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html">
                              <h1>FORDAQ.COM</h1>
-                              <Image src='/fordack-logo.gif' width={120} height={108} /></Link>
+                              <Image src='/fordack-logo.webp' width={120} height={108} /></a>
                     </div>
                 </div>
                 <div className={styles.contact__findus}>

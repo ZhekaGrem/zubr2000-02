@@ -33,6 +33,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
   // if (params.locale !== locale) {
   //   notFound();
   // }
+
   return (
 
     <html lang={locale}>

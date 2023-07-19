@@ -1,0 +1,16 @@
+.home__page{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.mini__blog__post {
+    width: calc(25% - 20px);
+    margin: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+ 

@@ -59,26 +59,28 @@ function Footer() {
                   <p>{t('Manager')}: +38 097 136-20-00</p>
                 </li>
                 <li>
-                  <p
+                  <a
                     className={styles.footer__link}
+                    href="mailto:gremroman@gmail.com"
                   >
                     gremroman@gmail.com
-                  </p>
+                  </a>
                 </li>
                 <li>
-                  <p
+                  <a
                     className={styles.footer__link}
+                    href="mailto:grem_roman@icloud.com"
                   >
                     grem_roman@icloud.com{" "}
-                  </p>
+                  </a>
                 </li>
                 <li>
-                  <p
+                  <a
                     className={styles.footer__link}
-                    
+                    href="mailto:zubrzubr2000@gmail.com"
                   >
                     zubrzubr2000@gmail.com{" "}
-                  </p>
+                  </a>
                 </li>
                 <li>
                   <Link

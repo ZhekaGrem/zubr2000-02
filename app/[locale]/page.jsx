@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import MiniBlog from "../components/miniblog/MiniBlog"
 
 export default function Home() {
   const t = useTranslations("Index");
@@ -13,6 +14,8 @@ export default function Home() {
   };
 
   const [counter, setCounter] = useState(1);
+
+
 
   useEffect(() => {
     //start a interval that runs every 5srconds
@@ -67,12 +70,12 @@ export default function Home() {
                       $35.99 monthly
                     </div> */}
                     <ul className={`${styles.list}`}>
-                    <Image
-                  className={styles.info__img}
-                  src="/test02.jpg"
-                  width={270}
-                  height={300}
-                />
+                      <Image
+                        className={styles.info__img}
+                        src="/test02.jpg"
+                        width={270}
+                        height={300}
+                      />
                     </ul>
                     <a href="" className={styles.btn}>
                       <span>SPECIFICATION</span>
@@ -82,14 +85,14 @@ export default function Home() {
                 <div className={`${styles.kek}`}>
                   <div className={`${styles.pricing__plan} `}>
                     <div className={`${styles.plan__title}`}>ASH Board</div>
-                    
+
                     <ul className={`${styles.list}`}>
-                    <Image
-                  className={styles.info__img}
-                  src="/test02.jpg"
-                  width={270}
-                  height={300}
-                />
+                      <Image
+                        className={styles.info__img}
+                        src="/test02.jpg"
+                        width={270}
+                        height={300}
+                      />
                     </ul>
                     <a href="" className={styles.btn}>
                       <span>SPECIFICATION</span>
@@ -103,12 +106,12 @@ export default function Home() {
                       $35.99 monthly
                     </div> */}
                     <ul className={`${styles.list}`}>
-                    <Image
-                  className={styles.info__img}
-                  src="/test02.jpg"
-                  width={270}
-                  height={300}
-                />
+                      <Image
+                        className={styles.info__img}
+                        src="/test02.jpg"
+                        width={270}
+                        height={300}
+                      />
                     </ul>
                     <a href="" className={styles.btn}>
                       <span>SPECIFICATION</span>
@@ -173,60 +176,132 @@ export default function Home() {
                 <div className={styles.section__title}>
                   <span>{t("aboutus")}</span>
                 </div>
-                <p>
-                {t("title1")}
-                </p>
-                <p>
-                {t("title2")}
-                </p>
-                <p>
-                {t("title3")}
-                </p>
+                <p>{t("title1")}</p>
+                <p>{t("title2")}</p>
+                <p>{t("title3")}</p>
               </div>
             </div>
           </div>
         </section>
-        <section>
-          <div className={styles.container}>
-            <div className={styles.section__title}>
-              <div className={styles.row}>
-                <span>{t("title4")}</span>
-              </div>
-            </div>
-
-            <div className={styles.row}>
-              <div className={styles.col}>
-                <div className={styles.test__02}>
-                  <div className={styles.row}>
-                    <ul className={styles.list}>
-                      <li>{t("list1")}</li>
-                      <li>{t("list2")}</li>
-                      <li>{t("list3")}</li>
-                      <li>{t("list4")}</li>
-                      <li>
-                      {t("list5")}
-                      </li>
-                    </ul>
-                  </div>
-
-                  <p>
-                  {t("title5")}
-                  </p>
-                  <p>
-                  {t("title6")}
-                  </p>
-                  <p>
-                  {t("title7")}
-                  </p>
+        <section className={`${styles.container} ${styles.test}`}>
+          <div className={styles.block}>
+                <div className={styles.section__title}>
+                  <span>News</span>
+                <MiniBlog/>
                 </div>
-              </div>
-
-              <div className={styles.col}>
+                </div>
+        </section>
+        <section className={`${styles.container} ${styles.test}`}>
+          <div className={styles.block}>
+            <div className={styles.col__5}>
+              <div className={styles.row}>
                 <Image
                   className={styles.info__img}
                   src="/test02.jpg"
-                  width={555}
-                  height={500}
+                  width={400}
+                  height={400}
+                />
+              </div>
+            </div>
+            <div className={`${styles.col} `}>
+              <div className={`${styles.row} ${styles.test} `}>
+                <div className={styles.section__title}>
+                  <span>Звязатись з нами</span>
+                </div>
+
+                <ul>
+                  <div>
+                    <h1>CONTACT US</h1>
+                  </div>
+                  <p>Manager:+38 097 136-20-00 </p>
+                  <p>Director:+38 067 674-58-43 </p>
+
+                  <li>
+                    <a href="mailto:gremroman@gmail.com">gremroman@gmail.com</a>
+                  </li>
+                  <li>
+                    <a href="mailto:grem_roman@icloud.com">
+                      grem_roman@icloud.com{" "}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:zubrzubr2000@gmail.com ">
+                      zubrzubr2000@gmail.com{" "}
+                    </a>
+                  </li>
+                  <button>
+                    <Link
+                      onClick={handleClick}
+                      href="/contact"
+                      className={styles.navbar__link}
+                    >
+                      Написати нам
+                    </Link>
+                  </button>
+                </ul>
+
+                <ul>
+                  {" "}
+                  <li>
+                    <Link href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html">
+                      <h1>FORDAQ.COM</h1>
+                      <Image
+                        src="/fordack-logo.webp"
+                        width={120}
+                        height={108}
+                      />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className={`${styles.container} ${styles.test}`}>
+          <div className={styles.block}>
+            <div className={`${styles.col} `}>
+              <div className={`${styles.row} ${styles.test} `}>
+                <div className={styles.section__title}>
+                  <span>Наша продукція</span>
+                </div>
+						<ul className={`${styles.list}`}>
+            <Link href="/products/lumber"
+                    className={styles.navbar__link}>
+                      <li>Сертиікати</li>
+              </Link>
+            <Link href="/products/lumber"
+                    className={styles.navbar__link}>
+                      <li>Стандарти якості</li>
+              </Link>
+            <Link href="/products/lumber"
+                    className={styles.navbar__link}>
+                      <li>Процес виробництва</li>
+              </Link>
+						</ul>
+						<ul className={`${styles.list}`}>
+							
+              <Link href="/products/lumber"
+                    className={styles.navbar__link}>
+                      <li>Береза</li>
+              </Link>
+              <Link href="/products/lumber"
+                    className={styles.navbar__link}>
+                      <li>Дуб</li>
+              </Link>
+              <Link href="/products/lumber"
+                    className={styles.navbar__link}>
+                      <li>Ясен</li>
+              </Link>
+						</ul>
+              </div>
+            </div>
+            <div className={styles.col__5}>
+              <div className={styles.row}>
+                <Image
+                  className={styles.info__img}
+                  src="/test02.jpg"
+                  width={400}
+                  height={400}
                 />
               </div>
             </div>

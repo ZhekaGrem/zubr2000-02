@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "./minipost.module.css";
+import styles from "@/app/styles/minipost.module.css";
 
 const blogPosts = [
     {

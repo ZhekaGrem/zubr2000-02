@@ -1,4 +1,4 @@
-import './globals.css'
+import '@/app/styles/globals.css'
 import { useLocale, NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import Navbar from '../components/navbar/Navbar';

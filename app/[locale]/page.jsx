@@ -1,6 +1,6 @@
 "use client";
 import Link from "next-intl/link";
-import styles from "./page.module.css";
+import styles from "@/app/styles/page.module.css";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState, useEffect } from "react";

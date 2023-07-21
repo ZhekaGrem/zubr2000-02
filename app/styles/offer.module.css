@@ -1,0 +1,46 @@
+.contact {
+    justify-content: space-around;
+    display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding-bottom: 5%;
+ }
+ 
+ .contact__info{
+    
+    margin-top: 2%;
+    
+   }
+   .contact__info ul {
+      margin: 5px;
+   }
+ .contact__form{
+    margin-top: 2%;
+ }
+ 
+ @media (max-width:803px) {
+ .contact__info {
+ 
+ justify-content: center;
+    align-items: center;
+ }
+ .contact__form {
+    margin-top: 5%;
+ }
+ .contact{
+    padding-bottom: 70px;
+    justify-content: center;
+    
+ }
+ }
+
+
+ 
+.contact__findus{
+   margin-top: 2%;
+}
+
+.contact__findus p {
+      margin: 5px;
+}
+

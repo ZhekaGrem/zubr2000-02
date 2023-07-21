@@ -1,0 +1,177 @@
+
+.form .title{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 420;
+    background: -webkit-linear-gradient(right, #8c9fa1, #2e3b2e, #98b4b7, #222f25);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form form{
+    padding: 30px 0 0 0;
+}
+.form form .form__row{ 
+    display: flex;
+    margin: 32px 0;
+}
+form .form__row .input__data{ 
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+}
+
+
+form .form__row .textarea{
+    height: 70px;
+
+}
+.input__data input,
+.textarea textarea{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+
+
+
+.input__data input:focus ~ label, .textarea textarea:focus ~ label,
+.input__data input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #758d9d;
+  border: none;
+}
+.textarea textarea{
+  resize: none;
+  padding-top: 10px;
+}
+.input__data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label{
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.input__data .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input__data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #909faa;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input__data input:focus ~ .underline:before,
+.input__data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+.submit__btn .input__data{
+  height: 45px!important;
+  width: 25%!important;
+}
+.submit__btn .input__data .inner{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -150%;
+  background: -webkit-linear-gradient(right, #8c9fa1, #2e3b2e, #98b4b7, #222f25);
+  transition: all 0.4s;
+  border: none;
+}
+.submit__btn .input__data:hover .inner{
+  left: 0;
+}
+.submit__btn .input__data input{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.button__send{
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button__send:disabled {
+  pointer-events: none;
+}
+
+.button__send:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button__send:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+@media (max-width: 700px) {
+  .container .text{
+    font-size: 30px;
+  }
+  .container form{
+    padding: 10px 0 0 0;
+  }
+  .container form .form__row{
+    display: block;
+  }
+  form .form__row .input__data{
+    margin: 35px 0!important;
+  }
+  .submit__btn .input__data{
+    width: 40%!important;
+  }
+}

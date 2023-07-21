@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react'
-import styles from './slider.module.css'
+import styles from '@/app/styles/slider.module.css'
 import Image from 'next/image';
 
 

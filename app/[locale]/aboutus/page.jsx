@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useTranslations } from "next-intl";
-import styles from "./aboutus.module.css";
+import styles from "@/app/styles/aboutus.module.css";
 import Image from "next/image";
 
 function AboutUs() {

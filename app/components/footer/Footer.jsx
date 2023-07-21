@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import styles from "./footer.module.css";
+import styles from "@/app/styles/footer.module.css";
 import Image from "next/image";
 import Link from "next-intl/link";
 import { useTranslations } from "next-intl";

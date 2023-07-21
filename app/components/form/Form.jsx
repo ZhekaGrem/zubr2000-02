@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import styles from "./form.module.css";
+import styles from "@/app/styles/form.module.css";
 import emailjs from "@emailjs/browser";
 
 const Form = () => {

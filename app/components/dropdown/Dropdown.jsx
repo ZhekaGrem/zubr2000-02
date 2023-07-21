@@ -1,6 +1,6 @@
 'use client'
 import React,{useEffect }  from 'react'
-import styles from './dropdown.module.css'
+import styles from '@/app/styles/dropdown.module.css'
 import Link from 'next-intl/link'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl';

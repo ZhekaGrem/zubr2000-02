@@ -1,0 +1,85 @@
+.footer{
+  background-image: url("../img/wood-1.jpg");
+    padding: 70px 4%;
+  margin-top: 5%;
+ }
+.container{
+   max-width: 1170px;
+   margin: auto;
+}
+
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .footer__col{
+    width: 25%;
+    padding: 0 15px;
+ }
+
+ .footer__col h4{
+   font-size: 18px;
+   color: var(--color_green); 
+   text-transform: capitalize;
+   margin-bottom: 30px;
+   position: relative;
+ }
+ .footer__col h4::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  background-color: #939b94;
+  width: 50px;
+  box-sizing: border-box;
+  }
+  .footer__col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+  }
+  .footer__col ul li{
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+
+  .footer__link{
+    font-size: 16px;
+    text-transform: none;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+
+  .footer__link:hover{
+    color: var(--color_green);
+     
+  }
+  .logo{
+    mix-blend-mode:lighten;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+    pointer-events: none;
+  }
+
+
+
+  @media(max-width:767px){
+    .footer__col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+  }
+  @media(max-width:574px){
+    .footer__col{
+        width: 100%;
+    }
+  }
+
+ .logo:hover{
+    filter: invert(52%) sepia(94%) saturate(707%) hue-rotate(32deg) brightness(91%) contrast(102%);
+
+ }

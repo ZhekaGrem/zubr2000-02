@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './certificates.module.css'
+import styles from '@/app/styles/certificates.module.css'
 import Image from "next/image";
 
 

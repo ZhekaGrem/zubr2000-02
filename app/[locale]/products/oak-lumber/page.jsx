@@ -35,9 +35,61 @@ function Lumber() {
     <div className={styles.table__cell}>54</div>
     <div className={styles.table__cell}>54</div>
     <div className={styles.table__cell}>220-750
-	<p>222-2222</p>
-	<p>222-2222</p>
-	<p>222-2222</p>
+	<p>220</p>
+	<p>270</p>
+	<p>320</p>
+	<p>370</p>
+	<p>420</p>
+	<p>470</p>
+	<p>520</p>
+	<p>620</p>
+	<p>820</p>
+	<p>620</p>
+	<p>3050</p>
+	</div>
+  </div>
+</div>
+				</div>
+
+				<div className={styles.col}>
+                <Image src="/oak-luimber-02.jpg" width={555} height={365} />
+
+				</div>
+			</div>
+		</div>
+                   </section>
+        <section>
+		<div className={styles.container}>
+			<div className={styles.row}>
+				<div className={styles.section__title}>
+					<span>БРУСОК 54 * 75-85 ММ</span>
+					
+				</div>
+			</div>
+
+			<div className={styles.row}>
+				<div className={`${styles.col} `}>
+					<h4>Сорт А</h4>
+					<p >
+					Чотири сторони чисті, без заболоні.
+					</p>
+					<h4>Сорт В</h4>
+					<p >
+					Одна сторона чиста і 4 сторони, прилягаючі до неї на 50% чисті.
+Використовується для виготовлення поверхонь столів, сходів, крісел тощо					</p>
+<div className={styles.table__cell__2}>РОЗМІРИ</div>
+<div className={styles.table}>
+  <div className={styles.table__row}>
+    <div className={styles.table__cell}>висота</div>
+    <div className={styles.table__cell}>ширина</div>
+    <div className={styles.table__cell}>довжина</div>
+  </div>
+  <div className={styles.table__row}>
+    <div className={styles.table__cell}>54</div>
+    <div className={styles.table__cell}>75-85</div>
+    <div className={styles.table__cell}>470-2550
+
+	
 	</div>
   </div>
 </div>
@@ -81,7 +133,7 @@ function Lumber() {
   </div>
   <div className={styles.table__row}>
     <div className={styles.table__cell}>54</div>
-    <div className={styles.table__cell}>54</div>
+    <div className={styles.table__cell}>110</div>
     <div className={styles.table__cell}>220-750
 	<p>222-2222</p>
 	<p>222-2222</p>

@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import MiniBlog from "../components/miniblog/MiniBlog"
+import Slider from "../components/Slider/Slider"
 
 export default function Home() {
   const t = useTranslations("Index");
@@ -13,151 +14,17 @@ export default function Home() {
     setIsActive(!isActive);
   };
 
-  const [counter, setCounter] = useState(1);
+  
 
 
 
-  useEffect(() => {
-    //start a interval that runs every 5srconds
-    const interval = setInterval(() => {
-      const radioElement = document.getElementById(`radio${counter}`);
-      if (radioElement) {
-        radioElement.checked = true;
-        setCounter((prevCounter) => (prevCounter % 4) + 1);
-      }
-    }, 500000);
-    //clean up the interval
-    return () => {
-      clearInterval(interval);
-    };
-  }, [counter]);
+
 
   return (
     <>
+    <Slider/>
       <div className={styles.content}>
-        <div className={styles.slider}>
-          <div className={styles.sliders}>
-            <input
-              type="radio"
-              name="radio-btn"
-              id="radio1"
-              className={styles.radio1}
-            />
-            <input
-              type="radio"
-              name="radio-btn"
-              id="radio2"
-              className={styles.radio2}
-            />
-            <input
-              type="radio"
-              name="radio-btn"
-              id="radio3"
-              className={styles.radio3}
-            />
-            <input
-              type="radio"
-              name="radio-btn"
-              id="radio4"
-              className={styles.radio4}
-            />
-            <div className={`${styles.slide} ${styles.first} `}>
-              <div className={` ${styles.row}`}>
-                <div className={styles.kek}>
-                  <div className={`${styles.pricing__plan}`}>
-                    <div className={`${styles.plan__title}`}>OAK Board</div>
-                    {/* <div className={`${styles.plan__price}`}>
-                      $35.99 monthly
-                    </div> */}
-                    <ul className={`${styles.list}`}>
-                      <Image
-                        className={styles.info__img}
-                        src="/test02.jpg"
-                        width={270}
-                        height={300}
-                      />
-                    </ul>
-                    <a href="" className={styles.btn}>
-                      <span>SPECIFICATION</span>
-                    </a>
-                  </div>
-                </div>
-                <div className={`${styles.kek}`}>
-                  <div className={`${styles.pricing__plan} `}>
-                    <div className={`${styles.plan__title}`}>ASH Board</div>
-
-                    <ul className={`${styles.list}`}>
-                      <Image
-                        className={styles.info__img}
-                        src="/test02.jpg"
-                        width={270}
-                        height={300}
-                      />
-                    </ul>
-                    <a href="" className={styles.btn}>
-                      <span>SPECIFICATION</span>
-                    </a>
-                  </div>
-                </div>
-                <div className={styles.kek}>
-                  <div className={`${styles.pricing__plan}`}>
-                    <div className={`${styles.plan__title}`}>BIRCH board</div>
-                    {/* <div className={`${styles.plan__price}`}>
-                      $35.99 monthly
-                    </div> */}
-                    <ul className={`${styles.list}`}>
-                      <Image
-                        className={styles.info__img}
-                        src="/test02.jpg"
-                        width={270}
-                        height={300}
-                      />
-                    </ul>
-                    <a href="" className={styles.btn}>
-                      <span>SPECIFICATION</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={`${styles.slide} `}>
-              {" "}
-              <Image src="/OAK-LOGS-02.webp" width={2000} height={600} />{" "}
-            </div>
-            <div className={`${styles.slide} `}>
-              {" "}
-              <Image src="/work-men-1.jpg" width={2000} height={600} />
-            </div>
-            <div className={`${styles.slide} `}>
-              {" "}
-              <Image src="/lumber-1.jpg" width={2000} height={600} />{" "}
-            </div>
-            <div className={styles.navigator__auto}>
-              <div className={styles.navigator__auto__btn1}></div>
-              <div className={styles.navigator__auto__btn2}></div>
-              <div className={styles.navigator__auto__btn3}></div>
-              <div className={styles.navigator__auto__btn4}></div>
-            </div>
-          </div>
-          <div className={styles.navigator__manual}>
-            <label
-              htmlFor="radio1"
-              className={styles.navigator__manual__btn}
-            ></label>
-            <label
-              htmlFor="radio2"
-              className={styles.navigator__manual__btn}
-            ></label>
-            <label
-              htmlFor="radio3"
-              className={styles.navigator__manual__btn}
-            ></label>
-            <label
-              htmlFor="radio4"
-              className={styles.navigator__manual__btn}
-            ></label>
-          </div>
-        </div>
+        
 
         <section className={`${styles.container} ${styles.test}`}>
           <div className={styles.block}>

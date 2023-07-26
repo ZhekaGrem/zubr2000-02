@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './birch-lumber.module.css'
+import styles from '@/app/styles/birch-lumber.module.css'
 import Image from "next/image";
 
 function Lumber() {

@@ -1,61 +1,28 @@
 import React from 'react'
 import styles from "@/app/styles/minipost.module.css";
+import { client } from "@/app/lib/sanity";
 
-const blogPosts = [
-    {
-      title: 'Blog Post 1',
-      timestamp: 'July 19, 2023',
-    },
-    {
-      title: 'Blog Post 2',
-      timestamp: 'July 20, 2023',
-    },
-    {
-      title: 'Blog Post 2',
-      timestamp: 'July 20, 2023',
-    },
-    {
-      title: 'Blog Post 2',
-      timestamp: 'July 20, 2023',
-    },
-    {
-      title: 'Blog Post 2',
-      timestamp: 'July 20, 2023',
-    },
-    {
-      title: 'Blog Post 2',
-      timestamp: 'July 20, 2023',
-    },
-    {
-      title: 'Blog Post 2',
-      timestamp: 'July 20, 2023',
-    },
-    {
-      title: 'Blog Post 2',
-      timestamp: 'July 20, 2023',
-    },
-    {
-      title: 'Blog Post 2',
-      timestamp: 'July 20, 2023',
-    },
-    {
-      title: 'Blog Post 2',
-      timestamp: 'July 20, 2023',
-    },
-    // Add more blog posts as needed
-  ];
-const MiniBlog = () => {
+
+async function getData() {
+  const query = `*[_type == "post"] | order(publication_data desc)`;
+  const data = await client.fetch(query);
+  return data;
+}
+
+
+export default async function MiniBlog  ()  {
+  const data = await getData();
+
   return (
     <div className={styles.home__page}>
       {/* Render the mini blog posts */}
-      {blogPosts.map((post, index) => (
-        <div key={index} className={styles.mini__blog__post}>
-          <h3>{post.title}</h3>
-          <p>{post.timestamp}</p>
+      {data.map((post) => (
+        <div key={post._id} className={styles.mini__blog__post}>
+          <div>{post.meta_title}</div>
+          <div>{post.publication_data}</div>
         </div>
       ))}
     </div>
   )
 }
 
-export default MiniBlog

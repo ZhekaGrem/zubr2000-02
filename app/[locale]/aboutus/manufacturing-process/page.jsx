@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from '@/app/styles/manufacturing-process.module.css'
 import Image from "next/image";
-import Link from 'next/link';
 
 function Certificates() {
     return (
@@ -27,7 +26,7 @@ function Certificates() {
 		<div className={styles.block}>
 			<div className={styles.col__5}>
 				<div className="row">
-                <Image src="/test02.jpg" width={300} height={200}/>
+                <Image src="/test02.jpg" width={300} height={200} alt='imag3'/>
 				</div>
 			</div>
 			<div className="col-md-offset-1 col-md-6 col-sm-12">
@@ -47,7 +46,7 @@ function Certificates() {
 		<div className={styles.block}>
 			<div className={styles.col__5}>
 				<div className="row">
-                <Image src="/test02.jpg" width={300} height={200}/>
+                <Image alt='imag3' src="/test02.jpg" width={300} height={200}/>
 				</div>
 			</div>
 			<div className="col-md-offset-1 col-md-6 col-sm-12">
@@ -67,7 +66,7 @@ function Certificates() {
 		<div className={styles.block}>
 			<div className={styles.col__5}>
 				<div className="row">
-                <Image src="/test02.jpg" width={300} height={200}/>
+                <Image  alt='imag3' src="/test02.jpg" width={300} height={200}/>
 				</div>
 			</div>
 			<div className="col-md-offset-1 col-md-6 col-sm-12">
@@ -90,7 +89,7 @@ SYC-520G</span>
 		<div className={styles.block}>
 			<div className={styles.col__5}>
 				<div className="row">
-                <Image src="/test02.jpg" width={300} height={200}/>
+                <Image alt='img4' src="/test02.jpg" width={300} height={200}/>
 				</div>
 			</div>
 			<div className="col-md-offset-1 col-md-6 col-sm-12">
@@ -112,7 +111,7 @@ SYC-520G</span>
 		<div className={styles.block}>
 			<div className={styles.col__5}>
 				<div className="row">
-                <Image src="/test02.jpg" width={300} height={200}/>
+                <Image src="/test02.jpg" width={300} alt='imag3' height={200}/>
 				</div>
 			</div>
 			<div className="col-md-offset-1 col-md-6 col-sm-12">
@@ -133,7 +132,7 @@ SYC-520G</span>
 		<div className={styles.block}>
 			<div className={styles.col__5}>
 				<div className="row">
-                <Image src="/test02.jpg" width={300} height={200}/>
+                <Image src="/test02.jpg" width={300} alt='img4' height={200}/>
 				</div>
 			</div>
 			<div className="col-md-offset-1 col-md-6 col-sm-12">

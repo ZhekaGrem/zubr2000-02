@@ -38,7 +38,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
 
     <html lang={locale}>
       <head>
-      <link rel="icon" type="image/x-icon" href="/app/favicon.ico" />
+      <link rel="icon" alt='icon planet'  type="image/x-icon" href="/app/favicon.ico" />
         <meta name='viewport' content='width=device-width' />
       </head>
       <body>

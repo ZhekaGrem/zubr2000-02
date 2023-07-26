@@ -44,7 +44,7 @@ function Contact() {
                     <div>
                         <a href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html">
                              <h1>FORDAQ.COM</h1>
-                              <Image src='/fordack-logo.webp' width={120} height={108} /></a>
+                              <Image src='/fordack-logo.webp' width={120} height={108} alt='fordaq' /></a>
                     </div>
                 </div>
                 <div className={styles.contact__findus}>

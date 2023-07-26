@@ -22,9 +22,9 @@ return (
     <ul className={styles.menu__list}>
       <li >
         <div className={styles.lang__list} >
-          <Image className={styles.planet} src='/language__02.svg' width={20} height={15}/>
+          <Image className={styles.planet} alt='planet logo change  language' src='/language__02.svg' width={20} height={15}/>
         <p className={styles.menu__link}>{t('language')}</p>
-          <Image className={styles.planet} src='/down__02.svg' width={20} height={15}/>
+          <Image className={styles.planet} alt='drop down  logo change  language'  src='/down__02.svg' width={20} height={15}/>
          </div>
         <ul className={styles.sub__menu__list}>
           <li >

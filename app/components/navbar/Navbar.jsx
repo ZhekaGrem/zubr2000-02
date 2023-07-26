@@ -15,10 +15,10 @@ function Navbar() {
   };
   return (
     <>
-      <div className={styles.container}>
+      <div alt='forest' role="img" aria-label="forest"className={styles.container}>
         <div className={styles.navbar__body}>
           <div className={styles.navbar__logo__text}>
-            <Link className={styles.navbar__logo} onClick={handleClick} href="/">
+            <Link  className={styles.navbar__logo} onClick={handleClick} href="/">
               <Image
                 src="/Zubr-logo.png"
                 width={80}
@@ -30,7 +30,7 @@ function Navbar() {
                 src="/text-zubr-03.png"
                 width={180}
                 height={80}
-                alt="Logo zubr 2000"
+                alt="Logo Text zubr 2000"
               />
             </Link>
           </div>
@@ -40,12 +40,12 @@ function Navbar() {
           >
             <ul className={styles.navbar__list}>
               <li>
-                <Link href="/" onClick={handleClick} className={styles.navbar__link}>
+                <Link   href="/" onClick={handleClick} className={styles.navbar__link}>
                   {t("home")}
                 </Link>
               </li>
               <li>
-                <Link href="/aboutus" onClick={handleClick} className={`${styles.navbar__link} ${styles.navbar__link__1}`}>
+                <Link   href="/aboutus" onClick={handleClick} className={`${styles.navbar__link} ${styles.navbar__link__1}`}>
                   {t("aboutus")}
                 </Link>
                 <ul className={` ${styles.sub__navbar__list} ${styles.navbar__link__1}`}>
@@ -120,7 +120,7 @@ function Navbar() {
                 </ul>
               </li>
               <li>
-                <Link onClick={handleClick} href="/contact" className={styles.navbar__link}>
+                <Link   onClick={handleClick} href="/contact" className={styles.navbar__link}>
                   {t("contact")}
                 </Link>
               </li>

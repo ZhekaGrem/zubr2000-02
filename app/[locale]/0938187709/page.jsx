@@ -35,7 +35,7 @@ function Contact() {
                     <div>
                         <Link href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html">
                              <h1>FORDAQ.COM</h1>
-                              <Image src='/fordack-logo.webp' width={120} height={108} /></Link>
+                              <Image alt="fordack" src='/fordack-logo.webp' width={120} height={108} /></Link>
                     </div>
                 </div>
               

@@ -2,8 +2,8 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import styles from './products.module.css';
-import Link from "next-intl/link";
+import styles from '@/app/styles/products.module.css';
+
 function Product() {
   const t = useTranslations("Index");
 
@@ -23,7 +23,7 @@ function Product() {
 			<div className={styles.row}>
 				<div className={styles.col}>
 					<div className={styles.team__member}>
-          <Image className={styles.info__img} src="/oak-luimber-01.jpg" width={400} height={400}/>
+          <Image className={styles.info__img} src="/oak-luimber-01.jpg" width={400} alt='oak1' height={400}/>
 						<div className={styles.team__member__hover}>
 							<div className={styles.team__member__info}>
 								<div className={styles.team__member__name}>john doe</div>
@@ -35,7 +35,7 @@ function Product() {
 				
 				<div className={styles.col} data-wow-delay=".1s">
 					<div className={styles.team__member}>
-          <Image className={styles.info__img} src="/oak-luimber-02.jpg" width={400} height={400}/>
+          <Image className={styles.info__img} src="/oak-luimber-02.jpg" width={400}  alt='img4' height={400}/>
 						<div className={styles.team__member__hover}>
 							<div className={styles.team__member__info}>
 								<div className={styles.team__member__name}>jennifer toms</div>

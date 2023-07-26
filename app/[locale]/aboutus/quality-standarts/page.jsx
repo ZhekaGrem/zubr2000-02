@@ -122,7 +122,7 @@ function qualityStandarts() {
             </div>
 
             <div className={styles.col}>
-              <Image src="/brus.jpg" width={555} height={415} />
+              <Image src="/brus.jpg" width={555} height={415} alt='img4' />
             </div>
           </div>
         </div>
@@ -246,7 +246,7 @@ function qualityStandarts() {
               <span>ТЕХНІЧНІ УМОВИ НА ПАЛЄТИ ТА ПАЛЄТНЕ ПАКУВАННЯ.</span>
             </div>
           <div className={styles.col}>
-              <Image src="/paleta.jpg" width={590} height={365} />
+              <Image src="/paleta.jpg" width={590} height={365} alt='img4' />
             </div>
           </div>
           <div className={styles.row}>

@@ -11,7 +11,7 @@ function Footer() {
 
   return (
     <>
-      <div className={styles.footer}>
+      <div role="img" aria-label="forest" className={styles.footer}>
         <div className={styles.container}>
           <div className={styles.row}>
             <div className={styles.footer__col}>

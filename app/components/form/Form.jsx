@@ -44,12 +44,12 @@ const Form = () => {
 
 
   useEffect(() => {
-    if (emailError || phoneError) {
+    if (emailError ) {
       setFormValid(false);
     } else {
       setFormValid(true);
     }
-  }, [emailError, phoneError]);
+  }, [emailError]);
 
   /* this code for validarion for phone no use library */
 
@@ -58,7 +58,7 @@ const Form = () => {
     const regexpPhone =
       /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
     if (!regexpPhone.test(String(e.target.value).toLowerCase())) {
-      setPhoneError("not valide email");
+      setPhoneError("not valide phone");
     } else {
       setPhoneError("");
     }
@@ -127,15 +127,17 @@ const Form = () => {
   };
 
   return (
+    <div className={styles.container }>
+
+    
     <div className={styles.form}>
       <div className={styles.title}>
-        <h1>CONTACT US ONLINE</h1>
+        <h1 id="contact">CONTACT US ONLINE</h1>
       </div>
       <form ref={form} onSubmit={sendEmail}>
-        {/* Name Input ->*/}
-        <div className={styles.form__row}>
+      <div className={styles.form__row}>
           <div className={`${styles["input__data"]} `}>
-            <input name="name"
+            <input  name="name"
             value={name} 
             onChange={(e) => nameHandler(e)}
             />
@@ -143,16 +145,24 @@ const Form = () => {
             <label htmlFor="name">Name</label>
           </div>
 
+
           {/* CompanyName Input ->*/}
+        </div>
+        <div className={styles.form__row}>
+
           <div className={`${styles["input__data"]} `}>
             <input onChange={namecompanyHandler} value={namecompany} name="namecompany" />
             <div className={styles.underline}></div>
             <label htmlFor="namecompany">Company Name</label>
           </div>
         </div>
+        {/* Name Input ->*/}
+        
 
         {/* Phone Input ->*/}
-        <div className={styles.form__row}>
+<section>
+
+<div className={styles.form__row}>
           <div className={`${styles["input__data"]} `}>
             <input
               value={phone}
@@ -167,7 +177,9 @@ const Form = () => {
           </div>
 
           {/* Email Input ->*/}
-          <div className={`${styles["input__data"]} `}>
+          
+<div className={styles.form__row}>
+<div className={`${styles["input__data"]} `}>
             <input
               value={email}
               onChange={(e) => emailHandler(e)}
@@ -177,9 +189,12 @@ const Form = () => {
             />
             <div className={styles.underline}></div>
             <label htmlFor="email">Mail</label>
-            {/* {emailDirty && emailError && <div>{emailError} </div>} */}
+            {emailDirty && emailError && <div>{emailError} </div>}
           </div>
+</div>
         </div>
+</section>
+
 
         {/* Send button ->*/}
         <div className={styles.form__row}>
@@ -215,6 +230,7 @@ const Form = () => {
           </button>
         </div>
       </form>
+    </div>
     </div>
   );
 };

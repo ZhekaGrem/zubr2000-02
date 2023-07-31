@@ -33,7 +33,7 @@ function Contact() {
                         </li>
                     </ul>
                     <div>
-                        <Link href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html">
+                        <Link    rel="preload" href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html">
                              <h1>FORDAQ.COM</h1>
                               <Image alt="fordack" src='/fordack-logo.webp' width={120} height={108} /></Link>
                     </div>

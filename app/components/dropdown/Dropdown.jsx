@@ -28,38 +28,38 @@ return (
          </div>
         <ul className={styles.sub__menu__list}>
           <li >
-            <Link to='' className={styles.sub__menu__link} href="/"  locale='uk'>
+            <Link    rel="preload" to='' className={styles.sub__menu__link} href="/"  locale='uk'>
               <Image alt='language UA' src='/ua.webp' width={20} height={16} />Українська</Link>{''}</li>
           <li >
-          <Link to="" className={styles.sub__menu__link} href='/' locale='en' >
+          <Link    rel="preload" to="" className={styles.sub__menu__link} href='/' locale='en' >
           <Image alt='language En' src='/gb.webp' width={20} height={16} />
           English </Link> </li>
           <li >
-            <Link to="" className={styles.sub__menu__link} href='/' locale='da'>
+            <Link    rel="preload" to="" className={styles.sub__menu__link} href='/' locale='da'>
               <Image alt='language DA' src='/dk.webp' width={20} height={16} />
               Danmark </Link>{''} </li>
           <li >
-            <Link to="" className={styles.sub__menu__link} href='/' locale='de'>
+            <Link    rel="preload" to="" className={styles.sub__menu__link} href='/' locale='de'>
               <Image alt='language DE' src='/de.webp' width={20} height={16} />
                Deutsch</Link>{''} </li>
           <li >
-            <Link  to="" className={styles.sub__menu__link} href='/' locale='ru'>
+            <Link    rel="preload"  to="" className={styles.sub__menu__link} href='/' locale='ru'>
               <Image alt='language Ru' src='/ru.webp' width={20} height={16} />
               руский </Link>{''} </li>
           <li >
-            <Link to="" className={styles.sub__menu__link} href='/' locale='fr'>
+            <Link    rel="preload" to="" className={styles.sub__menu__link} href='/' locale='fr'>
               <Image  alt='language FR' src='/fr.webp' width={20} height={16} />
               Français </Link>{''} </li>
           <li >
-            <Link to="" className={styles.sub__menu__link} href='/' locale='it'>
+            <Link    rel="preload" to="" className={styles.sub__menu__link} href='/' locale='it'>
               <Image alt='language IT' src='/it.webp' width={20} height={16} />
               Italiano </Link>{''} </li>
           <li >
-            <Link to="" className={styles.sub__menu__link} href='/' locale='sv'>
+            <Link    rel="preload" to="" className={styles.sub__menu__link} href='/' locale='sv'>
               <Image alt='language SW' src='/se.webp' width={20} height={16} />
               Sverige </Link> </li>
           <li >
-            <Link to="" className={styles.sub__menu__link} href='/' locale='pl'>
+            <Link    rel="preload" to="" className={styles.sub__menu__link} href='/' locale='pl'>
               <Image alt='language PL' src='/pl.webp' width={20} height={16} />
               Polski </Link>{''} </li>
           

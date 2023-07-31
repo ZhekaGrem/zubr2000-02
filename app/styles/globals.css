@@ -6,12 +6,15 @@
 }
 
 
+
 html,
 body{
-    display: block;
-    height: 100%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: block;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+
 }
+
 
 ul{
     list-style: none;
@@ -33,7 +36,6 @@ a.link:after{
 	left: 0;
 	width: 0;
 	height: 1px;
-	background-color: #7beec7;
 	-webkit-transition:all .2s ease-in-out;
 			transition:all .2s ease-in-out;
 }

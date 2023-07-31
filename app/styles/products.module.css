@@ -50,12 +50,11 @@
     display: table;
   }
   .section__title{
-    width: 50%;
+    width: 75%;
     margin: 50px auto 20px;
   }
   .section__title span{
     z-index: 1;
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 30px;
     text-transform: uppercase;
@@ -108,7 +107,6 @@
 	width: 100%;
 }
 .team__member .team__member__hover .team__member__info .team__member__name{
-	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 	font-size: 12px;
 	color:#60606e;	
@@ -123,9 +121,7 @@
 .team__member .team__member__hover .team__member__info .team__member__job{
 	display: inline-block;
 	margin-top: 10px;
-	background-color: #7beec7;
 	padding: 5px;
-	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -162,4 +158,6 @@
       }
     }
   
-    
+    .info__img{
+      width: "auto";
+    }

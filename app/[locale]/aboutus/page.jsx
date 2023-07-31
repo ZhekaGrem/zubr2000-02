@@ -1,10 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { useTranslations } from "next-intl";
 import styles from "@/app/styles/aboutus.module.css";
 
 function AboutUs() {
-  const [add, setAdd] = useState();
   const t = useTranslations("Index");
 
   return (
@@ -48,19 +47,19 @@ function AboutUs() {
                 виготовляти продукцію на замовлення.
               </p>
             </div>
-            <div className="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+            <div className={`${styles.container} ${styles.mini__block}`}>
               <div className={`${styles.pricing__plan}`}>
-                <div className={`${styles.plan__title}`}>Сертиікати</div>
+                <div className={`${styles.plan__title}`}><span>Сертиікати</span></div>
                 <ul className={`${styles.list}`}>
                   <li>FSC</li>
                   <li>Trade Leaders</li>
                 </ul>
               </div>
             </div>
-            <div className="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+            <div className={`${styles.container} ${styles.mini__block}`}>
               <div className={`${styles.pricing__plan}`}>
                 <div className={`${styles.plan__title}`}>
-                  Процес виробництва
+                  <span>Процес виробництва</span>
                 </div>
                 <ul className={`${styles.list}`}>
                   <li>Відбір сировини</li>
@@ -72,9 +71,9 @@ function AboutUs() {
                 </ul>
               </div>
             </div>
-            <div className="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+            <div className={`${styles.container} ${styles.mini__block}`}>
               <div className={`${styles.pricing__plan}`}>
-                <div className={`${styles.plan__title}`}>Стандарти якості</div>
+                <div className={`${styles.plan__title}`}><span>Стандарти якості</span></div>
                 <ul className={`${styles.list}`}>
                   <li>ФАНСИРОВИНА</li>
                   <li>ТЕХНІЧНІ УМОВИ НА ПИЛОМАТЕРІАЛИ</li>

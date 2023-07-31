@@ -5,25 +5,37 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import MiniBlog from "../components/miniblog/MiniBlog"
-import Slider from "../components/Slider/Slider"
+import { client } from "@/app/lib/sanity";
 
-export default  function Home() {
+
+
+
+async function getData() {
+  const query = `*[_type == "post"] | order(publication_data desc)`;
+  const data = await client.fetch(query);
+  return data;
+}
+
+export default  function Home() { 
   const t = useTranslations("Index");
   const [isActive, setIsActive] = useState(false);
+  const [blogData, setBlogData] = useState([]);
+  useEffect(() => {
+    async function fetchData() {
+      const data = await getData();
+      setBlogData(data);
+    }
+    fetchData();
+  }, []);
+
   const handleClick = () => {
     setIsActive(!isActive);
   };
 
-  
-
-
-
-
 
   return (
     <>
-    <Slider/>
-      <div className={styles.content}>
+         <div className={styles.content}>
         
 
         <section className={`${styles.container} ${styles.test}`}>
@@ -32,9 +44,9 @@ export default  function Home() {
               <div className={styles.row}>
                 <Image
                   className={styles.info__img}
-                  src="/test02.jpg"
-                  width={400}
-                  height={400}
+                  src="/photo_director_2.jpg"
+                  width={600}
+                  height={600}
                   alt="ясен"
                 />
               </div>
@@ -55,7 +67,7 @@ export default  function Home() {
           <div className={styles.block}>
                 <div className={styles.section__title}>
                   <span>News</span>
-                  <MiniBlog/>
+                  <MiniBlog data={blogData}/>
                 </div>
                 </div>
         </section>
@@ -68,30 +80,30 @@ export default  function Home() {
                   <span>Наша продукція</span>
                 </div>
 						<ul className={`${styles.list}`}>
-            <Link   href="/products/lumber"
+            <Link    rel="preload"   href="/aboutus/certificates"
                     className={styles.navbar__link}>
                       <li>Сертиікати</li>
               </Link>
-            <Link   href="/products/lumber"
+            <Link    rel="preload"    href="/aboutus/quality-standarts"
                     className={styles.navbar__link}>
                       <li>Стандарти якості</li>
               </Link>
-            <Link href="/products/lumber"
+            <Link    rel="preload"  href="/aboutus/manufacturing-process"
                     className={styles.navbar__link}>
                       <li>Процес виробництва</li>
               </Link>
 						</ul>
 						<ul className={`${styles.list}`}>
 							
-              <Link href="/products/lumber"
+              <Link    rel="preload" href="/products/birch-lumber"
                     className={styles.navbar__link}>
                       <li>Береза</li>
               </Link>
-              <Link href="/products/lumber"
+              <Link    rel="preload" href="/products/oak-lumber"
                     className={styles.navbar__link}>
                       <li>Дуб</li>
               </Link>
-              <Link href="/products/lumber"
+              <Link    rel="preload" href="/products/ash-lumber"
                     className={styles.navbar__link}>
                       <li>Ясен</li>
               </Link>
@@ -101,11 +113,11 @@ export default  function Home() {
             <div className={styles.col__5}>
               <div className={styles.row}>
                 <Image
-                alt="ясен"
+                alt="product"
                   className={styles.info__img}
-                  src="/test02.jpg"
+                  src="/photo_product_1.jpg"
                   width={400}
-                  height={400}
+                  height={500}
                 />
               </div>
             </div>
@@ -116,11 +128,12 @@ export default  function Home() {
             <div className={styles.col__5}>
               <div className={styles.row}>
                 <Image
-                alt="ясен"
+                alt="product"
                   className={styles.info__img}
-                  src="/test02.jpg"
+                  src="/photo_product_2.jpg"
                   width={400}
                   height={400}
+                  
                 />
               </div>
             </div>
@@ -131,46 +144,45 @@ export default  function Home() {
                 </div>
 
                 <ul>
-                  <div>
-                    <h1>CONTACT US</h1>
+                  <div className={styles.section__title}>
+                    <span>CONTACT US</span>
                   </div>
-                  <p>Manager:+38 097 136-20-00 </p>
                   <p>Director:+38 067 674-58-43 </p>
+                  <p>Manager:+38 097 136-20-00 </p>
 
                   <li>
-                    <a href="mailto:gremroman@gmail.com">gremroman@gmail.com</a>
+                    <Link    rel="preload" href="mailto:gremroman@gmail.com">gremroman@gmail.com</Link>
                   </li>
                   <li>
-                    <a href="mailto:grem_roman@icloud.com">
+                    <Link    rel="preload" href="mailto:grem_roman@icloud.com">
                       grem_roman@icloud.com{" "}
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="mailto:zubrzubr2000@gmail.com ">
+                    <Link    rel="preload" href="mailto:zubrzubr2000@gmail.com ">
                       zubrzubr2000@gmail.com{" "}
-                    </a>
-                  </li>
-                  <button>
-                    <Link
-                      onClick={handleClick}
-                      href="/contact"
-                      className={styles.navbar__link}
-                    >
-                      Написати нам
                     </Link>
+                  </li>
+                    <Link    rel="preload"
+                      onClick={handleClick}
+                      href="/contact#contact"
+                    >
+                  <button className={styles.button__us}role="button">
+                      Написати нам
                   </button>
+                    </Link>
                 </ul>
 
-                <ul>
+                <ul >
                   {" "}
-                  <li>
-                    <Link href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html">
-                      <h1>FORDAQ.COM</h1>
+                      <div className={styles.section__title}> <span>FORDAQ.COM</span></div>
+                  <li className={styles.img__section__title}>
+                    <Link    rel="preload" href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html">
                       <Image
                       alt="fordack"
-                        src="/fordack-logo.webp"
-                        width={120}
-                        height={108}
+                        src="/fordaq-logo-02.webp"
+                        width={150}
+                        height={70}
                       />
                     </Link>
                   </li>

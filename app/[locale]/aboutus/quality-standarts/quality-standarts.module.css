@@ -61,7 +61,6 @@
 .section__title span{
 	position: relative;
 	z-index: 1;
-	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 	text-transform: uppercase;
@@ -107,7 +106,6 @@
 
 .sub__section__title p {
     color: #999999;
-    font-family: "Open sans", sans-serif;
     line-height: 30px;
 }
 

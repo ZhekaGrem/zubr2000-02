@@ -18,12 +18,12 @@ function Footer() {
               <ul>
                 <h4>{t("ourproduct")}</h4>
                 <li>
-                  <Link className={styles.footer__link} href="/ ">
+                  <Link    rel="preload" className={styles.footer__link} href="/ ">
                     {t("log")}
                   </Link>
                 </li>
                 <li>
-                  <Link className={styles.footer__link} href="/ ">
+                  <Link    rel="preload" className={styles.footer__link} href="/ ">
                   {t("lumber")}
                   </Link>
                 </li>
@@ -33,7 +33,7 @@ function Footer() {
               <ul>
                 <h4>{t("certificates")}</h4>
                 <li>
-                  <Link
+                  <Link    rel="preload"
                     className={styles.footer__link}
                     href="/aboutus/certificates"
                   >
@@ -83,7 +83,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <Link
+                  <Link    rel="preload"
                     className={styles.footer__link}
                     href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html"
                   >
@@ -111,7 +111,7 @@ function Footer() {
                   <p>m.Lviv</p>
                 </li>
                 <li>
-                  <p>vul. Traktorystiv 44</p>
+                  <p>vul. Copernicus  20</p>
                 </li>
               </ul>
             </div>

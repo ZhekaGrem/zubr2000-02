@@ -418,7 +418,7 @@ function qualityStandarts() {
       <section>
         <div className={styles.container}>
         <div className={styles.row}>
-        <Link href="/aboutus/quality-standarts/cubaturnick">
+        <Link    rel="preload" href="/aboutus/quality-standarts/cubaturnick">
          <div className={`${styles.section__title}   ${styles.big__title}`}>
               <span>КУБАТУРНИК</span>
             </div></Link>

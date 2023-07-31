@@ -4,7 +4,6 @@
 }
 
 .menu__list li a {
-   font-family: "Montserrat", sans-serif;
    font-size: 12px;
    font-weight: 700;
    text-transform: uppercase;
@@ -59,7 +58,6 @@ ul.sub__menu__list>li>a {
 }
 
 .menu__link {
-   font-family: "Montserrat", sans-serif;
    font-size: 20px;
    font-weight: 700;
    text-transform: uppercase;
@@ -78,7 +76,6 @@ ul.sub__menu__list>li>a {
 .lang__list p {
    display: inline-block;
    color:white;
-   font-family: "Montserrat", sans-serif;
    font-weight: 700;
    text-transform: uppercase;
    margin: 0px 0px 0px 0px;

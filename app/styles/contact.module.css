@@ -11,6 +11,17 @@
     margin-top: 2%;
     
    }
+ .contact__info li {
+    
+    margin: 2% 0;
+    
+   }
+ .contact__info p {
+    
+    margin: 3% 0;
+    
+   }
+
    .contact__info ul {
       margin: 5px;
    }
@@ -35,6 +46,20 @@
  }
 
 
+ @media(max-width:767px){
+   .contact__info{
+       width: 50%;
+       margin-bottom: 30px;
+   }
+ }
+ @media(max-width:574px){
+   .contact__info{
+       width: 100%;
+   }
+ }
+
+
+
  
 .contact__findus{
    margin-top: 2%;
@@ -44,3 +69,10 @@
       margin: 5px;
 }
 
+.contact h1 {
+   font-size: 40px;
+	color:#60606e;
+	padding: 5px 0px;
+	margin-bottom: 30px;
+
+}

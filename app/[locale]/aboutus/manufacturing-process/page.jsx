@@ -1,21 +1,23 @@
+'use client'
 import React from "react";
 import styles from "@/app/styles/manufacturing-process.module.css";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
+
 
 function Certificates() {
+  const t = useTranslations("Index");
+
+
   return (
     <>
       <div className={styles.manual__content}>
         <div className={styles.manual__title}>
           <ul className={styles.manual__title__mini}>
             <li>
-              <div className={`${styles.big__title}`}>Виробничий процес</div>
+              <div className={`${styles.big__title}`}>{t('manufacturing')}</div>
               <p>
-                У виробничому процесі ми використовуємо сучасне обладнання,
-                передові технології обробки деревини та контролю якості.
-                Контроль за якістю нашої продукції починається з моменту відбору
-                дерева висококваліфікованими спеціалістами та триває протягом
-                усього процесу обробки та сушіння.
+              {t("manufacturing_process_01")}
               </p>
             </li>
           </ul>
@@ -28,7 +30,7 @@ function Certificates() {
             <div className={styles.col__5}>
               <div className="row">
                 <Image
-                  src="/photo_product_3.jpg"
+                  src="/photo_product_3.webp"
                   width={450}
                   height={300}
                   alt="imag3"
@@ -37,10 +39,10 @@ function Certificates() {
             </div>
             <div className={styles.container}>
               <div className={styles.text__block}>
+                  <span>{t("aboutus-message11")}</span>
                 <div className={styles.section__title}>
-                  <span>Відбір сировини</span>
                 </div>
-                <p>Вхідний контроль якості</p>
+                <p>{t("manufacturing_process_02")}</p>
               
               </div>
             </div>
@@ -52,7 +54,7 @@ function Certificates() {
               <div className="row">
                 <Image
                   alt="imag3"
-                  src="/photo_product_4.jpg"
+                  src="/photo_product_4.webp"
                   width={450}
                   height={300}
                 />
@@ -60,15 +62,12 @@ function Certificates() {
             </div>
             <div className={styles.container}>
               <div className={styles.text__block}>
+                  <span>{t("aboutus-message12")}</span>
                 <div className={styles.section__title}>
-                  <span>Склад сировини</span>
                 </div>
                 <p>
-                  Після поступлення на склад, колоди розпилюють відповідно до
-                  потрібних розмірів на сучаних деревообробних лініях,
-                  зберігаючи оригінальну структуру самої деревини.
+                {t("manufacturing_process_03")}
                 </p>
-               
               </div>
             </div>
           </div>
@@ -79,20 +78,18 @@ function Certificates() {
               <div className="row">
                 <Image
                   alt="imag3"
-                  src="/photo_product_5.jpg"
+                  src="/photo_product_5.webp"
                   width={450}
                   height={300}
                 />
               </div>
             </div>
             <div className={styles.container}>
-              <div cclassName={styles.text__block}>
+              <div className={styles.text__block}>
+                  <span>{t("aboutus-message13")}</span>
                 <div className={styles.section__title}>
-                  <span>Деревообробна лінія
-					 </span>
-					 <span>SYC-520G</span>
                 </div>
-                <p>Контроль якості процесу обробки</p>
+                <p>{t("manufacturing_process_04")}</p>
                 
               </div>
             </div>
@@ -104,7 +101,7 @@ function Certificates() {
               <div className={styles.text__block}>
                 <Image
                   alt="img4"
-                  src="/photo_product_7.jpg"
+                  src="/photo_product_7.webp"
                   width={450}
                   height={300}
                 />
@@ -112,14 +109,11 @@ function Certificates() {
             </div>
             <div className={styles.container}>
               <div className={styles.text__block}>
+                  <span>{t("aboutus-message14")}</span>
                 <div className={styles.section__title}>
-                  <span>Сушка</span>
                 </div>
                 <p>
-                  свіжорозпиляні пиломатеріали подаються в сушку, де
-                  комп’ютеризована система контролює процес сушіння. Через
-                  приблизно 50 днів пиломатеріали високої якості поступають на
-                  склад та готові для відправки замовнику.
+                {t("manufacturing_process_05")}
                 </p>
                 
               </div>
@@ -131,19 +125,20 @@ function Certificates() {
             <div className={styles.col__5}>
               <div className="row">
                 <Image
-                  src="/pack-product.jpg"
+                  src="/pack-product.webp"
                   width={450}
                   alt="imag3"
                   height={300}
+                  loading="lazy"
                 />
               </div>
             </div>
             <div className={styles.text__block}>
               <div className={styles.text__block}>
+                  <span>{t("aboutus-message15")}</span>
                 <div className={styles.section__title}>
-                  <span>Пакування</span>
                 </div>
-                <p>Контроль якості пакування</p>
+                <p>{t("manufacturing_process_06")}</p>
                 
               </div>
             </div>
@@ -154,20 +149,21 @@ function Certificates() {
             <div className={styles.col__5}>
               <div className="row">
                 <Image
-                  src="/photo_product_6.jpg"
+                  src="/photo_product_6.webp"
                   width={450}
                   alt="img4"
                   height={300}
+                  loading="lazy"
                 />
               </div>
             </div>
             <div className={styles.container}>
               <div className={styles.text__block}>
+                  <span>{t("aboutus-message16")} </span>
                 <div className={styles.section__title}>
-                  <span>Склад готової </span>
-				  <span>продукції</span>
+				  
                 </div>
-                <p>Контроль якості зберігання</p>
+                <p>{t("manufacturing_process_07")}</p>
                 
               </div>
             </div>
@@ -181,17 +177,11 @@ function Certificates() {
          
           <div className={styles.section__title__2}>
             <span>
-              Готові пиломатеріали пакуються на палєти за допомогою пластикових
-              стяжок (стрічок) та фолій.
+            {t("manufacturing_process_08")}
             </span>
           </div>
           <p>
-            Ми суворо дотримуємось стандартів якості виробництва, зберігання та
-            траспортування, зокрема ДСТУ EN 1315-2-2001 (ГОСТ-9462-88. "Вимоги
-            до якості та розмірів лісоматеріалів") та інших технічних умов на
-            пиломатеріали та сировину, забезпечуючи наших клієнтів високоякісною
-            продукцією. Детальніше ознайомитись зі стандартами якості Ви можете
-            завітавши в розділ стандарти якості.
+          {t("manufacturing_process_09")}.
           </p>
         </div>
       </section>

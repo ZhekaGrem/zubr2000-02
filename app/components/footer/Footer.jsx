@@ -1,5 +1,5 @@
 'use client'
-import React from "react";
+import React, {memo}from "react";
 import styles from "@/app/styles/footer.module.css";
 import Image from "next/image";
 import Link from "next-intl/link";
@@ -11,22 +11,43 @@ function Footer() {
 
   return (
     <>
-      <div role="img" aria-label="forest" className={styles.footer}>
+      <div  loading="lazy" role="img" aria-label="forest" className={`lazy ${styles.footer}`}>
+      I
         <div className={styles.container}>
           <div className={styles.row}>
             <div className={styles.footer__col}>
               <ul>
                 <h4>{t("ourproduct")}</h4>
                 <li>
-                  <Link    rel="preload" className={styles.footer__link} href="/ ">
-                    {t("log")}
-                  </Link>
-                </li>
-                <li>
-                  <Link    rel="preload" className={styles.footer__link} href="/ ">
-                  {t("lumber")}
-                  </Link>
-                </li>
+                    <Link
+                   
+                      rel="preload"
+                      href="/products/oak-lumber"
+                      className={styles.footer__link}
+                    >
+                      {t("oak")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                   
+                      rel="preload"
+                      href="/products/ash-lumber"
+                      className={styles.footer__link}
+                    >
+                      {t("ash")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                   
+                      rel="preload"
+                      href="/products#birch"
+                      className={styles.footer__link}
+                    >
+                      {t("birch")}
+                    </Link>
+                  </li>
               </ul>
             </div>
             <div className={styles.footer__col}>
@@ -39,7 +60,7 @@ function Footer() {
                   >
                     <Image
                       className={styles.logo}
-                      src="/fsc__mini2.png"
+                      src="/fsc__mini2.webp"
                       alt="FSC"
                       width={121}
                       height={180}
@@ -56,7 +77,7 @@ function Footer() {
                   <p>{t('director')}: +38 067 674-58-43</p>
                 </li>
                 <li>
-                  <p>{t('Manager')}: +38 097 136-20-00</p>
+                  <p>{t('manager')}: +38 097 136-20-00</p>
                 </li>
                 <li>
                   <a
@@ -122,4 +143,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default memo(Footer);

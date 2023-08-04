@@ -12,11 +12,13 @@ body{
   display: block;
   height: 100%;
   font-family: "Montserrat", sans-serif;
+background-color: rgba(245, 245, 245, 0.932);
 
 }
 
 
 ul{
+  font-display: auto;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -30,6 +32,7 @@ a.link{
 	position: relative;
 }
 a.link:after{
+  font-display: auto;
 	content: "";
 	position: absolute;
 	bottom: -10px;
@@ -54,6 +57,14 @@ li {
     text-decoration: none;
     color: rgb(0, 0, 0);
  } 
+
+
+a,
+li,
+p::first-letter {
+  text-transform: capitalize; 
+  }
+
 
  footer{
     display: block;
@@ -90,7 +101,12 @@ input:focus-visible{
   :root {
     --color_green__02: #677903;
     --color_green: #8ca600;
-
+    --container{
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 15px;
+      padding-left: 15px;
+    };
   }
 
    th {

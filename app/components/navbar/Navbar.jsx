@@ -2,7 +2,7 @@
 import styles from "@/app/styles/navbar.module.css";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import React, { useState } from "react";
+import React, { useState,memo } from "react";
 import Link from "next-intl/link";
 import Dropdown from "../dropdown/Dropdown";
 
@@ -16,6 +16,7 @@ function Navbar() {
   return (
     <>
       <div
+      loading="lazy"
         alt="forest"
         role="img"
         aria-label="forest"
@@ -31,14 +32,14 @@ function Navbar() {
               href="/"
             >
               <Image
-                src="/Zubr-logo.png"
+                src="/Zubr-logo.webp"
                 width={80}
                 height={75}
                 alt="Logo zubr 2000"
               />
               <Image
                 className={styles.logo__text}
-                src="/text-zubr-03.png"
+                src="/text-zubr-03.webp"
                 width={180}
                 height={80}
                 alt="Logo Text zubr 2000"
@@ -80,7 +81,7 @@ function Navbar() {
                       onClick={handleClick}
                       className={styles.sub__navbar__link}
                     >
-                      news
+                      {t('news')}
                     </Link>
                   </li>
                   <li>
@@ -130,17 +131,7 @@ function Navbar() {
                 <ul
                   className={` ${styles.sub__navbar__list} ${styles.navbar__link__2}`}
                 >
-                  <li>
-                    <Link
-                   
-                      rel="preload"
-                      onClick={handleClick}
-                      href="/products#birch"
-                      className={styles.sub__navbar__link}
-                    >
-                      {t("lumber")}
-                    </Link>
-                  </li>
+                
                   <li>
                     <Link
                    
@@ -149,7 +140,7 @@ function Navbar() {
                       href="/products/oak-lumber"
                       className={styles.sub__navbar__link}
                     >
-                      {t("lumber")}
+                      {t("oak")}
                     </Link>
                   </li>
                   <li>
@@ -160,7 +151,18 @@ function Navbar() {
                       href="/products/ash-lumber"
                       className={styles.sub__navbar__link}
                     >
-                      {t("lumber")}
+                      {t("ash")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                   
+                      rel="preload"
+                      onClick={handleClick}
+                      href="/products/birch-lumber"
+                      className={styles.sub__navbar__link}
+                    >
+                      {t("birch")}
                     </Link>
                   </li>
                 </ul>
@@ -199,4 +201,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default memo(Navbar);

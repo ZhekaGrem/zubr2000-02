@@ -1,35 +1,38 @@
+"use client"
+
 import React from 'react'
 import styles from '@/app/styles/birch-lumber.module.css'
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 function Lumber() {
+	const t = useTranslations("Index");
     return (
         <>
         <section>
 		<div className={styles.container}>
 			<div className={styles.row}>
 				<div className={styles.section__title}>
-					<span>БРУСОК 54 * 54 ММ</span>
+					<span>{t('beam')} 54 * 54 ММ</span>
 					
 				</div>
 			</div>
 
 			<div className={styles.row}>
 				<div className={`${styles.col} `}>
-					<h4>Сорт А</h4>
+					<h4>{t('sort')} А</h4>
 					<p >
-					Чотири сторони чисті, без заболоні.
+					{t('products-title-01')} 
 					</p>
-					<h4>Сорт В</h4>
+					<h4>{t('sort')} В</h4>
 					<p >
-					Одна сторона чиста і 4 сторони, прилягаючі до неї на 50% чисті.
-Використовується для виготовлення поверхонь столів, сходів, крісел тощо					</p>
-<div className={styles.table__cell__2}>РОЗМІРИ</div>
+					{t('products-title-02')}				</p>
+<div className={styles.table__cell__2}>{t('quality-title-27')}</div>
 <div className={styles.table}>
   <div className={styles.table__row}>
-    <div className={styles.table__cell}>висота</div>
-    <div className={styles.table__cell}>ширина</div>
-    <div className={styles.table__cell}>довжина</div>
+    <div className={styles.table__cell}>{t('products-title-07')}</div>
+    <div className={styles.table__cell}>{t('quality-title-48')}</div>
+    <div className={styles.table__cell}>{t('quality-title-35')}</div>
   </div>
   <div className={styles.table__row}>
     <div className={styles.table__cell}>54</div>
@@ -44,7 +47,7 @@ function Lumber() {
 				</div>
 
 				<div className={styles.col}>
-                <Image src="/birch-lumber-02.jpg" width={555} height={365} />
+                <Image src="/birch-lumber-02.webp" alt="birch lumber 1" width={555} height={365} />
 
 				</div>
 			</div>
@@ -54,30 +57,30 @@ function Lumber() {
 		<div className={styles.container}>
 			<div className={styles.row}>
 				<div className={styles.section__title}>
-					<span>БРУСОК 54 * 110 ММ</span>
+					<span>{t('beam')} 54 * 110 ММ</span>
 					
 				</div>
 			</div>
 
 			<div className={styles.row}>
 				<div className={`${styles.col} `}>
-					<h4>Сорт АA/AB</h4>
+					<h4>{t('sort')} АA/AB</h4>
 					<p >
-					Допускаются живые сучки диаметром до 12 мм в количестве одна штука на один погонный метр доски. Наличие двух стоевых 120*2200 мм.
+					{t('products-title-03')}
 					</p>
-					<h4>Сорт В</h4>
+					<h4>{t('sort')} В</h4>
 					<p >
-					Одопускаются живые сучки диаметром до 40 мм в количестве две штуки на один погонный метр, черные сучки до 10 мм до двух штук. Наличие стоевой размером 120*2200 мм.	</p>
-					<h4>Сорт С</h4>
+					{t('products-title-04')}	</p>
+					<h4>{t('sort')} С</h4>
 					<p >
-					допускаются живые сучки до 60 мм до четырех штук на погонный метр, черные сучки до 30 мм до двух штук на погонный метр.	</p>
-<div className={styles.table__cell__2}>РОЗМІРИ</div>
+					{t('products-title-05')}	</p>
+<div className={styles.table__cell__2}>{t('products-title-07')}</div>
 <div className={styles.table}>
   <div className={styles.table__row}>
-    <div className={styles.table__cell}>висота</div>
-    <div className={styles.table__cell}>ширина</div>
-    <div className={styles.table__cell}>довжина</div>
-    <div className={styles.table__cell}>влажность</div>
+    <div className={styles.table__cell}>{t('products-title-07')}</div>
+    <div className={styles.table__cell}>{t('quality-title-48')}</div>
+    <div className={styles.table__cell}>{t('quality-title-35')}</div>
+    <div className={styles.table__cell}>{t('products-title-06')}</div>
   </div>
   <div className={styles.table__row}>
     <div className={styles.table__cell}>54</div>
@@ -93,7 +96,7 @@ function Lumber() {
 				</div>
 
 				<div className={styles.col}>
-                <Image src="/birch-lumber-01.jpg" width={555} height={365} />
+                <Image src="/birch-lumber-01.webp" alt="birch lumber 1" width={555} height={365} />
 
 				</div>
 			</div>

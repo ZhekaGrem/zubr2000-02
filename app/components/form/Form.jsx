@@ -1,17 +1,21 @@
+'use client'
 import React, { useRef, useState, useEffect } from "react";
 import styles from "@/app/styles/form.module.css";
 import emailjs from "@emailjs/browser";
+import { useTranslations } from "next-intl";
 
 const Form = () => {
+  const t = useTranslations("Index");
+
   /* state for validate email */
   const [email, setEmail] = useState("");
   const [emailDirty, setEmailDirty] = useState(false);
-  const [emailError, setEmailError] = useState("ведіть емеіл");
+  const [emailError, setEmailError] = useState(t("enter_email_required"));
 
   /* state for validate phone  */
   const [phone, setPhone] = useState("");
   const [phoneDirty, setPhoneDirty] = useState(false);
-  const [phoneError, setPhoneError] = useState("ведіть телефон");
+  const [phoneError, setPhoneError] = useState(t("enter_phone"));
 
   //state for Name
   const [name, setName] = useState("");
@@ -24,7 +28,7 @@ const Form = () => {
   const [messageDirty, setMessageDirty] = useState(false);
 
   /* for button active*/
-  const [formValid, setFormValid] = useState(false);
+  // const [formValid, setFormValid] = useState(false);
 
   /* dont spam state*/
   const [canSubmit, setCanSubmit] = useState(true);
@@ -35,7 +39,7 @@ const Form = () => {
     const regexpMeil =
       /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if (!regexpMeil.test(String(e.target.value).toLowerCase())) {
-      setEmailError("not valide email");
+      setEmailError(t("not_valid_email"));
     } else {
       setEmailError("");
     }
@@ -43,13 +47,13 @@ const Form = () => {
   
 
 
-  useEffect(() => {
-    if (emailError ) {
-      setFormValid(false);
-    } else {
-      setFormValid(true);
-    }
-  }, [emailError]);
+  // useEffect(() => {
+  //   if (emailError ) {
+  //     setFormValid(false);
+  //   } else {
+  //     setFormValid(true);
+  //   }
+  // }, [emailError]);
 
   /* this code for validarion for phone no use library */
 
@@ -58,7 +62,7 @@ const Form = () => {
     const regexpPhone =
       /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
     if (!regexpPhone.test(String(e.target.value).toLowerCase())) {
-      setPhoneError("not valide phone");
+      setPhoneError(t("not_valid_phone"));
     } else {
       setPhoneError("");
     }
@@ -132,7 +136,7 @@ const Form = () => {
     
     <div className={styles.form}>
       <div className={styles.title}>
-        <h1 id="contact">CONTACT US ONLINE</h1>
+        <h1 id="contact">{t('contactus')} </h1>
       </div>
       <form ref={form} onSubmit={sendEmail}>
       <div className={styles.form__row}>
@@ -142,7 +146,7 @@ const Form = () => {
             onChange={(e) => nameHandler(e)}
             />
             <div className={styles.underline}></div>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">{t('name')}</label>
           </div>
 
 
@@ -153,7 +157,7 @@ const Form = () => {
           <div className={`${styles["input__data"]} `}>
             <input onChange={namecompanyHandler} value={namecompany} name="namecompany" />
             <div className={styles.underline}></div>
-            <label htmlFor="namecompany">Company Name</label>
+            <label htmlFor="namecompany">{t('company_name')}</label>
           </div>
         </div>
         {/* Name Input ->*/}
@@ -172,7 +176,7 @@ const Form = () => {
               type="text"
             />
             <div className={styles.underline}></div>
-            <label htmlFor="phone">Phone</label>
+            <label htmlFor="phone">{t('phone')}</label>
             {phoneDirty && phoneError && <div>{phoneError} </div>}
           </div>
 
@@ -188,7 +192,7 @@ const Form = () => {
               type="text"
             />
             <div className={styles.underline}></div>
-            <label htmlFor="email">Mail</label>
+            <label htmlFor="email">{t('email')}</label>
             {emailDirty && emailError && <div>{emailError} </div>}
           </div>
 </div>
@@ -207,7 +211,7 @@ const Form = () => {
             <textarea onChange={messageHandler} value={message}  name="message" rows="8" cols="80" required></textarea>
             <br />
             <div className={styles.underline}> </div>
-            <label htmlFor="message">Write your message</label>
+            <label htmlFor="message">{t('write_your_message')}</label>
             <br />
           </div>
         </div>
@@ -219,14 +223,14 @@ const Form = () => {
         `}
         >
           <button
-            disabled={!formValid}
+            // disabled={!formValid}
             type="submit"
             value="Send"
             className={styles.button__send}
             role="button"
           >
             {" "}
-            Send
+            {t('send')}
           </button>
         </div>
       </form>

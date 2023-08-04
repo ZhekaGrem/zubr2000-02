@@ -166,8 +166,8 @@
     text-align: center;
   }
   .section__title__2{
-    width: 70%;
-    margin: 50px 200px 10px;
+    width: 60%;
+    margin: 10% 20% 5%;
     text-align: center;
   }
   
@@ -182,7 +182,7 @@
     position: relative;
     display: inline-block;
   }
-  .section__title span{
+  .text__block span{
     position: relative;
     z-index: 1;
     font-weight: 700;
@@ -193,7 +193,7 @@
     display: inline-block;
     margin-bottom: 20px;
   }
-  .section__title span:after{
+  .text__block span:after{
     content: "";
     position: absolute;
     top:20px;

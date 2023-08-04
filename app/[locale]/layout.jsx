@@ -1,5 +1,6 @@
+
 import '@/app/styles/globals.css'
-import { useLocale, NextIntlClientProvider } from 'next-intl';
+import {  NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/footer/Footer';
@@ -8,19 +9,17 @@ import Footer from '../components/footer/Footer';
 
 export const metadata = {
   icons: {
-    icon: '/app/favicon.ico',
+    icon: '../favicon.ico',
   },
   title: 'ZUBR-2000 ',
-  description: 'ZUBR-2000',
-
+  description: "sale of timber" ,
+ 
 }
 
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'de' }, { locale: 'da' }, { locale: 'fr' }, { locale: 'it' }, { locale: 'ru' }, { locale: 'sv' }, { locale: 'uk' }, { locale: 'pl' }];
 }
 
-// export default function RootLayout({ children, params }) {
-//   const locale = useLocale();
 
 export default async function LocaleLayout({ children, params: { locale } }) {
   let messages;
@@ -29,24 +28,19 @@ export default async function LocaleLayout({ children, params: { locale } }) {
   } catch (error) {
     notFound();
   }
-  // Show a 404 error if the user requests an unknown locale
-  // if (params.locale !== locale) {
-  //   notFound();
-  // }
 
   return (
 
     <html lang={locale}>
       <head>
-      <link rel="icon" alt='icon planet'  type="image/x-icon" href="/app/favicon.ico" />
         <meta name='viewport' content='width=device-width' />
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className='wrapper'>
-            <nav>
+            
               <Navbar />
-            </nav>
+            
             <main className='content'>
               {children}
             </main>

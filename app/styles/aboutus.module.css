@@ -3,6 +3,11 @@
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
+      max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
   }
 
   .container ul {
@@ -30,7 +35,7 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 900px) {
     .container {
       max-width: 1170px;
     }
@@ -60,7 +65,7 @@
 
   .section__title{
 	width: 50%;
-	margin: 50px 300px 50px;
+	margin: 2% 25% 50px;
 	text-align: center;
 }
 .section__title  span{
@@ -133,7 +138,6 @@ ul.list li:before{
 }
 
 .mini__block{
-	border:solid 10px #606e63;
 	margin-left: 2%;
 }
 

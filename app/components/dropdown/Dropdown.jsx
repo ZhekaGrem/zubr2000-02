@@ -1,5 +1,5 @@
 'use client'
-import React,{useEffect }  from 'react'
+import React,{memo}  from 'react'
 import styles from '@/app/styles/dropdown.module.css'
 import Link from 'next-intl/link'
 import Image from 'next/image'
@@ -13,7 +13,6 @@ import { useTranslations } from 'next-intl';
 
 function Dropdown() {
   const t = useTranslations('Index');
- 
   
 return (
 
@@ -74,7 +73,7 @@ return (
 );
 }
 
-export default Dropdown;
+export default memo(Dropdown);
 
 
 

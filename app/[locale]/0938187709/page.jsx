@@ -18,9 +18,9 @@ function Contact() {
                 <div className={styles.contact__info}>
 
 
-                    <ul><div><h1>CONTACT US</h1></div>
-                        <p>Manager:+38 097 136-20-00 </p>
-                        <p>Director:+38 067 674-58-43 </p>
+                    <ul><div><h1>{t('contactus')}</h1></div>
+                        <p>{t('manager')}:+38 097 136-20-00 </p>
+                        <p>{t('director')}:+38 067 674-58-43 </p>
 
                         <li>
                             <p href="mailto:gremroman@gmail.com">gremroman@gmail.com</p>

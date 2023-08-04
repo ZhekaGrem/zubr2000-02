@@ -9,47 +9,36 @@ function AboutUs() {
   return (
     <>
       <section>
-        <div className={styles.container}>
+        <div className={`${styles.container} `}>
           <div className={styles.row}>
             <div className={styles.wi__41}>
               <div className={`${styles.big__title} ${styles.section__title} `}>
-                <span>{t("aboutus")}</span>
+                <span >{t("aboutus")}</span>
               </div>
 
               <p>
-                Фірма "ЗУБР-2000" - ваш надійний постачальник деревини твердих
-                порід Компанія "ЗУБР-2000" є лідером у галузі постачання
-                деревини твердих порід з сертифікатом ланцюга постачання FSC.
-                Завдяки нашому досвіду та високій якості продукції, ми
-                здійснюємо успішну співпрацю з країнами, такими як Італія,
-                Швеція, Словаччина, Польща, Естонія та Данія.
+              {t("aboutus-message1")}
               </p>
 
-              <h3>Наша компанія спеціалізується:</h3>
+              <h3>{t("aboutus-message2")}</h3>
               <ul className={`${styles.list}`}>
-                <li>торгівля деревиною </li>
-                <li>виробництві різноманітних типорозмірів пиломатеріалів</li>
-                <li>пропонуємо послуги з розпилу</li>
-                <li>сушки пиломатеріалів</li>
-                <li>простругування пиломатеріалів за індивідуальними розмірами клієнтів.
+                <li>{t("aboutus-message3")} </li>
+                <li>{t("aboutus-message4")}</li>
+                <li>{t("aboutus-message5")}</li>
+                <li>{t("aboutus-message6")}</li>
+                <li>{t("aboutus-message7")}
                 </li>
               </ul>
               <p>
-                Ми пильно відбираємо деревину, щоб вона повністю відповідала
-                вимогам Державного управління лісового господарства України та є
-                еквівалентною до європейських стандартів. На наших складах
-                завжди є значний запас деревини та пиломатеріалів, що гарантує
-                швидку поставку замовлень.
+              {t("aboutus-message8")}
               </p>
               <p>
-                Наша політика - гнучкість до вимог ринку та клієнтів. Ми завжди
-                готові відповідати на ваші потреби та пропозиції, а також
-                виготовляти продукцію на замовлення.
+              {t("aboutus-message9")}
               </p>
             </div>
             <div className={`${styles.container} ${styles.mini__block}`}>
               <div className={`${styles.pricing__plan}`}>
-                <div className={`${styles.plan__title}`}><span>Сертиікати</span></div>
+                <div className={`${styles.plan__title}`}><span>{t('certificates')}</span></div>
                 <ul className={`${styles.list}`}>
                   <li>FSC</li>
                   <li>Trade Leaders</li>
@@ -59,38 +48,34 @@ function AboutUs() {
             <div className={`${styles.container} ${styles.mini__block}`}>
               <div className={`${styles.pricing__plan}`}>
                 <div className={`${styles.plan__title}`}>
-                  <span>Процес виробництва</span>
+                  <span>{t('manufacturing')}</span>
                 </div>
                 <ul className={`${styles.list}`}>
-                  <li>Відбір сировини</li>
-                  <li>Склад сировини</li>
-                  <li>Деревообробна лінія SYC-520G</li>
-                  <li>Сушка</li>
-                  <li>Пакування</li>
-                  <li>Склад готової продукції</li>
+                  <li>{t("aboutus-message11")}</li>
+                  <li>{t("aboutus-message12")}</li>
+                  <li>{t("aboutus-message13")}</li>
+                  <li>{t("aboutus-message14")}</li>
+                  <li>{t("aboutus-message15")}</li>
+                  <li>{t("aboutus-message16")}</li>
                 </ul>
               </div>
             </div>
             <div className={`${styles.container} ${styles.mini__block}`}>
               <div className={`${styles.pricing__plan}`}>
-                <div className={`${styles.plan__title}`}><span>Стандарти якості</span></div>
+                <div className={`${styles.plan__title}`}><span>{t('quality')}</span></div>
                 <ul className={`${styles.list}`}>
-                  <li>ФАНСИРОВИНА</li>
-                  <li>ТЕХНІЧНІ УМОВИ НА ПИЛОМАТЕРІАЛИ</li>
-                  <li>ДУБ (КРУГЛЯК) СОРТ А</li>
-                  <li>ДУБ (КРУГЛЯК) ФАНЕРНОЇ ЯКОСТІ.</li>
-                  <li>ТЕХНІЧНІ УМОВИ НА ПАЛЄТИ ТА ПАЛЄТНЕ ПАКУВАННЯ.</li>
+                  <li>{t("aboutus-message17")}</li>
+                  <li>{t("aboutus-message18")}</li>
+                  <li>{t("aboutus-message19")} <br /> {t("aboutus-message20")}</li>
+
+                  
                 </ul>
               </div>
             </div>
 
             <div className={styles.wi__41}>
-              <p>
-                Обирайте компанію "ЗУБР-2000" як надійного партнера у галузі
-                деревообробки. Ми забезпечимо вас продукцією високої якості та
-                надійними поставками з урахуванням сертифікату FSC, що
-                підтверджує нашу відповідальність до збереження лісових ресурсів
-                та сталого розвитку.
+              <p>{t("aboutus-message10")}
+                
               </p>
             </div>
           </div>

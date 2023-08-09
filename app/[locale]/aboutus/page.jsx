@@ -13,7 +13,7 @@ function AboutUs() {
           <div className={styles.row}>
             <div className={styles.wi__41}>
               <div className={`${styles.big__title} ${styles.section__title} `}>
-                <span >{t("aboutus")}</span>
+                <span>{t("aboutus")}</span>
               </div>
 
               <p>

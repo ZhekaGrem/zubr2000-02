@@ -80,33 +80,36 @@ export default  function Home() {
                   <span>{t('ourproduct')}</span>
                 </div>
 						<ul className={`${styles.list}`}>
+              <li>
             <Link    rel="preload"   href="/aboutus/certificates"
                     className={styles.navbar__link}>
-                      <li>{t('certificates')}</li>
+                        
+                        {t('certificates')}
               </Link>
-            <Link    rel="preload"    href="/aboutus/quality-standarts"
+                        </li>
+                        <li>   <Link    rel="preload"    href="/aboutus/quality-standarts"
                     className={styles.navbar__link}>
-                      <li>{t('quality')}</li>
-              </Link>
-            <Link    rel="preload"  href="/aboutus/manufacturing-process"
+                      {t('quality')}
+              </Link> </li>
+              <li>         <Link    rel="preload"  href="/aboutus/manufacturing-process"
                     className={styles.navbar__link}>
-                      <li>{t('manufacturing')}</li>
-              </Link>
+                     {t('manufacturing')}
+              </Link> </li>
 						</ul>
 						<ul className={`${styles.list}`}>
 							
-              <Link    rel="preload" href="/products/birch-lumber"
+            <li>   <Link    rel="preload" href="/products/birch-lumber"
                     className={styles.navbar__link}>
-                      <li>  {t("birch")}</li>
-              </Link>
-              <Link    rel="preload" href="/products/oak-lumber"
+                       {t("birch")}
+              </Link> </li>
+              <li>    <Link    rel="preload" href="/products/oak-lumber"
                     className={styles.navbar__link}>
-                      <li>  {t("oak")}</li>
-              </Link>
-              <Link    rel="preload" href="/products/ash-lumber"
+                       {t("oak")}
+              </Link> </li>
+              <li>   <Link    rel="preload" href="/products/ash-lumber"
                     className={styles.navbar__link}>
-                      <li>  {t("ash")}</li>
-              </Link>
+                       {t("ash")}
+              </Link> </li>
 						</ul>
               </div>
             </div>

@@ -107,7 +107,6 @@ const Form = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           setEmail(""); //reset email
           setPhone(""); //reset phone
           setName(""); //reset name
@@ -121,7 +120,6 @@ const Form = () => {
           setMessageDirty(false); //reset message
         },
         (error) => {
-          console.log(error.text);
         }
       );
     setCanSubmit(false);

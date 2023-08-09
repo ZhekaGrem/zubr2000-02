@@ -47,7 +47,7 @@ function Lumber() {
 				</div>
 
 				<div className={styles.col}>
-                <Image src="/birch-lumber-02.webp" alt="birch lumber 1" width={555} height={365} />
+                <Image className={styles.adaptive__img} src="/birch-lumber-02.webp" alt="birch lumber 1" width={555} height={365} />
 
 				</div>
 			</div>
@@ -80,7 +80,6 @@ function Lumber() {
     <div className={styles.table__cell}>{t('products-title-07')}</div>
     <div className={styles.table__cell}>{t('quality-title-48')}</div>
     <div className={styles.table__cell}>{t('quality-title-35')}</div>
-    <div className={styles.table__cell}>{t('products-title-06')}</div>
   </div>
   <div className={styles.table__row}>
     <div className={styles.table__cell}>54</div>
@@ -90,13 +89,12 @@ function Lumber() {
 	<p>222-2222</p>
 	<p>222-2222</p>
 	</div>
-    <div className={styles.table__cell}>8%-10%</div>
   </div>
 </div>
 				</div>
 
 				<div className={styles.col}>
-                <Image src="/birch-lumber-01.webp" alt="birch lumber 1" width={555} height={365} />
+                <Image className={styles.adaptive__img} src="/birch-lumber-01.webp" alt="birch lumber 1" width={555} height={365} />
 
 				</div>
 			</div>

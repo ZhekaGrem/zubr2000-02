@@ -4,6 +4,7 @@ import styles from '@/app/styles/dropdown.module.css'
 import Link from 'next-intl/link'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl';
+import {usePathname} from 'next-intl/client';
 
 
 
@@ -13,7 +14,8 @@ import { useTranslations } from 'next-intl';
 
 function Dropdown() {
   const t = useTranslations('Index');
-  
+  const pathname = usePathname();
+
 return (
 
 
@@ -27,42 +29,43 @@ return (
          </div>
         <ul className={styles.sub__menu__list}>
           <li >
-            <Link    rel="preload" to='' className={styles.sub__menu__link} href="/"  locale='uk'>
-              <Image alt='language UA' src='/ua.webp' width={20} height={16} />Українська</Link>{''}</li>
+            <Link    rel="preload" to='' className={styles.sub__menu__link} href={usePathname()}  locale='ua'>
+              Українська <Image alt='language UA' src='/ua.webp' width={20} height={16} /></Link>{''}</li>
           <li >
-          <Link    rel="preload" to="" className={styles.sub__menu__link} href='/' locale='en' >
-          <Image alt='language En' src='/gb.webp' width={20} height={16} />
-          English </Link> </li>
+          <Link   rel="preload" to="" className={styles.sub__menu__link} href={usePathname()}  locale='en' >
+          English<Image alt='language En' src='/gb.webp' width={20} height={16} />
+           </Link> </li>
+           <li >
+            <Link    rel="preload" to="" className={styles.sub__menu__link} href={usePathname()} locale='pl'>
+            Polski  <Image alt='language PL' src='/pl.webp' width={20} height={16} />
+               </Link>{''} </li>
           <li >
-            <Link    rel="preload" to="" className={styles.sub__menu__link} href='/' locale='da'>
-              <Image alt='language DA' src='/dk.webp' width={20} height={16} />
-              Danmark </Link>{''} </li>
+            <Link   rel="preload" to="" className={styles.sub__menu__link} href={usePathname()} locale='da'>
+            Danmark <Image alt='language DA' src='/dk.webp' width={20} height={16} />
+               </Link>{''} </li>
           <li >
-            <Link    rel="preload" to="" className={styles.sub__menu__link} href='/' locale='de'>
-              <Image alt='language DE' src='/de.webp' width={20} height={16} />
-               Deutsch</Link>{''} </li>
+            <Link   rel="preload" to="" className={styles.sub__menu__link} href={usePathname()} locale='de'>
+            Deutsch <Image alt='language DE' src='/de.webp' width={20} height={16} />
+               </Link>{''} </li>
+        
           <li >
-            <Link    rel="preload"  to="" className={styles.sub__menu__link} href='/' locale='ru'>
-              <Image alt='language Ru' src='/ru.webp' width={20} height={16} />
-              руский </Link>{''} </li>
+            <Link    rel="preload" to="" className={styles.sub__menu__link} href={usePathname()} locale='fr'>
+            Français <Image  alt='language FR' src='/fr.webp' width={20} height={16} />
+               </Link>{''} </li>
           <li >
-            <Link    rel="preload" to="" className={styles.sub__menu__link} href='/' locale='fr'>
-              <Image  alt='language FR' src='/fr.webp' width={20} height={16} />
-              Français </Link>{''} </li>
+            <Link   rel="preload" to="" className={styles.sub__menu__link} href={usePathname()} locale='it'>
+            Italiano  <Image alt='language IT' src='/it.webp' width={20} height={16} />
+               </Link>{''} </li>
           <li >
-            <Link    rel="preload" to="" className={styles.sub__menu__link} href='/' locale='it'>
-              <Image alt='language IT' src='/it.webp' width={20} height={16} />
-              Italiano </Link>{''} </li>
-          <li >
-            <Link    rel="preload" to="" className={styles.sub__menu__link} href='/' locale='sv'>
-              <Image alt='language SW' src='/se.webp' width={20} height={16} />
-              Sverige </Link> </li>
-          <li >
-            <Link    rel="preload" to="" className={styles.sub__menu__link} href='/' locale='pl'>
-              <Image alt='language PL' src='/pl.webp' width={20} height={16} />
-              Polski </Link>{''} </li>
+            <Link    rel="preload" to="" className={styles.sub__menu__link} href={usePathname()} locale='sv'>
+            Sverige  <Image alt='language SW' src='/se.webp' width={20} height={16} />
+               </Link> </li>
+         
           
-
+               <li >
+            <Link    rel="preload"  to="" className={styles.sub__menu__link} href={usePathname()} locale='ru'>
+            Руский<Image alt='language Ru' src='/ru.webp' width={20} height={16} />
+               </Link>{''} </li>
 
         </ul>
       </li>

@@ -11,7 +11,6 @@ html,
 body{
   display: block;
   height: 100%;
-  font-family: "Montserrat", sans-serif;
 background-color: rgba(245, 245, 245, 0.932);
 
 }
@@ -24,27 +23,26 @@ ul{
     padding: 0;
 }
 a{
+  text-transform: none; 
+
 	color:#8ca600;
-	-webkit-transition:all .2s ease-in-out;
-			transition:all .2s ease-in-out;
 }
 a.link{
+
 	position: relative;
 }
 a.link:after{
   font-display: auto;
-	content: "";
 	position: absolute;
 	bottom: -10px;
 	left: 0;
 	width: 0;
 	height: 1px;
-	-webkit-transition:all .2s ease-in-out;
-			transition:all .2s ease-in-out;
 }
 a:hover, a:focus{
 	color:#8ca600;
 	text-decoration: none;
+
 }
 a:hover:after{
 	width: 50%;
@@ -52,18 +50,18 @@ a:hover:after{
 a,
 li {
     list-style-type: none;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     text-decoration: none;
     color: rgb(0, 0, 0);
  } 
 
 
-a,
 li,
 p::first-letter {
   text-transform: capitalize; 
   }
+
 
 
  footer{
@@ -90,6 +88,8 @@ input:focus-visible{
     padding-top:100px
   }
 
+
+  
 
   @media(max-width:574px){
    

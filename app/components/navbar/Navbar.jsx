@@ -53,8 +53,8 @@ function Navbar() {
             <ul className={styles.navbar__list}>
               <li>
                 <Link 
-                  rel="preload"
                   href="/"
+                  
                   onClick={handleClick}
                   className={styles.navbar__link}
                 >

@@ -14,7 +14,11 @@
     margin-bottom: 20px;
     padding: 10px;
   }
-  
-  .blog h2 {
-    margin-top: 0;
+  .blog__container h2{
+    color: #60606e;
+
   }
+  
+.data{
+  font-weight: bold;
+}

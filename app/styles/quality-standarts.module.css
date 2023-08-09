@@ -53,9 +53,15 @@
 
   .section__title{
 	width: 50%;
-	margin: 0px 300px 50px;
+	margin: 0px 25% 50px;
 	text-align: center;
 }
+
+@media (max-width: 992px){
+  .section__title{width: 100%;}
+
+}
+
 
 
 .section__title span{
@@ -127,6 +133,15 @@
   box-sizing: border-box;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.col img {
+  width: "auto";
+  height: auto;
+}
+.adaptive__img{
+  width: "auto";
+  height: auto;
 }
 
 

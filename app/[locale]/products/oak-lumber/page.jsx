@@ -55,7 +55,7 @@ function Lumber() {
 				</div>
 
 				<div className={styles.col}>
-                <Image src="/oak-luimber-02.webp" alt="oak lumber 1" width={555} height={365} />
+                <Image className={styles.adaptive__img} src="/oak-luimber-02.webp" alt="oak lumber 1" width={500} height={300} />
 
 				</div>
 			</div>
@@ -98,7 +98,7 @@ function Lumber() {
 				</div>
 
 				<div className={styles.col}>
-                <Image src="/oak-luimber-02.webp" alt="oak lumber 2" width={555} height={365} />
+                <Image className={styles.adaptive__img} src="/oak-luimber-02.webp" alt="oak lumber 2" width={500} height={300} />
 
 				</div>
 			</div>
@@ -131,7 +131,6 @@ function Lumber() {
     <div className={styles.table__cell}>{t('products-title-07')}</div>
     <div className={styles.table__cell}>{t('quality-title-48')}</div>
     <div className={styles.table__cell}>{t('quality-title-35')}</div>
-    <div className={styles.table__cell}>влажность</div>
   </div>
   <div className={styles.table__row}>
     <div className={styles.table__cell}>54</div>
@@ -141,13 +140,12 @@ function Lumber() {
 	<p>222-2222</p>
 	<p>222-2222</p>
 	</div>
-    <div className={styles.table__cell}>8%-10%</div>
   </div>
 </div>
 				</div>
 
 				<div className={styles.col}>
-                <Image src="/oak-luimber-01.webp" alt="oak lumber 3" width={555} height={365} />
+                <Image className={styles.adaptive__img} src="/oak-luimber-01.webp" alt="oak lumber 3" width={500} height={300} />
 
 				</div>
 			</div>

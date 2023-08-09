@@ -18,8 +18,6 @@ function qualityStandarts() {
               <span>{t('quality')} </span>
               <span>{t('quality-title-01')}</span>
             </div>
-
-            
             <div className={`${styles.section__title}  ${styles.big__title}`}>
               <span>{t('quality-title-02')} </span>
             </div>
@@ -27,7 +25,6 @@ function qualityStandarts() {
             {t('quality-title-03')}
             </p>
           </div>
-
           <div className={styles.row}>
             <div className={`${styles.sub__section__title} `}>
               <span className={styles.mini__title}>{t('quality-title-05')} (grade A)</span>
@@ -50,7 +47,6 @@ function qualityStandarts() {
           </div>
         </div>
       </section>
-
       <section className={styles.block__01}>
         <div className={styles.container}>
           <div className={styles.row}>
@@ -90,7 +86,7 @@ function qualityStandarts() {
             </div>
 
             <div className={styles.col}>
-              <Image src="/brus.webp" width={555} height={415} alt='img4' />
+              <Image  className={styles.adaptive__img} src="/brus.webp" width={555} height={415} alt='img4' />
             </div>
           </div>
         </div>
@@ -105,7 +101,7 @@ function qualityStandarts() {
               <span>{t('quality-title-23')}</span>
             </div>
           <div className={styles.col}>
-              <Image src="/paleta.webp" width={590} height={365} alt='img4' />
+              <Image src="/paleta.webp" className={styles.adaptive__img}  width={590} height={365} alt='img4' />
             </div>
           </div>
           <div className={styles.row}>
@@ -274,10 +270,11 @@ function qualityStandarts() {
       <section>
         <div className={styles.container}>
         <div className={styles.row}>
-        <Link    rel="preload" href="/aboutus/quality-standarts/cubaturnick">
          <div className={`${styles.section__title}  ${styles.section__title__cubaturnic} ${styles.big__title}`}>
+        <Link    rel="preload" href="/aboutus/quality-standarts/cubaturnick">
               <span>{t('quality-title-51')}</span>
-            </div></Link>
+            </Link>
+            </div>
           </div>
         </div>
       </section>

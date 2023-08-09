@@ -3,17 +3,16 @@ const nextConfig = {
   experimental: {
     appDir: true,
     i18n: {
-      locales: ['default', 'en', 'de', 'fr'],
+      locales: ['default', 'en', 'de', 'fr','it','da','sv','ua','pl', 'ru'],
       defaultLocale: 'default',
       localeDetection: false,
     },
     trailingSlash: true,
   },
 };
-// const withNextIntl = require('next-intl/plugin')(
-//   // This is the default (also the `src` folder is supported out of the box)
-//   './i18n.js'
-// );
+
+
+
 
 
 

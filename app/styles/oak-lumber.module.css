@@ -28,6 +28,12 @@
     }
   }
   
+  @media (max-width: 768px) {
+    .col {
+      width: 100%;
+    }
+  }
+  
 
   .container {
     margin-right: auto;
@@ -128,3 +134,9 @@
   margin-top: 20px;
 }
  
+.adaptive__img{
+  width: 100%;
+  height: auto;
+}
+
+

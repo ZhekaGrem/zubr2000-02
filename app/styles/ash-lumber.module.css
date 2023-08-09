@@ -37,6 +37,11 @@
     box-sizing: border-box;
 
   }
+  @media (max-width: 768px) {
+    .col {
+      width: 100%;
+    }
+  }
 
   @media (min-width: 576px) {
     .container {
@@ -128,3 +133,7 @@
   margin-top: 20px;
 }
  
+.adaptive__img{
+  width: 100%;
+  height: auto;
+}

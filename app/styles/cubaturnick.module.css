@@ -30,3 +30,19 @@
 .gray{
   background-color: gray;
 }
+@media only screen and (max-width: 600px) {
+  .table {
+    display: block;
+  }
+
+  .table__row {
+    margin-bottom: 10px;
+  }
+
+  .table__cell {
+    text-align: center;
+
+  }
+
+ 
+}

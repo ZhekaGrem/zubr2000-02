@@ -1,6 +1,9 @@
-import React from "react";
+'use client'
+import React,{useEffect,useState} from "react";
 import styles from "@/app/styles/news.module.css";
 import { client } from "@/app/lib/sanity";
+import NewsBlog from '@/app/components/newsblog/NewsBlog';
+
 
 async function getData() {
   const query = `*[_type == "post"] | order(publication_data desc)`;
@@ -8,21 +11,22 @@ async function getData() {
   return data;
 }
 
-export default async function News() {
-  const data = await getData();
+export default  function News() {
+  const [blogData, setBlogData] = useState([]);
+  useEffect(() => {
+    async function fetchData() {
+      const data = await getData();
+      setBlogData(data);
+    }
+    fetchData();
+  }, []);
 
   return (
     <>
       <section className={styles.body}>
         <div className={styles.App}>
           <div className={styles.blog__container}>
-            {data.map((post) => (
-              <div key={post._id} className={styles.blog}>
-                <h2>{post.meta_title}</h2>
-                <p>{post.body_text}</p>
-                <p>{post.publication_data}</p>
-              </div>
-            ))}
+          <NewsBlog data={blogData}/>
            
           
           </div>

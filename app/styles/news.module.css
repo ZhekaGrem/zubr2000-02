@@ -9,12 +9,12 @@
   }
   
   .blog {
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 5px;
     margin-bottom: 20px;
     padding: 10px;
   }
-  .blog__container h2{
+  .blog h2{
     color: #60606e;
 
   }

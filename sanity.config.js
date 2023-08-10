@@ -1,6 +1,6 @@
 import {defineConfig} from 'sanity';
 import {deskTool} from 'sanity/desk';
- import{schemaTypes} from'@/sanity-01/cms/sanity';
+ import{schemaTypes} from'@/sanity-01/sanity';
  const config = defineConfig({
     title: "ZUBR-2000-Admin",
     projectId: process.env.NEXT_PUBLIC_PROJECT_ID,

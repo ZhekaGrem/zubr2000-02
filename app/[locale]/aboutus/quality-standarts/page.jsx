@@ -86,7 +86,7 @@ function qualityStandarts() {
             </div>
 
             <div className={styles.col}>
-              <Image  className={styles.adaptive__img} src="/brus.webp" width={555} height={415} alt='img4' />
+              <Image  className={styles.adaptive__img} src="/brus.webp" width={450} height={300} alt='img4' />
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@ function qualityStandarts() {
               <span>{t('quality-title-23')}</span>
             </div>
           <div className={styles.col}>
-              <Image src="/paleta.webp" className={styles.adaptive__img}  width={590} height={365} alt='img4' />
+              <Image src="/paleta.webp" className={styles.adaptive__img}  width={450} height={300} alt='img4' />
             </div>
           </div>
           <div className={styles.row}>

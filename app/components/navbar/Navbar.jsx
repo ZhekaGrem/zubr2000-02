@@ -70,6 +70,7 @@ function Navbar() {
                 >
                   {t("aboutus")}
                 </Link>
+                <Image className={styles.img__down} alt='drop down  logo change  language'  src='/down__02.svg' width={40} height={20}/>
                 <ul
                   className={` ${styles.sub__navbar__list} ${styles.navbar__link__1}`}
                 >
@@ -128,13 +129,13 @@ function Navbar() {
                 >
                   {t("product")}
                 </Link>
+                <Image className={styles.img__down} alt='drop down  logo change  language'  src='/down__02.svg' width={40} height={20}/>
                 <ul
                   className={` ${styles.sub__navbar__list} ${styles.navbar__link__2}`}
                 >
                 
                   <li>
                     <Link
-                   
                       rel="preload"
                       onClick={handleClick}
                       href="/products/oak-lumber"

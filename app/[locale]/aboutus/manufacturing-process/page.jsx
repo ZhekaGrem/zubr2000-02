@@ -30,6 +30,7 @@ function Certificates() {
             <div className={styles.col__5}>
               <div className="row">
                 <Image
+                className={styles.info__img}
                   src="/photo_product_3.webp"
                   width={450}
                   height={300}
@@ -53,6 +54,7 @@ function Certificates() {
             <div className={styles.col__5}>
               <div className="row">
                 <Image
+                 className={styles.info__img}
                   alt="imag3"
                   src="/photo_product_4.webp"
                   width={450}
@@ -77,6 +79,7 @@ function Certificates() {
             <div className={styles.col__5}>
               <div className="row">
                 <Image
+                className={styles.info__img}
                   alt="imag3"
                   src="/photo_product_5.webp"
                   width={450}
@@ -100,6 +103,7 @@ function Certificates() {
             <div className={styles.col__5}>
               <div className={styles.text__block}>
                 <Image
+                className={styles.info__img}
                   alt="img4"
                   src="/photo_product_7.webp"
                   width={450}
@@ -125,6 +129,7 @@ function Certificates() {
             <div className={styles.col__5}>
               <div className="row">
                 <Image
+                className={styles.info__img}
                   src="/pack-product.webp"
                   width={450}
                   alt="imag3"
@@ -149,6 +154,7 @@ function Certificates() {
             <div className={styles.col__5}>
               <div className="row">
                 <Image
+                className={styles.info__img}
                   src="/photo_product_6.webp"
                   width={450}
                   alt="img4"

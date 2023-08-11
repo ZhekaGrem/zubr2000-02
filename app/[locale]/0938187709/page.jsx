@@ -2,6 +2,7 @@
 import React,{  useState, useEffect,  } from "react";
 import styles from "@/app/styles/offer.module.css";
 import { client } from "@/app/lib/sanity";
+import Link from "next-intl/link";
 import OfferBlog from '@/app/components/offerblog/OfferBlog';
 
 async function getData() {
@@ -109,6 +110,13 @@ export default  function Offers() {
                 zubrzubr2000@gmail.com
               </a>
             </p>
+          <Link    rel="preload"
+                      href="/contact#contact"
+                    >
+                  <button className={styles.button__us}role="button">
+                  <p>Написати нам</p>
+                  </button>
+                    </Link>
             </div>
           </div>
         </div>

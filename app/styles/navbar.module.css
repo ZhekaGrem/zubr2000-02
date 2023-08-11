@@ -121,6 +121,8 @@ ul.sub__navbar__list > li > a{
 	color:#fff;
 }
 
+
+
 .sub__navbar__list > li > a:hover{
    background-color: #404051;
 }
@@ -155,9 +157,22 @@ transition: all 0.3s ease 0s;
    font-size: 2rem;
    z-index: 3;
 }
+.img__down{
+   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+display: none;
+}
 
+
+
+ .img__down:hover{
+   filter: invert(52%) sepia(94%) saturate(707%) hue-rotate(32deg) brightness(91%) contrast(102%);
+}
 
 @media(max-width:964px) {
+
+   .img__down{
+      display: inline-block;
+   }
 
    .navbar__logo {
       flex: 0 0 110px;
@@ -316,6 +331,8 @@ transition: all 0.3s ease 0s;
    right: 250px;
    left: 38%;
    }
+  
+
 }
 
 @media (max-width: 360px) {
@@ -335,4 +352,6 @@ transition: all 0.3s ease 0s;
    left: 20%;
    }
  }
+
+
 

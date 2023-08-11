@@ -139,6 +139,10 @@
   content: "";
   display: table;
 }
+.info__img {
+  width: 100%;
+  height: auto;
+}
 
 .col__5 {
     width: 41.66667%;

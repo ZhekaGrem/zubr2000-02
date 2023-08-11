@@ -499,7 +499,6 @@ ul.list li:before {
   -webkit-user-select: none;
   touch-action: manipulation;
   will-change: transform;
-  padding: 10px;
 
 }
 .button__us:hover {

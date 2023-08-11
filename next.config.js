@@ -3,7 +3,7 @@ const nextConfig = {
   experimental: {
     appDir: true,
     i18n: {
-      locales: ['default', 'en', 'de', 'fr','it','da','sv','ua','pl', 'ru'],
+      locales: ['default', 'ua', 'de', 'fr','it','da','sv','en','pl', 'ru'],
       defaultLocale: 'default',
       localeDetection: false,
     },

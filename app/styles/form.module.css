@@ -151,6 +151,7 @@ padding-left: 7px;
 }
 
 .button__send{
+  font-size: 3vw;
   appearance: none;
   background-color: transparent;
   border: 2px solid #1A1A1A;
@@ -166,7 +167,6 @@ padding-left: 7px;
   min-height: 60px;
   min-width: 0;
   outline: none;
-  padding: 16px 24px;
   text-align: center;
   text-decoration: none;
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -175,6 +175,8 @@ padding-left: 7px;
   touch-action: manipulation;
   width: 20%;
   will-change: transform;
+    padding: 10px;
+
 }
 
 .button__send:disabled {

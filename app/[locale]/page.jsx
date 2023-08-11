@@ -74,7 +74,7 @@ export default  function Home() {
         
         <section className={`${styles.container} ${styles.test}`}>
           <div className={styles.block}>
-            <div className={`${styles.col} `}>
+            <div className={`${styles.col} ${styles.production__us} `}>
               <div className={`${styles.row} ${styles.test} `}>
                 <div className={styles.section__title}>
                   <span>{t('ourproduct')}</span>
@@ -146,7 +146,7 @@ export default  function Home() {
                   <span>{t('contactus')}</span>
                 </div>
 
-                <ul>
+                <ul className={styles.section__title__us}>
 
                   <p>{t('director')}:+38 067 674-58-43 </p>
                   <p>{t('manager')}:+38 097 136-20-00 </p>

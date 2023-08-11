@@ -27,7 +27,7 @@
   }
  
   
-  @media (max-width: 425px) {
+  @media (max-width: 550px) {
     .mini__blog__post {
         width: calc(100% - 20px);
     }

@@ -131,7 +131,7 @@
   }
 
   .section__title span:after {
-    left: 50%;
+    left: 100%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -238,7 +238,52 @@
     width: 50%;
   }
 }
+@media (max-width: 990px) {
+  .col {
+    width: 100%;
+    
+  }
+  .section__title__us{
+    width: 100%;
+    text-align: center;
 
+
+  }
+}
+.production__us{
+  padding-bottom: 3%;
+}
+.production__us a {
+  padding-right: 5%;
+}
+
+
+.button__send{
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 20%;
+  will-change: transform;
+}
 
 .container {
   margin-right: auto;
@@ -379,8 +424,8 @@
 ul.list li {
   list-style-type: disc;
   position: relative;
-  padding-left: 20px;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 ul.list li:last-child {
@@ -392,6 +437,10 @@ ul.list li:before {
   position: absolute;
   left: 0;
 
+}
+
+.list ::marker {
+  padding-left: 10px;
 }
 
 
@@ -427,32 +476,36 @@ ul.list li:before {
 .button__us{
 
 
-
-/* CSS */
-
-  background-color: #13aa52;
-  border: 1px solid #13aa52;
-  border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  font-size: 3vw;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
   box-sizing: border-box;
-  color: #fff;
+  color: #3B3B3B;
   cursor: pointer;
+  display: inline-block;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
   outline: none;
-  outline: 0;
-  padding: 10px 25px;
   text-align: center;
-  transform: translateY(0);
-  transition: transform 150ms, box-shadow 150ms;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-
+  will-change: transform;
+  padding: 10px;
 
 }
 .button__us:hover {
-  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  color: #fff;
+  background-color: var(--color_green);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
 

@@ -132,7 +132,7 @@ function Footer() {
                   <p>m.Lviv</p>
                 </li>
                 <li>
-                  <p>vul. Copernicus  20</p>
+                  <p>vul. Kopernyka  20</p>
                 </li>
               </ul>
             </div>

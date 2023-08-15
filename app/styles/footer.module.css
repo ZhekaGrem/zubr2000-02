@@ -88,3 +88,8 @@
     filter: invert(52%) sepia(94%) saturate(707%) hue-rotate(32deg) brightness(91%) contrast(102%);
 
  }
+
+
+ .footer__col li>a {
+text-decoration: none;
+ }

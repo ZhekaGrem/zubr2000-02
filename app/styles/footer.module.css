@@ -90,10 +90,9 @@
  }
 
 
- .footer__col li>a {
-text-decoration: none;
- }
 
-.footer__info{
-  text-decoration: none;
+
+.footer__col h4{
+  text-transform: none;
+  
 }

@@ -122,8 +122,8 @@ ul.list li:before{
 	font-size: 14px;
 	display: inline-block;
 } 
-.pricing__plan ul{
-	margin: 50px 0;
+.pricing__plan li{
+  margin-top: 5px;
 }
 
 

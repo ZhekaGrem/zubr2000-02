@@ -12,7 +12,7 @@ function Footer() {
   return (
     <>
       <div  loading="lazy" role="img" aria-label="forest" className={`lazy ${styles.footer}`}>
-      I
+      
         <div className={styles.container}>
           <div className={styles.row}>
             <div className={styles.footer__col}>

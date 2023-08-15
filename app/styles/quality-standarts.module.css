@@ -70,6 +70,12 @@
   .section__title{width: 100%;}
 
 }
+@media (max-width: 662px){
+  .section__title span {
+    font-size: 4vh;
+  }
+
+}
 
 
 
@@ -77,13 +83,15 @@
 	position: relative;
 	z-index: 1;
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 6vh;
 	text-transform: uppercase;
 	color:#60606e;
 	position: relative;
 	display: inline-block;
 	margin-bottom: 20px;
 }
+
+
 
 .section__title p{
 	line-height: 24px;
@@ -225,7 +233,7 @@
 }
 
 .big__title{
-	font-size: 48px;
+	font-size: 2vh;
 	color:#60606e;
 	padding: 10px 40px;
 	border:solid 10px #60606e;

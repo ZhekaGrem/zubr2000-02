@@ -3,7 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
-import {Montserrat} from "next/font/google"
+import {Montserrat} from "next/font/google";
 
 
 const font = Montserrat({
@@ -143,7 +143,6 @@ export default async function LocaleLayout({ children, params: { locale } }) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="wrapper">
             <Navbar />
-
             <main className="content">{children}</main>
           </div>
           <footer>

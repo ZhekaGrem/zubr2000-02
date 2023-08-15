@@ -27,7 +27,7 @@ function Product() {
 						<div className={styles.team__member__hover}>
 							<div className={styles.team__member__info}>
 								<div className={styles.team__member__name}>{t('beam')} 54 * 110 ММ</div>
-								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber'>open</Link></div>
+								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber'>{t('open')}</Link></div>
 							</div>
 						</div>
 					</div>
@@ -39,7 +39,7 @@ function Product() {
 						<div className={styles.team__member__hover}>
 							<div className={styles.team__member__info}>
 								<div className={styles.team__member__name}>{t('beam')} 54 * 54 ММ</div>
-								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber'>open</Link></div>
+								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber'>{t('open')}</Link></div>
 							</div>
 						</div>
 					</div>				
@@ -65,7 +65,7 @@ function Product() {
 						<div className={styles.team__member__hover}>
 							<div className={styles.team__member__info}>
 								<div className={styles.team__member__name}>{t('beam')} 54 * 110 ММ</div>
-								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber'>open</Link></div>
+								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber'>{t('open')}</Link></div>
 							</div>
 						</div>
 					</div>
@@ -76,7 +76,7 @@ function Product() {
 						<div className={styles.team__member__hover}>
 							<div className={styles.team__member__info}>
 								<div className={styles.team__member__name}>{t('beam')} 54 * 54 ММ</div>
-								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber'>open</Link></div>
+								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber'>{t('open')}</Link></div>
 							</div>
 						</div>
 					</div>				
@@ -101,7 +101,7 @@ function Product() {
 						<div className={styles.team__member__hover}>
 							<div className={styles.team__member__info}>
 								<div className={styles.team__member__name}>{t('beam')} 54 * 110 ММ</div>
-								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber'>open</Link></div>
+								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber'>{t('open')}</Link></div>
 							</div>
 						</div>
 					</div>
@@ -112,7 +112,7 @@ function Product() {
 						<div className={styles.team__member__hover}>
 							<div className={styles.team__member__info}>
 								<div className={styles.team__member__name}>{t('beam')} 54 * 54 ММ</div>
-								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber'>open</Link></div>
+								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber'>{t('open')} </Link></div>
 							</div>
 						</div>
 					</div>				

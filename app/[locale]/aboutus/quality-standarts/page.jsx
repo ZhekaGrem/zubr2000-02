@@ -231,7 +231,7 @@ function qualityStandarts() {
                 </div>
               <div className={` ${styles.block__01__left} ${styles.row}`}>
                 <ul>
-                  <span className={styles.bloc__title}>5.{t('quality-title-40')} :</span>
+                  <span className={styles.bloc__title}>4.{t('quality-title-40')} :</span>
                   <li>
                   {t('quality-title-41')}
                   </li>
@@ -255,7 +255,7 @@ function qualityStandarts() {
             <div className={styles.row}>
               <div className={` ${styles.block__01__left} ${styles.row}`}>
                 <ul>
-                  <span className={styles.bloc__title}>6. {t('quality-title-46')}:</span>
+                  <span className={styles.bloc__title}>5. {t('quality-title-46')}:</span>
                   <li>{t('quality-title-47')}:</li>
                   <li>- {t('quality-title-48')}</li>
                   <li>- {t('quality-title-35')}</li>

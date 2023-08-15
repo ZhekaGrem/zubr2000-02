@@ -9,7 +9,6 @@ import { client } from "@/app/lib/sanity";
 
 
 
-
 async function getData() {
   const query = `*[_type == "post"] | order(publication_data desc)`;
   const data = await client.fetch(query);

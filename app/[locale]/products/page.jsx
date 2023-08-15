@@ -12,10 +12,10 @@ function Product() {
     <>
 
 <section>
-		<div className={styles.container}>
-			<div className={styles.row}>
-				<div className={styles.section__title}>
-					<span>  {t("oak")}</span>
+		<div id="oak" className={styles.container}>
+			<div  className={styles.row}>
+				<div   className={styles.section__title}>
+					<span >  {t("oak")}</span>
 					<p>   {t("product_oak")}</p>
 				</div>
 			</div>
@@ -50,10 +50,10 @@ function Product() {
 		</div>
 	</section>
 <section>
-		<div className={styles.container}>
+		<div id="ash" className={styles.container}>
 			<div className={styles.row}>
 				<div className={styles.section__title}>
-					<span>  {t("ash")}</span>
+					<span >  {t("ash")}</span>
 					<p>  {t("product_ash")}</p>
 				</div>
 			</div>
@@ -86,10 +86,10 @@ function Product() {
 		</div>
 	</section>
 <section>
-		<div   className={styles.container}>
+		<div id="birch"  className={styles.container}>
 			<div className={styles.row}>
-				<div id="birch" className={styles.section__title}>
-					<span>  {t("birch")}</span>
+				<div  className={styles.section__title}>
+					<span >  {t("birch")}</span>
 					<p>{t("product_birch")}</p>
 				</div>
 			</div>

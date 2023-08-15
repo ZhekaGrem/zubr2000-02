@@ -22,7 +22,7 @@ function Footer() {
                     <Link
                    
                       rel="preload"
-                      href="/products/oak-lumber"
+                      href="/products#oak"
                       className={styles.footer__link}
                     >
                       {t("oak")}
@@ -32,7 +32,7 @@ function Footer() {
                     <Link
                    
                       rel="preload"
-                      href="/products/ash-lumber"
+                      href="/products#ash"
                       className={styles.footer__link}
                     >
                       {t("ash")}

@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import styles from '@/app/styles/birch-lumber.module.css'
+import styles from '@/app/styles/lumber.module.css'
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
 
@@ -13,7 +13,7 @@ function Lumber() {
 		<div className={styles.container}>
 			<div className={styles.row}>
 				<div className={styles.section__title}>
-					<span>{t('beam')} 54 * 54 ММ</span>
+					<span>{t('birch')} {t('beam')} 54 * 54 ММ</span>
 					
 				</div>
 			</div>
@@ -57,7 +57,7 @@ function Lumber() {
 		<div className={styles.container}>
 			<div className={styles.row}>
 				<div className={styles.section__title}>
-					<span>{t('beam')} 54 * 110 ММ</span>
+					<span>{t('birch')} {t('beam')}54 * 110 ММ</span>
 					
 				</div>
 			</div>

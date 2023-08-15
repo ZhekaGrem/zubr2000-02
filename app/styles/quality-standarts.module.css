@@ -72,7 +72,7 @@
 }
 @media (max-width: 662px){
   .section__title span {
-    font-size: 4vh;
+    font-size: 3.5vh;
   }
 
 }
@@ -83,7 +83,7 @@
 	position: relative;
 	z-index: 1;
 	font-weight: 700;
-	font-size: 6vh;
+	font-size: 5.5vh;
 	text-transform: uppercase;
 	color:#60606e;
 	position: relative;

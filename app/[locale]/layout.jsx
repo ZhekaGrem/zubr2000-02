@@ -96,7 +96,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
     <html lang={locale}>
       <head>
         <meta name="viewport"  as="viewport" content="width=device-width" />
-        <link rel="icon" as="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" as="icon" href="./favicon.ico" sizes="any" />
         <link rel="alternate"  as="alternate" href="https://zubr-2000.com.ua" />
         <link
         as="alternate"

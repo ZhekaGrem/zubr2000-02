@@ -120,7 +120,7 @@ function Footer() {
               </ul>
             </div>
             <div className={styles.footer__col}>
-              <ul>
+              <ul className={styles.footer__info}>
                 <h4>{t('findus')}</h4>
                 <li>
                   <p>79024</p>
@@ -132,7 +132,7 @@ function Footer() {
                   <p>m.Lviv</p>
                 </li>
                 <li>
-                  <p>vul. Copernicus  20</p>
+                  <p>vul. Kopernyka  20</p>
                 </li>
               </ul>
             </div>

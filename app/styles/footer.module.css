@@ -93,3 +93,7 @@
  .footer__col li>a {
 text-decoration: none;
  }
+
+.footer__info{
+  text-decoration: none;
+}

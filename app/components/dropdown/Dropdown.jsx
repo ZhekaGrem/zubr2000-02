@@ -33,7 +33,7 @@ return (
               Українська <Image alt='language UA' src='/ua.webp' width={20} height={16} /></Link>{''}</li>
           <li >
           <Link   rel="preload" to="" className={styles.sub__menu__link} href={usePathname()}  locale='en' >
-          English<Image alt='language En' src='/gb.webp' width={20} height={16} />
+          English <Image alt='language En' src='/gb.webp' width={20} height={16} />
            </Link> </li>
            <li >
             <Link    rel="preload" to="" className={styles.sub__menu__link} href={usePathname()} locale='pl'>

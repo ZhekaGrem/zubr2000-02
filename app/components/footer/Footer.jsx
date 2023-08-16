@@ -1,60 +1,61 @@
-'use client'
-import React, {memo}from "react";
+"use client";
+import React, { memo } from "react";
 import styles from "@/app/styles/footer.module.css";
 import Image from "next/image";
 import Link from "next-intl/link";
 import { useTranslations } from "next-intl";
-
 
 function Footer() {
   const t = useTranslations("Index");
 
   return (
     <>
-      <div  loading="lazy" role="img" aria-label="forest" className={`lazy ${styles.footer}`}>
-      
+      <div
+        loading="lazy"
+        role="img"
+        aria-label="forest"
+        className={`lazy ${styles.footer}`}
+      >
         <div className={styles.container}>
           <div className={styles.row}>
             <div className={styles.footer__col}>
               <ul>
                 <h4>{t("ourproduct")}</h4>
                 <li>
-                    <Link
-                   
-                      rel="preload"
-                      href="/products#oak"
-                      className={styles.footer__link}
-                    >
-                      {t("oak")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                   
-                      rel="preload"
-                      href="/products#ash"
-                      className={styles.footer__link}
-                    >
-                      {t("ash")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                   
-                      rel="preload"
-                      href="/products#birch"
-                      className={styles.footer__link}
-                    >
-                      {t("birch")}
-                    </Link>
-                  </li>
+                  <Link
+                    rel="preload"
+                    href="/products#oak"
+                    className={styles.footer__link}
+                  >
+                    {t("oak")}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    rel="preload"
+                    href="/products#ash"
+                    className={styles.footer__link}
+                  >
+                    {t("ash")}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    rel="preload"
+                    href="/products#birch"
+                    className={styles.footer__link}
+                  >
+                    {t("birch")}
+                  </Link>
+                </li>
               </ul>
             </div>
             <div className={styles.footer__col}>
               <ul>
                 <h4>{t("certificates")}</h4>
                 <li>
-                  <Link    rel="preload"
+                  <Link
+                    rel="preload"
                     className={styles.footer__link}
                     href="/aboutus/certificates"
                   >
@@ -67,17 +68,16 @@ function Footer() {
                     />
                   </Link>
                 </li>
-               
               </ul>
             </div>
             <div className={styles.footer__col}>
               <ul>
-                <h4>{t('contactus')}</h4>
+                <h4>{t("contactus")}</h4>
                 <li>
-                  <p>{t('director')}: +38 067 674-58-43</p>
+                  <p>{t("director")}: +38 067 674-58-43</p>
                 </li>
                 <li>
-                  <p>{t('manager')}: +38 097 136-20-00</p>
+                  <p>{t("manager")}: +38 097 136-20-00</p>
                 </li>
                 <li>
                   <a
@@ -104,7 +104,8 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <Link    rel="preload"
+                  <Link
+                    rel="preload"
                     className={styles.footer__link}
                     href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html"
                   >
@@ -121,19 +122,11 @@ function Footer() {
             </div>
             <div className={styles.footer__col}>
               <ul className={styles.footer__info}>
-                <h4>{t('findus')}</h4>
-                <li>
-                  79024
-                </li>
-                <li>
-                  Ukraine
-                </li>
-                <li>
-                 m.Lviv
-                </li>
-                <li>
-                  vul. Kopernyka  20
-                </li>
+                <h4>{t("findus")}</h4>
+                <li>79024</li>
+                <li>Ukraine</li>
+                <li>m.Lviv</li>
+                <li>vul. Kopernyka 20</li>
               </ul>
             </div>
           </div>

@@ -12,34 +12,44 @@
 
 
 .sub__menu__list {
+   border-radius: 20px;
    text-align: start;
    display: none;
    z-index: 999;
    position: absolute;
-   top: 20px;
+   top: 19px;
    left: 0%;
    min-width: 200px;
-   background-color: var(--color_green);
+   background-color: var(--color_green__02);
+
 }
 
 ul.sub__menu__list>li>a {
    display: inline-block;
-   width: 100%;
    height: 40px;
    line-height: 40px;
    padding: 0 20px;
    color: #fff;
 }
-
-
-
-
-.sub__menu__list>li:nth-child(even)>a {
-   background-color: var(--color_green__02);
+ul.sub__menu__list>li>a :hover {
+   box-shadow: 0 5px 10px rgba(250, 250, 250, 0.2);
 }
 
+.sub__menu__list img{
+ padding-left: 2%;
+}
+
+
+
+
 .sub__menu__list>li>a:hover {
+   width: 100%;
    background-color: #404051;
+   border-radius: 20px;
+   box-shadow: 0 5px 10px rgba(250, 250, 250, 0.055);
+   transition: all .3s ease 0s;
+
+
 }
 
 .sub__menu__list li {
@@ -50,6 +60,7 @@ ul.sub__menu__list>li>a {
 
 .sub__menu__list :hover {
    color: var(--color_green);
+
 }
 
 

@@ -51,9 +51,12 @@
 
   .row > * {
     box-sizing: border-box;
-    float: left;
   }
 
+
+  .wrapper{
+    overflow-x: scroll;
+  }
   .row::before,
   .row::after {
     content: "";
@@ -233,14 +236,15 @@
 }
 
 .big__title{
-	font-size: 2vh;
 	color:#60606e;
 	padding: 10px 40px;
 	border:solid 10px #60606e;
 	display: inline-block;
 	margin-bottom: 30px;
 }
-
+.big__title span{
+	font-size: 2vw;
+}
 .table {
   display: table;
   width: 100%;

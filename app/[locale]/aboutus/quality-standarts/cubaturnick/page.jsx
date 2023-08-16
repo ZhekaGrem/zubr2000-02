@@ -1,784 +1,170 @@
-import React from 'react'
+"use client";
+import { useState, useEffect } from "react";
 import styles from "@/app/styles/cubaturnick.module.css";
 
 const cubaturnick = () => {
-  return (
-    <>
-<div className={styles.table}>
-  <div className={styles.table__row}>
-    <div className={`${styles.table__cell} ${styles.gray}`}></div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,1</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,2</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,3</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,4</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,5</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,6</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,7</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,8</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,9</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}></div>
-  </div>
-  <div className={styles.table__row}>
-    <div className={`${styles.table__cell} ${styles.gray}`} >18</div>
-    <div className={styles.table__cell}>0,027</div>
-    <div className={styles.table__cell}>0,03</div>
-    <div className={styles.table__cell}>0,032</div>
-    <div className={styles.table__cell}>0,035</div>
-    <div className={styles.table__cell}>0,038</div>
-    <div className={styles.table__cell}>0,041</div>
-    <div className={styles.table__cell}>0,044</div>
-    <div className={styles.table__cell}>0,047</div>
-    <div className={styles.table__cell}>0,05</div>
-    <div className={styles.table__cell}>0,053</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>18</div>
-  </div>
-  <div className={styles.table__row}>
-    <div className={`${styles.table__cell} ${styles.gray}`}>19</div>
-    <div className={styles.table__cell}>0,03</div>
-    <div className={styles.table__cell}>0,033</div>
-    <div className={styles.table__cell}>0,036</div>
-    <div className={styles.table__cell}>0,04</div>
-    <div className={styles.table__cell}>0,043</div>
-    <div className={styles.table__cell}>0,046</div>
-    <div className={styles.table__cell}>0,049</div>
-    <div className={styles.table__cell}>0,053</div>
-    <div className={styles.table__cell}>0,056</div>
-    <div className={styles.table__cell}>0,06</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>19</div>
-  </div>
-  <div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>20</div>
-  <div className={styles.table__cell}>0,033</div>
-  <div className={styles.table__cell}>0,036</div>
-  <div className={styles.table__cell}>0,04</div>
-  <div className={styles.table__cell}>0,043</div>
-  <div className={styles.table__cell}>0,047</div>
-  <div className={styles.table__cell}>0,051</div>
-  <div className={styles.table__cell}>0,054</div>
-  <div className={styles.table__cell}>0,058</div>
-  <div className={styles.table__cell}>0,061</div>
-  <div className={styles.table__cell}>0,065</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>20</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>21</div>
-  <div className={styles.table__cell}>0,036</div>
-  <div className={styles.table__cell}>0,04</div>
-  <div className={styles.table__cell}>0,044</div>
-  <div className={styles.table__cell}>0,048</div>
-  <div className={styles.table__cell}>0,052</div>
-  <div className={styles.table__cell}>0,056</div>
-  <div className={styles.table__cell}>0,06</div>
-  <div className={styles.table__cell}>0,064</div>
-  <div className={styles.table__cell}>0,068</div>
-  <div className={styles.table__cell}>0,072</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>21</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>22</div>
-  <div className={styles.table__cell}>0,04</div>
-  <div className={styles.table__cell}>0,044</div>
-  <div className={styles.table__cell}>0,049</div>
-  <div className={styles.table__cell}>0,053</div>
-  <div className={styles.table__cell}>0,057</div>
-  <div className={styles.table__cell}>0,062</div>
-  <div className={styles.table__cell}>0,066</div>
-  <div className={styles.table__cell}>0,07</div>
-  <div className={styles.table__cell}>0,075</div>
-  <div className={styles.table__cell}>0,079</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>22</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>23</div>
-  <div className={styles.table__cell}>0,044</div>
-  <div className={styles.table__cell}>0,049</div>
-  <div className={styles.table__cell}>0,054</div>
-  <div className={styles.table__cell}>0,059</div>
-  <div className={styles.table__cell}>0,064</div>
-  <div className={styles.table__cell}>0,068</div>
-  <div className={styles.table__cell}>0,073</div>
-  <div className={styles.table__cell}>0,079</div>
-  <div className={styles.table__cell}>0,085</div>
-  <div className={styles.table__cell}>0,089</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>23</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>24</div>
-  <div className={styles.table__cell}>0,048</div>
-  <div className={styles.table__cell}>0,054</div>
-  <div className={styles.table__cell}>0,059</div>
-  <div className={styles.table__cell}>0,064</div>
-  <div className={styles.table__cell}>0,069</div>
-  <div className={styles.table__cell}>0,075</div>
-  <div className={styles.table__cell}>0,081</div>
-  <div className={styles.table__cell}>0,086</div>
-  <div className={styles.table__cell}>0,092</div>
-  <div className={styles.table__cell}>0,098</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>24</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>25</div>
-  <div className={styles.table__cell}>0,053</div>
-  <div className={styles.table__cell}>0,058</div>
-  <div className={styles.table__cell}>0,064</div>
-  <div className={styles.table__cell}>0,07</div>
-  <div className={styles.table__cell}>0,076</div>
-  <div className={styles.table__cell}>0,082</div>
-  <div className={styles.table__cell}>0,088</div>
-  <div className={styles.table__cell}>0,094</div>
-  <div className={styles.table__cell}>0,101</div>
-  <div className={styles.table__cell}>0,107</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>25</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>26</div>
-  <div className={styles.table__cell}>0,057</div>
-  <div className={styles.table__cell}>0,063</div>
-  <div className={styles.table__cell}>0,07</div>
-  <div className={styles.table__cell}>0,076</div>
-  <div className={styles.table__cell}>0,083</div>
-  <div className={styles.table__cell}>0,089</div>
-  <div className={styles.table__cell}>0,096</div>
-  <div className={styles.table__cell}>0,103</div>
-  <div className={styles.table__cell}>0,109</div>
-  <div className={styles.table__cell}>0,116</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>26</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>27</div>
-  <div className={styles.table__cell}>0,062</div>
-  <div className={styles.table__cell}>0,068</div>
-  <div className={styles.table__cell}>0,075</div>
-  <div className={styles.table__cell}>0,082</div>
-  <div className={styles.table__cell}>0,089</div>
-  <div className={styles.table__cell}>0,096</div>
-  <div className={styles.table__cell}>0,103</div>
-  <div className={styles.table__cell}>0,11</div>
-  <div className={styles.table__cell}>0,18</div>
-  <div className={styles.table__cell}>0,125</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>27</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>28</div>
-  <div className={styles.table__cell}>0,067</div>
-  <div className={styles.table__cell}>0,074</div>
-  <div className={styles.table__cell}>0,081</div>
-  <div className={styles.table__cell}>0,089</div>
-  <div className={styles.table__cell}>0,096</div>
-  <div className={styles.table__cell}>0,104</div>
-  <div className={styles.table__cell}>0,112</div>
-  <div className={styles.table__cell}>0,12</div>
-  <div className={styles.table__cell}>0,128</div>
-  <div className={styles.table__cell}>0,136</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>28</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>29</div>
-  <div className={styles.table__cell}>0,072</div>
-  <div className={styles.table__cell}>0,079</div>
-  <div className={styles.table__cell}>0,087</div>
-  <div className={styles.table__cell}>0,095</div>
-  <div className={styles.table__cell}>0,103</div>
-  <div className={styles.table__cell}>0,111</div>
-  <div className={styles.table__cell}>0,12</div>
-  <div className={styles.table__cell}>0,128</div>
-  <div className={styles.table__cell}>0,137</div>
-  <div className={styles.table__cell}>0,145</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>29</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>30</div>
-  <div className={styles.table__cell}>0,077</div>
-  <div className={styles.table__cell}>0,085</div>
-  <div className={styles.table__cell}>0,093</div>
-  <div className={styles.table__cell}>0,102</div>
-  <div className={styles.table__cell}>0,11</div>
-  <div className={styles.table__cell}>0,119</div>
-  <div className={styles.table__cell}>0,128</div>
-  <div className={styles.table__cell}>0,137</div>
-  <div className={styles.table__cell}>0,147</div>
-  <div className={styles.table__cell}>0,156</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>30</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>31</div>
-  <div className={styles.table__cell}>0,082</div>
-  <div className={styles.table__cell}>0,091</div>
-  <div className={styles.table__cell}>0,01</div>
-  <div className={styles.table__cell}>0,109</div>
-  <div className={styles.table__cell}>0,118</div>
-  <div className={styles.table__cell}>0,127</div>
-  <div className={styles.table__cell}>0,137</div>
-  <div className={styles.table__cell}>0,146</div>
-  <div className={styles.table__cell}>0,156</div>
-  <div className={styles.table__cell}>0,165</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>31</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>32</div>
-  <div className={styles.table__cell}>0,087</div>
-  <div className={styles.table__cell}>0,096</div>
-  <div className={styles.table__cell}>0,106</div>
-  <div className={styles.table__cell}>0,115</div>
-  <div className={styles.table__cell}>0,125</div>
-  <div className={styles.table__cell}>0,135</div>
-  <div className={styles.table__cell}>0,145</div>
-  <div className={styles.table__cell}>0,15</div>
-  <div className={styles.table__cell}>0,17</div>
-  <div className={styles.table__cell}>0,18</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>32</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>33</div>
-  <div className={styles.table__cell}>0,093</div>
-  <div className={styles.table__cell}>0,103</div>
-  <div className={styles.table__cell}>0,113</div>
-  <div className={styles.table__cell}>0,123</div>
-  <div className={styles.table__cell}>0,133</div>
-  <div className={styles.table__cell}>0,144</div>
-  <div className={styles.table__cell}>0,155</div>
-  <div className={styles.table__cell}>0,17</div>
-  <div className={styles.table__cell}>0,18</div>
-  <div className={styles.table__cell}>0,19</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>33</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>34</div>
-  <div className={styles.table__cell}>0,1</div>
-  <div className={styles.table__cell}>0,11</div>
-  <div className={styles.table__cell}>0,12</div>
-  <div className={styles.table__cell}>0,13</div>
-  <div className={styles.table__cell}>0,14</div>
-  <div className={styles.table__cell}>0,15</div>
-  <div className={styles.table__cell}>0,16</div>
-  <div className={styles.table__cell}>0,18</div>
-  <div className={styles.table__cell}>0,19</div>
-  <div className={styles.table__cell}>0,2</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>34</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>35</div>
-  <div className={styles.table__cell}>0,1</div>
-  <div className={styles.table__cell}>0,11</div>
-  <div className={styles.table__cell}>0,13</div>
-  <div className={styles.table__cell}>0,14</div>
-  <div className={styles.table__cell}>0,15</div>
-  <div className={styles.table__cell}>0,16</div>
-  <div className={styles.table__cell}>0,17</div>
-  <div className={styles.table__cell}>0,19</div>
-  <div className={styles.table__cell}>0,2</div>
-  <div className={styles.table__cell}>0,21</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>35</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>36</div>
-  <div className={styles.table__cell}>0,11</div>
-  <div className={styles.table__cell}>0,12</div>
-  <div className={styles.table__cell}>0,13</div>
-  <div className={styles.table__cell}>0,14</div>
-  <div className={styles.table__cell}>0,15</div>
-  <div className={styles.table__cell}>0,17</div>
-  <div className={styles.table__cell}>0,18</div>
-  <div className={styles.table__cell}>0,2</div>
-  <div className={styles.table__cell}>0,21</div>
-  <div className={styles.table__cell}>0,22</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>36</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>37</div>
-  <div className={styles.table__cell}>0,11</div>
-  <div className={styles.table__cell}>0,13</div>
-  <div className={styles.table__cell}>0,14</div>
-  <div className={styles.table__cell}>0,15</div>
-  <div className={styles.table__cell}>0,17</div>
-  <div className={styles.table__cell}>0,18</div>
-  <div className={styles.table__cell}>0,19</div>
-  <div className={styles.table__cell}>0,21</div>
-  <div className={styles.table__cell}>0,22</div>
-  <div className={styles.table__cell}>0,23</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>37</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>38</div>
-  <div className={styles.table__cell}>0,12</div>
-  <div className={styles.table__cell}>0,13</div>
-  <div className={styles.table__cell}>0,15</div>
-  <div className={styles.table__cell}>0,16</div>
-  <div className={styles.table__cell}>0,18</div>
-  <div className={styles.table__cell}>0,19</div>
-  <div className={styles.table__cell}>0,2</div>
-  <div className={styles.table__cell}>0,22</div>
-  <div className={styles.table__cell}>0,23</div>
-  <div className={styles.table__cell}>0,24</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>38</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>39</div>
-  <div className={styles.table__cell}>0,13</div>
-  <div className={styles.table__cell}>0,14</div>
-  <div className={styles.table__cell}>0,15</div>
-  <div className={styles.table__cell}>0,17</div>
-  <div className={styles.table__cell}>0,18</div>
-  <div className={styles.table__cell}>0,2</div>
-  <div className={styles.table__cell}>0,21</div>
-  <div className={styles.table__cell}>0,23</div>
-  <div className={styles.table__cell}>0,24</div>
-  <div className={styles.table__cell}>0,26</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>39</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>40</div>
-  <div className={styles.table__cell}>0,14</div>
-  <div className={styles.table__cell}>0,15</div>
-  <div className={styles.table__cell}>0,16</div>
-  <div className={styles.table__cell}>0,18</div>
-  <div className={styles.table__cell}>0,19</div>
-  <div className={styles.table__cell}>0,21</div>
-  <div className={styles.table__cell}>0,22</div>
-  <div className={styles.table__cell}>0,24</div>
-  <div className={styles.table__cell}>0,25</div>
-  <div className={styles.table__cell}>0,27</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>40</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>41</div>
-  <div className={styles.table__cell}>0,14</div>
-  <div className={styles.table__cell}>0,16</div>
-  <div className={styles.table__cell}>0,17</div>
-  <div className={styles.table__cell}>0,19</div>
-  <div className={styles.table__cell}>0,20</div>
-  <div className={styles.table__cell}>0,22</div>
-  <div className={styles.table__cell}>0,24</div>
-  <div className={styles.table__cell}>0,25</div>
-  <div className={styles.table__cell}>0,27</div>
-  <div className={styles.table__cell}>0,29</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>41</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>42</div>
-  <div className={styles.table__cell}>0,15</div>
-  <div className={styles.table__cell}>0,16</div>
-  <div className={styles.table__cell}>0,18</div>
-  <div className={styles.table__cell}>0,20</div>
-  <div className={styles.table__cell}>0,21</div>
-  <div className={styles.table__cell}>0,23</div>
-  <div className={styles.table__cell}>0,25</div>
-  <div className={styles.table__cell}>0,26</div>
-  <div className={styles.table__cell}>0,28</div>
-  <div className={styles.table__cell}>0,30</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>42</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>43</div>
-  <div className={styles.table__cell}>0,15</div>
-  <div className={styles.table__cell}>0,17</div>
-  <div className={styles.table__cell}>0,19</div>
-  <div className={styles.table__cell}>0,2</div>
-  <div className={styles.table__cell}>0,22</div>
-  <div className={styles.table__cell}>0,24</div>
-  <div className={styles.table__cell}>0,26</div>
-  <div className={styles.table__cell}>0,28</div>
-  <div className={styles.table__cell}>0,29</div>
-  <div className={styles.table__cell}>0,31</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>43</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>44</div>
-  <div className={styles.table__cell}>0,16</div>
-  <div className={styles.table__cell}>0,18</div>
-  <div className={styles.table__cell}>0,19</div>
-  <div className={styles.table__cell}>0,21</div>
-  <div className={styles.table__cell}>0,23</div>
-  <div className={styles.table__cell}>0,25</div>
-  <div className={styles.table__cell}>0,27</div>
-  <div className={styles.table__cell}>0,29</div>
-  <div className={styles.table__cell}>0,3</div>
-  <div className={styles.table__cell}>0,32</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>44</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>45</div>
-  <div className={styles.table__cell}>0,17</div>
-  <div className={styles.table__cell}>0,19</div>
-  <div className={styles.table__cell}>0,2</div>
-  <div className={styles.table__cell}>0,22</div>
-  <div className={styles.table__cell}>0,24</div>
-  <div className={styles.table__cell}>0,26</div>
-  <div className={styles.table__cell}>0,28</div>
-  <div className={styles.table__cell}>0,3</div>
-  <div className={styles.table__cell}>0,32</div>
-  <div className={styles.table__cell}>0,34</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>45</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>46</div>
-  <div className={styles.table__cell}>0,18</div>
-  <div className={styles.table__cell}>0,2</div>
-  <div className={styles.table__cell}>0,21</div>
-  <div className={styles.table__cell}>0,23</div>
-  <div className={styles.table__cell}>0,25</div>
-  <div className={styles.table__cell}>0,27</div>
-  <div className={styles.table__cell}>0,29</div>
-  <div className={styles.table__cell}>0,31</div>
-  <div className={styles.table__cell}>0,33</div>
-  <div className={styles.table__cell}>0,35</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>46</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>47</div>
-  <div className={styles.table__cell}>0,18</div>
-  <div className={styles.table__cell}>0,2</div>
-  <div className={styles.table__cell}>0,22</div>
-  <div className={styles.table__cell}>0,24</div>
-  <div className={styles.table__cell}>0,26</div>
-  <div className={styles.table__cell}>0,28</div>
-  <div className={styles.table__cell}>0,3</div>
-  <div className={styles.table__cell}>0,33</div>
-  <div className={styles.table__cell}>0,35</div>
-  <div className={styles.table__cell}>0,37</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>47</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>48</div>
-  <div className={styles.table__cell}>0,19</div>
-  <div className={styles.table__cell}>0,21</div>
-  <div className={styles.table__cell}>0,23</div>
-  <div className={styles.table__cell}>0,25</div>
-  <div className={styles.table__cell}>0,27</div>
-  <div className={styles.table__cell}>0,3</div>
-  <div className={styles.table__cell}>0,32</div>
-  <div className={styles.table__cell}>0,34</div>
-  <div className={styles.table__cell}>0,36</div>
-  <div className={styles.table__cell}>0,38</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>48</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>49</div>
-  <div className={styles.table__cell}>0,2</div>
-  <div className={styles.table__cell}>0,22</div>
-  <div className={styles.table__cell}>0,24</div>
-  <div className={styles.table__cell}>0,26</div>
-  <div className={styles.table__cell}>0,29</div>
-  <div className={styles.table__cell}>0,31</div>
-  <div className={styles.table__cell}>0,33</div>
-  <div className={styles.table__cell}>0,36</div>
-  <div className={styles.table__cell}>0,38</div>
-  <div className={styles.table__cell}>0,4</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>49</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>50</div>
-  <div className={styles.table__cell}>0,21</div>
-  <div className={styles.table__cell}>0,23</div>
-  <div className={styles.table__cell}>0,25</div>
-  <div className={styles.table__cell}>0,27</div>
-  <div className={styles.table__cell}>0,3</div>
-  <div className={styles.table__cell}>0,32</div>
-  <div className={styles.table__cell}>0,35</div>
-  <div className={styles.table__cell}>0,37</div>
-  <div className={styles.table__cell}>0,4</div>
-  <div className={styles.table__cell}>0,42</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>50</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>51</div>
-  <div className={styles.table__cell}>0,22</div>
-  <div className={styles.table__cell}>0,24</div>
-  <div className={styles.table__cell}>0,27</div>
-  <div className={styles.table__cell}>0,29</div>
-  <div className={styles.table__cell}>0,32</div>
-  <div className={styles.table__cell}>0,34</div>
-  <div className={styles.table__cell}>0,37</div>
-  <div className={styles.table__cell}>0,39</div>
-  <div className={styles.table__cell}>0,42</div>
-  <div className={styles.table__cell}>0,44</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>51</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>52</div>
-  <div className={styles.table__cell}>0,23</div>
-  <div className={styles.table__cell}>0,25</div>
-  <div className={styles.table__cell}>0,28</div>
-  <div className={styles.table__cell}>0,3</div>
-  <div className={styles.table__cell}>0,33</div>
-  <div className={styles.table__cell}>0,36</div>
-  <div className={styles.table__cell}>0,38</div>
-  <div className={styles.table__cell}>0,41</div>
-  <div className={styles.table__cell}>0,43</div>
-  <div className={styles.table__cell}>0,46</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>52</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>53</div>
-  <div className={styles.table__cell}>0,24</div>
-  <div className={styles.table__cell}>0,26</div>
-  <div className={styles.table__cell}>0,29</div>
-  <div className={styles.table__cell}>0,32</div>
-  <div className={styles.table__cell}>0,34</div>
-  <div className={styles.table__cell}>0,37</div>
-  <div className={styles.table__cell}>0,4</div>
-  <div className={styles.table__cell}>0,42</div>
-  <div className={styles.table__cell}>0,45</div>
-  <div className={styles.table__cell}>0,48</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>53</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>54</div>
-  <div className={styles.table__cell}>0,25</div>
-  <div className={styles.table__cell}>0,27</div>
-  <div className={styles.table__cell}>0,3</div>
-  <div className={styles.table__cell}>0,33</div>
-  <div className={styles.table__cell}>0,36</div>
-  <div className={styles.table__cell}>0,38</div>
-  <div className={styles.table__cell}>0,41</div>
-  <div className={styles.table__cell}>0,44</div>
-  <div className={styles.table__cell}>0,47</div>
-  <div className={styles.table__cell}>0,5</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>54</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>55</div>
-  <div className={styles.table__cell}>0,26</div>
-  <div className={styles.table__cell}>0,29</div>
-  <div className={styles.table__cell}>0,32</div>
-  <div className={styles.table__cell}>0,35</div>
-  <div className={styles.table__cell}>0,38</div>
-  <div className={styles.table__cell}>0,41</div>
-  <div className={styles.table__cell}>0,44</div>
-  <div className={styles.table__cell}>0,47</div>
-  <div className={styles.table__cell}>0,5</div>
-  <div className={styles.table__cell}>0,53</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>55</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>56</div>
-  <div className={styles.table__cell}>0,27</div>
-  <div className={styles.table__cell}>0,3</div>
-  <div className={styles.table__cell}>0,33</div>
-  <div className={styles.table__cell}>0,36</div>
-  <div className={styles.table__cell}>0,39</div>
-  <div className={styles.table__cell}>0,42</div>
-  <div className={styles.table__cell}>0,45</div>
-  <div className={styles.table__cell}>0,48</div>
-  <div className={styles.table__cell}>0,51</div>
-  <div className={styles.table__cell}>0,54</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>56</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>57</div>
-  <div className={styles.table__cell}>0,28</div>
-  <div className={styles.table__cell}>0,31</div>
-  <div className={styles.table__cell}>0,34</div>
-  <div className={styles.table__cell}>0,37</div>
-  <div className={styles.table__cell}>0,4</div>
-  <div className={styles.table__cell}>0,43</div>
-  <div className={styles.table__cell}>0,46</div>
-  <div className={styles.table__cell}>0,49</div>
-  <div className={styles.table__cell}>0,53</div>
-  <div className={styles.table__cell}>0,56</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>57</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>58</div>
-  <div className={styles.table__cell}>0,29</div>
-  <div className={styles.table__cell}>0,32</div>
-  <div className={styles.table__cell}>0,35</div>
-  <div className={styles.table__cell}>0,38</div>
-  <div className={styles.table__cell}>0,42</div>
-  <div className={styles.table__cell}>0,45</div>
-  <div className={styles.table__cell}>0,48</div>
-  <div className={styles.table__cell}>0,52</div>
-  <div className={styles.table__cell}>0,55</div>
-  <div className={styles.table__cell}>0,58</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>58</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>59</div>
-  <div className={styles.table__cell}>0,3</div>
-  <div className={styles.table__cell}>0,33</div>
-  <div className={styles.table__cell}>0,37</div>
-  <div className={styles.table__cell}>0,4</div>
-  <div className={styles.table__cell}>0,43</div>
-  <div className={styles.table__cell}>0,47</div>
-  <div className={styles.table__cell}>0,5</div>
-  <div className={styles.table__cell}>0,54</div>
-  <div className={styles.table__cell}>0,57</div>
-  <div className={styles.table__cell}>0,6</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>59</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>60</div>
-  <div className={styles.table__cell}>0,31</div>
-  <div className={styles.table__cell}>0,34</div>
-  <div className={styles.table__cell}>0,38</div>
-  <div className={styles.table__cell}>0,41</div>
-  <div className={styles.table__cell}>0,45</div>
-  <div className={styles.table__cell}>0,48</div>
-  <div className={styles.table__cell}>0,52</div>
-  <div className={styles.table__cell}>0,55</div>
-  <div className={styles.table__cell}>0,59</div>
-  <div className={styles.table__cell}>0,63</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>60</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>61</div>
-  <div className={styles.table__cell}>0,32</div>
-  <div className={styles.table__cell}>0,35</div>
-  <div className={styles.table__cell}>0,39</div>
-  <div className={styles.table__cell}>0,43</div>
-  <div className={styles.table__cell}>0,46</div>
-  <div className={styles.table__cell}>0,5</div>
-  <div className={styles.table__cell}>0,54</div>
-  <div className={styles.table__cell}>0,57</div>
-  <div className={styles.table__cell}>0,61</div>
-  <div className={styles.table__cell}>0,65</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>61</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>62</div>
-  <div className={styles.table__cell}>0,33</div>
-  <div className={styles.table__cell}>0,36</div>
-  <div className={styles.table__cell}>0,4</div>
-  <div className={styles.table__cell}>0,44</div>
-  <div className={styles.table__cell}>0,48</div>
-  <div className={styles.table__cell}>0,52</div>
-  <div className={styles.table__cell}>0,55</div>
-  <div className={styles.table__cell}>0,59</div>
-  <div className={styles.table__cell}>0,63</div>
-  <div className={styles.table__cell}>0,67</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>62</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>63</div>
-  <div className={styles.table__cell}>0,34</div>
-  <div className={styles.table__cell}>0,38</div>
-  <div className={styles.table__cell}>0,41</div>
-  <div className={styles.table__cell}>0,45</div>
-  <div className={styles.table__cell}>0,49</div>
-  <div className={styles.table__cell}>0,53</div>
-  <div className={styles.table__cell}>0,57</div>
-  <div className={styles.table__cell}>0,61</div>
-  <div className={styles.table__cell}>0,65</div>
-  <div className={styles.table__cell}>0,69</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>63</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>64</div>
-  <div className={styles.table__cell}>0,35</div>
-  <div className={styles.table__cell}>0,39</div>
-  <div className={styles.table__cell}>0,43</div>
-  <div className={styles.table__cell}>0,47</div>
-  <div className={styles.table__cell}>0,51</div>
-  <div className={styles.table__cell}>0,55</div>
-  <div className={styles.table__cell}>0,59</div>
-  <div className={styles.table__cell}>0,63</div>
-  <div className={styles.table__cell}>0,67</div>
-  <div className={styles.table__cell}>0,71</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>64</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>65</div>
-  <div className={styles.table__cell}>0,36</div>
-  <div className={styles.table__cell}>0,4</div>
-  <div className={styles.table__cell}>0,45</div>
-  <div className={styles.table__cell}>0,49</div>
-  <div className={styles.table__cell}>0,53</div>
-  <div className={styles.table__cell}>0,57</div>
-  <div className={styles.table__cell}>0,61</div>
-  <div className={styles.table__cell}>0,65</div>
-  <div className={styles.table__cell}>0,69</div>
-  <div className={styles.table__cell}>0,73</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>65</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>66</div>
-  <div className={styles.table__cell}>0,37</div>
-  <div className={styles.table__cell}>0,41</div>
-  <div className={styles.table__cell}>0,46</div>
-  <div className={styles.table__cell}>0,5</div>
-  <div className={styles.table__cell}>0,54</div>
-  <div className={styles.table__cell}>0,58</div>
-  <div className={styles.table__cell}>0,62</div>
-  <div className={styles.table__cell}>0,66</div>
-  <div className={styles.table__cell}>0,71</div>
-  <div className={styles.table__cell}>0,76</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>66</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>67</div>
-  <div className={styles.table__cell}>0,38</div>
-  <div className={styles.table__cell}>0,43</div>
-  <div className={styles.table__cell}>0,47</div>
-  <div className={styles.table__cell}>0,52</div>
-  <div className={styles.table__cell}>0,56</div>
-  <div className={styles.table__cell}>0,6</div>
-  <div className={styles.table__cell}>0,65</div>
-  <div className={styles.table__cell}>0,69</div>
-  <div className={styles.table__cell}>0,73</div>
-  <div className={styles.table__cell}>0,78</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>67</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>68</div>
-  <div className={styles.table__cell}>0,39</div>
-  <div className={styles.table__cell}>0,44</div>
-  <div className={styles.table__cell}>0,48</div>
-  <div className={styles.table__cell}>0,53</div>
-  <div className={styles.table__cell}>0,57</div>
-  <div className={styles.table__cell}>0,62</div>
-  <div className={styles.table__cell}>0,66</div>
-  <div className={styles.table__cell}>0,71</div>
-  <div className={styles.table__cell}>0,75</div>
-  <div className={styles.table__cell}>0,8</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>68</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>69</div>
-  <div className={styles.table__cell}>0,41</div>
-  <div className={styles.table__cell}>0,45</div>
-  <div className={styles.table__cell}>0,5</div>
-  <div className={styles.table__cell}>0,55</div>
-  <div className={styles.table__cell}>0,59</div>
-  <div className={styles.table__cell}>0,64</div>
-  <div className={styles.table__cell}>0,68</div>
-  <div className={styles.table__cell}>0,73</div>
-  <div className={styles.table__cell}>0,78</div>
-  <div className={styles.table__cell}>0,83</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>69</div>
-</div>
-<div className={styles.table__row}>
-  <div className={`${styles.table__cell} ${styles.gray}`}>70</div>
-  <div className={styles.table__cell}>0,42</div>
-  <div className={styles.table__cell}>0,46</div>
-  <div className={styles.table__cell}>0,51</div>
-  <div className={styles.table__cell}>0,56</div>
-  <div className={styles.table__cell}>0,61</div>
-  <div className={styles.table__cell}>0,66</div>
-  <div className={styles.table__cell}>0,7</div>
-  <div className={styles.table__cell}>0,75</div>
-  <div className={styles.table__cell}>0,8</div>
-  <div className={styles.table__cell}>0,85</div>
-  <div className={`${styles.table__cell} ${styles.gray}`}>70</div>
-</div>
-<div className={styles.table__row}>
-    <div className={`${styles.table__cell} ${styles.gray}`}></div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,1</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,2</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,3</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,4</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,5</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,6</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,7</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,8</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}>1,9</div>
-    <div className={`${styles.table__cell} ${styles.gray}`}></div>
-  </div>
-</div>
-    
-    </>
-  )
-}
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+const data__01 =[
+    [' ', '1', '1,1', '1,2', '1,3', '1,4', '1,5', '1,6', '1,7', '1,8', '1,9', ' '],
+    ['18', '0,036', '0,04', '0,044', '0,048', '0,052', '0,056', '0,06', '0,064', '0,068', '0,072', '18'],
+    ['19', '0,036', '0,04', '0,044', '0,048', '0,052', '0,056', '0,06', '0,064', '0,068', '0,072', '21'],
+    ['20', '0,033', '0,04', '0,044', '0,048', '0,052', '0,056', '0,06', '0,064', '0,068', '0,072', '21'],
+    ['21', '0,036', '0,04', '0,044', '0,048', '0,052', '0,056', '0,06', '0,064', '0,068', '0,072', '21'],
+    ['22', '0,04', '0,044', '0,049', '0,053', '0,057', '0,062', '0,066', '0,07', '0,075', '0,079', '22'],
+    ['23', '0,044', '0,049', '0,054', '0,059', '0,064', '0,068', '0,073', '0,079', '0,085', '0,089', '23'],
+    ['24', '0,048', '0,054', '0,059', '0,064', '0,069', '0,075', '0,081', '0,086', '0,092', '0,098', '24'],
+    ['25', '0,053', '0,058', '0,064', '0,07', '0,076', '0,082', '0,088', '0,094', '0,101', '0,107', '25'],
+    ['26', '0,057', '0,063', '0,07', '0,076', '0,083', '0,089', '0,096', '0,103', '0,109', '0,116', '26'],
+    ['27', '0,062', '0,068', '0,075', '0,082', '0,089', '0,096', '0,103', '0,11', '0,18', '0,125', '27'],
+    ['28', '0,067', '0,074', '0,081', '0,089', '0,096', '0,104', '0,112', '0,12', '0,128', '0,136', '28'],
+    ['29', '0,072', '0,079', '0,087', '0,095', '0,103', '0,111', '0,12', '0,128', '0,137', '0,145', '29'],
+    ['30', '0,077', '0,085', '0,093', '0,102', '0,11', '0,119', '0,128', '0,137', '0,147', '0,156', '30'],
+    ['31', '0,082', '0,091', '0,01', '0,109', '0,118', '0,127', '0,137', '0,146', '0,156', '0,165', '31'],
+    ['32', '0,087', '0,096', '0,106', '0,115', '0,125', '0,135', '0,145', '0,15', '0,17', '0,18', '32'],
+    ['33', '0,093', '0,103', '0,113', '0,123', '0,133', '0,144', '0,155', '0,17', '0,18', '0,19', '33'],
+    ['34', '0,1', '0,11', '0,12', '0,13', '0,14', '0,15', '0,16', '0,18', '0,19', '0,2', '34'],
+    ['35', '0,1', '0,11', '0,13', '0,14', '0,15', '0,16', '0,17', '0,19', '0,2', '0,21', '35'],
+    ['36', '0,11', '0,12', '0,13', '0,14', '0,15', '0,17', '0,18', '0,2', '0,21', '0,22', '36'],
+    ['37', '0,11', '0,13', '0,14', '0,15', '0,17', '0,18', '0,19', '0,21', '0,22', '0,23', '37'],
+    ['38', '0,12', '0,13', '0,15', '0,16', '0,18', '0,19', '0,2', '0,22', '0,23', '0,24', '38'],
+    ['39', '0,13', '0,14', '0,15', '0,17', '0,18', '0,2', '0,21', '0,23', '0,24', '0,26', '39'],
+    ['40', '0,14', '0,15', '0,16', '0,18', '0,19', '0,21', '0,22', '0,24', '0,25', '0,27', '40'],
+    ['41', '0,14', '0,16', '0,17', '0,19', '0,2', '0,22', '0,24', '0,25', '0,27', '0,29', '41'],
+    ['42', '0,15', '0,16', '0,18', '0,2', '0,21', '0,23', '0,25', '0,26', '0,28', '0,3', '42'],
+    ['43', '0,15', '0,17', '0,19', '0,2', '0,22', '0,24', '0,26', '0,28', '0,29', '0,31', '43'],
+    ['44', '0,16', '0,18', '0,19', '0,21', '0,23', '0,25', '0,27', '0,29', '0,3', '0,32', '44'],
+    ['45', '0,17', '0,19', '0,2', '0,22', '0,24', '0,26', '0,28', '0,3', '0,32', '0,34', '45'],
+    ['46', '0,18', '0,2', '0,21', '0,23', '0,25', '0,27', '0,29', '0,31', '0,33', '0,35', '46'],
+    ['47', '0,18', '0,2', '0,22', '0,24', '0,26', '0,28', '0,3', '0,33', '0,35', '0,37', '47'],
+    ['48', '0,19', '0,21', '0,23', '0,25', '0,27', '0,3', '0,32', '0,34', '0,36', '0,38', '48'],
+    ['49', '0,2', '0,22', '0,24', '0,26', '0,29', '0,31', '0,33', '0,36', '0,38', '0,4', '49'],
+    ['50', '0,21', '0,23', '0,25', '0,27', '0,3', '0,32', '0,35', '0,37', '0,4', '0,42', '50'],
+    ['51', '0,22', '0,24', '0,27', '0,29', '0,32', '0,34', '0,37', '0,39', '0,42', '0,44', '51'],
+    ['52', '0,23', '0,25', '0,28', '0,3', '0,33', '0,36', '0,38', '0,41', '0,43', '0,46', '52'],
+    ['53', '0,24', '0,26', '0,29', '0,32', '0,34', '0,37', '0,4', '0,42', '0,45', '0,48', '53'],
+    ['54', '0,25', '0,27', '0,3', '0,33', '0,36', '0,38', '0,41', '0,44', '0,47', '0,5', '54'],
+    ['55', '0,26', '0,29', '0,32', '0,35', '0,38', '0,41', '0,44', '0,47', '0,5', '0,53', '55'],
+    ['56', '0,27', '0,3', '0,33', '0,36', '0,39', '0,42', '0,45', '0,48', '0,51', '0,54', '56'],
+    ['57', '0,28', '0,31', '0,34', '0,37', '0,4', '0,43', '0,46', '0,49', '0,53', '0,56', '57'],
+    ['58', '0,29', '0,32', '0,35', '0,38', '0,42', '0,45', '0,48', '0,52', '0,55', '0,58', '58'],
+    ['59', '0,3', '0,33', '0,37', '0,4', '0,43', '0,47', '0,5', '0,54', '0,57', '0,6', '59'],
+    ['60', '0,31', '0,34', '0,38', '0,41', '0,45', '0,48', '0,52', '0,55', '0,59', '0,63', '60'],
+    ['61', '0,32', '0,35', '0,39', '0,43', '0,46', '0,5', '0,54', '0,57', '0,61', '0,65', '61'],
+    ['62', '0,33', '0,36', '0,4', '0,44', '0,48', '0,52', '0,55', '0,59', '0,63', '0,67', '62'],
+    ['63', '0,34', '0,38', '0,41', '0,45', '0,49', '0,53', '0,57', '0,61', '0,65', '0,69', '63'],
+    ['64', '0,35', '0,39', '0,43', '0,47', '0,51', '0,55', '0,59', '0,63', '0,67', '0,71', '64'],
+    ['65', '0,36', '0,4', '0,45', '0,49', '0,53', '0,57', '0,61', '0,65', '0,69', '0,73', '65'],
+    ['66', '0,37', '0,41', '0,46', '0,5', '0,54', '0,58', '0,62', '0,66', '0,71', '0,76', '66'],
+    ['67', '0,38', '0,43', '0,47', '0,52', '0,56', '0,6', '0,65', '0,69', '0,73', '0,78', '67'],
+    ['68', '0,39', '0,44', '0,48', '0,53', '0,57', '0,62', '0,66', '0,71', '0,75', '0,8', '68'],
+    ['69', '0,41', '0,45', '0,5', '0,55', '0,59', '0,64', '0,68', '0,73', '0,78', '0,83', '69'],
+    ['70', '0,42', '0,46', '0,51', '0,56', '0,61', '0,66', '0,7', '0,75', '0,8', '0,85', '70'],
+    [' ', '1', '1,1', '1,2', '1,3', '1,4', '1,5', '1,6', '1,7', '1,8', '1,9', ' ']
+];
+const data__02 =[
+    ['','2', '2,1', '2,2', '2,3', '2,4', '2,5', '2,6', '2,7', '2,8', '2,9',''],
+['18', '0,056', '0,059', '0,062', '0,063', '0,068', '0,071', '0,074', '0,077', '0,08', '0,083', '18'],
+['19', '0,063', '0,066', '0,069', '0,071', '0,075', '0,079', '0,083', '0,086', '0,09', '0,093', '19'],
+['20', '0,069', '0,073', '0,076', '0,077', '0,083', '0,087', '0,091', '0,095', '0,1', '0,103', '20'],
+['21', '0,076', '0,08', '0,084', '0,087', '0,093', '0,097', '0,101', '0,105', '0,109', '0,114', '21'],
+['22', '0,084', '0,089', '0,093', '0,095', '0,103', '0,107', '0,111', '0,116', '0,21', '0,125', '22'],
+['23', '0,094', '0,099', '0,104', '0,107', '0,113', '0,118', '0,123', '0,128', '0,133', '0,138', '23'],
+['24', '0,103', '0,108', '0,114', '0,116', '0,125', '0,13', '0,135', '0,14', '0,146', '0,151', '24'],
+['25', '0,113', '0,119', '0,125', '0,127', '0,136', '0,142', '0,148', '0,154', '0,16', '0,165', '25'],
+['26', '0,123', '0,129', '0,135', '0,138', '0,147', '0,154', '0,016', '0,166', '0,173', '0,179', '26'],
+['27', '0,133', '0,139', '0,145', '0,148', '0,159', '0,167', '0,174', '0,18', '0,187', '0,193', '27'],
+['28', '0,144', '0,15', '0,157', '0,161', '0,172', '0,18', '0,187', '0,194', '0,2', '0,21', '28'],
+['29', '0,154', '0,161', '0,169', '0,173', '0,185', '0,193', '0,2', '0,21', '0,22', '0,22', '29'],
+['30', '0,165', '0,173', '0,181', '0,185', '0,2', '0,2', '0,21', '0,22', '0,23', '0,24', '30'],
+['31', '0,177', '0,185', '0,193', '0,195', '0,21', '0,22', '0,23', '0,23', '0,24', '0,25', '31'],
+['32', '0,19', '0,2', '0,2', '0,21', '0,22', '0,23', '0,24', '0,25', '0,26', '0,27', '32'],
+['33', '0,2', '0,21', '0,22', '0,22', '0,24', '0,25', '0,26', '0,27', '0,28', '0,29', '33'],
+['34', '0,21', '0,22', '0,23', '0,24', '0,25', '0,26', '0,27', '0,28', '0,29', '0,3', '34'],
+['35', '0,22', '0,23', '0,24', '0,25', '0,27', '0,28', '0,29', '0,3', '0,31', '0,32', '35'],
+['36', '0,23', '0,24', '0,25', '0,27', '0,28', '0,29', '0,3', '0,32', '0,34', '0,35', '36'],
+['37', '0,25', '0,26', '0,27', '0,29', '0,3', '0,31', '0,32', '0,33', '0,35', '0,36', '37'],
+['38', '0,26', '0,27', '0,28', '0,3', '0,31', '0,32', '0,34', '0,35', '0,37', '0,38', '38'],
+['39', '0,27', '0,29', '0,3', '0,32', '0,33', '0,34', '0,36', '0,37', '0,39', '0,4', '39'],
+['40', '0,28', '0,3', '0,31', '0,33', '0,34', '0,36', '0,37', '0,38', '0,4', '0,41', '40'],
+['41', '0,3', '0,31', '0,33', '0,35', '0,36', '0,37', '0,39', '0,41', '0,43', '0,44', '41'],
+['42', '0,31', '0,33', '0,34', '0,36', '0,38', '0,39', '0,41', '0,42', '0,44', '0,46', '42'],
+['43', '0,33', '0,34', '0,36', '0,38', '0,39', '0,41', '0,43', '0,44', '0,46', '0,48', '43'],
+['44', '0,34', '0,35', '0,37', '0,39', '0,41', '0,43', '0,44', '0,46', '0,48', '0,5', '44'],
+['45', '0,36', '0,38', '0,4', '0,42', '0,43', '0,45', '0,46', '0,48', '0,5', '0,52', '45'],
+['46', '0,37', '0,39', '0,41', '0,43', '0,45', '0,47', '0,49', '0,51', '0,53', '0,55', '46'],
+['47', '0,39', '0,41', '0,43', '0,46', '0,47', '0,49', '0,51', '0,53', '0,55', '0,57', '47'],
+['48', '0,41', '0,43', '0,45', '0,47', '0,49', '0,51', '0,53', '0,55', '0,57', '0,6', '48'],
+['49', '0,43', '0,45', '0,47', '0,49', '0,51', '0,53', '0,56', '0,58', '0,6', '0,62', '49'],
+['50', '0,44', '0,47', '0,49', '0,51', '0,54', '0,56', '0,58', '0,6', '0,63', '0,65', '50'],
+['51', '0,46', '0,49', '0,51', '0,54', '0,56', '0,58', '0,61', '0,63', '0,66', '0,68', '51'],
+['52', '0,48', '0,51', '0,54', '0,56', '0,59', '0,61', '0,63', '0,66', '0,68', '0,71', '52'],
+['53', '0,51', '0,53', '0,56', '0,58', '0,61', '0,63', '0,66', '0,69', '0,71', '0,74', '53'],
+['54', '0,53', '0,55', '0,58', '0,61', '0,63', '0,66', '0,69', '0,72', '0,74', '0,77', '54'],
+['55', '0,55', '0,58', '0,61', '0,63', '0,66', '0,69', '0,72', '0,74', '0,77', '0,8', '55'],
+['56', '0,57', '0,6', '0,63', '0,66', '0,69', '0,72', '0,75', '0,78', '0,8', '0,83', '56'],
+['57', '0,59', '0,62', '0,65', '0,68', '0,71', '0,74', '0,77', '0,8', '0,83', '0,86', '57'],
+['58', '0,61', '0,65', '0,68', '0,71', '0,74', '0,77', '0,8', '0,83', '0,86', '0,89', '58'],
+['59', '0,64', '0,67', '0,7', '0,73', '0,77', '0,8', '0,83', '0,86', '0,89', '0,93', '59'],
+['60', '0,66', '0,7', '0,73', '0,76', '0,79', '0,83', '0,86', '0,89', '0,93', '0,96', '60'],
+['61', '0,68', '0,72', '0,75', '0,79', '0,82', '0,85', '0,89', '0,92', '0,96', '0,99', '61'],
+['62', '0,71', '0,74', '0,77', '0,81', '0,85', '0,88', '0,92', '0,95', '0,99', '1,03', '62'],
+['63', '0,73', '0,76', '0,8', '0,84', '0,87', '0,91', '0,95', '0,99', '1,02', '1,06', '63'],
+['64', '0,75', '0,79', '0,83', '0,86', '0,9', '0,94', '0,98', '1,02', '1,06', '0,1', '64'],
+['65', '0,76', '0,82', '0,86', '0,89', '0,93', '0,97', '1,01', '1,05', '1,09', '1,13', '65'],
+['66', '0,8', '0,84', '0,88', '0,92', '0,96', '1, 00', '1,04', '1,08', '1,12', '1,16', '66'],
+['67', '0,82', '0,86', '0,91', '0,95', '0,98', '1,02', '1,06', '1,11', '1,15', '1,2', '67'],
+['68', '0,85', '0,89', '0,93', '0,97', '1,02', '1,05', '1,1', '1,14', '1,19', '1,23', '68'],
+['69', '0,87', '0,91', '0,96', '1, 00', '1,04', '1,09', '1,13', '1,18', '1,22', '1,27', '69'],
+['70', '0,89', '0,94', '0,99', '1,03', '1,08', '1,12', '', '','', '', '70' ],
+['71', ' ', ' ', ' ', ' ', ' ', ' ', '', '','', '', '71' ],
+['72', ' ', ' ', ' 1,01', '1,06 ', '1,1 ', '1,5 ', '1,19', '1,24','1,29', '1,36', '72' ],
+['73', ' ', ' ', ' ', ' ', ' ', ' ', '', '','', '', '73' ],
+['74', ' ', ' ', ' ', ' ', ' ', ' ', '', '','', '', '74' ],
+['75', ' ', ' ', ' ', ' ', ' ', ' ', '', '','', '', '75' ],
+['76', ' ', ' ', ' ', ' ', ' ', ' ', '', '','', '', '76' ],
+['77', ' ', ' ', ' ', ' ', ' ', ' ', '', '','', '', '77' ],
+['78', ' ', ' ', ' ', ' ', ' ', ' ', '', '','', '', '78' ],
+['79', ' ', ' ', ' ', ' ', ' ', ' ', '', '','', '', '79' ],
+['80', ' ', ' ', ' ', ' ', ' ', ' ', '', '','', '', '80' ],
+['','2', '2,1', '2,2', '2,3', '2,4', '2,5', '2,6', '2,7', '2,8', '2,9','']
+];
 
-export default cubaturnick
+  return    mounted && (
+      <>
+        <div className={styles.container} >
+            <div className={styles.wrapper} >
+
+           
+          <table className={styles.table}>
+        
+            <tbody className={styles.table}>
+        {data__01.slice(0).map((row, rowIndex) => (
+          <tr key={rowIndex}
+          className={rowIndex === 0 || rowIndex === data__01.length - 1 ? styles.grayBackground : ''}>
+            {row.map((cell, columnIndex) => (
+              <td className={`${styles.table__cell} ${+cell === rowIndex || +cell === +row[0] ? styles.gray : ''}`} key={columnIndex}>{cell}</td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+            <tbody className={styles.table}>
+        {data__02.slice(0).map((row__02, rowIndex__02) => (
+          <tr key={rowIndex__02} className={rowIndex__02 === 0 || rowIndex__02 === data__02.length - 1 ? styles.grayBackground : ''}>
+            {row__02.map((cell, columnIndex) => (
+              <td className={`${styles.table__cell} `} key={columnIndex}>{cell}</td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+          </table>
+          </div>
+        </div>
+      </>
+
+  )
+};
+
+export default cubaturnick;

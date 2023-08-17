@@ -9,7 +9,7 @@ function Lumber() {
 	const t = useTranslations("Index");
     return (
         <>
-        <section>
+        <section id="oak__01">
 		<div className={styles.container}>
 			<div className={styles.row}>
 				<div className={styles.section__title}>
@@ -61,50 +61,8 @@ function Lumber() {
 			</div>
 		</div>
                    </section>
-        <section>
-		<div className={styles.container}>
-			<div className={styles.row}>
-				<div className={styles.section__title}>
-					<span>{t('oak')} {t('beam')} 54 * 75-85 ММ</span>
-					
-				</div>
-			</div>
-
-			<div className={styles.row}>
-				<div className={`${styles.col} `}>
-					<h4>{t('sort')} А</h4>
-					<p >
-					{t('products-title-01')} 
-					</p>
-					<h4>{t('sort')} В</h4>
-					<p >
-					{t('products-title-02')}				</p>
-<div className={styles.table__cell__2}>{t('products-title-07')}</div>
-<div className={styles.table}>
-  <div className={styles.table__row}>
-    <div className={styles.table__cell}>{t('products-title-07')}</div>
-    <div className={styles.table__cell}>{t('quality-title-48')}</div>
-    <div className={styles.table__cell}>{t('quality-title-35')}</div>
-  </div>
-  <div className={styles.table__row}>
-    <div className={styles.table__cell}>54</div>
-    <div className={styles.table__cell}>75-85</div>
-    <div className={styles.table__cell}>470-2550
-
-	
-	</div>
-  </div>
-</div>
-				</div>
-
-				<div className={styles.col}>
-                <Image className={styles.adaptive__img} src="/oak-luimber-02.webp" alt="oak lumber 2" width={500} height={300} />
-
-				</div>
-			</div>
-		</div>
-                   </section>
-        <section>
+        
+        <section id="oak__02">
 		<div className={styles.container}>
 			<div className={styles.row}>
 				<div className={styles.section__title}>

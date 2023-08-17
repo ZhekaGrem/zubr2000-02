@@ -8,7 +8,7 @@ function Lumber() {
 	const t = useTranslations("Index");
     return (
         <>
-        <section>
+        <section id="ash__01" >
 		<div className={styles.container}>
 			<div className={styles.row}>
 				<div className={styles.section__title}>
@@ -46,13 +46,13 @@ function Lumber() {
 				</div>
 
 				<div className={styles.col}>
-                <Image className={styles.adaptive__img} src="/ash-lumber-02.webp" width={555} alt="ash lumber 1" height={365} />
+                <Image className={styles.adaptive__img} src="/ash-lumber-02.webp" width={500} alt="ash lumber 1" height={300} />
 
 				</div>
 			</div>
 		</div>
                    </section>
-        <section>
+        <section id="ash__02" >
 		<div className={styles.container}>
 			<div className={styles.row}>
 				<div className={styles.section__title}>
@@ -93,7 +93,7 @@ function Lumber() {
 				</div>
 
 				<div className={styles.col}>
-                <Image className={styles.adaptive__img} src="/ash-lumber-01.webp" alt="ash lumber 2" width={555} height={365} />
+                <Image className={styles.adaptive__img} src="/ash-lumber-01.webp" alt="ash lumber 2" width={500} height={300} />
 
 				</div>
 			</div>

@@ -187,7 +187,7 @@ function Certificates() {
             </span>
           </div>
           <p>
-          {t("manufacturing_process_09")}.
+          {t("manufacturing_process_09")}
           </p>
         </div>
       </section>

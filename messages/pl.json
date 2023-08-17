@@ -10,14 +10,13 @@
     "ash": "Jesion",
     "news": "Wiadomości",
     "beam": "Belka",
-    "title": "Hej världen!",
     "language": "PL",
     "certificates": "Certyfikaty",
     "manufacturing": "Proces produkcyjny",
     "quality": "Standardy jakości",
     "lumber": "Tarcica",
     "log": "Kłoda",
-    "title1": "Firma 'ZUBR-2000' została założona w 2000 roku i zdobyła uznanie na rynku twardych gatunków drewna.",
+    "title1": "Firma \"ZUBR-2000\" została założona w 2000 roku i zdobyła uznanie na rynku twardych gatunków drewna.",
     "title2": "Dążymy do osiągnięcia najwyższej jakości naszych produktów i przestrzegamy wszystkich standardów Państwowego Zarządu Leśnictwa Ukrainy. Posiadamy również certyfikat łańcucha pochodzenia drewna (FSC).",
     "title3": "Ten certyfikat potwierdza nasze zgodność z europejskimi standardami oraz nasze zobowiązanie do zrównoważonego gospodarowania lasami.",
     "title4": "Nasze główne dziedziny działalności obejmują:",
@@ -27,8 +26,8 @@
     "list4": "suszenie drewna;",
     "list5": "struganie drewna po suszeniu zgodnie z wymaganiami klienta.",
     "title5": "Nasze magazyny zawsze są wypełnione szerokim asortymentem drewna i materiałów drewnianych. Dostarczamy naszym klientom produkty najwyższej jakości, w pełni uwzględniając ich potrzeby i wymagania.",
-    "title6": "Polityka firmy 'ZUBR-2000' jest elastyczna i skierowana na potrzeby rynku i klientów. Cały czas się rozwijamy, uwzględniając dynamikę współczesnego świata, dlatego zawsze jesteśmy gotowi do produkcji zgodnie z indywidualnymi wymaganiami klienta.",
-    "title7": "Zapraszamy do współpracy z nami - firmą 'ZUBR-2000', twoim niezawodnym partnerem w dziedzinie obróbki drewna i handlu drewnem.",
+    "title6": "Polityka firmy \"ZUBR-2000\" jest elastyczna i skierowana na potrzeby rynku i klientów. Cały czas się rozwijamy, uwzględniając dynamikę współczesnego świata, dlatego zawsze jesteśmy gotowi do produkcji zgodnie z indywidualnymi wymaganiami klienta.",
+    "title7": "Zapraszamy do współpracy z nami - firmą \"ZUBR-2000\", twoim niezawodnym partnerem w dziedzinie obróbki drewna i handlu drewnem.",
     "contactus": "Skontaktuj się z nami",
     "findus": "Znajdź nas",
     "ourproduct": "Nasze produkty",
@@ -137,6 +136,6 @@
 "products-title-05": "Dozwolone są żywe sęki o średnicy do 60 mm, do czterech kawałków na jeden metr bieżący, a także czarne sęki do 30 mm, do dwóch kawałków na jeden metr bieżący.",
 "products-title-06": "Wilgotność",
 "products-title-07": "Wysokość",
-"open":"open"
+"open":"Otwarty"
   }
 }

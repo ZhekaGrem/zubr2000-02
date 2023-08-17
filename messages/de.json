@@ -10,14 +10,13 @@
     "birch": "Birke",
     "ash": "Esche",
     "news": "Nachrichten",
-    "title": "Hej världen!",
     "language": "DE",
     "certificates": "Bescheinigungen",
     "manufacturing": "Herstellungsprozess",
     "quality": "Qualitätsstandards",
     "lumber": "Schnittholz",
     "log": "Holz",
-    "title1": "Das Unternehmen 'ZUBR-2000' wurde im Jahr 2000 gegründet und hat Anerkennung auf dem Markt für Hartholz erlangt.",
+    "title1": "Das Unternehmen \"ZUBR-2000\" wurde im Jahr 2000 gegründet und hat Anerkennung auf dem Markt für Hartholz erlangt.",
     "title2": "Wir streben nach höchster Qualität unserer Produkte und halten uns an alle Standards der staatlichen Forstverwaltung der Ukraine. Darüber hinaus sind wir mit dem Forest Stewardship Council (FSC) zertifiziert.",
     "title3": "Diese Zertifizierung bestätigt unsere Übereinstimmung mit europäischen Standards und unser Engagement für nachhaltige Forstwirtschaft.",
     "title4": "Unsere Hauptgeschäftsfelder umfassen:",
@@ -27,8 +26,8 @@
     "list4": "Holztrocknung;",
     "list5": "Hobelung des Holzes nach der Trocknung, um den spezifischen Anforderungen unserer Kunden gerecht zu werden.",
     "title5": "Unsere Lager sind immer mit einer breiten Auswahl an Holz und Schnittholz gefüllt. Wir stellen sicher, dass unsere Kunden Produkte von höchster Qualität erhalten, die ihre Bedürfnisse und Anforderungen berücksichtigen.",
-    "title6": "'ZUBR-2000' hat eine flexible und kundenorientierte Politik. Wir entwickeln uns ständig weiter und passen uns der Dynamik der modernen Welt an. Daher sind wir offen für Zusammenarbeit und bereit, Produkte gemäß den individuellen Anforderungen unserer Kunden herzustellen.",
-    "title7": "Wir laden Sie zur Zusammenarbeit mit uns - der 'ZUBR-2000'-Firma, Ihrem verlässlichen Partner in der Holzverarbeitungs- und Holzhandelsbranche - ein.",
+    "title6": "\"ZUBR-2000\" hat eine flexible und kundenorientierte Politik. Wir entwickeln uns ständig weiter und passen uns der Dynamik der modernen Welt an. Daher sind wir offen für Zusammenarbeit und bereit, Produkte gemäß den individuellen Anforderungen unserer Kunden herzustellen.",
+    "title7": "Wir laden Sie zur Zusammenarbeit mit uns - der \"ZUBR-2000\"-Firma, Ihrem verlässlichen Partner in der Holzverarbeitungs- und Holzhandelsbranche - ein.",
     "contactus": "Kontaktieren Sie uns",
     "findus": "Finde uns",
     "ourproduct": "Unsere Produkte",
@@ -137,6 +136,6 @@
 "products-title-05": "Kleine lebendige Äste bis zu 60 mm, bis zu vier Stücke pro laufenden Meter, und schwarze Äste bis zu 30 mm, bis zu zwei Stücke pro laufenden Meter.",
 "products-title-06": "Feuchtigkeit",
 "products-title-07": "Höhe",
-"open":"open"
+"open":"Öffnen Sie"
   }
 }

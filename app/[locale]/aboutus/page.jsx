@@ -20,7 +20,7 @@ function AboutUs() {
               {t("aboutus-message1")}
               </p>
 
-              <h3>{t("aboutus-message2")}</h3>
+              <h2>{t("aboutus-message2")}</h2>
               <ul className={`${styles.list}`}>
                 <li>{t("aboutus-message3")} </li>
                 <li>{t("aboutus-message4")}</li>

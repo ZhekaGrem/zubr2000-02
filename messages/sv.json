@@ -10,14 +10,13 @@
     "news": "Nyheter",
     "ash": "Ask",
     "beam": "Balk",
-    "title": "Hej världen!",
     "language": "SV",
     "certificates": "Certifikat",
     "manufacturing": "Tillverkningsprocess",
     "quality": "Kvalitetsstandarder",
     "lumber": "Virke",
     "log": "Timmer",
-    "title1": "Företaget 'ZUBR-2000' grundades år 2000 och har blivit erkänt på marknaden för hårt trävirke.",
+    "title1": "Företaget \"ZUBR-2000\" grundades år 2000 och har blivit erkänt på marknaden för hårt trävirke.",
     "title2": "Vi strävar efter högsta kvalitet på våra produkter och följer alla standarder från Ukrainas statliga skogsmyndighet; dessutom är vi certifierade enligt Forest Stewardship Council (FSC).",
     "title3": "Denna certifiering bekräftar vår överensstämmelse med europeiska standarder och vårt åtagande för hållbart skogsbruk.",
     "title4": "Våra huvudsakliga verksamhetsområden inkluderar:",
@@ -27,8 +26,8 @@
     "list4": "torkning av trävaror;",
     "list5": "hyvling av trävaror efter torkning för att möta våra kunders specifika krav.",
     "title5": "Våra lager är alltid välfyllda med ett brett sortiment av trä och sågade material. Vi ser till att våra kunder får produkter av högsta kvalitet som tar hänsyn till deras behov och krav.",
-    "title6": "'ZUBR-2000' har en flexibel och kundorienterad policy. Vi utvecklas kontinuerligt och anpassar oss till den moderna världens dynamik, vilket gör oss öppna för samarbete och redo att tillverka produkter enligt individuella kunders krav.",
-    "title7": "Vi inbjuder er att samarbeta med oss - 'ZUBR-2000' företaget, er pålitliga partner inom träbearbetning och trähandel.",
+    "title6": "\"ZUBR-2000\" har en flexibel och kundorienterad policy. Vi utvecklas kontinuerligt och anpassar oss till den moderna världens dynamik, vilket gör oss öppna för samarbete och redo att tillverka produkter enligt individuella kunders krav.",
+    "title7": "Vi inbjuder er att samarbeta med oss - \"ZUBR-2000\" företaget, er pålitliga partner inom träbearbetning och trähandel.",
     "contactus": "Kontakta oss",
     "findus": "Hitta oss",
     "ourproduct": "Våra produkter",
@@ -137,6 +136,6 @@
 "products-title-05": "Små levande knutar upp till 60 mm, upp till fyra stycken per linjär meter, och svarta knutar upp till 30 mm, upp till två stycken per linjär meter.",
 "products-title-06": "Fuktighet",
 "products-title-07": "Höjd",
-"open":"open"
+"open":"Öppna"
   }
 }

@@ -4,7 +4,6 @@ import styles from '@/app/styles/dropdown.module.css'
 import Link from 'next-intl/link'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl';
-import {usePathname} from 'next-intl/client';
 
 
 
@@ -14,19 +13,13 @@ import {usePathname} from 'next-intl/client';
 
 function Dropdown() {
   const t = useTranslations('Index');
-  const pathname = usePathname();
 
 return (
 
 
   
-    <ul className={styles.menu__list}>
-      <li >
-        <div className={styles.lang__list} >
-          <Image className={styles.planet} alt='planet logo change  language' src='/language__02.svg' width={20} height={15}/>
-        <p className={styles.menu__link}>{t('language')}</p>
-          <Image className={styles.planet} alt='drop down  logo change  language'  src='/down__02.svg' width={20} height={15}/>
-         </div>
+      <li className={styles.menu__link} >
+        
         <ul className={styles.sub__menu__list}>
           <li >
             <Link    rel="preload" to='' className={styles.sub__menu__link} href={usePathname()}  locale='ua'>
@@ -69,7 +62,6 @@ return (
 
         </ul>
       </li>
-    </ul>
 
 
 

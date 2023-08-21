@@ -1,4 +1,4 @@
-.menu__list li:hover .sub__menu__list {
+/* .menu__list li:hover .sub__menu__list {
    display: block;
    color: #ffffff;
 }
@@ -138,4 +138,10 @@ ul.sub__menu__list>li>a :hover {
 .menu__link>div {
    display: flex;
 }
-}
+} */
+/* 
+.sub__menu__list ul li {
+float: left;
+line-height: 30px
+
+} */

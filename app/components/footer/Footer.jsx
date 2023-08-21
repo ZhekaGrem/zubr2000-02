@@ -131,6 +131,14 @@ function Footer() {
             </div>
           </div>
         </div>
+      <Link
+                    rel="preload"
+                    className={styles.footer__link__admin}
+                    href="https://zubr-2000.com.ua/admin"
+                  >
+                    {" "}
+                 *
+                  </Link>
       </div>
     </>
   );

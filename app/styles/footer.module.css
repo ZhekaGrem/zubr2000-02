@@ -97,3 +97,9 @@
   text-transform: none;
   
 }
+
+
+.footer__link__admin{
+  text-decoration: none;
+    color: #48545a;
+}

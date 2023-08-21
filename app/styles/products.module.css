@@ -21,6 +21,9 @@
     .container {
       max-width: 970px;
     }
+    .col{width: 50%;
+  
+    }
   }
 
   @media (min-width: 1200px) {
@@ -89,7 +92,7 @@
 	top:0;
 	left: 0;
 	height: 100%;
-	width: 100%;
+	width: 80%;
 	background-color: rgba(255,255,255,.8);
 	padding: 20px;
 	opacity: 0;
@@ -104,7 +107,7 @@
 	    -ms-transform:translate(-50%, -50%);
 	        transform:translate(-50%, -50%);
 	text-align: center;
-	width: 100%;
+	width: 80%;
 }
 .team__member .team__member__hover .team__member__info .team__member__name{
 	font-weight: 700;
@@ -152,12 +155,7 @@
     float: left;
   }
   
-    @media (min-width: 992px) {
-      .col{width: 50%;
-  
-      }
-    }
-  
+   
     .info__img{
-      width: 100%;
+      width: 80%;
     }

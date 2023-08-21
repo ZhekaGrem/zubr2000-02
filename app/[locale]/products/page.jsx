@@ -27,7 +27,7 @@ function Product() {
 						<div className={styles.team__member__hover}>
 							<div className={styles.team__member__info}>
 								<div className={styles.team__member__name}>{t('beam')} 54 * 110 ММ</div>
-								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber#oak__01'>{t('open')}</Link></div>
+								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber#oak__02'>{t('open')}</Link></div>
 							</div>
 						</div>
 					</div>
@@ -38,7 +38,7 @@ function Product() {
           <Image className={styles.info__img} src="/oak-luimber-02.webp" width={400}  alt='img4' height={400}/>
 						<div className={styles.team__member__hover}>
 							<div className={styles.team__member__info}>
-								<div className={styles.team__member__name}>{t('beam')} 54 * 54 ММ</div>
+								<div className={styles.team__member__name}>{t('beam')} 36-54 * 54 ММ</div>
 								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber#oak__01'>{t('open')}</Link></div>
 							</div>
 						</div>
@@ -66,13 +66,14 @@ function Product() {
           <Image className={styles.info__img} alt="birch lumber 2" src="/ash-lumber-01.webp" width={400} height={400}/>
 						<div className={styles.team__member__hover}>
 							<div className={styles.team__member__info}>
-								<div className={styles.team__member__name}>{t('beam')} 54 * 110 ММ</div>
+								<div className={styles.team__member__name}>{t('beam')} 30 * 255 ММ</div>
 								<div className={styles.team__member__job}><Link    rel="preload" href='/products/ash-lumber#ash__01'>{t('open')}</Link></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className={styles.col} data-wow-delay=".1s">
+
+				{/* <div className={styles.col} data-wow-delay=".1s">
 					<div className={styles.team__member}>
           <Image className={styles.info__img} src="/ash-lumber-02.webp" alt="birch lumber 1" width={400} height={400}/>
 						<div className={styles.team__member__hover}>
@@ -82,7 +83,7 @@ function Product() {
 							</div>
 						</div>
 					</div>				
-				</div>
+				</div> */}
 
 			</div>
 		</div>
@@ -102,13 +103,14 @@ function Product() {
           <Image className={styles.info__img} src="/birch-lumber-01.webp" alt="ash lumber 2" width={400} height={400}/>
 						<div className={styles.team__member__hover}>
 							<div className={styles.team__member__info}>
-								<div className={styles.team__member__name}>{t('beam')} 54 * 110 ММ</div>
+								<div className={styles.team__member__name}>{t('beam')} 36/52 * 52 ММ</div>
 								<div className={styles.team__member__job}><Link    rel="preload" href='/products/birch-lumber#birch__01'>{t('open')}</Link></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className={styles.col} data-wow-delay=".1s">
+				
+				{/* <div className={styles.col} data-wow-delay=".1s">
 					<div className={styles.team__member}>
           <Image className={styles.info__img} src="/birch-lumber-02.webp" alt="ash lumber 1" width={400} height={400}/>
 						<div className={styles.team__member__hover}>
@@ -118,7 +120,7 @@ function Product() {
 							</div>
 						</div>
 					</div>				
-				</div>
+				</div> */}
 
 			</div>
 		</div>

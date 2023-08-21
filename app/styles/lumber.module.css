@@ -131,7 +131,18 @@
   display:flex;
   margin-top: 20px;
 }
+.table__cell__3 {
+  padding: 5px;
+  border: 1px solid black;
+  justify-content:center;
+  display:flex;
+}
  
 .adaptive__img{
   width: 100%;
+}
+
+.col h4{
+  margin-top: 5px;
+  color:#60606e;
 }

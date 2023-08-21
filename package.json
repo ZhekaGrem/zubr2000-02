@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
-    "next/font": "^13.4.13",
+    "@next/font": "^13.4.13",
     "@sanity/client": "^6.1.7",
     "@sanity/vision": "^3.14.3",
     "multiformats": "^9.9.0",

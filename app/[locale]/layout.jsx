@@ -14,8 +14,14 @@ const font = Montserrat({
 
 export const metadata = {
   title: "ZUBR-2000 ",
-  description:
+  description:[
+    "Відкрийте для себе високоякісні пиломатеріали на продаж в компанії ЗУБР-2000. Ми пропонуємо широкий вибір пиломатеріалів, які ідеально підходять для різних проектів. Перегляньте наш найкращий магазин пиломатеріалів і знайдіть ідеальну відповідність вашим потребам. ",
+    "Откройте для себя высококачественные пиломатериалы, предлагаемые к продаже в компании ЗУБР-2000. Мы предлагаем широкий выбор пиломатериалов, идеально подходящих для реализации различных проектов. Посетите наш лучший магазин пиломатериалов и найдите идеальный вариант для своих нужд. ",
     "Discover high-quality lumber for sale at ZUBR-2000. We offer a wide selection of timber, perfect for various projects. Browse our best lumber store and find the perfect match for your needs. ",
+    "Oplev tømmer af høj kvalitet til salg hos ZUBR-2000. Vi tilbyder et bredt udvalg af tømmer, der er perfekt til forskellige projekter. Gennemse vores bedste trælast og find det perfekte match til dine behov. ",
+    "Upptäck högkvalitativt timmer till salu på ZUBR-2000. Vi erbjuder ett brett urval av timmer, perfekt för olika projekt. Bläddra i vår bästa timmerbutik och hitta den perfekta matchningen för dina behov. ",
+  ],
+    
   keywords: [
     "lumber sale",
     "wood sale",

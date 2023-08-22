@@ -26,7 +26,7 @@ export default  function Offers() {
       <div className={styles.contact}>
         <div className={styles.contact__info}>
           <div className={styles.big__title}>
-            <span>Запрошуємо до спів праці</span>
+            <span>Запрошуємо до співпраці</span>
           </div>
           <div>
             <p>

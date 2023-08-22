@@ -39,13 +39,13 @@ export default  function Home() {
 
         <section className={`${styles.container} ${styles.test}`}>
           <div className={styles.block}>
-            <div className={styles.col__5}>
+            <div className={`${styles.col__5} ${styles.col__6}`}>
               <div className={styles.row}>
                 <Image
                   className={styles.info__img}
                   src="/new-title.webp"
-                  width={600}
-                  height={600}
+                  width={400}
+                  height={400}
                   alt="ясен"
                 />
               </div>

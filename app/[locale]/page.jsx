@@ -97,17 +97,20 @@ export default  function Home() {
 						</ul>
 						<ul className={`${styles.list}`}>
 							
-            <li>   <Link    rel="preload" href="/products/birch-lumber"
-                    className={styles.navbar__link}>
-                       {t("birch")}
-              </Link> </li>
-              <li>    <Link    rel="preload" href="/products/oak-lumber"
+           
+							  <li>    <Link    rel="preload" href="/products/oak-lumber"
                     className={styles.navbar__link}>
                        {t("oak")}
               </Link> </li>
+							
+            
               <li>   <Link    rel="preload" href="/products/ash-lumber"
                     className={styles.navbar__link}>
                        {t("ash")}
+              </Link> </li>
+							<li>   <Link    rel="preload" href="/products/birch-lumber"
+                    className={styles.navbar__link}>
+                       {t("birch")}
               </Link> </li>
 						</ul>
               </div>

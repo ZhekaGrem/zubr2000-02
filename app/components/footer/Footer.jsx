@@ -125,9 +125,9 @@ function Footer() {
               <ul className={styles.footer__info}>
                 <h4>{t("findus")}</h4>
                 <li>79000</li>
-                <li>Ukraine</li>
-                <li>m.Lviv</li>
-                <li>vul. Kopernyka 20</li>
+                <li>Україна</li>
+                <li>м.ЛЬвівv</li>
+                <li>вул. Миколи Коперника 20</li>
               </ul>
             </div>
           </div>

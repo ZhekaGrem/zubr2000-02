@@ -79,6 +79,14 @@ function Footer() {
                 <li>
                   <p>{t("manager")}: +38 097 136-20-00</p>
                 </li>
+                   <li>
+                  <a
+                    className={styles.footer__link}
+                    href="mailto:zubrzubr2000@gmail.com"
+                  >
+                    zubrzubr2000@gmail.com{" "}
+                  </a>
+                </li>
                 <li>
                   <a
                     className={styles.footer__link}
@@ -95,14 +103,7 @@ function Footer() {
                     grem_roman@icloud.com{" "}
                   </a>
                 </li>
-                <li>
-                  <a
-                    className={styles.footer__link}
-                    href="mailto:zubrzubr2000@gmail.com"
-                  >
-                    zubrzubr2000@gmail.com{" "}
-                  </a>
-                </li>
+             
                 <li>
                   <Link
                     rel="preload"

@@ -43,7 +43,7 @@ export default  function Home() {
               <div className={styles.row}>
                 <Image
                   className={styles.info__img}
-                  src="/photo_director_2.webp"
+                  src="/new-title.webp"
                   width={600}
                   height={600}
                   alt="ясен"

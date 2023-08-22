@@ -13,7 +13,7 @@ function Lumber() {
 		<div className={styles.container}>
 			<div className={styles.row}>
 				<div className={styles.section__title}>
-					<span>{t('oak')} {t('beam')} 22-54 * 54 mm</span>
+					<span>{t('oak')} {t('beam')} 22-54 * 54-315 mm</span>
 					
 				</div>
 			</div>
@@ -25,7 +25,7 @@ function Lumber() {
               <h4>{t("sort")} AA/AB</h4>
               <p>{t("products-title-03")}</p>
               <h4>{t("sort")} В</h4>
-              <p>{t("products-title-02")} </p>
+              <p>{t("products-title-02-oak")} </p>
               <h4>{t("sort")} С</h4>
               <p>{t("products-title-05")} </p>
 <div className={styles.table__cell__2}>{t('quality-title-27')} mm</div>
@@ -37,13 +37,9 @@ function Lumber() {
   </div>
   <div className={styles.table__row}>
     <div className={styles.table__cell}>
-		<p>22</p>
-		<p>30</p>
-		<p>36</p>
-	<p>41</p>
-	<p>54</p>
+	<p>22-54</p>
 	</div>
-    <div className={styles.table__cell}>54</div>
+    <div className={styles.table__cell}>54-315</div>
     <div className={styles.table__cell}>220-3050
 
 	</div>
@@ -76,7 +72,7 @@ function Lumber() {
               <h4>{t("sort")} АA/AB</h4>
               <p>{t("products-title-03")}</p>
               <h4>{t("sort")} В</h4>
-              <p>{t("products-title-02")} </p>
+              <p>{t("products-title-02-oak")} </p>
               <h4>{t("sort")} С</h4>
               <p>{t("products-title-05")} </p>
 <div className={styles.table__cell__2}>{t('quality-title-27')} mm</div>

@@ -13,7 +13,7 @@ function Lumber() {
           <div className={styles.row}>
             <div className={styles.section__title}>
               <span>
-                {t("ash")} {t("beam")} 30 * 255 mm
+                {t("ash")} {t("beam")} 30-54 * 54-315 mm
               </span>
             </div>
           </div>
@@ -22,12 +22,10 @@ function Lumber() {
             <div className={`${styles.col} `}>
               <h4>{t("sort")} А</h4>
               <p>{t("products-title-01")}</p>
-              <h4>{t("sort")} AA/AB</h4>
-              <p>{t("products-title-03")}</p>
+
               <h4>{t("sort")} В</h4>
-              <p>{t("products-title-02")} </p>
-              <h4>{t("sort")} С</h4>
-              <p>{t("products-title-05")} </p>
+              <p>{t("products-title-02-ash")} </p>
+
               <div className={styles.table__cell__2}>
                 {t("quality-title-27")} mm
               </div>
@@ -44,9 +42,9 @@ function Lumber() {
                   </div>
                 </div>
                 <div className={styles.table__row}>
-                  <div className={styles.table__cell}>30 </div>
-                  <div className={styles.table__cell}>165-255</div>
-                  <div className={styles.table__cell}>220-3000</div>
+                  <div className={styles.table__cell}>30-54 </div>
+                  <div className={styles.table__cell}>54-315</div>
+                  <div className={styles.table__cell}>220-4000</div>
                 </div>
               </div>
               <div className={styles.table__cell__3}>

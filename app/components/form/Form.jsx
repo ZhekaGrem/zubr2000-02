@@ -90,7 +90,7 @@ const Form = () => {
     }
   };
 
-  /* this cod for emailjs send message -> zubrzubr2000@gmail.com */
+  /* this cod for emailjs send message -> @gmail.com */
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();

@@ -152,7 +152,11 @@ export default  function Home() {
 
                   <p>{t('manager')}:+38 097 136-20-00 </p>
                   <p>{t('director')}:+38 067 674-58-43 </p>
-
+                  <li>
+                    <Link    rel="preload" href="mailto:zubrzubr2000@gmail.com ">
+                      zubrzubr2000@gmail.com{" "}
+                    </Link>
+                  </li>
                   <li>
                     <Link    rel="preload" href="mailto:gremroman@gmail.com">gremroman@gmail.com</Link>
                   </li>
@@ -161,11 +165,7 @@ export default  function Home() {
                       grem_roman@icloud.com{" "}
                     </Link>
                   </li>
-                  <li>
-                    <Link    rel="preload" href="mailto:zubrzubr2000@gmail.com ">
-                      zubrzubr2000@gmail.com{" "}
-                    </Link>
-                  </li>
+               
                     <Link    rel="preload"
                       onClick={handleClick}
                       href="/contact#contact"

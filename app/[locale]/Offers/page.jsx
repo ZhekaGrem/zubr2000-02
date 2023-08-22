@@ -96,6 +96,11 @@ export default  function Offers() {
             </div>
             <div className={styles.col}>
             <p>
+              <a rel="preload" href="mailto:zubrzubr2000@gmail.com ">
+                zubrzubr2000@gmail.com
+              </a>
+            </p>
+            <p>
               <a rel="preload" href="mailto:gremroman@gmail.com">
                 gremroman@gmail.com
               </a>
@@ -105,11 +110,7 @@ export default  function Offers() {
                 grem_roman@icloud.com{" "}
               </a>
             </p>
-            <p>
-              <a rel="preload" href="mailto:zubrzubr2000@gmail.com ">
-                zubrzubr2000@gmail.com
-              </a>
-            </p>
+           
           <Link    rel="preload"
                       href="/contact#contact"
                     >

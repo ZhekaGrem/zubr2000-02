@@ -29,8 +29,8 @@ function Contact() {
             <div>
               <h1>{t('contactus')}</h1>
             </div>
-            <p>{t('director')}:+38 067 674-58-43 </p>
             <p>{t('manager')}:+38 097 136-20-00 </p>
+            <p>{t('director')}:+38 067 674-58-43 </p>
             <li>
               <Link    rel="preload" href="mailto:gremroman@gmail.com">gremroman@gmail.com</Link>
             </li>
@@ -52,9 +52,9 @@ function Contact() {
               <h1>{t('findus')}</h1>
             </div>
             <p>79000</p>
-            <p>Україна</p>
-            <p>м.Львів</p>
-            <p>вул. Коперника  20</p>
+            <p>{t("ukrain")}</p>
+                <p>{t("lviv")}</p>
+                <p>{t("street")}</p>
           </ul>
         </div>
         <div className={styles.contact__info}>

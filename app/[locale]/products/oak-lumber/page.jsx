@@ -13,7 +13,7 @@ function Lumber() {
 		<div className={styles.container}>
 			<div className={styles.row}>
 				<div className={styles.section__title}>
-					<span>{t('oak')} {t('beam')} 36-54 * 54 mm</span>
+					<span>{t('oak')} {t('beam')} 22-54 * 54 mm</span>
 					
 				</div>
 			</div>
@@ -22,7 +22,7 @@ function Lumber() {
 				<div className={`${styles.col} `}>
 				<h4>{t("sort")} А</h4>
               <p>{t("products-title-01")}</p>
-              <h4>{t("sort")} AB</h4>
+              <h4>{t("sort")} AA/AB</h4>
               <p>{t("products-title-03")}</p>
               <h4>{t("sort")} В</h4>
               <p>{t("products-title-02")} </p>

@@ -38,7 +38,7 @@ function Product() {
           <Image className={styles.info__img} src="/oak-luimber-02.webp" width={400}  alt='img4' height={400}/>
 						<div className={styles.team__member__hover}>
 							<div className={styles.team__member__info}>
-								<div className={styles.team__member__name}>{t('beam')} 36-54 * 54 ММ</div>
+								<div className={styles.team__member__name}>{t('beam')} 22-54 * 54 ММ</div>
 								<div className={styles.team__member__job}><Link    rel="preload" href='/products/oak-lumber#oak__01'>{t('open')}</Link></div>
 							</div>
 						</div>

@@ -74,10 +74,10 @@ function Footer() {
               <ul>
                 <h4>{t("contactus")}</h4>
                 <li>
-                  <p>{t("director")}: +38 067 674-58-43</p>
+                  <p>{t("manager")}: +38 097 136-20-00</p>
                 </li>
                 <li>
-                  <p>{t("manager")}: +38 097 136-20-00</p>
+                  <p>{t("director")}: +38 067 674-58-43</p>
                 </li>
                    <li>
                   <a
@@ -125,9 +125,9 @@ function Footer() {
               <ul className={styles.footer__info}>
                 <h4>{t("findus")}</h4>
                 <li>79000</li>
-                <li>Україна</li>
-                <li>м.ЛЬвівv</li>
-                <li>вул. Миколи Коперника 20</li>
+                <li>{t("ukrain")}</li>
+                <li>{t("lviv")}</li>
+                <li>{t("street")}</li>
               </ul>
             </div>
           </div>

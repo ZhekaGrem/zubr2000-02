@@ -22,7 +22,7 @@ function Lumber() {
 				<div className={`${styles.col} `}>
 				<h4>{t("sort")} А</h4>
               <p>{t("products-title-01")}</p>
-              <h4>{t("sort")} AB</h4>
+              <h4>{t("sort")} AA/AB</h4>
               <p>{t("products-title-03")}</p>
 
               <h4>{t("sort")} В</h4>

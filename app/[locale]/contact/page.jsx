@@ -52,9 +52,9 @@ function Contact() {
               <h1>{t('findus')}</h1>
             </div>
             <p>79000</p>
-            <p>Ukraine</p>
-            <p>m.Lviv</p>
-            <p>vul. Copernicus  20</p>
+            <p>Україна</p>
+            <p>м.Львів</p>
+            <p>вул. Коперника  20</p>
           </ul>
         </div>
         <div className={styles.contact__info}>

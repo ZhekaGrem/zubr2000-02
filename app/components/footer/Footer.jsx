@@ -123,7 +123,7 @@ function Footer() {
             <div className={styles.footer__col}>
               <ul className={styles.footer__info}>
                 <h4>{t("findus")}</h4>
-                <li>79024</li>
+                <li>79000</li>
                 <li>Ukraine</li>
                 <li>m.Lviv</li>
                 <li>vul. Kopernyka 20</li>

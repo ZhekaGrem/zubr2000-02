@@ -112,6 +112,10 @@ export default  function Home() {
                     className={styles.navbar__link}>
                        {t("birch")}
               </Link> </li>
+							<li>   <Link    rel="preload" href="/products/modrina-lumber"
+                    className={styles.navbar__link}>
+                       {t("modrina")}
+              </Link> </li>
 						</ul>
               </div>
             </div>

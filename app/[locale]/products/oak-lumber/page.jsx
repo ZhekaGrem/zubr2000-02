@@ -49,7 +49,7 @@ function Lumber() {
 				</div>
 
 				<div className={styles.col}>
-                <Image className={styles.adaptive__img} src="/oak-luimber-02.webp" alt="oak lumber 1" width={500} height={300} />
+                <Image className={styles.adaptive__img} src="/oak-lumber-02.webp" alt="oak lumber 1" width={500} height={300} />
 
 				</div>
 			</div>
@@ -94,7 +94,7 @@ function Lumber() {
 				</div>
 
 				<div className={styles.col}>
-                <Image className={styles.adaptive__img} src="/oak-luimber-01.webp" alt="oak lumber 3" width={500} height={300} />
+                <Image className={styles.adaptive__img} src="/oak-lumber-01.webp" alt="oak lumber 3" width={500} height={300} />
 
 				</div>
 			</div>

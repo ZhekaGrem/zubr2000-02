@@ -54,7 +54,7 @@ function Lumber() {
             <div className={styles.col}>
               <Image
                 className={styles.adaptive__img}
-                src="/ash-lumber-02.webp"
+                src="/ash-lumber-03.webp"
                 width={500}
                 alt="ash lumber 1"
                 height={300}

@@ -81,7 +81,25 @@ function Certificates() {
                 <Image
                 className={styles.info__img}
                   alt="imag3"
-                  src="/photo_product_5.webp"
+                  src="/photo_product_5_1.webp"
+                  width={450}
+                  height={300}
+                />
+              </div>
+              <div className="row">
+                <Image
+                className={styles.info__img}
+                  alt="imag3"
+                  src="/photo_product_5_2.webp"
+                  width={450}
+                  height={300}
+                />
+              </div>
+              <div className="row">
+                <Image
+                className={styles.info__img}
+                  alt="imag3"
+                  src="/photo_product_5_3.webp"
                   width={450}
                   height={300}
                 />

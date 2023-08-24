@@ -28,7 +28,7 @@
 
   @media (min-width: 1200px) {
     .container {
-      max-width: 1170px;
+      max-width: 1000px;
     }
   }
 
@@ -92,7 +92,7 @@
 	top:0;
 	left: 0;
 	height: 100%;
-	width: 80%;
+	width: 100%; 
 	background-color: rgba(255,255,255,.8);
 	padding: 20px;
 	opacity: 0;
@@ -107,7 +107,7 @@
 	    -ms-transform:translate(-50%, -50%);
 	        transform:translate(-50%, -50%);
 	text-align: center;
-	width: 80%;
+	width: 100%;
 }
 .team__member .team__member__hover .team__member__info .team__member__name{
 	font-weight: 700;
@@ -157,5 +157,5 @@
   
    
     .info__img{
-      width: 80%;
+      width: 100%;
     }

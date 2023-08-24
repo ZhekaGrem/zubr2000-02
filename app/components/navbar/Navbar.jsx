@@ -181,6 +181,16 @@ function Navbar() {
                   {t("birch")}
                 </Link>
               </li>
+              <li>
+                <Link
+                  rel="preload"
+                  onClick={handleClick}
+                  href="/products/modrina-lumber"
+                  className={styles.sub__navbar__link}
+                >
+                  {t("modrina")}
+                </Link>
+              </li>
             </ul>
           </li>
           <li>

@@ -48,6 +48,15 @@ function Footer() {
                     {t("birch")}
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    rel="preload"
+                    href="/products#modrina"
+                    className={styles.footer__link}
+                  >
+                    {t("modrina")}
+                  </Link>
+                </li>
               </ul>
             </div>
             <div className={styles.footer__col}>

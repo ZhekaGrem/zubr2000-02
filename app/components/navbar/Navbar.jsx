@@ -1,7 +1,7 @@
 "use client";
 import styles from "@/app/styles/navbar.module.css";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations,useLocale } from "next-intl";
 import React, { useState, memo } from "react";
 import Link from "next-intl/link";
 import { usePathname } from "next-intl/client";
@@ -10,10 +10,12 @@ function Navbar() {
   const t = useTranslations("Index");
   const pathname = usePathname();
 
+const locale = useLocale();
   const [menuActive, setMenuActive] = useState(true);
   const handleClick = () => {
     setMenuActive(true);
   };
+  console.log(locale)
   return (
     <>
       <nav
@@ -121,16 +123,19 @@ function Navbar() {
                   {t("quality")}
                 </Link>
               </li>
-              {/* <li>
-                <Link
-                  rel="preload"
-                  href="/aboutus/news"
-                  onClick={handleClick}
-                  className={styles.sub__navbar__link}
-                >
-                  {t("offers")}
-                </Link>
-              </li> */}
+{locale === 'ua' && (
+    <li>
+      <Link
+        rel="preload"
+        href="/aboutus/news"
+        onClick={handleClick}
+        className={styles.sub__navbar__link}
+      >
+        {t("offers")}
+      </Link>
+    </li>
+  )}
+              
             </ul>
           </li>
           <li className={styles.navbar__link__open__02}>

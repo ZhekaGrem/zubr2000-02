@@ -105,46 +105,55 @@ export default async function LocaleLayout({ children, params: { locale } }) {
       <head>
         <meta name="viewport"  as="viewport" content="width=device-width" />
         <link rel="icon" as="icon" href="./favicon.ico" sizes="any" />
-        <link rel="alternate"  as="alternate" href="https://zubr-2000.com.ua" />
+        <link rel="alternate"  as="alternate" href="https://zubr-2000.com.ua"  hreflang="uk" />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/en.com.ua"
+          hreflang="en"
         />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/da.com.ua"
+          hreflang="da"
         />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/de.com.ua"
+          hreflang="de"
+
         />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/pl.com.ua"
+          hreflang="pl"
         />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/ru.com.ua"
+          hreflang="ru"
         />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/fr.com.ua"
+          hreflang="fr"
         />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/it.com.ua"
+          hreflang="it"
         />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/sv.com.ua"
+          hreflang="sv"
         />
       </head>
       <body className={font.className}>

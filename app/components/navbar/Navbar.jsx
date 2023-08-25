@@ -15,7 +15,6 @@ const locale = useLocale();
   const handleClick = () => {
     setMenuActive(true);
   };
-  console.log(locale)
   return (
     <>
       <nav

@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.11.0",
     "@sanity/client": "^6.1.7",
     "@sanity/vision": "^3.14.3",
+    "@vercel/analytics": "^1.0.2",
     "multiformats": "^9.9.0",
     "next": "^13.4.6-canary.7",
     "next-intl": "^2.15.1",

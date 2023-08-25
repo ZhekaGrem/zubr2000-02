@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import {Montserrat} from "next/font/google";
+import { Analytics } from '@vercel/analytics/react';
 
 
 const font = Montserrat({
@@ -25,6 +26,20 @@ export const metadata = {
   ],
     
   keywords: [
+    "дерево",
+    "пиломатеріали",
+    "пиломатеріали україна",
+    "дуб україна",
+    "ясин україна",
+    "зубр2000",
+    "зубр дерево",
+    "ЗУБР-2000",
+    "Zubr2000",
+    "zubr-2000",
+    "zubr 2000",
+    "lumber oak",
+    "lumber ash",
+    "lumber larch",
     "lumber sale",
     "wood sale",
     "timber sale",
@@ -105,62 +120,63 @@ export default async function LocaleLayout({ children, params: { locale } }) {
       <head>
         <meta name="viewport"  as="viewport" content="width=device-width" />
         <link rel="icon" as="icon" href="./favicon.ico" sizes="any" />
-        <link rel="alternate"  as="alternate" href="https://zubr-2000.com.ua"  hreflang="uk" />
+        <link rel="alternate"  as="alternate" href="https://zubr-2000.com.ua"  hrefLang="uk" />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/en.com.ua"
-          hreflang="en"
+          hrefLang="en-US"
         />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/da.com.ua"
-          hreflang="da"
+          hrefLang="da-DA"
         />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/de.com.ua"
-          hreflang="de"
+          hrefLang="de-DE"
 
         />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/pl.com.ua"
-          hreflang="pl"
+          hrefLang="pl-PL"
         />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/ru.com.ua"
-          hreflang="ru"
+          hrefLang="ru-RU"
         />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/fr.com.ua"
-          hreflang="fr"
+          hrefLang="fr-FR"
         />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/it.com.ua"
-          hreflang="it"
+          hrefLang="it-IT"
         />
         <link
         as="alternate"
           rel="alternate"
           href="https://zubr-2000/sv.com.ua"
-          hreflang="sv"
+          hrefLang="sv-SV"
         />
       </head>
       <body className={font.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="wrapper">
             <Navbar />
-            <main className="content">{children}</main>
+            <main className="content">{children}  <Analytics /></main>
+           
           </div>
           <footer>
             <Footer />

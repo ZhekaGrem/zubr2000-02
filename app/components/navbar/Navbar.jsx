@@ -126,7 +126,7 @@ const locale = useLocale();
     <li>
       <Link
         rel="preload"
-        href="/aboutus/news"
+        href="/aboutus/offers"
         onClick={handleClick}
         className={styles.sub__navbar__link}
       >

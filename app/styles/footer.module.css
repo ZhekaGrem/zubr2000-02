@@ -69,6 +69,10 @@
 
 
   @media(max-width:767px){
+    .footer{
+      background-image: url("../img/wood-2.webp");
+    }
+    
     .footer__col{
         width: 50%;
         margin-bottom: 30px;

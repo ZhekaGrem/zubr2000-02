@@ -144,6 +144,9 @@
 "offers": "",
 "ukrain": "Ukraine",
     "lviv": "Lviv city",
-    "street": "20 Mykola Kopernika St."
+    "street": "20 Mykola Kopernika St.",
+    "terraceboard":"board and terrace board",
+    "basket":"basket",
+    "curvedelements":"curved elements"
   }
 }

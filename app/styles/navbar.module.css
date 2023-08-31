@@ -137,6 +137,7 @@
 }
 
 @media(min-width: 996px){
+ 
    .container ul li a:hover>ul {
       opacity: 2;
       visibility: visible;

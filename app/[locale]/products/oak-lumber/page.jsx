@@ -100,6 +100,50 @@ function Lumber() {
 			</div>
 		</div>
                    </section>
+        <section id="oak__03">
+		<div className={styles.container}>
+			<div className={styles.row}>
+				<div className={styles.section__title}>
+					<span>{t('oak')} {t('curvedelements')} 26-55 * 76-315 mm</span>
+					
+				</div>
+			</div>
+
+			<div className={styles.row}>
+				<div className={`${styles.col} `}>
+				<h4>{t("sort")} А</h4>
+              <p>{t("products-title-01")}</p>
+              <h4>{t("sort")} АA/AB</h4>
+              <p>{t("products-title-03")}</p>
+              <h4>{t("sort")} В</h4>
+              <p>{t("products-title-02-oak")} </p>
+              <h4>{t("sort")} С</h4>
+              <p>{t("products-title-05")} </p>
+<div className={styles.table__cell__2}>{t('quality-title-27')} mm</div>
+<div className={styles.table}>
+  <div className={styles.table__row}>
+    <div className={styles.table__cell}>{t('products-title-07')}</div>
+    <div className={styles.table__cell}>{t('quality-title-48')}</div>
+    <div className={styles.table__cell}>{t('quality-title-35')}</div>
+  </div>
+  <div className={styles.table__row}>
+    <div className={styles.table__cell}>26-55</div>
+    <div className={styles.table__cell}>76-315</div>
+    <div className={styles.table__cell}>420-1000</div>
+  </div>
+  
+
+</div>
+<div className={styles.table__cell__3}>Certificate code FSC 100% - NC-COC-024736</div>
+				</div>
+
+				<div className={styles.col}>
+                <Image className={styles.adaptive__img} src="/oak-lumber-03.webp" alt="oak lumber 3" width={500} height={300} />
+
+				</div>
+			</div>
+		</div>
+                   </section>
         
        
         

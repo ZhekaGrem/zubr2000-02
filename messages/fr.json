@@ -144,6 +144,9 @@
 "offers": " ",
 "ukrain": "Ukraine",
     "lviv": "Lviv",
-    "street": "20 Mykola Kopernika St."
+    "street": "20 Mykola Kopernika St.",
+    "terraceboard":"Ppanneau et panneau de terrasse",
+    "basket":"corbeille",
+    "curvedelements":"éléments courbes"
   }
 }

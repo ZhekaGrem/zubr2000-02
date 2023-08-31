@@ -144,6 +144,9 @@
 "offers": " ",
 "ukrain": "Ukraine",
     "lviv": "Lemberg",
-    "street": "20 Mykola Kopernika St."
+    "street": "20 Mykola Kopernika St.",
+    "terraceboard":"Tafel und Terrassentafel",
+    "basket":"Korb",
+    "curvedelements":"gebogene Elemente"
   }
 }

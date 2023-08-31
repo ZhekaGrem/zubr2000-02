@@ -124,8 +124,8 @@ export default  function Home() {
                 <Image
                 alt="product"
                   className={styles.info__img}
-                  src="/photo_product_1.webp"
-                  width={400}
+                  src="/photo_product_0.webp"
+                  width={500}
                   height={500}
                 />
               </div>
@@ -140,8 +140,8 @@ export default  function Home() {
                 alt="products"
                   className={styles.info__img}
                   src="/photo_product_2.webp"
-                  width={400}
-                  height={400}
+                  width={500}
+                  height={500}
                   
                 />
               </div>

@@ -31,12 +31,9 @@ export default  function Home() {
     setIsActive(!isActive);
   };
 
-
   return (
     <>
          <div className={styles.content}>
-        
-
         <section className={`${styles.container} ${styles.test}`}>
           <div className={styles.block}>
             <div className={`${styles.col__5} ${styles.col__6}`}>
@@ -44,9 +41,10 @@ export default  function Home() {
                 <Image
                   className={styles.info__img}
                   src="/new-title.webp"
-                  width={400}
-                  height={400}
+                  width={800}
+                  height={800}
                   alt="ясен"
+                  loading ='eager'
                 />
               </div>
             </div>
@@ -91,22 +89,15 @@ export default  function Home() {
                       {t('quality')}
               </Link> </li>
               <li>         <Link    rel="preload"  href="/aboutus/manufacturing-process"
-                    className={styles.navbar__link}>
-                     {t('manufacturing')}
+                    className={styles.navbar__link}>{t('manufacturing')}
               </Link> </li>
 						</ul>
 						<ul className={`${styles.list}`}>
-							
-           
 							  <li>    <Link    rel="preload" href="/products/oak-lumber"
-                    className={styles.navbar__link}>
-                       {t("oak")}
-              </Link> </li>
-							
-            
+                    className={styles.navbar__link}>{t("oak")}
+              </Link> </li>  
               <li>   <Link    rel="preload" href="/products/ash-lumber"
-                    className={styles.navbar__link}>
-                       {t("ash")}
+                    className={styles.navbar__link}>{t("ash")}
               </Link> </li>
 							<li>   <Link    rel="preload" href="/products/birch-lumber"
                     className={styles.navbar__link}>
@@ -125,8 +116,8 @@ export default  function Home() {
                 alt="product"
                   className={styles.info__img}
                   src="/photo_product_0.webp"
-                  width={500}
-                  height={500}
+                  width={800}
+                  height={800}
                 />
               </div>
             </div>
@@ -140,9 +131,8 @@ export default  function Home() {
                 alt="products"
                   className={styles.info__img}
                   src="/photo_product_2.webp"
-                  width={500}
-                  height={500}
-                  
+                  width={800}
+                  height={800}                 
                 />
               </div>
             </div>
@@ -151,9 +141,7 @@ export default  function Home() {
                 <div className={styles.section__title}>
                   <span>{t('contactus')}</span>
                 </div>
-
                 <ul className={styles.section__title__us}>
-
                   <p>{t('manager')}:+38 097 136-20-00 </p>
                   <p>{t('director')}:+38 067 674-58-43 </p>
                   <li>
@@ -169,7 +157,6 @@ export default  function Home() {
                       grem_roman@icloud.com{" "}
                     </Link>
                   </li>
-               
                     <Link    rel="preload"
                       onClick={handleClick}
                       href="/contact#contact"
@@ -179,8 +166,6 @@ export default  function Home() {
                   </button>
                     </Link>
                 </ul>
-
-                 
               </div>
             </div>
           </div>

@@ -17,7 +17,6 @@ function Lumber() {
 					
 				</div>
 			</div>
-
 			<div className={styles.row}>
 				<div className={`${styles.col} `}>
 				<h4>{t("sort")} А</h4>
@@ -41,21 +40,17 @@ function Lumber() {
 	</div>
     <div className={styles.table__cell}>54-315</div>
     <div className={styles.table__cell}>220-3050
-
 	</div>
   </div>
 </div>
 	<div className={styles.table__cell__3}>Certificate code FSC 100% - NC-COC-024736</div>
 				</div>
-
 				<div className={styles.col}>
                 <Image className={styles.adaptive__img} src="/oak-lumber-02.webp" alt="oak lumber 1" width={500} height={300} />
-
 				</div>
 			</div>
 		</div>
-                   </section>
-        
+                   </section> 
         <section id="oak__02">
 		<div className={styles.container}>
 			<div className={styles.row}>
@@ -64,7 +59,6 @@ function Lumber() {
 					
 				</div>
 			</div>
-
 			<div className={styles.row}>
 				<div className={`${styles.col} `}>
 				<h4>{t("sort")} А</h4>
@@ -87,15 +81,11 @@ function Lumber() {
     <div className={styles.table__cell}>110</div>
     <div className={styles.table__cell}>220-3050</div>
   </div>
-  
-
 </div>
 <div className={styles.table__cell__3}>Certificate code FSC 100% - NC-COC-024736</div>
 				</div>
-
 				<div className={styles.col}>
                 <Image className={styles.adaptive__img} src="/oak-lumber-01.webp" alt="oak lumber 3" width={500} height={300} />
-
 				</div>
 			</div>
 		</div>
@@ -108,7 +98,6 @@ function Lumber() {
 					
 				</div>
 			</div>
-
 			<div className={styles.row}>
 				<div className={`${styles.col} `}>
 				<h4>{t("sort")} А</h4>

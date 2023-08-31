@@ -18,7 +18,7 @@ const locale = useLocale();
   return (
     <>
       <nav
-        loading="lazy"
+      loading ='eager'
         alt="forest"
         role="img"
         aria-label="forest"
@@ -34,7 +34,7 @@ const locale = useLocale();
               className={styles.logo__img}
               src="/Zubr-logo.webp"
               width={70}
-              height={75}
+              height={70}
               alt="Logo zubr 2000"
             />
             <Image
@@ -49,9 +49,7 @@ const locale = useLocale();
         <div
           className={`${
             menuActive ? [styles.navbar__burger] : [styles.navbar__burger__exit]
-          }`}
-          onClick={() => setMenuActive(!menuActive)}
-        >
+          }`}onClick={() => setMenuActive(!menuActive)}>
           <span></span>
         </div>
         <ul>
@@ -59,8 +57,7 @@ const locale = useLocale();
             <Link
               href="/"
               onClick={handleClick}
-              className={styles.navbar__link}
-            >
+              className={styles.navbar__link}>
               {t("home")}
             </Link>
           </li>
@@ -80,7 +77,6 @@ const locale = useLocale();
                 height={16}
               />
             </Link>
-
             <ul className={styles.sub__link__01}>
               <li>
                 <Link

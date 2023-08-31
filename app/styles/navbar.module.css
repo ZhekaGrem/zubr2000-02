@@ -380,3 +380,10 @@ width: 100%;
       display: none;
    }
 }
+
+@media(max-width: 768px){
+   .container{
+
+      background-image: url("../img/wood-3.webp");
+   }
+}

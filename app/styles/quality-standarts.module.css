@@ -277,3 +277,13 @@
 .section__title__cubaturnic:hover  > span{
   background-color: var(--color_green);
 } 
+
+@media (max-width: 500px) {
+  .manual__content .big__title{
+    font-size:6.9vw;
+  }
+
+  .section__title span{
+    font-size:6.9vw;
+  }
+}

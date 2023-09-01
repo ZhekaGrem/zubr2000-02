@@ -51,7 +51,8 @@
 }
 
 .container ul li a:hover {
-   transition: all .5s ease 0s;
+   transition:all .5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+   
 
    color: var(--color_green);
    ;
@@ -64,7 +65,7 @@
    background-color: var(--color_green__02);
    opacity: 0;
    visibility: hidden;
-   transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+   transition:all .5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
 
 }
 
@@ -93,6 +94,7 @@
    display: none;
 }
 .container ul .sub__link__01 li {
+   
    text-align: center;
    line-height: 50px;
 }
@@ -100,7 +102,7 @@
 .container ul .sub__link__02 li {
    text-align: center;
    line-height: 50px;
-
+   transition: all .5s ease;
 }
 
 
@@ -251,13 +253,15 @@ ul.sub__menu__list > li > a
    }
 
    .navbar__burger span {
+
+      opacity: 1;
       position: absolute;
       background-color:var(--color_green);
       width: 100%;
       height: 3px;
       right: 0;
       top: 13.5px;
-
+      transition: opacity 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
    }
 
    .navbar__burger::before,
@@ -268,7 +272,7 @@ ul.sub__menu__list > li > a
       width: 100%;
       height: 3px;
       right: 0;
-     
+      transition:all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
    }
 
@@ -297,8 +301,8 @@ right: 0;
       right: 0;
       top: 14.5px;
       background-color: var(--color_green);
-display: none;
-
+opacity: 0;
+transition:opacity .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
    }
 
    .navbar__burger__exit::before,
@@ -309,11 +313,14 @@ display: none;
       width: 100%;
       height: 3px;
       right: 0;
+transition:all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
    }
 
    .navbar__burger__exit::before {
       top: 14px;
       transform: rotate(45deg);
+      transition:all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
    }
 
    .navbar__burger__exit::after {
@@ -349,13 +356,13 @@ width: 100%;
       position: static;
       border-top: none;
       width: 100%;
+
    }
    .navbar__link__open__03:hover>ul {
       opacity: 2;
       visibility: visible;
       top: 200px;
       position: static;
-
    }
    .sub__menu__list {
       width: 100%;

@@ -82,6 +82,16 @@
     .container {
       max-width: 960px;
     }
+    .sub__section__title{ 
+      width: 33.33333333%;
+  }
+  
+  .wi__41{
+      width: 41.66666667%;  
+  }
+  .wi__50{
+      width: 50%;  
+  }
   }
 
   @media (min-width: 1200px) {
@@ -108,14 +118,6 @@
 	width:100%;
 	margin: 0 auto 30px;
 }
-@media (max-width: 991px) {
-	.site-hero ul.slides{height: 750px;}
-	.block{margin-top: 30px;}
-	.block img{margin-bottom: 30px;}
-	.block .section-title{margin: 0 auto;text-align: center;}
-	.block p{text-align: center;}
-}
-
 
 
 .row{
@@ -154,12 +156,45 @@
   }
 
   @media (max-width: 991px) {
+    .site-hero ul.slides{height: 750px;}
+	.block{margin-top: 30px;}
+	.block img{margin-bottom: 30px;}
+	.block .section-title{margin: 0 auto;text-align: center;}
+	.block p{text-align: center;}
     .col__5 {
       width: 100%;
       float: none;
       padding-right: 15px;
       padding-left: 15px;
     }
+    .section__title{
+      margin : 0 auto 50px;
+    }
+    .section__title span:after{
+      left:50%;
+      -webkit-transform:translateX(-50%);
+          -ms-transform:translateX(-50%);
+              transform:translateX(-50%);
+    }
+      .block__01 .block__01__left{
+          text-align: center;
+          margin-bottom: 50px;
+      }
+
+      .text__block span{
+        font-size:3.9vw;
+      }
+  }
+
+
+  @media (max-width: 345px) {
+    .section__title__2{
+      width: 60%;
+      margin: 5% 10% 5%;
+      text-align: center;
+      
+    }
+  
   }
 
   .section__title{
@@ -216,37 +251,10 @@
       float: right;
   }
 
-  @media (max-width: 345px) {
-    .section__title__2{
-      width: 60%;
-      margin: 5% 10% 5%;
-      text-align: center;
-      
-    }
 
   
-  }
-  
-  @media (max-width: 991px) {
-    .section__title{
-      margin : 0 auto 50px;
-    }
-    .section__title span:after{
-      left:50%;
-      -webkit-transform:translateX(-50%);
-          -ms-transform:translateX(-50%);
-              transform:translateX(-50%);
-    }
-      .block__01 .block__01__left{
-          text-align: center;
-          margin-bottom: 50px;
-      }
 
-      .text__block span{
-        font-size:3.9vw;
-      }
-
-  }
+ 
   .sub__section__title{
       position: relative;
       min-height: 1px;
@@ -262,15 +270,12 @@
       line-height: 30px;
   }
   
-  @media (min-width: 992px){
-  .sub__section__title{ 
-      width: 33.33333333%;
+  @media (max-width: 500px) {
+    .manual__content .big__title{
+      font-size:6.9vw;
+    }
+
+    .text__block span{
+      font-size:6.9vw;
+    }
   }
-  
-  .wi__41{
-      width: 41.66666667%;  
-  }
-  .wi__50{
-      width: 50%;  
-  }
-  }  

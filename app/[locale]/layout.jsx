@@ -145,7 +145,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
           rel="alternate"
           as="alternate"
           href="https://zubr-2000.com.ua"
-          hrefLang="ua"
+          hrefLang="uk-UA"
         />
         <link
           as="alternate"

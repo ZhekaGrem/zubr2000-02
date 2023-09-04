@@ -35,14 +35,14 @@ const locale = useLocale();
               src="/Zubr-logo.webp"
               width={70}
               height={70}
-              alt="Logo zubr 2000"
+              alt="Logo zubr 2000 лого зубр2000"
             />
             <Image
               className={styles.logo__text}
-              src="/text-zubr-03.webp"
-              width={120}
-              height={60}
-              alt="Logo Text zubr 2000"
+              src="/text-zubr-04.webp"
+              width={200}
+              height={70}
+              alt="Zubr 2000 ЗУБР 2000"
             />
           </Link>
         </div>

@@ -27,7 +27,7 @@ function Contact() {
         <div className={styles.contact__info}>
           <ul>
             <div>
-              <h1>{t('contactus')}</h1>
+              <h2>{t('contactus')}</h2>
             </div>
             <p>{t('manager')}:+38 097 136-20-00 </p>
             <p>{t('director')}:+38 067 674-58-43 </p>
@@ -50,7 +50,7 @@ function Contact() {
         <div className={styles.contact__info}>
           <ul>
             <div>
-              <h1>{t('findus')}</h1>
+              <h2>{t('findus')}</h2>
             </div>
             <p>79000</p>
             <p>{t("ukrain")}</p>
@@ -60,7 +60,7 @@ function Contact() {
         </div>
         <div className={styles.contact__info}>
           <Link    rel="preload" href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html">
-            <h1>FORDAQ.COM</h1>
+            <h2>FORDAQ.COM</h2>
             <Image
               src="/fordaq-logo-02.webp"
               width={190}

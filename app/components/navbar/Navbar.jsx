@@ -40,8 +40,8 @@ const locale = useLocale();
             <Image
               className={styles.logo__text}
               src="/text-zubr-03.webp"
-              width={170}
-              height={70}
+              width={120}
+              height={60}
               alt="Logo Text zubr 2000"
             />
           </Link>
@@ -135,6 +135,7 @@ const locale = useLocale();
           </li>
           <li className={styles.navbar__link__open__02}>
             <Link
+            
               rel="preload"
               onClick={handleClick}
               href="/products"
@@ -143,7 +144,7 @@ const locale = useLocale();
               {t("product")}
               <Image
                 className={`${styles.drop__down} ${styles.planet}`}
-                alt="language PL"
+                alt="language you use"
                 src="/down__02.svg"
                 width={20}
                 height={16}
@@ -206,6 +207,7 @@ const locale = useLocale();
           <li className={styles.navbar__link__open__03}>
             <p className={`${styles.navbar__link} `}>
               {" "}
+              
               <Image
                 className={styles.planet}
                 alt="language PL"
@@ -226,6 +228,7 @@ const locale = useLocale();
             <ul className={styles.sub__menu__list}>
               <li>
                 <Link
+                prefetch={false}
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
@@ -244,6 +247,7 @@ const locale = useLocale();
               </li>
               <li>
                 <Link
+                prefetch={false}
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
@@ -261,6 +265,7 @@ const locale = useLocale();
               </li>
               <li>
                 <Link
+                prefetch={false}
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
@@ -279,6 +284,7 @@ const locale = useLocale();
               </li>
               <li>
                 <Link
+                prefetch={false}
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
@@ -297,6 +303,7 @@ const locale = useLocale();
               </li>
               <li>
                 <Link
+                prefetch={false}
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
@@ -315,6 +322,7 @@ const locale = useLocale();
               </li>
               <li>
                 <Link
+                prefetch={false}
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
@@ -333,6 +341,7 @@ const locale = useLocale();
               </li>
               <li>
                 <Link
+                prefetch={false}
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
@@ -351,6 +360,7 @@ const locale = useLocale();
               </li>
               <li>
                 <Link
+                prefetch={false}
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
@@ -369,6 +379,7 @@ const locale = useLocale();
 
               <li>
                 <Link
+                prefetch={false}
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}

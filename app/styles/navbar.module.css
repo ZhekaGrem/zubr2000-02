@@ -186,7 +186,7 @@ ul.sub__menu__list > li > a
 }
 
 
-@media(max-width: 1050px) {
+@media(max-width: 992px) {
    .container ul ul li {
       float: right;
    
@@ -194,7 +194,6 @@ ul.sub__menu__list > li > a
   
    .container .navbar__logo{
       padding-left: 30px;
-      width: 100%;
    }
    .container ul {
       margin-right: 0px;
@@ -261,7 +260,7 @@ ul.sub__menu__list > li > a
       height: 3px;
       right: 0;
       top: 13.5px;
-      transition: opacity 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: opacity .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
    }
 
    .navbar__burger::before,
@@ -302,7 +301,7 @@ right: 0;
       top: 14.5px;
       background-color: var(--color_green);
 opacity: 0;
-transition:opacity .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+transition:opacity .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
    }
 
    .navbar__burger__exit::before,

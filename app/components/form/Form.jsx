@@ -134,7 +134,7 @@ const Form = () => {
     
     <div className={styles.form}>
       <div className={styles.title}>
-        <h1 id="contact">{t('contactus')} </h1>
+        <h2 id="contact">{t('contactus')} </h2>
       </div>
       <form ref={form} onSubmit={sendEmail}>
       <div className={styles.form__row}>

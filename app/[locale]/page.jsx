@@ -45,6 +45,7 @@ export default  function Home() {
                   height={800}
                   alt="ясен"
                   loading ='eager'
+                  priority={true}
                 />
               </div>
             </div>

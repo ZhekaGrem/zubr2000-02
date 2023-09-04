@@ -2,3 +2,7 @@ User-Agent: *
 Allow: /
 Disallow: /private/
 Sitemap: https://zubr-2000.com.ua/sitemap.xml
+
+User-agent: googlebot
+Disallow: /admin
+Disallow: /aboutus/offers

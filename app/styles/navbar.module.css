@@ -186,7 +186,7 @@ ul.sub__menu__list > li > a
 }
 
 
-@media(max-width: 1050px) {
+@media(max-width: 1200px) {
    .container ul ul li {
       float: right;
    

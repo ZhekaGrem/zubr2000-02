@@ -43,7 +43,7 @@ export default  function Home() {
                   src="/new-title.webp"
                   width={800}
                   height={800}
-                  alt="Пиломатеріали Зубр2000 lumber zubr 2000"
+                  alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
                   loading ='eager'
                   priority={true}
                 />
@@ -114,7 +114,7 @@ export default  function Home() {
             <div className={styles.col__5}>
               <div className={styles.row}>
                 <Image
-                alt="product zubr2000 продукти зубр2000"
+                alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
                   className={styles.info__img}
                   src="/photo_product_0.webp"
                   width={800}
@@ -129,7 +129,7 @@ export default  function Home() {
             <div className={styles.col__5}>
               <div className={styles.row}>
                 <Image
-                alt="product zubr2000 продуккція зубр 2000"
+                alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
                   className={styles.info__img}
                   src="/photo_product_2.webp"
                   width={800}

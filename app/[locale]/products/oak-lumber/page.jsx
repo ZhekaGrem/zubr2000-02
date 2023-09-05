@@ -55,7 +55,7 @@ function Lumber() {
 		<div className={styles.container}>
 			<div className={styles.row}>
 				<div className={styles.section__title}>
-					<span>{t('oak')} {t('beam')} 54 * 110 mm</span>
+					<span>{t('oak')} {t('board')} 54 * 110 mm</span>
 					
 				</div>
 			</div>

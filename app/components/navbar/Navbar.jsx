@@ -39,9 +39,9 @@ const locale = useLocale();
             />
             <Image
               className={styles.logo__text}
-              src="/text-zubr-04.webp"
-              width={200}
-              height={70}
+              src="/text-zubr-05.webp"
+              width={180}
+              height={62}
               alt="Zubr 2000 ЗУБР 2000"
             />
           </Link>

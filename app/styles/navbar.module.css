@@ -51,7 +51,6 @@
 }
 
 .container ul li a:hover {
-   transition:all .5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
    
 
    color: var(--color_green);
@@ -65,7 +64,7 @@
    background-color: var(--color_green__02);
    opacity: 0;
    visibility: hidden;
-   transition:all .5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+   transition:all .5s ease-in-out;
 
 }
 
@@ -102,7 +101,6 @@
 .container ul .sub__link__02 li {
    text-align: center;
    line-height: 50px;
-   transition: all .5s ease;
 }
 
 
@@ -120,7 +118,7 @@
    width: 100%;
    background-color: #404051;
    border-radius: 20px;
-   box-shadow: 0 10px 10px rgba(250, 250, 250, 0.055);
+   box-shadow: 0 0px 10px rgba(250, 250, 250, 0.055);
 
 
 }
@@ -134,26 +132,26 @@
    margin: 2px;
 }
 
-.logo__text {
-   padding-top: 3px;
-}
+
 
 @media(min-width: 996px){
  
    .container ul li a:hover>ul {
       opacity: 2;
       visibility: visible;
-      top: 55px;
+      top: 68px;
    }
    
    .container ul li:hover>ul {
       opacity: 2;
       visibility: visible;
-      top: 55px;
+      top: 68px;
    }
 }
 
-
+.logo__text{
+   padding: 8px  0 12px 0 ;
+}
 .logo__text:hover {
    transition: all .5s ease 0s;
    filter: invert(52%) sepia(94%) saturate(707%) hue-rotate(32deg) brightness(91%) contrast(102%);

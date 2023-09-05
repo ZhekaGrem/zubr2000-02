@@ -1,4 +1,5 @@
 User-Agent: *
 Allow: /
-Disallow: /private/
+Disallow: /admin
+Disallow: /aboutus/offers
 Sitemap: https://zubr-2000.com.ua/sitemap.xml

@@ -141,6 +141,7 @@
       visibility: visible;
       top: 68px;
    }
+
    
    .container ul li:hover>ul {
       opacity: 2;
@@ -184,9 +185,13 @@ ul.sub__menu__list > li > a
 }
 
 
-@media(max-width: 1200px) {
+@media(max-width: 1180px) {
    .container ul ul li {
       float: right;
+   
+   }
+   .container ul li {
+      margin: 0 15px;
    
    }
  
@@ -386,6 +391,10 @@ width: 100%;
 }
 
 @media(max-width: 768px){
+   .container ul li {
+      margin: 0 5px;
+   
+   }
    .container{
 
       background-image: url("../img/wood-3.webp");

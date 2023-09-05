@@ -23,6 +23,8 @@ export const metadata = {
   name: "zubr-2000 зубр-2000",
   short_name: [
     "зубр",
+    "зубр 2000",
+    "zubr 2000",
     "зубр2000",
     "zubr2000",
     "zubr-2000",
@@ -53,6 +55,7 @@ export const metadata = {
     "дуб україна",
     "ясин україна",
     "зубр2000",
+    "зубр 2000",
     "зубр дерево",
     "ЗУБР-2000",
     "Zubr2000",
@@ -116,7 +119,7 @@ export const metadata = {
 
 export function generateStaticParams() {
   return [
-    { locale: "ua" },
+    { locale: "uk" },
     { locale: "en" },
     { locale: "de" },
     { locale: "da" },
@@ -139,16 +142,16 @@ export default async function LocaleLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <head>
+        <meta charSet="utf-8"/>
         <meta name="viewport" as="viewport" content="width=device-width" />
-        <link rel="icon" as="icon" href="./favicon.ico" sizes="any" />
+     
         <link
           rel="alternate"
-          as="alternate"
           href="https://zubr-2000.com.ua"
           hrefLang="uk-UA"
         />
+     
         <link
-          as="alternate"
           rel="alternate"
           href="https://zubr-2000/en.com.ua"
           hrefLang="en-US"

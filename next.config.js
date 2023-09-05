@@ -3,8 +3,8 @@ const nextConfig = {
   experimental: {
     appDir: true,
     i18n: {
-      locales: ['ua', 'de', 'fr','it','da','sv','en','pl', 'ru'],
-      defaultLocale: 'ua',
+      locales: ['uk', 'de', 'fr','it','da','sv','en','pl', 'ru'],
+      defaultLocale: 'uk',
     },
     trailingSlash: true,
   },

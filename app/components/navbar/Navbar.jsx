@@ -118,7 +118,7 @@ const locale = useLocale();
                   {t("quality")}
                 </Link>
               </li>
-{locale === 'ua' && (
+{locale === 'uk' && (
     <li>
       <Link
         rel="preload"
@@ -233,7 +233,7 @@ const locale = useLocale();
                   to=""
                   className={styles.sub__menu__link}
                   href={usePathname()}
-                  locale="ua"
+                  locale="uk"
                 >
                   Українська{" "}
                   <Image

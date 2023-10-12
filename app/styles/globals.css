@@ -82,7 +82,7 @@ input:focus-visible{
   }
  
   main{
-    padding-top:83px
+    padding-top:79px
   }
 
 
@@ -91,7 +91,7 @@ input:focus-visible{
   @media(max-width:574px){
    
     main{
-        padding-top:80px
+        padding-top:79px
       }
      }
 

@@ -152,6 +152,7 @@
 
 .logo__text{
    padding: 8px  0 12px 0 ;
+   width: 190px  ;
 }
 .logo__text:hover {
    transition: all .5s ease 0s;

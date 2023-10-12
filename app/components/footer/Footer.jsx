@@ -114,7 +114,7 @@ function Footer() {
                 </li>
              
                 <li>
-                  <Link
+                  <a
                     rel="preload"
                     className={styles.footer__link}
                     href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html"
@@ -126,7 +126,7 @@ function Footer() {
                       width={100}
                       height={30}
                     />
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

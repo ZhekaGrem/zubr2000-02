@@ -53,9 +53,7 @@ function qualityStandarts() {
             <div className={`${styles.section__title}  ${styles.big__title}`}>
               <span>{t('quality-title-10')}</span>
             </div>
-            <p>
-            {t('quality-title-11')}
-            </p>
+            
           </div>
 
           <div className={styles.row}>

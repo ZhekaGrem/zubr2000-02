@@ -21,7 +21,7 @@
  }
 
  .footer__col h4{
-   font-size: 18px;
+  font-size: 3.5rem;
    color: var(--color_green); 
    margin-bottom: 30px;
    position: relative;
@@ -41,14 +41,14 @@
 
   }
   .footer__col ul li{
-    font-size: 16px;
+    font-size: 2rem;
     text-decoration: none;
     color: #ffffff;
     display: block;
   }
 
   .footer__link{
-    font-size: 16px;
+    font-size: 2rem;
     text-transform: none;
     text-decoration: none;
     color: #ffffff;

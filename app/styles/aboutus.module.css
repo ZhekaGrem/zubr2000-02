@@ -74,7 +74,7 @@
 	position: relative;
 	z-index: 1;
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 4rem;
 	text-transform: uppercase;
 	color:#60606e;
 	
@@ -86,7 +86,7 @@
 	position: relative;
 	z-index: 1;
 	font-weight: 500;
-	font-size: 25px;
+	font-size: 4rem;
 	text-transform: uppercase;
 	color:#60606e;
 	
@@ -116,12 +116,12 @@ ul.list li:before{
 }
 
 .pricing__plan .plan__title{
-	font-size: 30px;
+	font-size: 4rem;
 } 
 .pricing__plan .plan__price{
 	padding: 5px 20px;
 	color:white;
-	font-size: 14px;
+	font-size: 4rem;
 	display: inline-block;
 } 
 .pricing__plan li{
@@ -131,7 +131,7 @@ ul.list li:before{
 
 
 .big__title{
-	font-size: 48px;
+	font-size: 4rem;
 	color:#60606e;
 	padding: 10px 40px;
 	border:solid 10px #60606e;
@@ -139,16 +139,15 @@ ul.list li:before{
 	margin-bottom: 30px;
 }
 
-.mini__block{
-	margin-left: 2%;
-}
+
 
 
 .wi__41{
 	padding: 20px 0;
 	
 }
-.wi__41 h2{
+.wi__41 span{
 	padding: 10px 0;
-	
+  font-size: 5rem;
+	color:#60606e;
 }

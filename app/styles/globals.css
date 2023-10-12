@@ -5,7 +5,9 @@
     box-sizing: border-box;
 }
 
-
+html{
+  font-size: 62.5%;
+}
 
 html,
 body{
@@ -57,7 +59,9 @@ li {
  } 
 
 
-
+p{
+  font-size: 3rem;
+}
 
 
 
@@ -88,12 +92,6 @@ input:focus-visible{
 
   
 
-  @media(max-width:574px){
-   
-    main{
-        padding-top:79px
-      }
-     }
 
   :root {
     --color_green__02: #677903;
@@ -109,3 +107,32 @@ input:focus-visible{
    th {
     border: 1px solid #000;
   }
+
+
+  @media (max-width: 1280px) {
+    html {
+      font-size: 55%;
+    }
+  }
+  @media (max-width: 1024px) {
+    html {
+      font-size: 45%;
+    }
+  }
+  
+  @media (max-width: 574px) {
+  
+    main{
+      padding-top:79px
+    }
+  }
+
+
+  
+  @media (max-width: 375px) {
+    html {
+      font-size: 50%;
+    }
+ 
+  }
+  

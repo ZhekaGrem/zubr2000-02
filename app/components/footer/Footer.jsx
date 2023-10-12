@@ -83,10 +83,10 @@ function Footer() {
               <ul>
                 <h4>{t("contactus")}</h4>
                 <li>
-                  <p>{t("manager")}: +38 097 136-20-00</p>
+                  {t("manager")}: +38 097 136-20-00
                 </li>
                 <li>
-                  <p>{t("director")}: +38 067 674-58-43</p>
+                {t("director")}: +38 067 674-58-43
                 </li>
                    <li>
                   <a

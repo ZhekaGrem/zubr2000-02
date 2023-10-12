@@ -11,7 +11,7 @@ function AboutUs() {
       <section>
         <div className={`${styles.container} `}>
           <div className={styles.row}>
-            <div className={styles.wi__41}>
+            <div className={styles.wi__41} >
               <div className={`${styles.big__title} ${styles.section__title} `}>
                 <span>{t("aboutus")}</span>
               </div>
@@ -20,7 +20,7 @@ function AboutUs() {
               {t("aboutus-message1")}
               </p>
 
-              <h2>{t("aboutus-message2")}</h2>
+              <span>{t("aboutus-message2")}</span>
               <ul className={`${styles.list}`}>
                 <li>{t("aboutus-message3")} </li>
                 <li>{t("aboutus-message4")}</li>

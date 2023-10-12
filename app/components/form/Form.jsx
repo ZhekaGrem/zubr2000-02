@@ -15,20 +15,25 @@ const Form = () => {
   console.log('form');
   
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input type="text" placeholder="First name" {...register("Firstname", {required: true, maxLength: 80})} />
+    <div className={styles.container}>
+<div className={styles.text}> {t('contactus')} </div>
+    
+    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+    
+      <input className={styles.input} type="text" placeholder="First name" {...register("Firstname", {required: true, maxLength: 80})} />
       <p>{errors.Firstname?.message}</p>
-      <input type="text" placeholder="Firm name" {...register("Firmname", {required: true, maxLength: 80})} />
+      <input className={styles.input} type="text" placeholder="Firm name" {...register("Firmname", {required: true, maxLength: 80})} />
       <p>{errors.Firmname?.message}</p>
-      <input type="text" placeholder="Email" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
+      <input className={styles.input} type="text" placeholder="Email" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
       <p>{errors.Email?.message}</p>
-      <input type="tel" placeholder="Mobile number" {...register("Mobilenumber", {required: true, minLength: 6, maxLength: 12})} />
+      <input className={styles.input} type="tel" placeholder="Mobile number" {...register("Mobilenumber", {required: true, minLength: 6, maxLength: 12})} />
       <p>{errors.Mobilenumber?.message}</p>
       <textarea {...register("writeyourmessage", {required: true})} />
       <p>{errors.writeyourmessage?.message}</p>
 
       <input type="submit" />
     </form>
+    </div>
   );
 }
 //     <div className={styles.container }>

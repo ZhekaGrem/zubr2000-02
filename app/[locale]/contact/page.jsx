@@ -10,13 +10,14 @@ function Contact() {
   const t = useTranslations("Index");
   return (
     <>
+      <div className={styles.contact}>
       <Googlmap/>
 
-    
-      <div className={styles.contact}>
+    <div className={styles.contact__block}>
+
+    </div>
         <div className={styles.contact__info}>
           <ul>
-            
               <li className={styles.sub__contact__info}>{t('contactus')}</li>
             
             <li>{t('manager')}:+38 097 136-20-00 </li>

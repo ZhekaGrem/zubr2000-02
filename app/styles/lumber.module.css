@@ -22,6 +22,10 @@
     padding-left: 15px;
   }
 
+  .col>h4{
+    font-size: 4rem;
+  }
+
   @media (min-width: 768px) {
     .col {
       width: 50%;
@@ -74,7 +78,7 @@
 	position: relative;
 	z-index: 1;
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 4rem;
 	text-transform: uppercase;
 	color:#60606e;
 	position: relative;

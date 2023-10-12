@@ -28,7 +28,7 @@ function Certificates() {
         <div className={styles.container}>
           <div className={styles.block}>
             <div className={styles.col__5}>
-              <div className="row">
+              <div  >
                 <Image
                 className={styles.info__img}
                   src="/photo_product_3.webp"
@@ -52,7 +52,7 @@ function Certificates() {
         <div className={styles.container}>
           <div className={styles.block}>
             <div className={styles.col__5}>
-              <div className="row">
+              <div  >
                 <Image
                  className={styles.info__img}
                   alt="imag3"
@@ -77,7 +77,7 @@ function Certificates() {
         <div className={styles.container}>
           <div className={styles.block}>
             <div className={styles.col__5}>
-              <div className="row">
+              <div  >
                 <Image
                 className={styles.info__img}
                   alt="imag3"
@@ -86,7 +86,7 @@ function Certificates() {
                   height={300}
                 />
               </div>
-              <div className="row">
+              <div  >
                 <Image
                 className={styles.info__img}
                   alt="imag3"
@@ -95,7 +95,7 @@ function Certificates() {
                   height={300}
                 />
               </div>
-              <div className="row">
+              <div  >
                 <Image
                 className={styles.info__img}
                   alt="imag3"
@@ -145,7 +145,7 @@ function Certificates() {
         <div className={styles.container}>
           <div className={styles.block}>
             <div className={styles.col__5}>
-              <div className="row">
+              <div  >
                 <Image
                 className={styles.info__img}
                   src="/pack-product.webp"
@@ -170,7 +170,7 @@ function Certificates() {
         <div className={styles.container}>
           <div className={styles.block}>
             <div className={styles.col__5}>
-              <div className="row">
+              <div  >
                 <Image
                 className={styles.info__img}
                   src="/photo_product_6.webp"

@@ -7,6 +7,10 @@
     width: 100%;
 
 }
+
+.manual__content p {
+  font-size:var(--p_block);
+}
 .manual__title{
 	height: 450px; /* 850 - 400 */
 	width: 100%;
@@ -40,7 +44,7 @@
 	display: inline-block;
 }
 .manual__content .big__title{
-    font-size:4rem;
+  font-size:var(--span_title);
 	color:#60606e;
 	padding: 10px 40px;
 	border:solid 10px #60606e;
@@ -159,6 +163,10 @@
     font-size:2.5rem;
   }
 }
+
+.block p{
+  padding-bottom: 10px;
+}
    
   @media (max-width: 991px) {
     .site-hero ul.slides{height: 750px;}
@@ -187,7 +195,7 @@
       }
 
       .text__block span{
-        font-size:4rem;
+        font-size:var(--span_title);
       }
    
     }
@@ -211,24 +219,23 @@
   }
   .section__title__2{
     width: 60%;
-    margin: 10% 20% 5%;
     text-align: center;
+    
     
   }
   
 
-  .section__title__2 span{
-    position: relative;
+  .container span{
     z-index: 1;
     font-weight: 700;
-    font-size:4rem;
     text-transform: uppercase;
-    color:#60606e;
+    color: #60606e;
     position: relative;
     display: inline-block;
+    margin-bottom: 20px;
+    font-size: var(--span_title);
   }
   .text__block span{
-    position: relative;
     z-index: 1;
     font-weight: 700;
     text-transform: uppercase;
@@ -236,8 +243,7 @@
     position: relative;
     display: inline-block;
     margin-bottom: 20px;
-    font-size:4rem;
-
+    font-size:var(--span_title);
 
   }
   .text__block span:after{
@@ -279,10 +285,10 @@
   
   @media (max-width: 500px) {
     .manual__content .big__title{
-      font-size:4rem;
+      font-size:var(--span_title);
     }
 
     .text__block span{
-      font-size:4rem;
+      font-size:var(--span_title);
     }
   }

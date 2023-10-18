@@ -23,7 +23,7 @@
   }
 
   .col>h4{
-    font-size: 4rem;
+    font-size:var(--span_title);
   }
 
   @media (min-width: 768px) {
@@ -78,7 +78,7 @@
 	position: relative;
 	z-index: 1;
 	font-weight: 700;
-	font-size: 4rem;
+  font-size:var(--span_title);
 	text-transform: uppercase;
 	color:#60606e;
 	position: relative;
@@ -113,7 +113,7 @@
 .table {
   display: table;
   width: 100%;
-
+  font-size:var(--p_block);
 }
 
 .table__row {
@@ -126,9 +126,11 @@
   padding: 5px;
   border: 1px solid black;
   text-align: center;
+  font-size:var(--p_block);
 
 }
 .table__cell__2 {
+  font-size:var(--p_block);
   padding: 5px;
   border: 1px solid black;
   justify-content:center;
@@ -136,6 +138,7 @@
   margin-top: 20px;
 }
 .table__cell__3 {
+  font-size:var(--p_block);
   padding: 5px;
   border: 1px solid black;
   justify-content:center;

@@ -199,11 +199,11 @@ function Certificates() {
         <div className={styles.container}>
         
          
-          <div className={styles.section__title__2}>
+          
             <span>
             {t("manufacturing_process_08")}
             </span>
-          </div>
+         
           <p>
           {t("manufacturing_process_09")}
           </p>

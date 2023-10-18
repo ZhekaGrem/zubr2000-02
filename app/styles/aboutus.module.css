@@ -74,7 +74,7 @@
 	position: relative;
 	z-index: 1;
 	font-weight: 700;
-	font-size: 4rem;
+	font-size:var(--span_title);
 	text-transform: uppercase;
 	color:#60606e;
 	
@@ -86,7 +86,7 @@
 	position: relative;
 	z-index: 1;
 	font-weight: 500;
-	font-size: 4rem;
+	font-size:var(--span_title);
 	text-transform: uppercase;
 	color:#60606e;
 	
@@ -131,7 +131,7 @@ ul.list li:before{
 
 
 .big__title{
-	font-size: 4rem;
+	font-size:var(--span_title);
 	color:#60606e;
 	padding: 10px 40px;
 	border:solid 10px #60606e;
@@ -143,11 +143,12 @@ ul.list li:before{
 
 
 .wi__41{
-	padding: 20px 0;
+	padding: 20px 15px;
+  
 	
 }
 .wi__41 span{
 	padding: 10px 0;
-  font-size: 5rem;
+  font-size:var(--span_title);
 	color:#60606e;
 }

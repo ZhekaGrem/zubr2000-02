@@ -60,7 +60,7 @@ li {
 
 
 p{
-  font-size: 3rem;
+  font-size: 1.8rem;
 }
 
 
@@ -86,7 +86,7 @@ input:focus-visible{
   }
  
   main{
-    padding-top:79px
+    padding-top:75px
   }
 
 
@@ -96,6 +96,8 @@ input:focus-visible{
   :root {
     --color_green__02: #677903;
     --color_green: #8ca600;
+    --span_title: 4rem;
+    --p_block: 2rem;
     --container{
       margin-right: auto;
       margin-left: auto;
@@ -120,8 +122,12 @@ input:focus-visible{
     }
   }
   
+
   @media (max-width: 574px) {
-  
+    :root {
+      --span_title: 3rem;
+      --p_block: 2.5rem;
+    }
     main{
       padding-top:79px
     }

@@ -98,9 +98,11 @@ function qualityStandarts() {
             <div className={`${styles.section__title}  ${styles.big__title}`}>
               <span>{t('quality-title-23')}</span>
             </div>
-          <div className={styles.col}>
-              <Image src="/paleta.webp" className={styles.adaptive__img}  width={450} height={300} alt='img4' />
+       
+         <div className={styles.row}>
+              <Image src="/paleta.webp" className={styles.adaptive__img}  width={550} height={300} alt='img4' />
             </div>
+     
           </div>
           <div className={styles.row}>
           
@@ -135,12 +137,10 @@ function qualityStandarts() {
                       </ul>
                     </div>
                   </div>
-                  <div className={styles.row}>
-                  </div>
+                  
                 </div>
 
               </div>
-            </div>
             <div className={styles.row}>
                     <div className={` ${styles.block__01__left} ${styles.row}`}>
                       <ul>
@@ -156,6 +156,7 @@ function qualityStandarts() {
                         </li>
                       </ul>
                     </div>
+            </div>
                <div className={styles.wrapper}>
                <div className={styles.table}>
                   <span className={styles.bloc__title}>4.{t('quality-title-34')}: </span>
@@ -251,7 +252,6 @@ function qualityStandarts() {
                   {t('quality-title-45')}</li>
                 </ul>
               </div>
-            </div>
             <div className={styles.row}>
               <div className={` ${styles.block__01__left} ${styles.row}`}>
                 <ul>
@@ -264,17 +264,18 @@ function qualityStandarts() {
                 </ul>
               </div>
             </div>
+            </div>
           </div>
         </div>
       </section>
       <section>
         <div className={styles.container}>
         <div className={styles.row}>
-         <div className={`${styles.section__title}  ${styles.section__title__cubaturnic} ${styles.big__title}`}>
         <Link    rel="preload" href="/aboutus/quality-standarts/cubaturnick">
+         <div className={`${styles.section__title}  ${styles.section__title__cubaturnic} ${styles.big__title}`}>
               <span>{t('quality-title-51')}</span>
-            </Link>
             </div>
+            </Link>
           </div>
         </div>
       </section>

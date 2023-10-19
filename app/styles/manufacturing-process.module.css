@@ -70,6 +70,8 @@
 
   }
 
+
+
   @media (min-width: 576px) {
     .container {
       max-width: 540px;
@@ -291,4 +293,7 @@
     .text__block span{
       font-size:var(--span_title);
     }
+  }
+  .container > p:last-child {
+    padding-bottom: 20px;
   }

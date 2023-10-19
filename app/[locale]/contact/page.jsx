@@ -15,7 +15,6 @@ function Contact() {
 
     <div className={styles.contact__block}>
 
-    </div>
         <div className={styles.contact__info}>
           <ul>
               <li className={styles.sub__contact__info}>{t('contactus')}</li>
@@ -61,7 +60,8 @@ function Contact() {
           </a>
         </div>
       </div>
-      <div className={styles.contact__form}>
+              </div>
+      <div id='contact_name' className={styles.contact__form}>
         <Form />
       </div>
     </>

@@ -18,8 +18,7 @@
     width: 50%;
     float: left;
     box-sizing: border-box;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0 15px 10px 15px;
   }
 
   .col>h4{
@@ -40,8 +39,7 @@
   .container {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+   padding: 0 15px 20px 15px;
     box-sizing: border-box;
 
   }
@@ -101,7 +99,7 @@
 }
 @media (max-width: 991px) {
 	.section__title{
-		margin : 0 auto 50px;
+		margin : 20px auto 0px;
 	}
 	.section__title span:after{
 		left:50%;

@@ -4,6 +4,7 @@ import styles from "@/app/styles/form.module.css";
 import emailjs from "@emailjs/browser";
 import { useTranslations } from "next-intl";
 import Input from "./Input";
+import Button from "@/app/UI/button/button";
 
 const Form = () => {
   const t = useTranslations("Index");
@@ -28,7 +29,7 @@ const Form = () => {
       <div className={styles.text}> {t("contactus")} </div>
       <div className=""></div>
       <form className={styles.form}>
-      <Input span={t('name')}/>
+      <Input  span={t('name')}/>
       <Input span={t('company_name')}/>
       <Input span={t('phone')}/>
       <Input span={t('email')}/>
@@ -49,10 +50,8 @@ const Form = () => {
           </div>
         </div>
      <div>
-      <button className={styles.btn} type="submit" >
-      {t('send')}
-      </button>
-    
+      
+    <Button  title_button={t('send')}/>
      </div>
         
       </form>

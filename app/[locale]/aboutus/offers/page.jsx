@@ -4,6 +4,7 @@ import styles from "@/app/styles/offer.module.css";
 import { client } from "@/app/lib/sanity";
 import Link from "next-intl/link";
 import OfferBlog from '@/app/components/offerblog/OfferBlog';
+import Button from "@/app/UI/button/button";
 
 async function getData() {
   const query = `*[_type == "offer"] | order(publication_data_offer desc)`;
@@ -112,11 +113,8 @@ export default  function Offers() {
             </p>
            
           <Link    rel="preload"
-                      href="/contact#contact"
-                    >
-                  <button className={styles.button__us}role="button">
-                  <p>Написати нам</p>
-                  </button>
+                      href="/contact#contact_name"
+                    ><Button title_button={<p>Написати нам</p>}/>
                     </Link>
             </div>
           </div>

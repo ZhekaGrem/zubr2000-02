@@ -6,7 +6,8 @@ import Link from "next/link";
 import { useTranslations } from 'next-intl';
 
 
-function qualityStandarts() {
+function QualityStandarts() {
+
   const t = useTranslations("Index");
 
   return (
@@ -283,4 +284,4 @@ function qualityStandarts() {
   );
 }
 
-export default qualityStandarts;
+export default QualityStandarts;

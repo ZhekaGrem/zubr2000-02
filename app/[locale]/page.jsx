@@ -1,4 +1,5 @@
 "use client";
+import React  from 'react';
 import Link from "next-intl/link";
 import styles from "@/app/styles/page.module.css";
 import { useTranslations } from "next-intl";
@@ -29,6 +30,8 @@ export default function Home() {
   const handleClick = () => {
     setIsActive(!isActive);
   };
+
+
 
   return (
     <>
@@ -178,20 +181,20 @@ export default function Home() {
                   <span>{t("contactus")}</span>
                 </div>
                 <ul className={styles.section__title__us}>
-                  <p>{t("manager")}:+38 097 136-20-00 </p>
-                  <p>{t("director")}:+38 067 674-58-43 </p>
+                  <li><strong>{t("manager")}: </strong>+38 097 136-20-00 </li>
+                  <li><strong>{t("director")}: </strong>+38 067 674-58-43 </li>
                   <li>
-                    <a rel="preload" href="mailto:zubrzubr2000@gmail.com ">
+                  <strong>Email:</strong> <a rel="preload" href="mailto:zubrzubr2000@gmail.com ">
                       zubrzubr2000@gmail.com{" "}
                     </a>
                   </li>
                   <li>
-                    <a rel="preload" href="mailto:gremroman@gmail.com">
+                  <strong>Email:</strong> <a rel="preload" href="mailto:gremroman@gmail.com">
                       gremroman@gmail.com
                     </a>
                   </li>
                   <li>
-                    <a rel="preload" href="mailto:grem_roman@icloud.com">
+                  <strong>Email:</strong><a rel="preload" href="mailto:grem_roman@icloud.com">
                       grem_roman@icloud.com{" "}
                     </a>
                   </li>

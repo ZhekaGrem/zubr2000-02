@@ -1,9 +1,9 @@
-"use client";
-import React from "react";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
+'use client';
+import React from 'react';
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import styles from '@/app/styles/products.module.css';
-import Link from "next/link";
+import Link from 'next/link';
 
 function Product() {
   const t = useTranslations("Index");

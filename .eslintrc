@@ -1,0 +1,23 @@
+{
+    "extends": [
+        "next",
+        "next/core-web-vitals",
+        "eslint:recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:react/recommended"
+    ],
+    "settings": {
+      "next": {
+        "rootDir": "packages/my-app/"
+      }
+    },
+    "rules": {
+        "no-unused-vars":"warn",
+        "@next/next/no-html-link-for-pages": "off",
+        "max-len":["warn",{"code":120}],
+        "no-console":"warn",
+        "quotes":["warn","single"],
+        "jsx-quotes":["warn","prefer-double"],
+      }
+    
+  }

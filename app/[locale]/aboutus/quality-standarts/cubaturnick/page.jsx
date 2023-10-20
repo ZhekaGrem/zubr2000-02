@@ -1,12 +1,8 @@
-"use client";
-import { useState, useEffect } from "react";
+import React  from 'react';
 import styles from "@/app/styles/cubaturnick.module.css";
 
-const cubaturnick = () => {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+const Cubaturnick = () => {
+
 const data__01 =[
     [' ', '1', '1,1', '1,2', '1,3', '1,4', '1,5', '1,6', '1,7', '1,8', '1,9', ' '],
     ['18', '0,036', '0,04', '0,044', '0,048', '0,052', '0,056', '0,06', '0,064', '0,068', '0,072', '18'],
@@ -132,7 +128,7 @@ const data__02 =[
 ['','2', '2,1', '2,2', '2,3', '2,4', '2,5', '2,6', '2,7', '2,8', '2,9','']
 ];
 
-  return    mounted && (
+  return      (
       <>
         <div className={styles.container} >
             <div className={styles.wrapper} >
@@ -167,4 +163,4 @@ const data__02 =[
   )
 };
 
-export default cubaturnick;
+export default Cubaturnick;

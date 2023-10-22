@@ -10,9 +10,8 @@
     "rules": {
         "no-unused-vars":"warn",
         "@next/next/no-html-link-for-pages": "off",
-        "max-len":["warn",{"code":120}],
-        "no-console":"warn",
-        "quotes":["warn","single"]
+        "max-len":["warn",{"code":220}],
+        "no-console":"warn"
       
       }
     

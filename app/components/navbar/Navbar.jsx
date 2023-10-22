@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import React, { useState, memo } from 'react';
 import Link from 'next-intl/link';
 import { usePathname } from 'next-intl/client';
+import Dropdownlang from '@/app/components/dropdownlang/Dropdownlang'
 
 function Navbar() {
   const t = useTranslations('Index');

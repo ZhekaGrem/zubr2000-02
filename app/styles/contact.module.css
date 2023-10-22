@@ -62,7 +62,7 @@ flex-wrap: wrap;
    .contact__info {
       width: 100%;
       justify-content: center;
-	@@ -95,4 +95,10 @@ flex-wrap: wrap;
+	 flex-wrap: wrap;
    padding: 5px 0px;
    margin-bottom: 30px;
 
@@ -73,6 +73,7 @@ flex-wrap: wrap;
    padding: 10px 100px;
 }
 
+}
 
 
 

@@ -58,15 +58,20 @@ flex-wrap: wrap;
 
 }
 
-@media(max-width:590px) {
+@media(max-width:700px) {
    .contact__info {
       width: 100%;
       justify-content: center;
-      align-items: center;
-      display: flex;
-   }
+	@@ -95,4 +95,10 @@ flex-wrap: wrap;
+   padding: 5px 0px;
+   margin-bottom: 30px;
+
 }
 
+
+.contact__block{
+   padding: 10px 100px;
+}
 
 
 

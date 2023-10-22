@@ -2,9 +2,7 @@
     "extends": [
         "next",
         "next/core-web-vitals",
-        "eslint:recommended",
-        "plugin:react-hooks/recommended",
-        "plugin:react/recommended"
+        "eslint:recommended"
     ],
     "settings": {
       "next": {
@@ -17,7 +15,7 @@
         "max-len":["warn",{"code":120}],
         "no-console":"warn",
         "quotes":["warn","single"],
-        "jsx-quotes":["warn","prefer-double"],
+        "jsx-quotes":["warn","prefer-double"]
       }
     
   }

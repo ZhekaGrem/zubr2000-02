@@ -42,7 +42,7 @@ export default function Home() {
             <div className={`${styles.col} `}>
               <div className={`${styles.row}  `}>
                 <div className={styles.section__title}>
-                  <span>{t("aboutus")}</span>
+                  <h4>{t("aboutus")}</h4>
                 </div>
                 <p>{t("title1")}</p>
                 <p>{t("title2")}</p>
@@ -67,7 +67,7 @@ export default function Home() {
         <section className={`${styles.container}`}>
           <div className={styles.block}>
             <div className={styles.section__title}>
-              <span>{t("news")}</span>
+              <h4>{t("news")}</h4>
               <MiniBlog data={blogData} />
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function Home() {
               <div className={`${styles.row} `}>
                 
                 <div className={styles.section__title}>
-                  <span>{t("ourproduct")}</span>
+                  <h4>{t("ourproduct")}</h4>
                 </div>
                 <ul className={`${styles.list}`}>
                   <li>
@@ -178,7 +178,7 @@ export default function Home() {
             <div className={`${styles.col} `}>
               <div className={`${styles.row} ${styles.test} `}>
                 <div className={styles.section__title}>
-                  <span>{t("contactus")}</span>
+                  <h4>{t("contactus")}</h4>
                 </div>
                 <ul className={styles.section__title__us}>
                   <li><strong>{t("manager")}: </strong>+38 097 136-20-00 </li>
@@ -194,7 +194,7 @@ export default function Home() {
                     </a>
                   </li>
                   <li>
-                  <strong>Email:</strong><a rel="preload" href="mailto:grem_roman@icloud.com">
+                  <strong>Email:</strong> <a rel="preload" href="mailto:grem_roman@icloud.com">
                       grem_roman@icloud.com{" "}
                     </a>
                   </li>

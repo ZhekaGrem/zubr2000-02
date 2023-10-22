@@ -6,7 +6,7 @@ import styles from '@/app/styles/UI/button.module.css'; // Import your CSS modul
 
   return (
     <button className={styles.btn} type="submit">
-     { props.title_button}
+     {props.title_button}
     </button>
   );
 }

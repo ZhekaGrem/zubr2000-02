@@ -88,7 +88,7 @@ padding: 15px;
 }
 
 
-.section__title span:after {
+.section__title h4:after {
   content: "";
   position: absolute;
   top: 20px;
@@ -127,7 +127,7 @@ padding: 15px;
     margin: 0 auto 50px;
   }
 
-  .section__title span:after {
+  .section__title h4:after {
     left: 100%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -260,7 +260,7 @@ padding: 15px;
   text-align: center;
 }
 
-.section__title span {
+.section__title h4 {
   position: relative;
   z-index: 1;
   font-weight: 700;

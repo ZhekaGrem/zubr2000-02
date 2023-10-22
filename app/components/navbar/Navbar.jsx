@@ -10,13 +10,14 @@ function Navbar() {
   const t = useTranslations("Index");
   const pathname = usePathname();
 
+  
 const locale = useLocale();
   const [menuActive, setMenuActive] = useState(true);
   const handleClick = () => {
     setMenuActive(true);
   };
   return (
-    <>
+   
       <nav
       loading ='eager'
         alt="forest"
@@ -400,7 +401,7 @@ const locale = useLocale();
           </li>
         </ul>
       </nav>
-    </>
+   
   );
 }
 

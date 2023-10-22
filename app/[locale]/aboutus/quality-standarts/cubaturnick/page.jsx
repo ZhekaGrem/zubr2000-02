@@ -1,5 +1,5 @@
 import React  from 'react';
-import styles from "@/app/styles/cubaturnick.module.css";
+import styles from '@/app/styles/cubaturnick.module.css';
 
 const Cubaturnick = () => {
 
@@ -141,14 +141,17 @@ const data__02 =[
           <tr key={rowIndex}
           className={rowIndex === 0 || rowIndex === data__01.length - 1 ? styles.grayBackground : ''}>
             {row.map((cell, columnIndex) => (
-              <td className={`${styles.table__cell} ${+cell === rowIndex || +cell === +row[0] ? styles.gray : ''}`} key={columnIndex}>{cell}</td>
+              <td
+               className={`${styles.table__cell} ${+cell === rowIndex || +cell === +row[0] ? styles.gray : ''}`} 
+               key={columnIndex}>{cell}</td>
             ))}
           </tr>
         ))}
       </tbody>
             <tbody className={styles.table}>
         {data__02.slice(0).map((row__02, rowIndex__02) => (
-          <tr key={rowIndex__02} className={rowIndex__02 === 0 || rowIndex__02 === data__02.length - 1 ? styles.grayBackground : ''}>
+          <tr key={rowIndex__02}
+           className={rowIndex__02 === 0 || rowIndex__02 === data__02.length - 1 ? styles.grayBackground : ''}>
             {row__02.map((cell, columnIndex) => (
               <td className={`${styles.table__cell} `} key={columnIndex}>{cell}</td>
             ))}

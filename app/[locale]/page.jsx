@@ -1,22 +1,23 @@
-"use client";
+'use client';
 import React  from 'react';
-import Link from "next-intl/link";
-import styles from "@/app/styles/page.module.css";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
-import { useState, useEffect } from "react";
-import MiniBlog from "../components/miniblog/MiniBlog";
-import { client } from "@/app/lib/sanity";
-import Button from "@/app/UI/button/button";
+import Link from 'next-intl/link';
+import styles from '@/app/styles/page.module.css';
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+import { useState, useEffect } from 'react';
+import MiniBlog from '../components/miniblog/MiniBlog';
+import { client } from '@/app/lib/sanity';
+import Button from '@/app/UI/button/button';
 
 async function getData() {
+  // eslint-disable-next-line quotes
   const query = `*[_type == "post"] | order(publication_data desc)`;
   const data = await client.fetch(query);
   return data;
 }
 
 export default function Home() {
-  const t = useTranslations("Index");
+  const t = useTranslations('Index');
   const [isActive, setIsActive] = useState(false);
   const [blogData, setBlogData] = useState([]);
   useEffect(() => {
@@ -42,22 +43,22 @@ export default function Home() {
             <div className={`${styles.col} `}>
               <div className={`${styles.row}  `}>
                 <div className={styles.section__title}>
-                  <h4>{t("aboutus")}</h4>
+                  <h4>{t('aboutus')}</h4>
                 </div>
-                <p>{t("title1")}</p>
-                <p>{t("title2")}</p>
-                <p>{t("title3")}</p>
+                <p>{t('title1')}</p>
+                <p>{t('title2')}</p>
+                <p>{t('title3')}</p>
               </div>
             </div>
           <div className={`${styles.col__5} ${styles.col__6}`}>
               <div className={styles.row}>
                 <Image
                   className={styles.info__img}
-                  src="/new-title.webp"
+                  src='/new-title.webp'
                   width={800}
                   height={800}
-                  alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
-                  loading="eager"
+                  alt='lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна'
+                  loading='eager'
                   priority={true}
                 />
               </div>
@@ -67,7 +68,7 @@ export default function Home() {
         <section className={`${styles.container}`}>
           <div className={styles.block}>
             <div className={styles.section__title}>
-              <h4>{t("news")}</h4>
+              <h4>{t('news')}</h4>
               <MiniBlog data={blogData} />
             </div>
           </div>
@@ -79,9 +80,9 @@ export default function Home() {
           <div className={styles.col__5}>
               <div className={styles.row}>
                 <Image
-                  alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
+                  alt='lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна'
                   className={styles.info__img}
-                  src="/photo_product_0.webp"
+                  src='/photo_product_0.webp'
                   width={800}
                   height={800}
                 />
@@ -92,79 +93,79 @@ export default function Home() {
               <div className={`${styles.row} `}>
                 
                 <div className={styles.section__title}>
-                  <h4>{t("ourproduct")}</h4>
+                  <h4>{t('ourproduct')}</h4>
                 </div>
                 <ul className={`${styles.list}`}>
                   <li>
                     <Link
-                      rel="preload"
-                      href="/aboutus/certificates"
+                      rel='preload'
+                      href='/aboutus/certificates'
                       className={styles.navbar__link}
                     >
-                      {t("certificates")}
+                      {t('certificates')}
                     </Link>
                   </li>
                   <li>
-                    {" "}
+                    {' '}
                     <Link
-                      rel="preload"
-                      href="/aboutus/quality-standarts"
+                      rel='preload'
+                      href='/aboutus/quality-standarts'
                       className={styles.navbar__link}
                     >
-                      {t("quality")}
-                    </Link>{" "}
+                      {t('quality')}
+                    </Link>{' '}
                   </li>
                   <li>
-                    {" "}
+                    {' '}
                     <Link
-                      rel="preload"
-                      href="/aboutus/manufacturing-process"
+                      rel='preload'
+                      href='/aboutus/manufacturing-process'
                       className={styles.navbar__link}
                     >
-                      {t("manufacturing")}
-                    </Link>{" "}
+                      {t('manufacturing')}
+                    </Link>{' '}
                   </li>
                 </ul>
                 <ul className={`${styles.list}`}>
                   <li>
-                    {" "}
+                    {' '}
                     <Link
-                      rel="preload"
-                      href="/products/oak-lumber"
+                      rel='preload'
+                      href='/products/oak-lumber'
                       className={styles.navbar__link}
                     >
-                      {t("oak")}
-                    </Link>{" "}
+                      {t('oak')}
+                    </Link>{' '}
                   </li>
                   <li>
-                    {" "}
+                    {' '}
                     <Link
-                      rel="preload"
-                      href="/products/ash-lumber"
+                      rel='preload'
+                      href='/products/ash-lumber'
                       className={styles.navbar__link}
                     >
-                      {t("ash")}
-                    </Link>{" "}
+                      {t('ash')}
+                    </Link>{' '}
                   </li>
                   <li>
-                    {" "}
+                    {' '}
                     <Link
-                      rel="preload"
-                      href="/products/birch-lumber"
+                      rel='preload'
+                      href='/products/birch-lumber'
                       className={styles.navbar__link}
                     >
-                      {t("birch")}
-                    </Link>{" "}
+                      {t('birch')}
+                    </Link>{' '}
                   </li>
                   <li>
-                    {" "}
+                    {' '}
                     <Link
-                      rel="preload"
-                      href="/products/modrina-lumber"
+                      rel='preload'
+                      href='/products/modrina-lumber'
                       className={styles.navbar__link}
                     >
-                      {t("modrina")}
-                    </Link>{" "}
+                      {t('modrina')}
+                    </Link>{' '}
                   </li>
                 </ul>
               </div>
@@ -178,32 +179,32 @@ export default function Home() {
             <div className={`${styles.col} `}>
               <div className={`${styles.row} ${styles.test} `}>
                 <div className={styles.section__title}>
-                  <h4>{t("contactus")}</h4>
+                  <h4>{t('contactus')}</h4>
                 </div>
                 <ul className={styles.section__title__us}>
-                  <li><strong>{t("manager")}: </strong>+38 097 136-20-00 </li>
-                  <li><strong>{t("director")}: </strong>+38 067 674-58-43 </li>
+                  <li><strong>{t('manager')}: </strong>+38 097 136-20-00 </li>
+                  <li><strong>{t('director')}: </strong>+38 067 674-58-43 </li>
                   <li>
-                  <strong>Email:</strong> <a rel="preload" href="mailto:zubrzubr2000@gmail.com ">
-                      zubrzubr2000@gmail.com{" "}
+                  <strong>Email:</strong> <a rel='preload' href='mailto:zubrzubr2000@gmail.com '>
+                      zubrzubr2000@gmail.com{' '}
                     </a>
                   </li>
                   <li>
-                  <strong>Email:</strong> <a rel="preload" href="mailto:gremroman@gmail.com">
+                  <strong>Email:</strong> <a rel='preload' href='mailto:gremroman@gmail.com'>
                       gremroman@gmail.com
                     </a>
                   </li>
                   <li>
-                  <strong>Email:</strong> <a rel="preload" href="mailto:grem_roman@icloud.com">
-                      grem_roman@icloud.com{" "}
+                  <strong>Email:</strong> <a rel='preload' href='mailto:grem_roman@icloud.com'>
+                      grem_roman@icloud.com{' '}
                     </a>
                   </li>
                   <Link
-                    rel="preload"
+                    rel='preload'
                     onClick={handleClick}
-                    href="/contact#contact_name"
+                    href='/contact#contact_name'
                   >
-                    <Button title_button={t("writeus")} />
+                    <Button title_button={t('writeus')} />
                   </Link>
                 </ul>
               </div>
@@ -211,9 +212,9 @@ export default function Home() {
               <div className={styles.col__5}>
               <div className={styles.row}>
                 <Image
-                  alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
+                  alt='lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна'
                   className={styles.info__img}
-                  src="/photo_product_2.webp"
+                  src='/photo_product_2.webp'
                   width={800}
                   height={800}
                 />

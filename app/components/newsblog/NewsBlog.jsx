@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "@/app/styles/news.module.css";
+import styles from '@/app/styles/news.module.css';
  
 
 function NewsBlog({ data }) {

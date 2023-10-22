@@ -1,19 +1,19 @@
-"use client";
-import React,{  useState, useEffect,  } from "react";
-import styles from "@/app/styles/offer.module.css";
-import { client } from "@/app/lib/sanity";
-import Link from "next-intl/link";
+'use client';
+import React, { useState, useEffect } from 'react';
+import styles from '@/app/styles/offer.module.css';
+import { client } from '@/app/lib/sanity';
+import Link from 'next-intl/link';
 import OfferBlog from '@/app/components/offerblog/OfferBlog';
-import Button from "@/app/UI/button/button";
+import Button from '@/app/UI/button/button';
 
 async function getData() {
-  const query = `*[_type == "offer"] | order(publication_data_offer desc)`;
+  // eslint-disable-next-line quotes
+  const query = `*[_type == 'offer'] | order(publication_data_offer desc)`;
   const data = await client.fetch(query);
   return data;
 }
 
-
-export default  function Offers() {
+export default function Offers() {
   const [blogData, setBlogData] = useState([]);
   useEffect(() => {
     async function fetchData() {
@@ -31,16 +31,16 @@ export default  function Offers() {
           </div>
           <div>
             <p>
-              {" "}
+              {' '}
               Ми, команда ZUBR-2000, відкриті до нових можливостей та важливих
               партнерств для створення високоякісних пиломатеріалів, які
               задовольнять найвищі стандарти якості та відповідають
-              різноманітним потребам наших клієнтів.{" "}
+              різноманітним потребам наших клієнтів.{' '}
             </p>
           </div>
           <div>
             <p>
-              {" "}
+              {' '}
               Ми хочемо розширити свої можливості та посилити наше виробництво
               пиломатеріалів обрізних та не обрізних. В цьому контексті ми
               шукаємо надійних та відданих партнерів, які поділяють нашу
@@ -53,7 +53,7 @@ export default  function Offers() {
           <div>
             <ul>
               <li>
-                {" "}
+                {' '}
                 🌿 Багаторічний досвід: Ми маємо більше ніж 20 років досвіду у
                 виробництві пиломатеріалів, що гарантує якість та надійність
                 нашої продукції.
@@ -83,51 +83,44 @@ export default  function Offers() {
             Якщо ви прагнете знайти надійного та інноваційного партнера для
             спільного виробництва пиломатеріалів, ми готові почути вас!
             Запрошуємо вас до обговорення можливостей співпраці та створення
-            вигідних партнерських зв `&apos;`язків. З нетерпінням чекаємо на ваші ідеї
-            та пропозиції. З найкращими побажаннями, Команда ZUBR-2000.
+            вигідних партнерських зв `&apos;`язків. З нетерпінням чекаємо на
+            ваші ідеї та пропозиції. З найкращими побажаннями, Команда
+            ZUBR-2000.
           </p>
           <div>
-            <div className={styles.big__title}>
+            <div className={styles.big__title}>Контактна інформація:</div>
+            <div className={styles.col}>
+              <p>Директор: +38 067 674-58-43</p>
+              <p>Менеджер: +38 097 136-20-00</p>
+            </div>
+            <div className={styles.col}>
+              <p>
+                <a rel='preload' href='mailto:zubrzubr2000@gmail.com '>
+                  zubrzubr2000@gmail.com
+                </a>
+              </p>
+              <p>
+                <a rel='preload' href='mailto:gremroman@gmail.com'>
+                  gremroman@gmail.com
+                </a>
+              </p>
+              <p>
+                <a rel='preload' href='mailto:grem_roman@icloud.com'>
+                  grem_roman@icloud.com{' '}
+                </a>
+              </p>
 
-            Контактна інформація:
-            </div>
-            <div className={styles.col}>
-            <p>Директор: +38 067 674-58-43</p>
-            <p>Менеджер: +38 097 136-20-00</p>
-            </div>
-            <div className={styles.col}>
-            <p>
-              <a rel="preload" href="mailto:zubrzubr2000@gmail.com ">
-                zubrzubr2000@gmail.com
-              </a>
-            </p>
-            <p>
-              <a rel="preload" href="mailto:gremroman@gmail.com">
-                gremroman@gmail.com
-              </a>
-            </p>
-            <p>
-              <a rel="preload" href="mailto:grem_roman@icloud.com">
-                grem_roman@icloud.com{" "}
-              </a>
-            </p>
-           
-          <Link    rel="preload"
-                      href="/contact#contact_name"
-                    ><Button title_button={<p>Написати нам</p>}/>
-                    </Link>
+              <Link rel='preload' href='/contact#contact_name'>
+                <Button title_button={<p>Написати нам</p>} />
+              </Link>
             </div>
           </div>
         </div>
         <div>
-          <div className={styles.big__title}>
-            {" "}
-            Ми шукаємо
+          <div className={styles.big__title}> Ми шукаємо</div>
+          <div>
+            <OfferBlog data={blogData} />
           </div>
-            <div>
-            <OfferBlog data={blogData}/>
-
-            </div>
         </div>
       </div>
     </>

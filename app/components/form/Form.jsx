@@ -1,13 +1,14 @@
-"use client";
-import React, { useState } from "react";
-import styles from "@/app/styles/form.module.css";
-import emailjs from "@emailjs/browser";
-import { useTranslations } from "next-intl";
-import Input from "./Input";
-import Button from "@/app/UI/button/button";
+'use client';
+import React, { useState } from 'react';
+import styles from '@/app/styles/form.module.css';
+// eslint-disable-next-line no-unused-vars
+import emailjs from '@emailjs/browser';
+import { useTranslations } from 'next-intl';
+import Input from './Input';
+import Button from '@/app/UI/button/button';
 
 const Form = () => {
-  const t = useTranslations("Index");
+  const t = useTranslations('Index');
 
   const [isActive, setIsActive] = useState(false);
 
@@ -18,7 +19,7 @@ const Form = () => {
  
 
   const handleBlur = (e) => {
-    if (e.target.value === "") {
+    if (e.target.value === '') {
       setIsActive(false);
     }
   };
@@ -26,8 +27,8 @@ const Form = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.text}> {t("contactus")} </div>
-      <div className=""></div>
+      <div className={styles.text}> {t('contactus')} </div>
+      <div className=''></div>
       <form className={styles.form}>
       <Input  span={t('name')}/>
       <Input span={t('company_name')}/>
@@ -39,12 +40,12 @@ const Form = () => {
         <div className={styles.col__6}>
           <div className={styles.textarea_1}>
             <textarea
-              type="text"
-              name="message"
+              type='text'
+              name='message'
               onFocus={handleFocus}
               onBlur={handleBlur}
             />
-            <span className={` ${isActive ? styles.active : ""}`}>
+            <span className={` ${isActive ? styles.active : ''}`}>
               message
             </span>
           </div>

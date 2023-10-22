@@ -12,8 +12,8 @@
         "@next/next/no-html-link-for-pages": "off",
         "max-len":["warn",{"code":120}],
         "no-console":"warn",
-        "quotes":["warn","single"],
-        "jsx-quotes":["warn","prefer-double"]
+        "quotes":["warn","single"]
+      
       }
     
   }

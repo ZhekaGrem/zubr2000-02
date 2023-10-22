@@ -1,10 +1,10 @@
-'use client';
-import React, { useState, useEffect } from 'react';
-import styles from '@/app/styles/offer.module.css';
-import { client } from '@/app/lib/sanity';
-import Link from 'next-intl/link';
-import OfferBlog from '@/app/components/offerblog/OfferBlog';
-import Button from '@/app/UI/button/button';
+"use client";
+import React, { useState, useEffect } from "react";
+import styles from "@/app/styles/offer.module.css";
+import { client } from "@/app/lib/sanity";
+import Link from "next-intl/link";
+import OfferBlog from "@/app/components/offerblog/OfferBlog";
+import Button from "@/app/UI/button/button";
 
 async function getData() {
   // eslint-disable-next-line quotes
@@ -31,16 +31,16 @@ export default function Offers() {
           </div>
           <div>
             <p>
-              {' '}
+              {" "}
               Ми, команда ZUBR-2000, відкриті до нових можливостей та важливих
               партнерств для створення високоякісних пиломатеріалів, які
               задовольнять найвищі стандарти якості та відповідають
-              різноманітним потребам наших клієнтів.{' '}
+              різноманітним потребам наших клієнтів.{" "}
             </p>
           </div>
           <div>
             <p>
-              {' '}
+              {" "}
               Ми хочемо розширити свої можливості та посилити наше виробництво
               пиломатеріалів обрізних та не обрізних. В цьому контексті ми
               шукаємо надійних та відданих партнерів, які поділяють нашу
@@ -53,7 +53,7 @@ export default function Offers() {
           <div>
             <ul>
               <li>
-                {' '}
+                {" "}
                 🌿 Багаторічний досвід: Ми маємо більше ніж 20 років досвіду у
                 виробництві пиломатеріалів, що гарантує якість та надійність
                 нашої продукції.
@@ -95,22 +95,22 @@ export default function Offers() {
             </div>
             <div className={styles.col}>
               <p>
-                <a rel='preload' href='mailto:zubrzubr2000@gmail.com '>
+                <a rel="preload" href="mailto:zubrzubr2000@gmail.com ">
                   zubrzubr2000@gmail.com
                 </a>
               </p>
               <p>
-                <a rel='preload' href='mailto:gremroman@gmail.com'>
+                <a rel="preload" href="mailto:gremroman@gmail.com">
                   gremroman@gmail.com
                 </a>
               </p>
               <p>
-                <a rel='preload' href='mailto:grem_roman@icloud.com'>
-                  grem_roman@icloud.com{' '}
+                <a rel="preload" href="mailto:grem_roman@icloud.com">
+                  grem_roman@icloud.com{" "}
                 </a>
               </p>
 
-              <Link rel='preload' href='/contact#contact_name'>
+              <Link rel="preload" href="/contact#contact_name">
                 <Button title_button={<p>Написати нам</p>} />
               </Link>
             </div>

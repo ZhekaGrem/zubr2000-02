@@ -1,8 +1,8 @@
-'use client';
-import React, { useEffect, useState } from 'react';
-import styles from '@/app/styles/news.module.css';
-import { client } from '@/app/lib/sanity';
-import NewsBlog from '@/app/components/newsblog/NewsBlog';
+"use client";
+import React, { useEffect, useState } from "react";
+import styles from "@/app/styles/news.module.css";
+import { client } from "@/app/lib/sanity";
+import NewsBlog from "@/app/components/newsblog/NewsBlog";
 
 async function getData() {
   // eslint-disable-next-line quotes

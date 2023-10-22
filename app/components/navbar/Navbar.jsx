@@ -382,7 +382,7 @@ function Navbar() {
                 href={usePathname()}
                 locale='ru'
               >
-                Руский
+                Руский1
                 <Image
                   alt='language Ru'
                   src='/ru.webp'

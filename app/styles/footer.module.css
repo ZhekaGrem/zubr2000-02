@@ -35,10 +35,7 @@
   width: 50px;
   box-sizing: border-box;
   }
-  .footer__col ul li:not(:last-child){
-    margin-bottom: 10px;
 
-  }
   .footer__col ul li{
     font-size: 1.5rem;
     text-decoration: none;
@@ -118,5 +115,4 @@
 .footer__link{
   width: 48px;
    height: 48px;
-   padding: 5px;
 }

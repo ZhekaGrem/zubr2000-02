@@ -139,6 +139,9 @@ input:focus-visible{
     html {
       font-size: 50%;
     }
- 
+    :root {
+      --span_title: 2rem;
+      --p_block: 1.5rem;
+    }
   }
   

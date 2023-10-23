@@ -26,9 +26,9 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1350px) {
     .container {
-      max-width: 1000px;
+      max-width: 75%;
     }
   }
 

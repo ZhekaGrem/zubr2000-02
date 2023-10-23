@@ -43,6 +43,12 @@
     }
   }
 
+  @media (min-width: 1350px) {
+    .container {
+      max-width: 87%;
+    }
+  }
+
   .row{
     margin-left: -15px;
     margin-right: -15px;

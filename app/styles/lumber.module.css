@@ -67,6 +67,12 @@
       max-width: 1170px;
     }
   }
+
+  @media (min-width: 1350px) {
+    .container {
+      max-width: 87%;
+    }
+  }
   .section__title{
 	width: 50%;
 	margin: 50px 300px 50px;

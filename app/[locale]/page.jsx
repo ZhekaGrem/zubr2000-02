@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React from "react";
 import Link from "next-intl/link";
 import styles from "@/app/styles/page.module.css";
 import { useTranslations } from "next-intl";
@@ -36,7 +36,6 @@ export default function Home() {
       <div className={styles.content}>
         <section className={`${styles.container} `}>
           <div className={styles.block}>
-         
             <div className={`${styles.col} `}>
               <div className={`${styles.row}  `}>
                 <div className={styles.section__title}>
@@ -47,7 +46,7 @@ export default function Home() {
                 <p>{t("title3")}</p>
               </div>
             </div>
-          <div className={`${styles.col__5} ${styles.col__6}`}>
+            <div className={`${styles.col__5} ${styles.col__6}`}>
               <div className={styles.row}>
                 <Image
                   className={styles.info__img}
@@ -69,12 +68,11 @@ export default function Home() {
               <MiniBlog data={blogData} />
             </div>
           </div>
-          
         </section>
 
         <section className={`${styles.container} `}>
           <div className={styles.block}>
-          <div className={styles.col__5}>
+            <div className={styles.col__5}>
               <div className={styles.row}>
                 <Image
                   alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
@@ -86,9 +84,7 @@ export default function Home() {
               </div>
             </div>
             <div className={`${styles.col} ${styles.production__us} `}>
-              
               <div className={`${styles.row} `}>
-                
                 <div className={styles.section__title}>
                   <span>{t("ourproduct")}</span>
                 </div>
@@ -167,47 +163,55 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-           
           </div>
         </section>
         <section className={`${styles.container}`}>
           <div className={styles.block}>
-            
             <div className={`${styles.col} `}>
               <div className={`${styles.row} ${styles.test} `}>
                 <div className={styles.section__title}>
                   <span>{t("contactus")}</span>
                 </div>
                 <ul className={styles.section__title__us}>
-                  <li><strong>{t("manager")}: </strong>+38 097 136-20-00 </li>
-                  <li><strong>{t("director")}: </strong>+38 067 674-58-43 </li>
                   <li>
-                  <strong>Email:</strong> <a rel="preload" href="mailto:zubrzubr2000@gmail.com ">
+                    <strong>{t("manager")}: </strong>+38 097 136-20-00{" "}
+                  </li>
+                  <li>
+                    <strong>{t("director")}: </strong>+38 067 674-58-43{" "}
+                  </li>
+                  <li>
+                    <strong>Email:</strong>{" "}
+                    <a rel="preload" href="mailto:zubrzubr2000@gmail.com ">
                       zubrzubr2000@gmail.com{" "}
                     </a>
                   </li>
                   <li>
-                  <strong>Email:</strong> <a rel="preload" href="mailto:gremroman@gmail.com">
+                    <strong>Email:</strong>{" "}
+                    <a rel="preload" href="mailto:gremroman@gmail.com">
                       gremroman@gmail.com
                     </a>
                   </li>
                   <li>
-                  <strong>Email:</strong><a rel="preload" href="mailto:grem_roman@icloud.com">
+                    <strong>Email:</strong>{" "}
+                    <a className={styles.link_style} rel="preload" href="mailto:grem_roman@icloud.com">
                       grem_roman@icloud.com{" "}
                     </a>
                   </li>
-                  <Link
-                    rel="preload"
-                    onClick={handleClick}
-                    href="/contact#contact_name"
-                  >
-                    <Button title_button={t("writeus")} />
-                  </Link>
                 </ul>
               </div>
+              <div className={styles.btnblock}> 
+              <Link
+            
+                rel="preload"
+                onClick={handleClick}
+                href="/contact#contact_name"
+              >
+                <Button title_button={t("writeus")} />
+              </Link>
+              </div>
             </div>
-              <div className={styles.col__5}>
-              <div className={styles.row}>
+            <div className={styles.col__5}>
+              <div className={`${styles.row} `}>
                 <Image
                   alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
                   className={styles.info__img}

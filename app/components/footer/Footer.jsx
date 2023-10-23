@@ -19,8 +19,8 @@ function Footer() {
         <div className={styles.container}>
           <div className={styles.row}>
             <div className={styles.footer__col}>
-              <ul>
                 <h4>{t("ourproduct")}</h4>
+              <ul>
                 <li>
                   <Link
                     rel="preload"
@@ -60,12 +60,12 @@ function Footer() {
               </ul>
             </div>
             <div className={styles.footer__col}>
-              <ul>
                 <h4>{t("certificates")}</h4>
+              <ul>
                 <li>
                   <Link
                     rel="preload"
-                    className={styles.footer__link}
+                    className={`${styles.footer__link} ${styles.footer__link__img}`}
                     href="/aboutus/certificates"
                   >
                     <Image
@@ -80,8 +80,8 @@ function Footer() {
               </ul>
             </div>
             <div className={styles.footer__col}>
-              <ul>
                 <h4>{t("contactus")}</h4>
+              <ul>
                 <li>
                   {t("manager")}: +38 097 136-20-00
                 </li>
@@ -131,8 +131,8 @@ function Footer() {
               </ul>
             </div>
             <div className={styles.footer__col}>
-              <ul className={styles.footer__info}>
                 <h4>{t("findus")}</h4>
+              <ul className={styles.footer__info}>
                 <li>79000</li>
                 <li>{t("ukrain")}</li>
                 <li>{t("lviv")}</li>

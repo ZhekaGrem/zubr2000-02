@@ -49,7 +49,7 @@ const Form = () => {
             </span>
           </div>
         </div>
-     <div>
+     <div className={styles.btnblock}>
       
     <Button  title_button={t('send')}/>
      </div>

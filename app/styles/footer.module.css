@@ -1,6 +1,6 @@
 .footer{
   background-image: url("../img/wood-1.webp");
-    padding: 30px ;
+    padding: 20px 10px 0 10px ;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
  }
@@ -20,7 +20,7 @@
  }
 
  .footer__col h4{
-  font-size: 3rem;
+  font-size: 2.5rem;
    color: var(--color_green); 
    margin-bottom: 30px;
    position: relative;
@@ -37,7 +37,7 @@
   }
 
   .footer__col ul li{
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-decoration: none;
     color: #ffffff;
     display: block;
@@ -62,17 +62,23 @@
     pointer-events: none;
   }
 
+  .footer__link{
+    height: 50px;
+ }
 
-
+ .footer__link__img{
+  height: 100%;
+ }
   @media(max-width:767px){
-    .footer__col ul li{
+    .footer__col a,
+.footer__col li,
+.footer__col p{
       font-size: 2.5rem;}
-      .footer__link{
-        font-size: 2.5rem;}
+      
     .footer{
       background-image: url("../img/wood-2.webp");
     }
-    
+   
     .footer__col{
         width: 50%;
         margin-bottom: 30px;
@@ -112,7 +118,3 @@
     color: #a5009d;
 }
 
-.footer__link{
-  width: 48px;
-   height: 48px;
-}

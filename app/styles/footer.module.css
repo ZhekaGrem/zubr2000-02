@@ -44,7 +44,6 @@
   }
 
   .footer__link{
-    font-size: 1.5rem;
     text-transform: none;
     text-decoration: none;
     color: #ffffff;
@@ -118,3 +117,8 @@
     color: #a5009d;
 }
 
+@media (min-width: 1350px) {
+  .container {
+    max-width: 95%;
+  }
+}

@@ -32,7 +32,7 @@ const locale = useLocale();
           <Link rel="preload" onClick={handleClick} href="/">
             <Image
               className={styles.logo__img}
-              src="/Zubr-logo.webp"
+              src="/Zubr-logo-01.webp"
               width={70}
               height={70}
               alt="Logo zubr 2000 лого зубр2000"

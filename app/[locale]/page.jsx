@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import MiniBlog from "../components/miniblog/MiniBlog";
 import { client } from "@/app/lib/sanity";
 import Button from "@/app/UI/button/button";
-import { DropDownMenu } from "@/app/components/navbar/Dropdownmenu";
+
 
 async function getData() {
   const query = `*[_type == "post"] | order(publication_data desc)`;

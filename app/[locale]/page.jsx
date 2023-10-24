@@ -1,13 +1,14 @@
 "use client";
 import React from "react";
 import Link from "next-intl/link";
-import styles from "@/app/styles/page.module.css";
+import styles from "@/app/styles/page/page.module.css";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import MiniBlog from "../components/miniblog/MiniBlog";
 import { client } from "@/app/lib/sanity";
 import Button from "@/app/UI/button/button";
+import { DropDownMenu } from "@/app/components/navbar/Dropdownmenu";
 
 async function getData() {
   const query = `*[_type == "post"] | order(publication_data desc)`;
@@ -33,7 +34,9 @@ export default function Home() {
 
   return (
     <>
+
       <div className={styles.content}>
+   
         <section className={`${styles.container} `}>
           <div className={styles.block}>
             <div className={`${styles.col} `}>

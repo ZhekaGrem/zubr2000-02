@@ -3,7 +3,7 @@
    width: 100%;
    position: fixed;
    z-index: 50;
-   background-image: url("../img/wood-1.webp");
+   background-image: url("../../img/wood-1.webp");
    border-bottom-left-radius: 5px;
    border-bottom-right-radius: 5px;
 }
@@ -21,7 +21,7 @@
 }
 
 .container ul li {
-   float: left;
+   float:inline-start ;
    display: block;
    margin: 0 5px;
 
@@ -177,7 +177,6 @@ ul.sub__link__01 > li > a,
 ul.sub__link__02 > li > a,
 ul.sub__menu__list > li > a
 {
-   display: inline-block; 
      width: 100%;
 	display: inline-block;
 	height: 40px;
@@ -345,7 +344,6 @@ transition:all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
    
    .navbar__link__open__01:hover>ul {
       top: 50px;
-      position: static;
       border-top: none;
       opacity: 1;
 visibility: visible;
@@ -398,6 +396,6 @@ width: 100%;
    }
    .container{
 
-      background-image: url("../img/wood-3.webp");
+      background-image: url("../../img/wood-3.webp");
    }
 }

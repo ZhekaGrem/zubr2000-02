@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import styles from "@/app/styles/form.module.css";
+import styles from "@/app/styles/component/form.module.css";
 
 export default function Input(props) {
     const [isActive, setIsActive] = useState(false);

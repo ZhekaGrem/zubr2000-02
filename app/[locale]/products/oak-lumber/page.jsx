@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import styles from '@/app/styles/lumber.module.css'
+import styles from '@/app/styles/page/lumber.module.css'
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
 

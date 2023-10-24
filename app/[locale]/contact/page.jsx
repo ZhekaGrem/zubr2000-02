@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import styles from "@/app/styles/contact.module.css";
+import styles from "@/app/styles/page/contact.module.css";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Form from "@/app/components/form/Form";

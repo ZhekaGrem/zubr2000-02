@@ -1,6 +1,6 @@
 "use client";
 import React, { memo } from "react";
-import styles from "@/app/styles/footer.module.css";
+import styles from "@/app/styles/component/footer.module.css";
 import Image from "next/image";
 import Link from "next-intl/link";
 import { useTranslations } from "next-intl";

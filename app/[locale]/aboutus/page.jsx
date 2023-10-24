@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useTranslations } from "next-intl";
-import styles from "@/app/styles/aboutus.module.css";
+import styles from "@/app/styles/page/aboutus.module.css";
 
 function AboutUs() {
   const t = useTranslations("Index");

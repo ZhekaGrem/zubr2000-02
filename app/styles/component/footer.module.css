@@ -1,5 +1,5 @@
 .footer{
-  background-image: url("../img/wood-1.webp");
+  background-image: url("../../img/wood-1.webp");
     padding: 20px 10px 0 10px ;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -36,8 +36,9 @@
   box-sizing: border-box;
   }
 
-  .footer__col ul li{
-    font-size: 2rem;
+  .footer__col ul li,
+  .footer__col a{
+    font-size: 1.7rem;
     text-decoration: none;
     color: #ffffff;
     display: block;
@@ -75,7 +76,7 @@
       font-size: 2.5rem;}
       
     .footer{
-      background-image: url("../img/wood-2.webp");
+      background-image: url("../../img/wood-2.webp");
     }
    
     .footer__col{
@@ -87,7 +88,7 @@
     .footer__col ul li{
       font-size: 2rem;}
       .footer__link{
-        font-size: 2rem;}
+        font-size: 3.5rem;}
     .footer__col{
         width: 100%;
         text-align: center;

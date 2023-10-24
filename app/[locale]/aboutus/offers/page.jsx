@@ -1,6 +1,6 @@
 "use client";
 import React,{  useState, useEffect,  } from "react";
-import styles from "@/app/styles/offer.module.css";
+import styles from "@/app/styles/page/offer.module.css";
 import { client } from "@/app/lib/sanity";
 import Link from "next-intl/link";
 import OfferBlog from '@/app/components/offerblog/OfferBlog';

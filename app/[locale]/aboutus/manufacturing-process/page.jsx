@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import styles from "@/app/styles/manufacturing-process.module.css";
+import styles from "@/app/styles/page/manufacturing-process.module.css";
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
 

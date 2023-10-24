@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import styles from "@/app/styles/quality-standarts.module.css";
+import styles from "@/app/styles/page/quality-standarts.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from 'next-intl';

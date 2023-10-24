@@ -1,6 +1,6 @@
 'use client'
 import React,{useEffect,useState} from "react";
-import styles from "@/app/styles/news.module.css";
+import styles from "@/app/styles/page/news.module.css";
 import { client } from "@/app/lib/sanity";
 import NewsBlog from '@/app/components/newsblog/NewsBlog';
 

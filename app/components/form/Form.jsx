@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import styles from "@/app/styles/form.module.css";
+import styles from "@/app/styles/component/form.module.css";
 import emailjs from "@emailjs/browser";
 import { useTranslations } from "next-intl";
 import Input from "./Input";

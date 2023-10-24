@@ -64,11 +64,11 @@ function Dropdownmenu() {
 
   function DropdownItem(props) {
     return (
-      <Link href="#" className={styles.menu__item} onClick={()=> props.goToMenu && setactiveMenu(props.goToMenu)}>
+      <div href="#" className={styles.menu__item} onClick={()=> props.goToMenu && setactiveMenu(props.goToMenu)}>
         <span className={styles.icon__button}> {props.leftIcon}</span>
         {props.children}
         <span className={styles.icon__right}> {props.rightIcon}</span>
-      </Link>
+      </div>
     );
   }
 

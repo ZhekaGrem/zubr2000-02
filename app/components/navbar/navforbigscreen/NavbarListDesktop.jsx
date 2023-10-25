@@ -205,17 +205,18 @@ const locale = useLocale();
                 prefetch={false}
                   rel="preload"
                   to=""
-                  className={styles.sub__menu__link}
                   href={usePathname()}
-                  locale="uk"
-                >
-                  Українська{" "}
+                  locale="uk">
+                  <div className={styles.menu__lang}>
                   <Image
                     alt="language UA"
                     src="/ua.webp"
                     width={20}
                     height={16}
+                    className={styles.menu__flag}
                   />
+                  Українська
+                  </div>
                 </Link>
                 {""}
               </li>
@@ -228,13 +229,14 @@ const locale = useLocale();
                   href={usePathname()}
                   locale="en"
                 >
-                  English{" "}
-                  <Image
+              <div className={styles.menu__lang}>    <Image
                     alt="language En"
                     src="/gb.webp"
                     width={20}
                     height={16}
-                  />
+                    className={styles.menu__flag}
+                    />
+                    English{" "}</div>
                 </Link>{" "}
               </li>
               <li>
@@ -246,13 +248,18 @@ const locale = useLocale();
                   href={usePathname()}
                   locale="pl"
                 >
-                  Polski{" "}
+                  <div className={styles.menu__lang}>
+
+                  
                   <Image
+                  className={styles.menu__flag}
                     alt="language PL"
                     src="/pl.webp"
                     width={20}
                     height={16}
-                  />
+                    />
+                    Polski{" "}
+                    </div>
                 </Link>
                 {""}{" "}
               </li>
@@ -265,13 +272,15 @@ const locale = useLocale();
                   href={usePathname()}
                   locale="da"
                 >
-                  Danmark{" "}
+                  <div className={styles.menu__lang}>
                   <Image
-                    alt="language DA"
-                    src="/dk.webp"
-                    width={20}
-                    height={16}
+                  className={styles.menu__flag}
+                  alt="language DA"
+                  src="/dk.webp"
+                  width={20}
+                  height={16}
                   />
+                  Danmark{" "}</div>
                 </Link>
                 {""}{" "}
               </li>
@@ -284,13 +293,15 @@ const locale = useLocale();
                   href={usePathname()}
                   locale="de"
                 >
-                  Deutsch{" "}
+                  <div className={styles.menu__lang}>
                   <Image
-                    alt="language DE"
-                    src="/de.webp"
-                    width={20}
-                    height={16}
+                  className={styles.menu__flag}
+                  alt="language DE"
+                  src="/de.webp"
+                  width={20}
+                  height={16}
                   />
+                  Deutsch{" "}</div>
                 </Link>
                 {""}{" "}
               </li>
@@ -303,13 +314,15 @@ const locale = useLocale();
                   href={usePathname()}
                   locale="fr"
                 >
-                  Français{" "}
+                  <div className={styles.menu__lang}>
                   <Image
-                    alt="language FR"
-                    src="/fr.webp"
-                    width={20}
-                    height={16}
+                  className={styles.menu__flag}
+                  alt="language FR"
+                  src="/fr.webp"
+                  width={20}
+                  height={16}
                   />
+                  Français{" "}</div>
                 </Link>
                 {""}{" "}
               </li>
@@ -322,13 +335,15 @@ const locale = useLocale();
                   href={usePathname()}
                   locale="it"
                 >
-                  Italiano{" "}
+                  <div className={styles.menu__lang}>
                   <Image
-                    alt="language IT"
-                    src="/it.webp"
-                    width={20}
-                    height={16}
+                  className={styles.menu__flag}
+                  alt="language IT"
+                  src="/it.webp"
+                  width={20}
+                  height={16}
                   />
+                  Italiano{" "}</div>
                 </Link>
                 {""}{" "}
               </li>
@@ -341,13 +356,15 @@ const locale = useLocale();
                   href={usePathname()}
                   locale="sv"
                 >
-                  Sverige{" "}
+                  <div className={styles.menu__lang}>
                   <Image
-                    alt="language SW"
-                    src="/se.webp"
-                    width={20}
-                    height={16}
+                  className={styles.menu__flag}
+                  alt="language SW"
+                  src="/se.webp"
+                  width={20}
+                  height={16}
                   />
+                  Sverige{" "}</div>
                 </Link>{" "}
               </li>
 
@@ -360,13 +377,15 @@ const locale = useLocale();
                   href={usePathname()}
                   locale="ru"
                 >
-                  Руский
+                  <div className={styles.menu__lang}>
                   <Image
-                    alt="language Ru"
-                    src="/ru.webp"
-                    width={20}
-                    height={16}
+                  className={styles.menu__flag}
+                  alt="language Ru"
+                  src="/ru.webp"
+                  width={20}
+                  height={16}
                   />
+                  Руский</div>
                 </Link>
                
               </li>

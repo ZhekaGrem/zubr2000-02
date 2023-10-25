@@ -1,9 +1,9 @@
 "use client";
 import styles from "@/app/styles/component/oldnavbar.module.css";
 import Image from "next/image";
+import Link from "next-intl/link";
 import { useTranslations,useLocale } from "next-intl";
 import React, { useState, memo } from "react";
-import Link from "next-intl/link";
 import { usePathname } from "next-intl/client";
 
 function Navbar() {

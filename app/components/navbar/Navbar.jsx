@@ -1,21 +1,44 @@
 "use client";
-import React, { memo } from "react";
-import { DropDownMenu } from "./DropDownMenu";
-import { NavbarList } from "./NavbarList";
-import { NavbarItem } from "./NavbarItem";
-import styles from "@/app/styles/component/navbar.module.css";
-import Image from "next/image";
-import Link from "next-intl/link";
+import React, { memo, useState, useEffect } from "react";
+import { DropDownMenu } from "./navformobile/DropDownMenu";
+import { NavbarListMobile } from "./navformobile/NavbarListMobile";
+import { NavbarItem } from "./navformobile/NavbarItem";
+import { NavbarListDesktop } from "./navforbigscreen/NavbarListDesktop";
+
+
+
 
 function Navbar() {
+  const [isMobile, setIsMobile] = useState(
+    typeof window !== 'undefined' && window.innerWidth < 1180
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1180);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
-    <NavbarList>
-     
-      <NavbarItem className={styles.last} icon="/angle-bottom.svg">
-        <DropDownMenu />
-      </NavbarItem>
-    </NavbarList>
+    <nav>
+   
+      <NavbarListMobile>
+        <NavbarItem icon="/angle-bottom.svg">
+          <DropDownMenu />
+        </NavbarItem>
+      </NavbarListMobile>
+   
+      <NavbarListDesktop/>
+  
+    
+  </nav>
   );
 }
 

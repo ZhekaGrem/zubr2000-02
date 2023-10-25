@@ -1,0 +1,196 @@
+@media(min-width: 1180px){ 
+.container {
+   width: 100%;
+   z-index: 50;
+   background-image: url("../../img/wood-1.webp");
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+
+.container::after {
+   content: '';
+   clear: both;
+   display: table;
+}
+
+.container ul {
+   float: right;
+   margin-right: 40px;
+   position: relative;
+}
+
+.container ul li {
+   float:inline-start ;
+   display: block;
+   margin: 0 5px;
+
+}
+
+.container ul li a {
+   font-size: 22px;
+   padding: 0px 20px 10px 16px;
+   color: aliceblue;
+   text-transform: uppercase;
+
+}
+
+
+
+
+.container ul li p {
+   font-size: 22px;
+   padding: 0px 20px 10px 50px;
+   color: aliceblue;
+   text-transform: uppercase;
+}
+
+.navbar__link {
+   line-height: 70px;
+
+}
+
+.container ul li a:hover {
+   
+
+   color: var(--color_green);
+   ;
+}
+
+
+.container ul ul {
+   z-index: 51;
+   border-radius: 25px;
+   position: absolute;
+   background-image: url("../../img/wood-1.webp");
+   opacity: 0;
+   visibility: hidden;
+   transition:all .5s ease-in-out;
+
+}
+
+.container ul ul li a {
+   font-size: 18px;
+}
+
+.container ul ul li {
+   position: relative;
+   margin: 0px;
+   width: 300px;
+   float: none;
+   display: list-item;
+
+}
+.planet {
+   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+.navbar__link__open__03:hover .planet,
+.navbar__link__open__03:hover p{
+   filter: invert(52%) sepia(94%) saturate(707%) hue-rotate(32deg) brightness(91%) contrast(102%);
+
+}
+
+.drop__down{
+   display: none;
+}
+.container ul .sub__link__01 li {
+   
+   text-align: center;
+   line-height: 50px;
+}
+
+.container ul .sub__link__02 li {
+   text-align: center;
+   line-height: 50px;
+}
+
+
+
+.container ul .sub__link__02 li a {
+   font-size: 18px;
+   width: 100%;
+}
+
+.sub__link__01>li>a:hover,
+.sub__link__02>li>a:hover,
+.sub__menu__list>li>a:hover
+ {
+   
+   width: 100%;
+   background-color: var(--bg-accent);
+   border-radius: 20px;
+   box-shadow: 0 0px 10px rgba(250, 250, 250, 0.055);
+}
+
+.navbar__logo {
+   float: left;
+   padding-left: 10px;
+}
+
+.navbar__logo img {
+   margin: 2px;
+}
+
+
+
+
+ 
+   .container ul li a:hover>ul {
+      opacity: 2;
+      visibility: visible;
+      top: 68px;
+   }
+
+   
+   .container ul li:hover>ul {
+      opacity: 2;
+      visibility: visible;
+      top:58px;
+   }
+
+
+.logo__text{
+   padding: 8px  0 12px 0 ;
+   width: 190px  ;
+}
+.logo__text:hover {
+   transition: all .5s ease 0s;
+   filter: invert(52%) sepia(94%) saturate(707%) hue-rotate(32deg) brightness(91%) contrast(102%);
+
+}
+
+
+.sub__menu__list {
+   width: 170px;
+   padding-right: 200px;
+}
+
+.sub__menu__list a {
+   text-align: start;
+   line-height: 40px;
+
+
+}
+
+ul.sub__link__01 > li > a,
+ul.sub__link__02 > li > a,
+ul.sub__menu__list > li > a
+{
+     width: 100%;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	color:#fff;
+}
+
+
+
+
+}
+
+
+
+@media(max-width:1180px) {
+   .container{
+      display: none;
+   }
+}

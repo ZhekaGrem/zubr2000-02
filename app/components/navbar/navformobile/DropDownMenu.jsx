@@ -1,7 +1,8 @@
+"use client";
 import React, { useState } from "react";
 import styles from "@/app/styles/component/navbar.module.css";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations,useLocale } from "next-intl";
 import Link from "next-intl/link";
 import { CSSTransition } from "react-transition-group";
 import { usePathname } from "next-intl/client";
@@ -10,7 +11,7 @@ export const DropDownMenu = (props) => {
   const t = useTranslations("Index");
   const [activeMenu, setactiveMenu] = useState("main");
   const pathname = usePathname();
-
+const locale = useLocale();
 
   function DropdownItem(props) {
     return (
@@ -110,7 +111,7 @@ export const DropDownMenu = (props) => {
 
           <Link
             rel="preload"
-            href="/aboutus/news"
+            href="/aboutus"
             onClick={() => setactiveMenu(!false)}>
             <DropdownItem> {t("infous")}</DropdownItem>
           </Link>
@@ -138,6 +139,12 @@ export const DropDownMenu = (props) => {
             onClick={() => setactiveMenu(!false)}>
             <DropdownItem> {t("quality")}</DropdownItem>
           </Link>
+         {locale === 'uk' && ( <Link
+            rel="preload"
+            href="/aboutus/offers"
+            onClick={() => setactiveMenu(!false)}>
+            <DropdownItem> {t("offers")}</DropdownItem>
+          </Link>)}
 
         </div>
       </CSSTransition>
@@ -226,7 +233,7 @@ export const DropDownMenu = (props) => {
             locale="en"
           >
             <DropdownItem>
-              <Image alt="language EN" src="/gb.webp" width={20} height={16} />{" "}
+              <Image className={styles.menu__item__img} alt="language EN" src="/gb.webp" width={20} height={16} />{" "}
               English
             </DropdownItem>
           </Link>
@@ -238,7 +245,7 @@ export const DropDownMenu = (props) => {
             locale="uk"
           >
             <DropdownItem>
-              <Image alt="language EN" src="/ua.webp" width={20} height={16} />{" "}
+              <Image className={styles.menu__item__img} alt="language EN" src="/ua.webp" width={20} height={16} />{" "}
               Українська
             </DropdownItem>
           </Link>
@@ -250,7 +257,7 @@ export const DropDownMenu = (props) => {
             locale="pl"
           >
             <DropdownItem>
-              <Image alt="language pl" src="/pl.webp" width={20} height={16} />{" "}
+              <Image className={styles.menu__item__img} alt="language pl" src="/pl.webp" width={20} height={16} />{" "}
               Polski
             </DropdownItem>
           </Link>
@@ -263,7 +270,7 @@ export const DropDownMenu = (props) => {
             locale="da"
           >
             <DropdownItem>
-              <Image alt="language da" src="/dk.webp" width={20} height={16} />{" "}
+              <Image className={styles.menu__item__img} alt="language da" src="/dk.webp" width={20} height={16} />{" "}
               Danmark
             </DropdownItem>
           </Link>
@@ -276,7 +283,7 @@ export const DropDownMenu = (props) => {
             locale="de"
           >
             <DropdownItem>
-              <Image alt="language de" src="/de.webp" width={20} height={16} />{" "}
+              <Image className={styles.menu__item__img} alt="language de" src="/de.webp" width={20} height={16} />{" "}
               Deutsch
             </DropdownItem>
           </Link>
@@ -289,7 +296,7 @@ export const DropDownMenu = (props) => {
             locale="it"
           >
             <DropdownItem>
-              <Image alt="language it" src="/it.webp" width={20} height={16} />{" "}
+              <Image className={styles.menu__item__img} alt="language it" src="/it.webp" width={20} height={16} />{" "}
               Italiano
             </DropdownItem>
           </Link>
@@ -302,7 +309,7 @@ export const DropDownMenu = (props) => {
             locale="sv"
           >
             <DropdownItem>
-              <Image alt="language SW" src="/se.webp" width={20} height={16} />{" "}
+              <Image className={styles.menu__item__img} alt="language SW" src="/se.webp" width={20} height={16} />{" "}
               Sverige
             </DropdownItem>
           </Link>
@@ -315,7 +322,7 @@ export const DropDownMenu = (props) => {
             locale="fr"
           >
             <DropdownItem>
-              <Image alt="language FR" src="/fr.webp" width={20} height={16} />{" "}
+              <Image className={styles.menu__item__img}  alt="language FR" src="/fr.webp" width={20} height={16} />{" "}
               Français
             </DropdownItem>
           </Link>
@@ -326,9 +333,10 @@ export const DropDownMenu = (props) => {
             to=""
             href={usePathname()}
             locale="ru"
+            
           >
             <DropdownItem>
-              <Image alt="language Ru" src="/ru.webp" width={20} height={16} />{" "}
+              <Image className={styles.menu__item__img} alt="language Ru" src="/ru.webp" width={20} height={16} />{" "}
               Руский
             </DropdownItem>
           </Link>

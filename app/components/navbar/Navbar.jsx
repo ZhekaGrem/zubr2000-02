@@ -44,9 +44,9 @@ function NavItem(props) {
   const [open, setOpen] = useState(false);
   return (
     <li className={`${styles.nav__item}`}>
-      <Link rel="preload" href="/" onClick={() => setOpen(!open)}>
+      <div rel="preload" onClick={() => setOpen(!open)}>
         <Image src={props.icon} width={60} height={60} alt="dropdown button" />
-      </Link>
+      </div>
       {open && props.children}
     </li>
   );
@@ -64,7 +64,7 @@ function Dropdownmenu() {
 
   function DropdownItem(props) {
     return (
-      <div href="#" className={styles.menu__item} onClick={()=> props.goToMenu && setactiveMenu(props.goToMenu)}>
+      <div  className={styles.menu__item} onClick={()=> props.goToMenu && setactiveMenu(props.goToMenu)}>
         <span className={styles.icon__button}> {props.leftIcon}</span>
         {props.children}
         <span className={styles.icon__right}> {props.rightIcon}</span>
@@ -165,7 +165,17 @@ function Dropdownmenu() {
                 height={50}
                 alt="dropleft button"
               /> } goToMenu ="main"></DropdownItem>
-          <DropdownItem> {t("oak")}</DropdownItem>
+          <Link
+          
+                  rel="preload"
+                  href="/products/oak-lumber"
+                  className={styles.sub__navbar__link}
+                  onClick={()=> setactiveMenu(!false)}
+                  >
+                  <DropdownItem > 
+                  {t("oak")}
+                </DropdownItem>
+                </Link>
           <DropdownItem>{t("certificates")}</DropdownItem>
           <DropdownItem>{t("manufacturing")}</DropdownItem>
           <DropdownItem> {t("contact")}</DropdownItem>

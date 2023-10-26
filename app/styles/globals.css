@@ -87,11 +87,6 @@ input:focus-visible{
   }
  
 
-
-
-  
-
-
   :root {
     --color_green__02: #677903;
     --color_green: #8ca600;
@@ -185,4 +180,10 @@ input:focus-visible{
  .menu-lang-exit-active{
   transform: translateX(110%);
   transition: all 500ms ease;
+ }
+
+ @media(min-width: 1180px){
+  main{
+    padding-top: 80px;
+  }
  }

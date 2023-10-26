@@ -201,8 +201,9 @@ export default async function LocaleLayout({ children, params: { locale } }) {
           <div className="wrapper">
             <Navbar />
             <main className="content">
-              {children} <Analytics />
+              {children}  <Analytics />
             </main>
+            
           </div>
           <footer>
             <Footer />

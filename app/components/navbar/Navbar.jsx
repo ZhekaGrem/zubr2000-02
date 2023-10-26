@@ -4,6 +4,8 @@ import { DropDownMenu } from "./navformobile/DropDownMenu";
 import { NavbarListMobile } from "./navformobile/NavbarListMobile";
 import { NavbarItem } from "./navformobile/NavbarItem";
 import { NavbarListDesktop } from "./navforbigscreen/NavbarListDesktop";
+import {BackToTopButton} from "../BackToTop/BackToTopButton";
+
 
 
 
@@ -36,7 +38,7 @@ function Navbar() {
       </NavbarListMobile>
    
       <NavbarListDesktop/>
-  
+  <BackToTopButton/>
     
   </nav>
   );

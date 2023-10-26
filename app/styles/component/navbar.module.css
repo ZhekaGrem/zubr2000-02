@@ -1,3 +1,8 @@
+@media(min-width: 1180px){
+   .navbar{
+      display: none;
+   }
+}
 .navbar {
    height: 80px;
    z-index: 50;
@@ -129,8 +134,3 @@ transform: translateX(-110%);
    height: 20px;
 }
 
-@media(min-width: 1180px){
-   .navbar{
-      display: none;
-   }
-}

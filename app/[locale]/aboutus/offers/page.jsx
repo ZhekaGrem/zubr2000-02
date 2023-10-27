@@ -27,7 +27,7 @@ export default  function Offers() {
       <div className={styles.contact}>
         <div className={styles.contact__info}>
           <div className={styles.big__title}>
-            <span>Запрошуємо до співпраці</span>
+            <h1>Запрошуємо до співпраці</h1>
           </div>
           <div>
             <p>
@@ -48,7 +48,7 @@ export default  function Offers() {
               галузь разом з нами.
             </p>
           </div>
-          <div>Чому варто обрати співпрацю з нами:</div>
+          <div className={styles.mini__title}>Чому варто обрати співпрацю з нами:</div>
 
           <div>
             <ul>
@@ -87,7 +87,7 @@ export default  function Offers() {
             та пропозиції. З найкращими побажаннями, Команда ZUBR-2000.
           </p>
           <div>
-            <div className={styles.big__title}>
+            <div className={styles.mini__title}>
 
             Контактна інформація:
             </div>

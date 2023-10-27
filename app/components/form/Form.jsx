@@ -9,16 +9,18 @@ const Form = () => {
   const t = useTranslations("Index");
   const form = useRef();
   const [isSubmitted, setIsSubmitted] = useState(false); // Стан для відстеження стану відправки форми
-
+  const templateid = process.env.NEXT_YOUR_TEMPLATE_ID;
+  const serviseid =process.env.NEXT_YOUR_SERVICE_ID;
+  
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "zubr-2000",
-        "template_og4evsg",
+        "service_zubr2000",
+        "template_855qbjj",
         form.current,
-        "-AlbKbVvCTP2xs6GJ"
+        "mBp3HPR3Z6HamrQJZ"
       )
       .then(
         (result) => {

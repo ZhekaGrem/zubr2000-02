@@ -53,7 +53,7 @@ export default function Home() {
               <div className={styles.row}>
                 <Image
                   className={styles.info__img}
-                  src="/zubr-title_02.webp"
+                  src="/photo_tittl_№1.webp"
                   width={800}
                   height={800}
                   alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
@@ -80,7 +80,7 @@ export default function Home() {
                 <Image
                   alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
                   className={styles.info__img}
-                  src="/photo_product_0_2.webp"
+                  src="/photo_tittl_№2.webp"
                   width={800}
                   height={800}
                 />

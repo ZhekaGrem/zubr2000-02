@@ -64,6 +64,7 @@ function Contact() {
       <div id='contact_name' className={styles.contact__form}>
         <Form />
       </div>
+    
     </>
   );
 }

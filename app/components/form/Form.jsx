@@ -1,5 +1,4 @@
-import React from "react";
-import { useForm, Controller } from "react-hook-form";
+import React, { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import styles from "@/app/styles/component/form.module.css";
 import Input from "./Input";
@@ -8,90 +7,61 @@ import emailjs from "@emailjs/browser";
 
 const Form = () => {
   const t = useTranslations("Index");
-  const { handleSubmit, control, setError, formState, reset } = useForm();
-  const { errors } = formState;
+  const form = useRef();
+  const [isSubmitted, setIsSubmitted] = useState(false); // Стан для відстеження стану відправки форми
 
-  const onSubmit = async (data) => {
-    try {
-      // Send email using emailjs
-      const templateParams = {
-        name: data.name,
-        namecompany: data.namecompany,
-        phone: data.phone,
-        email: data.email,
-        message: data.message,
-      };
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-      await emailjs.send("zubr-2000", "template_og4evsg", templateParams, "-AlbKbVvCTP2xs6GJ");
-
-      reset(); // Reset the form after successful submission
-    } catch (error) {
-      console.error(error);
-    }
+    emailjs
+      .sendForm(
+        "zubr-2000",
+        "template_og4evsg",
+        form.current,
+        "-AlbKbVvCTP2xs6GJ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setIsSubmitted(true); // Встановлюємо стан відправлення в true
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
     <div className={styles.container}>
       <div className={styles.text}> {t("contactus")} </div>
-      <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+      <form className={styles.form} ref={form} onSubmit={sendEmail}>
+        <Input typeValue="text" nameValue="name" span={t("name")} />
+
         <Input
-          span={t("name")}
-          name="name"
-          control={control}
-          rules={{
-            required: t("enter_name_required"),
-          }}
-        />
-        <Input
-          span={t("company_name")}
-          name="namecompany"
-          control={control}
-        />
-        <Input
+          typeValue="tel"
+          nameValue="tel"
           span={t("phone")}
-          name="telephone_name"
-          control={control}
-          rules={{
-            required: t("enter_phone_required"),
-            pattern: {
-              value: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
-              message: t("not_valid_phone"),
-            },
-          }}
         />
         <Input
+          name="emails"
+          typeValue="email"
+          nameValue="email"
           span={t("email")}
-          name="firm_name"
-          
-          control={control}
-          rules={{
-            required: t("enter_email_required"),
-            pattern: {
-              value: /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
-              message: t("not_valid_email"),
-            },
-          }}
         />
         <div className={styles.col__6}>
           <div className={styles.textarea_1}>
-            <Controller
-              name="message"
-              control={control}
-              defaultValue=""
-              render={({ field }) => (
-                <textarea
-                  {...field}
-                  type="text"
-                  
-                  
-                />
-              )}
-            />
-            {errors.message && <span>{errors.message.message}</span>}
+            <textarea name="message"></textarea>
           </div>
         </div>
         <div className={styles.btnblock}>
-          <Button type="submit" value="Send" title_button={t("send")} />
+          <Button
+            type="submit"
+            value="Send"
+            role="button"
+            title_button={t("send")}
+            title_button_sent_out={t("sentout")}
+            isSubmitted={isSubmitted} // Передаємо стан відправлення до кнопки
+          />
         </div>
       </form>
     </div>

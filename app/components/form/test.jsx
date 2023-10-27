@@ -1,10 +1,10 @@
 'use client'
-import React, { useRef, useState, useEffect } from "react";
-import styles from "@/app/styles/form.module.css";
+import React, { useRef, useState } from "react";
+import styles from "@/app/styles/component/form.module.css";
 import emailjs from "@emailjs/browser";
 import { useTranslations } from "next-intl";
 
-const Form = () => {
+const Test = () => {
   const t = useTranslations("Index");
 
   /* state for validate email */
@@ -103,7 +103,7 @@ const Form = () => {
         "zubr-2000",
         "template_og4evsg",
         form.current,
-        "mBp3HPR3Z6HamrQJZ"
+        "-AlbKbVvCTP2xs6GJ"
       )
       .then(
         (result) => {
@@ -237,4 +237,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default Test;

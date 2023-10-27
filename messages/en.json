@@ -62,6 +62,7 @@
     "email": "Email",
     "write_your_message": "Write your message",
     "send": "Send",
+    "sentout": "Sent out",
     "manager": "Manager",
     "not_valid_phone": "Invalid phone number",
     "not_valid_email": "Invalid email address",

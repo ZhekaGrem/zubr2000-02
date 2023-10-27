@@ -30,7 +30,7 @@ export const BackToTopButton = () => {
             style={{
               position: "fixed",
               bottom:"50px",
-              right:"30px",
+              right:"10px",
               height:"30px",
               background:"none"
             }}

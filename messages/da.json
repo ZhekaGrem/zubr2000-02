@@ -62,6 +62,7 @@
     "email": "Email",
     "write_your_message": "Skriv din besked",
     "send": "Send",
+    "sentout": "Sendt ud",
     "not_valid_phone": "Ugyldigt telefonnummer",
     "not_valid_email": "Ugyldig e-mailadresse",
     "enter_email_required": "Indtast e-mail ",

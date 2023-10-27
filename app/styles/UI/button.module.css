@@ -31,3 +31,14 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
   }
+
+.btn:disabled{
+  color: #aaaaaa;
+  background-color:#818181;
+  transform: translateY(0px);
+}
+.btn:disabled:hover{
+  box-shadow: rgba(110, 109, 109, 0.25) 0 0px 0px;
+  transform: none;
+  box-shadow:none;
+}

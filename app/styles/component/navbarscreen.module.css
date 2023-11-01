@@ -20,7 +20,7 @@
 }
 
 .container ul li {
-   float:inline-start ;
+   float:left ;
    display: block;
    margin: 0 5px;
 

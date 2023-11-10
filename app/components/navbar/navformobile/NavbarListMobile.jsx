@@ -6,7 +6,7 @@ import { NavbarLogo } from "./NavbarLogo";
 
 export const NavbarListMobile = (props) => {
     return (
-      <div
+      <nav
       loading="eager"
       alt="forest"
       role="img"
@@ -15,8 +15,8 @@ export const NavbarListMobile = (props) => {
     >
       <ul className={styles.navbar__nav}>
          <NavbarLogo/>
-        {props.children} {/* Your dynamic content here */}
+        {props.children} 
       </ul>
-    </div>
+    </nav>
     )
 }

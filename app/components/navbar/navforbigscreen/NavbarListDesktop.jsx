@@ -20,7 +20,7 @@ const locale = useLocale();
   };
   return (
     <>
-      <div
+      <nav
       loading ='eager'
         alt="forest"
         role="img"
@@ -392,7 +392,7 @@ const locale = useLocale();
             </ul>
           </li>
         </ul>
-      </div>
+      </nav>
     </>
   );
 }

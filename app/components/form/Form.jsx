@@ -8,9 +8,7 @@ import emailjs from "@emailjs/browser";
 const Form = () => {
   const t = useTranslations("Index");
   const form = useRef();
-  const [isSubmitted, setIsSubmitted] = useState(false); // Стан для відстеження стану відправки форми
-  const templateid = process.env.NEXT_YOUR_TEMPLATE_ID;
-  const serviseid =process.env.NEXT_YOUR_SERVICE_ID;
+  const [isSubmitted, setIsSubmitted] = useState(false); 
   
   const sendEmail = (e) => {
     e.preventDefault();
@@ -25,7 +23,7 @@ const Form = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setIsSubmitted(true); // Встановлюємо стан відправлення в true
+          setIsSubmitted(true); 
         },
         (error) => {
           console.log(error.text);
@@ -62,7 +60,7 @@ const Form = () => {
             role="button"
             title_button={t("send")}
             title_button_sent_out={t("sentout")}
-            isSubmitted={isSubmitted} // Передаємо стан відправлення до кнопки
+            isSubmitted={isSubmitted} 
           />
         </div>
       </form>

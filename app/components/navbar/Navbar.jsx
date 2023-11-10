@@ -29,7 +29,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav>
+    <header>
    
       <NavbarListMobile>
         <NavbarItem icon="/angle-bottom.svg">
@@ -40,7 +40,7 @@ function Navbar() {
       <NavbarListDesktop/>
   <BackToTopButton/>
     
-  </nav>
+  </header>
   );
 }
 

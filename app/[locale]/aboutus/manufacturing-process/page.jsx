@@ -183,12 +183,14 @@ function Certificates() {
             </div>
             <div className={styles.container}>
               <div className={styles.text__block}>
+              <div className={styles.text__block}>
                   <span>{t("aboutus-message16")} </span>
                 <div className={styles.section__title}>
 				  
                 </div>
                 <p>{t("manufacturing_process_07")}</p>
                 
+              </div>
               </div>
             </div>
           </div>

@@ -57,7 +57,7 @@
 
 
 .block .section__title {
-  text-align: left;
+  text-align: center;
   width: 100%;
   margin: 0 0 auto 0px;
 }
@@ -82,6 +82,7 @@
   margin-left: -15px;
   margin-right: -15px;
   padding: 15px;
+  
 }
 
 .col p {
@@ -123,7 +124,6 @@
 
 .container .info__img {
   width: 100%;
-  height: auto;
 }
 
 .container p {
@@ -142,6 +142,8 @@
   content: "";
   display: table;
   clear: both;
+
+
 }
 
 .col {
@@ -212,6 +214,8 @@
 .row>* {
   box-sizing: border-box;
   float: left;
+
+
 }
 
 .section__title {
@@ -283,9 +287,9 @@ ul.list li:before {
     max-width: 1170px;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1450px) {
   .container {
-    max-width: 87%;
+    max-width: 1300;
   }
 }
 

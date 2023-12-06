@@ -1,16 +1,16 @@
 "use client";
 import styles from "@/app/styles/component/navbarscreen.module.css";
 import Image from "next/image";
-import Link from "next-intl/link";
+import {Link,usePathname} from "@/navigation";
 import { useTranslations,useLocale } from "next-intl";
 import React, { useState } from "react";
-import { usePathname } from "next-intl/client";
 
 
 
 export const NavbarListDesktop = () => {
 
   const t = useTranslations("Index");
+
   const pathname = usePathname();
 
 const locale = useLocale();
@@ -205,7 +205,7 @@ const locale = useLocale();
                 prefetch={false}
                   rel="preload"
                   to=""
-                  href={usePathname()}
+                  href={pathname}
                   locale="uk">
                   <div className={styles.menu__lang}>
                   <Image
@@ -226,7 +226,7 @@ const locale = useLocale();
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
-                  href={usePathname()}
+                  href={pathname}
                   locale="en"
                 >
               <div className={styles.menu__lang}>    <Image
@@ -245,7 +245,7 @@ const locale = useLocale();
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
-                  href={usePathname()}
+                  href={pathname}
                   locale="pl"
                 >
                   <div className={styles.menu__lang}>
@@ -269,7 +269,7 @@ const locale = useLocale();
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
-                  href={usePathname()}
+                  href={pathname}
                   locale="da"
                 >
                   <div className={styles.menu__lang}>
@@ -290,7 +290,7 @@ const locale = useLocale();
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
-                  href={usePathname()}
+                  href={pathname}
                   locale="de"
                 >
                   <div className={styles.menu__lang}>
@@ -311,7 +311,7 @@ const locale = useLocale();
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
-                  href={usePathname()}
+                  href={pathname}
                   locale="fr"
                 >
                   <div className={styles.menu__lang}>
@@ -332,7 +332,7 @@ const locale = useLocale();
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
-                  href={usePathname()}
+                  href={pathname}
                   locale="it"
                 >
                   <div className={styles.menu__lang}>
@@ -353,7 +353,7 @@ const locale = useLocale();
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
-                  href={usePathname()}
+                  href={pathname}
                   locale="sv"
                 >
                   <div className={styles.menu__lang}>
@@ -374,7 +374,7 @@ const locale = useLocale();
                   rel="preload"
                   to=""
                   className={styles.sub__menu__link}
-                  href={usePathname()}
+                  href={pathname}
                   locale="ru"
                 >
                   <div className={styles.menu__lang}>

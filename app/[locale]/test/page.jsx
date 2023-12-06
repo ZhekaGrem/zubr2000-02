@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import styles from "@/app/styles/page/page.module.css";
+import styles from "./pagetest.module.css";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import MiniBlog from "../components/miniblog/MiniBlog";
+import MiniBlog from "@/app/components/miniblog/MiniBlog";
 import { client } from "@/app/lib/sanity";
 import Button from "@/app/UI/button/button";
 
@@ -33,15 +33,15 @@ export default function Home() {
   };
 
   return (
-    <>
+    
 
-      <div className={styles.content}>
+      <div className={styles.content} >
    
-        <section className={`${styles.container} `}>
+        <section className={`${styles.container} ${styles.section__title__2}`}>
           <div className={styles.block}>
             <div className={`${styles.col} `}>
               <div className={`${styles.row}  `}>
-                <div className={styles.section__title}>
+                <div className={`${styles.section__title} ${styles.section__title__}`}>
                   <span>{t("aboutus")}</span>
                 </div>
                 <p>{t("title1")}</p>
@@ -49,13 +49,18 @@ export default function Home() {
                 <p>{t("title3")}</p>
               </div>
             </div>
-            <div className={`${styles.col__5} ${styles.col__6}`}>
+            
+          </div>
+        </section>
+        <section className={`${styles.container} ${styles.section__title__1}`}>
+          <div className={styles.block}>
+            <div className={`${styles.col__5} `}>
               <div className={styles.row}>
                 <Image
                   className={styles.info__img}
                   src="/photo_product_6.webp"
-                  width={800}
-                  height={800}
+                  width={600}
+                  height={300}
                   alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
                   loading="eager"
                   priority={true}
@@ -64,28 +69,33 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={`${styles.container}`}>
+         <section className={`${styles.container} ${styles.section__title__news}`}>
           <div className={styles.block}>
             <div className={styles.section__title}>
               <span>{t("news")}</span>
               <MiniBlog data={blogData} />
             </div>
           </div>
-        </section>
+        </section> 
 
-        <section className={`${styles.container} `}>
+
+        <section className={`${styles.container} ${styles.section__title__4}`}>
           <div className={styles.block}>
-            <div className={styles.col__5}>
+            <div className={`${styles.col__5} `}>
               <div className={styles.row}>
-                <Image
+              <Image
                   alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
                   className={styles.info__img}
                   src="/photo_tittl_№2.webp"
-                  width={800}
-                  height={800}
+                  width={600}
+                  height={300}
                 />
               </div>
             </div>
+          </div>
+        </section>
+        <section className={`${styles.container} ${styles.section__title__5}`}>
+          <div className={styles.block}>
             <div className={`${styles.col} ${styles.production__us} `}>
               <div className={`${styles.row} `}>
                 <div className={styles.section__title}>
@@ -168,8 +178,21 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={`${styles.container}`}>
-          <div className={styles.block}>
+        
+        
+        <section className={`${styles.container} ${styles.section__title__6}`}> <div className={styles.col__5}>
+              <div className={`${styles.row} `}>
+                <Image
+                  alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
+                  className={styles.info__img}
+                  src="/photo_product_6.webp"
+                  width={600}
+                  height={300}
+                />
+              </div>
+            </div></section>
+
+            <section className={`${styles.section__title__7}`}>          <div className={styles.block}>
             <div className={`${styles.col} `}>
               <div className={`${styles.row} ${styles.test} `}>
                 <div className={styles.section__title}>
@@ -213,20 +236,10 @@ export default function Home() {
               </Link>
               </div>
             </div>
-            <div className={styles.col__5}>
-              <div className={`${styles.row} `}>
-                <Image
-                  alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
-                  className={styles.info__img}
-                  src="/photo_product_2.webp"
-                  width={800}
-                  height={800}
-                />
-              </div>
-            </div>
+
           </div>
-        </section>
+        </section > 
       </div>
-    </>
+    
   );
 }

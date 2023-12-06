@@ -2,7 +2,7 @@
 import React, { memo } from "react";
 import styles from "@/app/styles/component/footer.module.css";
 import Image from "next/image";
-import Link from "next-intl/link";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 function Footer() {
@@ -83,10 +83,12 @@ function Footer() {
                 <h4>{t("contactus")}</h4>
               <ul>
                 <li>
-                  {t("manager")}: +38 097 136-20-00
+                  <p>{t("manager")}:</p>
+                   +38 097 136-20-00
                 </li>
                 <li>
-                {t("director")}: +38 067 674-58-43
+                <p>{t("director")}:</p>
+                +38 067 674-58-43
                 </li>
                    <li>
                   <a

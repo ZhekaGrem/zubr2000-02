@@ -2,7 +2,7 @@
 import React,{  useState, useEffect,  } from "react";
 import styles from "@/app/styles/page/offer.module.css";
 import { client } from "@/app/lib/sanity";
-import Link from "next-intl/link";
+import Link from "next/link";
 import OfferBlog from '@/app/components/offerblog/OfferBlog';
 import Button from "@/app/UI/button/button";
 

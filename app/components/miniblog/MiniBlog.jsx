@@ -5,12 +5,26 @@ import styles from "@/app/styles/component/minipost.module.css";
 function MiniBlog({ data }) {
   return (
     <div className={styles.home__page}>
-      {data.map((post) => (
-        <div key={post._id} className={styles.mini__blog__post}>
-          <h2>{post.meta_title}</h2>
-          <p>{post.publication_data}</p>
+     <div className={styles.mini__blog__post}>
+          <h2>k3k</h2>
+          <p>123.123.312</p>
         </div>
-      ))}
+     <div className={styles.mini__blog__post}>
+          <h2>k3k</h2>
+          <p>123.123.312</p>
+        </div>
+     <div className={styles.mini__blog__post}>
+          <h2>k3k</h2>
+          <p>123.123.312</p>
+        </div>
+     <div className={styles.mini__blog__post}>
+          <h2>k3k</h2>
+          <p>123.123.312</p>
+        </div>
+     <div className={styles.mini__blog__post}>
+          <h2>k3k</h2>
+          <p>123.123.312</p>
+        </div>
     </div>
   );
 }

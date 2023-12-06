@@ -3,14 +3,13 @@ import React, { useState } from "react";
 import styles from "@/app/styles/component/navbar.module.css";
 import Image from "next/image";
 import { useTranslations,useLocale } from "next-intl";
-import Link from "next-intl/link";
+import {Link,usePathname} from "@/navigation";
 import { CSSTransition } from "react-transition-group";
-import { usePathname } from "next-intl/client";
 
 export const DropDownMenu = (props) => {
+  const pathname = usePathname();
   const t = useTranslations("Index");
   const [activeMenu, setactiveMenu] = useState("main");
-  const pathname = usePathname();
 const locale = useLocale();
 
   function DropdownItem(props) {
@@ -229,7 +228,7 @@ const locale = useLocale();
             prefetch={false}
             rel="preload"
             to=""
-            href={usePathname()}
+            href={pathname}
             locale="en"
           >
             <DropdownItem>
@@ -241,7 +240,7 @@ const locale = useLocale();
             prefetch={false}
             rel="preload"
             to=""
-            href={usePathname()}
+            href={pathname}
             locale="uk"
           >
             <DropdownItem>
@@ -253,7 +252,7 @@ const locale = useLocale();
             prefetch={false}
             rel="preload"
             to=""
-            href={usePathname()}
+            href={pathname}
             locale="pl"
           >
             <DropdownItem>
@@ -266,7 +265,7 @@ const locale = useLocale();
             prefetch={false}
             rel="preload"
             to=""
-            href={usePathname()}
+            href={pathname}
             locale="da"
           >
             <DropdownItem>
@@ -279,7 +278,7 @@ const locale = useLocale();
             prefetch={false}
             rel="preload"
             to=""
-            href={usePathname()}
+            href={pathname}
             locale="de"
           >
             <DropdownItem>
@@ -292,7 +291,7 @@ const locale = useLocale();
             prefetch={false}
             rel="preload"
             to=""
-            href={usePathname()}
+            href={pathname}
             locale="it"
           >
             <DropdownItem>
@@ -305,7 +304,7 @@ const locale = useLocale();
             prefetch={false}
             rel="preload"
             to=""
-            href={usePathname()}
+            href={pathname}
             locale="sv"
           >
             <DropdownItem>
@@ -318,7 +317,7 @@ const locale = useLocale();
             prefetch={false}
             rel="preload"
             to=""
-            href={usePathname()}
+            href={pathname}
             locale="fr"
           >
             <DropdownItem>
@@ -331,7 +330,7 @@ const locale = useLocale();
             prefetch={false}
             rel="preload"
             to=""
-            href={usePathname()}
+            href={pathname}
             locale="ru"
             
           >

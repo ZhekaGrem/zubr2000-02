@@ -59,7 +59,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className={styles.footer__col}>
+            {/* <div className={styles.footer__col}>
                 <h4>{t("certificates")}</h4>
               <ul>
                 <li>
@@ -78,7 +78,7 @@ function Footer() {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div className={styles.footer__col}>
                 <h4>{t("contactus")}</h4>
               <ul>

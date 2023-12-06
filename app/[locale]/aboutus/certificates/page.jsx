@@ -9,8 +9,8 @@ function Certificates() {
         <>
      
 <div className={styles.container}>
-    <div><Image src="/ZUBR2000-1.webp" alt="Certificates FSC  1page" width={1200} height={400}/></div>
-    <div><Image src="/ZUBR2000-2.webp" alt="Certificates FSC  2page" width={1200} height={400}/></div>
+    {/* <div><Image src="/ZUBR2000-1.webp" alt="Certificates FSC  1page" width={1200} height={400}/></div>
+    <div><Image src="/ZUBR2000-2.webp" alt="Certificates FSC  2page" width={1200} height={400}/></div> */}
     <div id="certificate-trade" ><Image src="/certificate-trade.webp" alt="Image 3" width={1200} height={400}/></div>
    
      </div>

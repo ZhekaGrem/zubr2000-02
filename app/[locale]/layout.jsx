@@ -3,14 +3,20 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
-import { Montserrat } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 
-const font = Montserrat({
-  weight: "600",
+
+export const font = Source_Sans_3({
+  weight: ["300","400","600"],
   display: "swap",
   subsets: ["latin-ext"],
+  variable:"--font-source"
 });
+
+
+
+
 
 const meta = {
   title: "ZUBR-2000",

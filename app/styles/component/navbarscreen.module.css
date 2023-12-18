@@ -31,13 +31,16 @@
    padding: 0px 20px 10px 16px;
    color: aliceblue;
    text-transform: uppercase;
-
+   letter-spacing: 0.05em;
+   font-weight: 400;
 }
 
 
 
 
 .container ul li p {
+   letter-spacing: 0.05em;
+   font-weight: 400;
    font-size: 22px;
    padding: 0px 20px 10px 50px;
    color: aliceblue;
@@ -148,8 +151,7 @@
 
 
 .logo__text{
-   padding: 8px  0 12px 0 ;
-   width: 190px  ;
+  
 }
 .logo__text:hover {
    transition: all .5s ease 0s;

@@ -16,9 +16,9 @@ export const NavbarLogo=()=>{
         />
         <Image
           className={styles.logo__text}
-          src="/text-zubr-05.webp"
-          width={150}
-          height={50}
+          src="/ZUBR-2000-3.svg"
+            width={280}
+          height={62}
           alt="Zubr 2000 ЗУБР 2000"
         />
       </Link>

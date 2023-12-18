@@ -59,26 +59,28 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            {/* <div className={styles.footer__col}>
+             <div className={styles.footer__col}>
                 <h4>{t("certificates")}</h4>
               <ul>
                 <li>
                   <Link
                     rel="preload"
-                    className={`${styles.footer__link} ${styles.footer__link__img}`}
+                    className={`
+                    ${styles.footer__link} `}
+                    // ${styles.footer__link__img}
                     href="/aboutus/certificates"
-                  >
-                    <Image
+                  >FCS
+                    {/* <Image
                       className={styles.logo}
                       src="/fsc__mini2.webp"
                       alt="FSC"
                       width={121}
                       height={180}
-                    />
+                    /> */}
                   </Link>
                 </li>
               </ul>
-            </div> */}
+            </div> 
             <div className={styles.footer__col}>
                 <h4>{t("contactus")}</h4>
               <ul>

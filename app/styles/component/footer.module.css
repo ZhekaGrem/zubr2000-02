@@ -15,8 +15,7 @@
  }
 
  .footer__col{
-    /* width: 25%; */
-    width: 33%;
+    width: 25%;
     padding: 0 15px;
  }
 
@@ -81,11 +80,10 @@
     }
    
     .footer__col{
-        width: 100%;
-        /* width: 50%; */
+        width: 50%;
         margin-bottom: 30px;
         text-align: center;
-        /* ???? */
+        
     }
   }
   @media(max-width:574px){

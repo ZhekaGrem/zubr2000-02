@@ -84,6 +84,9 @@
   }
 
   .team__member{
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
 	margin-bottom: 30px;
 	position: relative;
 	overflow: hidden;
@@ -108,7 +111,7 @@
 	    -ms-transform:translate(-50%, -50%);
 	        transform:translate(-50%, -50%);
 	text-align: center;
-	width: 100%;
+	width: 80%;
 }
 .team__member .team__member__hover .team__member__info .team__member__name{
 	font-weight: 700;
@@ -158,5 +161,13 @@
   
    
     .info__img{
+      border-radius: 0.35em;
       width: 100%;
+    }
+
+    @media(max-width: 1024px){
+      .team__member{
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;}
     }

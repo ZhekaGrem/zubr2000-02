@@ -12,15 +12,16 @@
 }
 
 .left1{
+  
   margin: 5px;
   grid-area: left1;
 }
 .right1{
   grid-area: right1;
   padding: 30px;
- 
- 
+  
 }
+
 .left2{
   grid-area: left2;
   padding: 30px;
@@ -53,9 +54,12 @@
 width: 100%;
  
 }
-
+.title{
+  text-align: center;
+}
 
 .title > span{
+
   position: relative;
   z-index: 1;
   font-weight: 700;
@@ -121,4 +125,28 @@ width: 100%;
   .content {
     max-width: 90%;
   }
+}
+
+
+.block{
+  width: 100%;
+  text-align: start ;
+  display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.list li ,
+.list2 li{ list-style-type: disc;}
+
+.list,
+.list2{
+  
+  width: 50%;
+}
+
+.btnblock{
+  display: flex;
+  justify-content: center;
 }

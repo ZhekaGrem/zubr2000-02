@@ -9,8 +9,6 @@ const Form = () => {
   const t = useTranslations("Index");
   const form = useRef();
   const [isSubmitted, setIsSubmitted] = useState(false); // Стан для відстеження стану відправки форми
-  const templateid = process.env.NEXT_YOUR_TEMPLATE_ID;
-  const serviseid =process.env.NEXT_YOUR_SERVICE_ID;
   
   const sendEmail = (e) => {
     e.preventDefault();

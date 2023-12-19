@@ -8,7 +8,7 @@ export const NavbarItem = (props) => {
   return (
     <li className={`${styles.nav__item}`}>
       <div rel="preload" onClick={() => setOpen(!open)}>
-        <Image src={props.icon} width={60} height={60} alt="dropdown button" />
+        <Image src={props.icon} width={60} height={60} style={{position:""}}alt="dropdown button" />
       </div>
       {open && props.children}
     </li>

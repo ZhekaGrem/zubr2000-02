@@ -41,6 +41,7 @@ a.link:after{
 	left: 0;
 	width: 0;
 	height: 1px;
+  font-weight: 400;
 }
 a:hover, a:focus{
 	color:#8ca600;
@@ -64,6 +65,7 @@ li {
 p{
   font-size: 1.8rem;
   color: #555;
+  font-weight: 600;
 }
 
 

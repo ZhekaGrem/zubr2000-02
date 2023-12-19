@@ -46,8 +46,8 @@ export default function Home() {
           <Image
             className={`${styles.img} `}
             src="/photo_tittl_№1.1.webp"
-            width={550}
-            height={400}
+            width={700}
+            height={500}
             alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
             loading="eager"
             priority={true}
@@ -66,8 +66,8 @@ export default function Home() {
             alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
             className={styles.img}
             src="/photo_tittl_№2.webp"
-            width={550}
-            height={400}
+            width={700}
+            height={500}
           />
         </section>
         <section className={`${styles.left2} `}>
@@ -204,8 +204,8 @@ export default function Home() {
             alt="lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна"
             className={styles.img}
             src="/photo_product_2.webp"
-            width={550}
-            height={400}
+            width={700}
+            height={500}
           />
         </section>
       </div>

@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 
 export const font = Source_Sans_3({
-  weight: ["300","400","600"],
+  weight: ["300","400","500","600"],
   display: "swap",
   subsets: ["latin-ext"],
   variable:"--font-source"

@@ -23,7 +23,7 @@ export const BackToTopButton = () => {
     });
   };
   return (
-    <div>
+    <>
       {backToTop && (
       
           <button
@@ -43,6 +43,6 @@ export const BackToTopButton = () => {
                 height={70}/>
           </button>
       )}
-    </div>
+    </>
   );
 };

@@ -27,6 +27,7 @@
   padding: 30px;
 }
 
+
 .left2 {
   grid-area: left2;
   padding: 30px;
@@ -83,11 +84,12 @@ padding: 5px;
 
 @media (max-width: 1200px) {
   .content {
+    grid-template-columns: 1fr 1fr ;
     grid-template-areas:
-      'left1 right1 '
-      'news news '
-      'left2 right2 '
-      'left3 right3 ';
+      'left1 right1'
+      'news news'
+      'left2 right2'
+      'left3 right3';
   }
   .img{
     max-height:450px ;
@@ -107,6 +109,11 @@ padding: 5px;
       'left3'
       'right3'
     ;
+    .right1,
+      .left2,
+    .right3 {
+      padding: 15px;
+    }
   }
   .img{
     max-height:550px ;
@@ -168,7 +175,8 @@ padding: 5px;
 
 .list,
 .list2 {
-
+  list-style-position: inside;
+  padding-left: 1em;
   width: 50%;
 }
 

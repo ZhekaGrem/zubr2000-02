@@ -17,6 +17,7 @@
    float: right;
    margin-right: 50px;
    position: relative;
+   
 }
 
 .container ul li {
@@ -28,11 +29,11 @@
 
 .container ul li a {
    font-size: 22px;
-   padding: 0px 20px 10px 16px;
+   padding: 0px 20px 0px 16px;
    color: aliceblue;
    text-transform: uppercase;
    letter-spacing: 0.05em;
-   font-weight: 400;
+   font-weight: 500;
 }
 
 
@@ -40,9 +41,9 @@
 
 .container ul li p {
    letter-spacing: 0.05em;
-   font-weight: 400;
+   font-weight: 500;
    font-size: 22px;
-   padding: 0px 20px 10px 50px;
+   padding: 0px 20px 0px 35px;
    color: aliceblue;
    text-transform: uppercase;
 }
@@ -81,7 +82,6 @@
    width: 300px;
    float: none;
    display: list-item;
-
 }
 .planet {
    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
@@ -139,20 +139,15 @@
    .container ul li a:hover>ul {
       opacity: 2;
       visibility: visible;
-      top: 68px;
    }
 
    
    .container ul li:hover>ul {
       opacity: 2;
       visibility: visible;
-      top:58px;
    }
 
 
-.logo__text{
-  
-}
 .logo__text:hover {
    transition: all .5s ease 0s;
    filter: invert(52%) sepia(94%) saturate(707%) hue-rotate(32deg) brightness(91%) contrast(102%);
@@ -167,7 +162,6 @@
 
 .sub__menu__list a {
    text-align: start;
-   line-height: 40px;
 
 
 }
@@ -175,6 +169,7 @@
 ul.sub__link__01 > li > a,
 ul.sub__link__02 > li > a
 {
+  
      width: 100%;
 	display: inline-block;
 	height: 40px;

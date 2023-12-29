@@ -44,8 +44,9 @@ a.link:after{
   font-weight: 400;
 }
 a:hover, a:focus{
-	color:#8ca600;
+	color:#8da600db;
 	text-decoration: none;
+  transition: .53s all ease;
 
 }
 a:hover:after{

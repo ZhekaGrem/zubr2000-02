@@ -186,7 +186,7 @@ const locale = useLocale();
             </Link>
           </li>
           <li className={styles.navbar__link__open__03}>
-            <p className={`${styles.navbar__link} `}>
+            <Link href="#"  className={`${styles.navbar__link} `}>
               
               <Image
                 className={styles.planet}
@@ -197,7 +197,7 @@ const locale = useLocale();
               />
               {t("language")}
              
-            </p>
+            </Link>
 
             <ul className={styles.sub__menu__list}>
               <li>

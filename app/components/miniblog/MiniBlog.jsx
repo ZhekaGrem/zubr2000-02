@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "@/app/styles/component/minipost.module.css";
-import { Source_Sans_3 } from "next/font/google";
+
 
 
 

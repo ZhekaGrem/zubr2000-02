@@ -27,6 +27,7 @@ export const BackToTopButton = () => {
       {backToTop && (
       
           <button
+          type="button"
             style={{
               position: "fixed",
               bottom:"50px",

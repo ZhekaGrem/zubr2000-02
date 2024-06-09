@@ -1,9 +1,8 @@
-'use client'
-import React,{useEffect,useState} from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import styles from "@/app/styles/page/news.module.css";
-import { client } from "@/app/lib/sanity";
-import NewsBlog from '@/app/components/newsblog/NewsBlog';
-
+import { client } from "@/app/_lib/sanity";
+import NewsBlog from "@/app/components/newsblog/NewsBlog";
 
 async function getData() {
   const query = `*[_type == "post"] | order(publication_data desc)`;
@@ -11,7 +10,7 @@ async function getData() {
   return data;
 }
 
-export default  function News() {
+export default function News() {
   const [blogData, setBlogData] = useState([]);
   useEffect(() => {
     async function fetchData() {
@@ -26,13 +25,10 @@ export default  function News() {
       <section className={styles.body}>
         <div className={styles.App}>
           <div className={styles.blog__container}>
-          <NewsBlog data={blogData}/>
-           
-          
+            <NewsBlog data={blogData} />
           </div>
         </div>
       </section>
     </>
   );
 }
-

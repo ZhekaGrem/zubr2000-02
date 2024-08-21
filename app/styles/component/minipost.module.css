@@ -1,6 +1,6 @@
 
 
-.mini__blog__post > time {
+.mini__blog__post > span {
   background: #878787;
     color: #fff;
     font-weight: 400;
@@ -14,7 +14,6 @@
     
 }
 .mini__blog__post > p {
-  font-weight: bold;
   color: inherit;
   vertical-align: baseline;
   text-align: justify;

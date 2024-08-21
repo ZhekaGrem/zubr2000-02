@@ -51,7 +51,12 @@ export const metadata = {
     locale: "en",
     siteName: meta.title,
     type: "website",
-   
+    images: ["https://www.zubr-2000.com.ua/photo_tittl_%E2%84%961.1.webp"],
+  },
+  twitter: {
+    title: "meta.title",
+    description: "meta.description",
+    images: ["https://www.zubr-2000.com.ua/photo_tittl_%E2%84%961.1.webp"],
   },
   keywords: [
     "дерево",

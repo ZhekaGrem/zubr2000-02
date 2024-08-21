@@ -9,8 +9,8 @@ function MiniBlog({ data }) {
     <ul className={styles.home__page}>
       {data.map((post) => (
         <li key={post._id} className={styles.mini__blog__post}>
-          <span>{post.publication_data}</span>
-          <p >{post.meta_title}</p>
+          <time>{post.publication_data}</time>
+          <p>{post.meta_title}</p>
         </li>
       ))}
     </ul>

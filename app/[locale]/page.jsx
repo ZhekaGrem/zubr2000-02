@@ -59,9 +59,9 @@ export default function Home() {
         <section className={`${styles.news}`}>
           <div className={styles.title}>
             <span>{t("news")}</span>
-        <Suspense fallback={<Loading/>}>
-            <MiniBlog data={blogData} />
-        </Suspense>
+            <Suspense fallback={<Loading />}>
+              <MiniBlog data={blogData} />
+            </Suspense>
           </div>
         </section>
 
@@ -88,7 +88,6 @@ export default function Home() {
                 >
                   {t("certificates")}
                 </Link>
-                
               </li>
               <li>
                 <Link
@@ -155,27 +154,35 @@ export default function Home() {
           <div className={styles.title}>
             <span>{t("contactus")}</span>
           </div>
-          <ul className={styles.section__title__us}>
-            <li>
-              <strong>{t("manager")} : </strong>+38 097 136-20-00
-            </li>
-            <li>
-              <strong>{t("director")} : </strong>+38 067 674-58-43
-            </li>
-            <li>
+          <dl className={styles.section__title__us}>
+            <dt>
+              <strong>{t("manager")} : </strong>
+            </dt>
+            <dd>+38 097 136-20-00</dd>
+            <dt>
+              <strong>{t("director")} : </strong>
+            </dt>
+            <dd>+38 067 674-58-43</dd>
+            <dt>
               <strong>Email : </strong>
+            </dt>
+            <dd>
               <a rel='preload' href='mailto:zubrzubr2000@gmail.com '>
                 zubrzubr2000@gmail.com
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               <strong>Email : </strong>
+            </dt>
+            <dd>
               <a rel='preload' href='mailto:gremroman@gmail.com'>
                 gremroman@gmail.com
               </a>
-            </li>
-            <li>
+            </dd>
+            <dt>
               <strong>Email : </strong>
+            </dt>
+            <dd>
               <a
                 className={styles.link_style}
                 rel='preload'
@@ -183,8 +190,8 @@ export default function Home() {
               >
                 grem_roman@icloud.com
               </a>
-            </li>
-          </ul>
+            </dd>
+          </dl>
 
           <div className={styles.btnblock}>
             <Link

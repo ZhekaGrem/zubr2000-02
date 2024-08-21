@@ -53,7 +53,7 @@ a:hover:after{
 	width: 50%;
 }
 a,
-li {
+li,dl {
   color: #555;
     list-style-type: none;
     font-weight: 600;

@@ -10,21 +10,16 @@ function Footer() {
 
   return (
     <>
-      <div
-        loading="lazy"
-        role="img"
-        aria-label="forest"
-        className={`lazy ${styles.footer}`}
-      >
+      <div className={`lazy ${styles.footer}`}>
         <div className={styles.container}>
           <div className={styles.row}>
             <div className={styles.footer__col}>
-                <h4>{t("ourproduct")}</h4>
+              <h4>{t("ourproduct")}</h4>
               <ul>
                 <li>
                   <Link
-                    rel="preload"
-                    href="/products#oak"
+                    rel='preload'
+                    href='/products#oak'
                     className={styles.footer__link}
                   >
                     {t("oak")}
@@ -32,8 +27,8 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    rel="preload"
-                    href="/products#ash"
+                    rel='preload'
+                    href='/products#ash'
                     className={styles.footer__link}
                   >
                     {t("ash")}
@@ -41,8 +36,8 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    rel="preload"
-                    href="/products#birch"
+                    rel='preload'
+                    href='/products#birch'
                     className={styles.footer__link}
                   >
                     {t("birch")}
@@ -50,8 +45,8 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    rel="preload"
-                    href="/products#modrina"
+                    rel='preload'
+                    href='/products#modrina'
                     className={styles.footer__link}
                   >
                     {t("modrina")}
@@ -59,17 +54,18 @@ function Footer() {
                 </li>
               </ul>
             </div>
-             <div className={styles.footer__col}>
-                <h4>{t("certificates")}</h4>
+            <div className={styles.footer__col}>
+              <h4>{t("certificates")}</h4>
               <ul>
                 <li>
                   <Link
-                    rel="preload"
+                    rel='preload'
                     className={`
                     ${styles.footer__link} `}
                     // ${styles.footer__link__img}
-                    href="/aboutus/certificates"
-                  >FCS
+                    href='/aboutus/certificates'
+                  >
+                    {t("certificates-name-1")}
                     {/* <Image
                       className={styles.logo}
                       src="/fsc__mini2.webp"
@@ -80,20 +76,16 @@ function Footer() {
                   </Link>
                 </li>
               </ul>
-            </div> 
+            </div>
             <div className={styles.footer__col}>
-                <h4>{t("contactus")}</h4>
+              <h4>{t("contactus")}</h4>
               <ul>
+                <li>{t("manager")}: +38 097 136-20-00</li>
+                <li>{t("director")}: +38 067 674-58-43</li>
                 <li>
-                  {t("manager")}: +38 097 136-20-00
-                </li>
-                <li>
-                {t("director")}: +38 067 674-58-43
-                </li>
-                   <li>
                   <a
                     className={styles.footer__link}
-                    href="mailto:zubrzubr2000@gmail.com"
+                    href='mailto:zubrzubr2000@gmail.com'
                   >
                     zubrzubr2000@gmail.com{" "}
                   </a>
@@ -101,7 +93,7 @@ function Footer() {
                 <li>
                   <a
                     className={styles.footer__link}
-                    href="mailto:gremroman@gmail.com"
+                    href='mailto:gremroman@gmail.com'
                   >
                     gremroman@gmail.com
                   </a>
@@ -109,22 +101,22 @@ function Footer() {
                 <li>
                   <a
                     className={styles.footer__link}
-                    href="mailto:grem_roman@icloud.com"
+                    href='mailto:grem_roman@icloud.com'
                   >
                     grem_roman@icloud.com{" "}
                   </a>
                 </li>
-             
+
                 <li>
                   <a
-                    rel="preload"
+                    rel='preload'
                     className={styles.footer__link}
-                    href="https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html"
+                    href='https://derevyna.fordaq.com/fordaq/srvFordaqReport/UkrWood+LLC_642294.html'
                   >
                     {" "}
                     <Image
-                      src="/fordaq-logo-02.webp"
-                      alt="fordaq"
+                      src='/fordaq-logo-02.webp'
+                      alt='fordaq'
                       width={100}
                       height={30}
                     />
@@ -133,7 +125,7 @@ function Footer() {
               </ul>
             </div>
             <div className={styles.footer__col}>
-                <h4>{t("findus")}</h4>
+              <h4>{t("findus")}</h4>
               <ul className={styles.footer__info}>
                 <li>79000</li>
                 <li>{t("ukrain")}</li>
@@ -143,14 +135,14 @@ function Footer() {
             </div>
           </div>
         </div>
-      <Link
-                    rel="preload"
-                    className={styles.footer__link__admin}
-                    href="https://zubr-2000.com.ua/admin"
-                  >
-                    {" "}
-                 *
-                  </Link>
+        <Link
+          rel='preload'
+          className={styles.footer__link__admin}
+          href='https://zubr-2000.com.ua/admin'
+        >
+          {" "}
+          *
+        </Link>
       </div>
     </>
   );

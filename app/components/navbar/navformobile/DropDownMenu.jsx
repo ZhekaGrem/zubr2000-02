@@ -228,7 +228,7 @@ const locale = useLocale();
           <Link
             prefetch={false}
             rel="preload"
-            to=""
+            
             href={usePathname()}
             locale="en"
           >
@@ -240,7 +240,7 @@ const locale = useLocale();
           <Link
             prefetch={false}
             rel="preload"
-            to=""
+            
             href={usePathname()}
             locale="uk"
           >
@@ -252,7 +252,7 @@ const locale = useLocale();
           <Link
             prefetch={false}
             rel="preload"
-            to=""
+            
             href={usePathname()}
             locale="pl"
           >
@@ -265,7 +265,7 @@ const locale = useLocale();
           <Link
             prefetch={false}
             rel="preload"
-            to=""
+            
             href={usePathname()}
             locale="da"
           >
@@ -278,7 +278,7 @@ const locale = useLocale();
           <Link
             prefetch={false}
             rel="preload"
-            to=""
+            
             href={usePathname()}
             locale="de"
           >
@@ -291,7 +291,7 @@ const locale = useLocale();
           <Link
             prefetch={false}
             rel="preload"
-            to=""
+            
             href={usePathname()}
             locale="it"
           >
@@ -304,7 +304,7 @@ const locale = useLocale();
           <Link
             prefetch={false}
             rel="preload"
-            to=""
+            
             href={usePathname()}
             locale="sv"
           >
@@ -317,7 +317,7 @@ const locale = useLocale();
           <Link
             prefetch={false}
             rel="preload"
-            to=""
+            
             href={usePathname()}
             locale="fr"
           >
@@ -330,7 +330,7 @@ const locale = useLocale();
           <Link
             prefetch={false}
             rel="preload"
-            to=""
+            
             href={usePathname()}
             locale="ru"
             

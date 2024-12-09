@@ -40,7 +40,7 @@ function AboutUs() {
               <div className={`${styles.pricing__plan}`}>
                 <div className={`${styles.plan__title}`}><span>{t('certificates')}</span></div>
                 <ul className={`${styles.list}`}>
-                  <li>FSC</li>
+                  {/* <li>FSC</li> */}
                   <li>Trade Leaders</li>
                 </ul>
               </div>

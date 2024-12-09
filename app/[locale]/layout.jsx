@@ -3,29 +3,24 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
-import {BackToTopButton}  from "../components/BackToTop/BackToTopButton";
+import { BackToTopButton } from "../components/BackToTop/BackToTopButton";
 import { Source_Sans_3 } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { Suspense } from "react";
 import Loading from "./loading";
 
-
 export const font = Source_Sans_3({
-  weight: ["300","400","500","600"],
+  weight: ["300", "400", "500", "600"],
   display: "swap",
   subsets: ["latin-ext"],
-  variable:"--font-source"
+  variable: "--font-source",
 });
-
-
-
-
 
 const meta = {
   title: "ZUBR-2000",
   description:
-    "ZUBR-2000 is a high-quality wood from Ukraine. FSC certified. oak lumber, ash lumber, birch lumber, larch lumber. Find the perfect timber for your project. ЗУБР-2000 – високоякісна деревина з України. Сертифікований FSC. пиломатеріали дуб,  пиломатеріали ясен, пиломатеріали береза, пиломатеріали модрина. Знайдіть ідеальну деревину для вашого проекту.",
-  image: "/public/new-title.webp",
+    "ZUBR-2000 is a high-quality wood from Ukraine. oak lumber, ash lumber, birch lumber, larch lumber. Find the perfect timber for your project. ЗУБР-2000 – високоякісна деревина з України.  пиломатеріали дуб,  пиломатеріали ясен, пиломатеріали береза, пиломатеріали модрина. Знайдіть ідеальну деревину для вашого проекту.",
+  image: "https://www.zubr-2000.com.ua/photo_tittl_%E2%84%961.1.webp",
 };
 
 export const metadata = {
@@ -152,7 +147,6 @@ export default async function LocaleLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <head>
-        <meta charSet='utf-8' />
         <meta
           name='viewport'
           as='viewport'
@@ -161,12 +155,12 @@ export default async function LocaleLayout({ children, params: { locale } }) {
         <meta
           name='description'
           lang='uk'
-          content='ЗУБР-2000 – високоякісна деревина з України. Сертифікований FSC. пиломатеріали дуб,  пиломатеріали ясен, пиломатеріали береза, пиломатеріали модрина. Знайдіть ідеальну деревину для вашого проекту.'
+          content='ЗУБР-2000 – високоякісна деревина з України. . пиломатеріали дуб,  пиломатеріали ясен, пиломатеріали береза, пиломатеріали модрина. Знайдіть ідеальну деревину для вашого проекту.'
         />
         <meta
           name='description'
           lang='ru'
-          content='ЗУБР-2000 – високоякісна деревина з України. Сертифікований FSC. пиломатеріали дуб,  пиломатеріали ясен, пиломатеріали береза, пиломатеріали модрина. Знайдіть ідеальну деревину для вашого проекту.'
+          content='ЗУБР-2000 – високоякісна деревина з України. . пиломатеріали дуб,  пиломатеріали ясен, пиломатеріали береза, пиломатеріали модрина. Знайдіть ідеальну деревину для вашого проекту.'
         />
         <link
           rel='alternate'
@@ -176,67 +170,59 @@ export default async function LocaleLayout({ children, params: { locale } }) {
 
         <link
           rel='alternate'
-          href='https://zubr-2000/en.com.ua'
+          href='https://zubr-2000.com.ua/en'
           hrefLang='en-US'
         />
         <link
-          as='alternate'
           rel='alternate'
-          href='https://zubr-2000/da.com.ua'
+          href='https://zubr-2000.com.ua/da'
           hrefLang='da-DA'
         />
         <link
-          as='alternate'
           rel='alternate'
-          href='https://zubr-2000/de.com.ua'
+          href='https://zubr-2000.com.ua/de'
           hrefLang='de-DE'
         />
         <link
-          as='alternate'
           rel='alternate'
-          href='https://zubr-2000/pl.com.ua'
+          href='https://zubr-2000.com.ua/pl'
           hrefLang='pl-PL'
         />
         <link
-          as='alternate'
           rel='alternate'
-          href='https://zubr-2000/ru.com.ua'
+          href='https://zubr-2000.com.ua/ru'
           hrefLang='ru-RU'
         />
         <link
-          as='alternate'
           rel='alternate'
-          href='https://zubr-2000/fr.com.ua'
+          href='https://zubr-2000.com.ua/fr'
           hrefLang='fr-FR'
         />
         <link
-          as='alternate'
           rel='alternate'
-          href='https://zubr-2000/it.com.ua'
+          href='https://zubr-2000.com.ua/it'
           hrefLang='it-IT'
         />
         <link
-          as='alternate'
           rel='alternate'
-          href='https://zubr-2000/sv.com.ua'
+          href='https://zubr-2000.com.ua/sv'
           hrefLang='sv-SV'
         />
       </head>
       <body className={font.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-            <Suspense fallback={<Loading/>}>
-          <div className='wrapper'>
-
-            <Navbar />
-            <main className='content'>
-              {children} <Analytics />
-            </main>
-            <BackToTopButton />
-          </div>
-          <footer>
-            <Footer />
-          </footer>
-            </Suspense>
+          <Suspense fallback={<Loading />}>
+            <div className='wrapper'>
+              <Navbar />
+              <main className='content'>
+                {children} <Analytics />
+              </main>
+              <BackToTopButton />
+            </div>
+            <footer>
+              <Footer />
+            </footer>
+          </Suspense>
         </NextIntlClientProvider>
       </body>
     </html>

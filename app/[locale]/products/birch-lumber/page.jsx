@@ -51,9 +51,9 @@ function Lumber() {
                   <div className={styles.table__cell}>500-3200</div>
                 </div>
               </div>
-              <div className={styles.table__cell__3}>
+              {/* <div className={styles.table__cell__3}>
                 Certificate code FSC 100% - NC-COC-024736
-              </div>
+              </div> */}
             </div>
 
             <div className={styles.col}>

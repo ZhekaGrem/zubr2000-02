@@ -43,7 +43,7 @@ function Lumber() {
 	</div>
   </div>
 </div>
-	<div className={styles.table__cell__3}>Certificate code FSC 100% - NC-COC-024736</div>
+	{/* <div className={styles.table__cell__3}>Certificate code FSC 100% - NC-COC-024736</div> */}
 				</div>
 				<div className={styles.col}>
                 <Image className={styles.adaptive__img} src="/oak-lumber-02.webp" alt="oak lumber 1" width={500} height={300} />
@@ -82,7 +82,7 @@ function Lumber() {
     <div className={styles.table__cell}>220-3050</div>
   </div>
 </div>
-<div className={styles.table__cell__3}>Certificate code FSC 100% - NC-COC-024736</div>
+{/* <div className={styles.table__cell__3}>Certificate code FSC 100% - NC-COC-024736</div> */}
 				</div>
 				<div className={styles.col}>
                 <Image className={styles.adaptive__img} src="/oak-lumber-01.webp" alt="oak lumber 3" width={500} height={300} />
@@ -123,7 +123,7 @@ function Lumber() {
   
 
 </div>
-<div className={styles.table__cell__3}>Certificate code FSC 100% - NC-COC-024736</div>
+{/* <div className={styles.table__cell__3}>Certificate code FSC 100% - NC-COC-024736</div> */}
 				</div>
 
 				<div className={styles.col}>

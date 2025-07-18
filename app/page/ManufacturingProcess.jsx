@@ -15,7 +15,7 @@ function ManufacturingProcess() {
         <div className={styles.manual__title}>
           <ul className={styles.manual__title__mini}>
             <li>
-              <div className={`${styles.big__title}`}>{t('manufacturing')}</div>
+              <div className={`${styles.big__title}`}><h1>{t('manufacturing')}</h1></div>
               <p>
               {t("manufacturing_process_01")}
               </p>
@@ -40,7 +40,7 @@ function ManufacturingProcess() {
             </div>
             <div className={styles.container}>
               <div className={styles.text__block}>
-                  <span>{t("aboutus-message11")}</span>
+                  <h2>{t("aboutus-message11")}</h2>
                 <div className={styles.section__title}>
                 </div>
                 <p>{t("manufacturing_process_02")}</p>
@@ -64,7 +64,7 @@ function ManufacturingProcess() {
             </div>
             <div className={styles.container}>
               <div className={styles.text__block}>
-                  <span>{t("aboutus-message12")}</span>
+                  <h2>{t("aboutus-message12")}</h2>
                 <div className={styles.section__title}>
                 </div>
                 <p>
@@ -107,7 +107,7 @@ function ManufacturingProcess() {
             </div>
             <div className={styles.container}>
               <div className={styles.text__block}>
-                  <span>{t("aboutus-message13")}</span>
+                  <h2>{t("aboutus-message13")}</h2>
                 <div className={styles.section__title}>
                 </div>
                 <p>{t("manufacturing_process_04")}</p>
@@ -131,7 +131,7 @@ function ManufacturingProcess() {
             </div>
             <div className={styles.container}>
               <div className={styles.text__block}>
-                  <span>{t("aboutus-message14")}</span>
+                  <h2>{t("aboutus-message14")}</h2>
                 <div className={styles.section__title}>
                 </div>
                 <p>
@@ -158,7 +158,7 @@ function ManufacturingProcess() {
             </div>
             <div className={styles.text__block}>
               <div className={styles.text__block}>
-                  <span>{t("aboutus-message15")}</span>
+                  <h2>{t("aboutus-message15")}</h2>
                 <div className={styles.section__title}>
                 </div>
                 <p>{t("manufacturing_process_06")}</p>
@@ -183,7 +183,7 @@ function ManufacturingProcess() {
             </div>
             <div className={styles.container}>
               <div className={styles.text__block}>
-                  <span>{t("aboutus-message16")} </span>
+                  <h2>{t("aboutus-message16")} </h2>
                 <div className={styles.section__title}>
 				  
                 </div>
@@ -200,9 +200,9 @@ function ManufacturingProcess() {
         
          
           
-            <span>
+            <h2>
             {t("manufacturing_process_08")}
-            </span>
+            </h2>
          
           <p>
           {t("manufacturing_process_09")}

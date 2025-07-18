@@ -3,197 +3,132 @@ import styles from "@/app/styles/component/navbarscreen.module.css";
 import Image from "next/image";
 import Link from "next-intl/link";
 import { useTranslations, useLocale } from "next-intl";
-import React, { useState, lazy } from "react";
+import React, { useState, useCallback, lazy, Suspense } from "react";
 
 const LangDropBar = lazy(() => import("./LangDropBar"));
 
 export const NavbarListDesktop = () => {
   const t = useTranslations("Index");
-
   const locale = useLocale();
-  const [menuActive, setMenuActive] = useState(true);
-  const handleClick = () => {
-    setMenuActive(true);
-  };
-  return (
-    <>
-      <div
-        loading='eager'
-        alt='forest'
-        role='img'
-        aria-label='forest'
-        className={`${styles.container} ${styles.container__closed}`}
-      >
-        <div className={styles.navbar__logo}>
-          <Link rel='preload' onClick={handleClick} href='/'>
-            <Image
-              className={styles.logo__img}
-              src='/Zubr-logo-01.webp'
-              width={70}
-              height={70}
-              alt='Logo zubr 2000 лого зубр2000'
-            />
-            <Image
-              className={styles.logo__text}
-              src='/ZUBR-2000-3.svg'
-              width={280}
-              height={62}
-              alt='Zubr 2000 ЗУБР 2000'
-            />
-          </Link>
-        </div>
-        <ul className={styles.nav__link}>
-          <li>
-            <Link
-              href='/'
-              onClick={handleClick}
-              className={styles.navbar__link}
-            >
-              {t("home")}
-            </Link>
-          </li>
-          <li className={styles.navbar__link__open__01}>
-            <Link
-              rel='preload'
-              href='/aboutus'
-              onClick={handleClick}
-              className={`${styles.navbar__link} `}
-            >
-              {t("aboutus")}
-            </Link>
-            <ul className={styles.sub__link__01}>
-              <li>
-                <Link
-                  rel='preload'
-                  href='/aboutus/news'
-                  onClick={handleClick}
-                  className={styles.sub__navbar__link}
-                >
-                  {t("news")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  rel='preload'
-                  href='/aboutus/certificates'
-                  onClick={handleClick}
-                  className={styles.sub__navbar__link}
-                >
-                  {t("certificates")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  rel='preload'
-                  onClick={handleClick}
-                  href='/aboutus/manufacturing-process'
-                  className={styles.sub__navbar__link}
-                >
-                  {t("manufacturing")}
-                </Link>
-              </li>
-              <li className={styles.test}>
-                <Link
-                  rel='preload'
-                  onClick={handleClick}
-                  href='/aboutus/quality-standarts'
-                  className={styles.sub__navbar__link}
-                >
-                  {t("quality")}
-                </Link>
-              </li>
-              {locale === "uk" && (
-                <li>
-                  <Link
-                    rel='preload'
-                    href='/aboutus/offers'
-                    onClick={handleClick}
-                    className={styles.sub__navbar__link}
-                  >
-                    {t("offers")}
-                  </Link>
-                </li>
-              )}
-            </ul>
-          </li>
-          <li className={styles.navbar__link__open__02}>
-            <Link
-              rel='preload'
-              onClick={handleClick}
-              href='/products'
-              className={`${styles.navbar__link} `}
-            >
-              {t("product")}
-            </Link>
+  const [activeDropdown, setActiveDropdown] = useState(null);
 
-            <ul className={styles.sub__link__02}>
-              <li>
-                <Link
-                  rel='preload'
-                  onClick={handleClick}
-                  href='/products/oak-lumber'
-                  className={styles.sub__navbar__link}
-                >
-                  {t("oak")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  rel='preload'
-                  onClick={handleClick}
-                  href='/products/ash-lumber'
-                  className={styles.sub__navbar__link}
-                >
-                  {t("ash")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  rel='preload'
-                  onClick={handleClick}
-                  href='/products/birch-lumber'
-                  className={styles.sub__navbar__link}
-                >
-                  {t("birch")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  rel='preload'
-                  onClick={handleClick}
-                  href='/products/modrina-lumber'
-                  className={styles.sub__navbar__link}
-                >
-                  {t("modrina")}
-                </Link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <Link
-              rel='preload'
-              onClick={handleClick}
-              href='/contact'
-              className={styles.navbar__link}
+  const handleMouseEnter = useCallback((dropdown) => {
+    setActiveDropdown(dropdown);
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
+    setActiveDropdown(null);
+  }, []);
+
+  const navItems = [
+    {
+      key: "home",
+      href: "/",
+      label: t("home"),
+    },
+    {
+      key: "aboutus",
+      href: "/aboutus",
+      label: t("aboutus"),
+      dropdown: [
+        { href: "/aboutus/news", label: t("news") },
+        { href: "/aboutus/certificates", label: t("certificates") },
+        { href: "/aboutus/manufacturing-process", label: t("manufacturing") },
+        { href: "/aboutus/quality-standarts", label: t("quality") },
+        ...(locale === "uk" ? [{ href: "/aboutus/offers", label: t("offers") }] : []),
+      ],
+    },
+    {
+      key: "products",
+      href: "/products",
+      label: t("product"),
+      dropdown: [
+        { href: "/products/oak-lumber", label: t("oak") },
+        { href: "/products/ash-lumber", label: t("ash") },
+        { href: "/products/birch-lumber", label: t("birch") },
+        { href: "/products/modrina-lumber", label: t("modrina") },
+      ],
+    },
+    {
+      key: "contact",
+      href: "/contact",
+      label: t("contact"),
+    },
+  ];
+
+  return (
+    <nav className={styles.navbar}>
+      <div className={styles.container}>
+        <Link href="/" className={styles.logoLink}>
+          <div className={styles.logo}>
+          <Image
+              src="/Zubr-logo-01.webp"
+              width={50}
+              height={50}
+              alt="ZUBR-2000 Logo"
+              priority
+            />
+            <Image
+              src="/ZUBR-2000-3.svg"
+              width={240}
+              height={56}
+              alt="ZUBR-2000"
+              priority
+            />
+            
+          </div>
+        </Link>
+
+        <ul className={styles.navList}>
+          {navItems.map((item) => (
+            <li
+              key={item.key}
+              className={styles.navItem}
+              onMouseEnter={() => item.dropdown && handleMouseEnter(item.key)}
+              onMouseLeave={handleMouseLeave}
             >
-              {t("contact")}
-            </Link>
-          </li>
-          <li className={styles.navbar__link__open__03}>
-            <Link href='#' className={`${styles.navbar__link} `}>
+              <Link href={item.href} className={styles.navLink}>
+                {item.label}
+              </Link>
+              
+              {item.dropdown && (
+                <ul className={`${styles.dropdown} ${activeDropdown === item.key ? styles.active : ""}`}>
+                  {item.dropdown.map((subItem, index) => (
+                    <li key={index} className={styles.dropdownItem}>
+                      <Link href={subItem.href} className={styles.dropdownLink}>
+                        {subItem.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
+          
+          <li
+            className={styles.navItem}
+            onMouseEnter={() => handleMouseEnter("language")}
+            onMouseLeave={handleMouseLeave}
+          >
+            <button className={styles.langButton}>
               <Image
-                className={styles.planet}
-                alt='language PL'
-                src='/language__02.svg'
+                src="/language__02.svg"
                 width={20}
-                height={16}
+                height={20}
+                alt="Language"
+                className={styles.svgImg}
               />
-              {t("language")}
-            </Link>
-            <LangDropBar />
+              <span>{t("language")}</span>
+            </button>
+            
+            <div className={`${styles.dropdown} ${styles.langDropdown} ${activeDropdown === "language" ? styles.active : ""}`}>
+              <Suspense fallback={<div className={styles.loading}>...</div>}>
+                <LangDropBar />
+              </Suspense>
+            </div>
           </li>
         </ul>
       </div>
-    </>
+    </nav>
   );
 };

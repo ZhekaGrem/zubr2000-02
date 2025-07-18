@@ -1,17 +1,46 @@
 import React from "react";
 import styles from "@/app/styles/UI/button.module.css";
 
-function Button(props) {
+// Button component with consistent styling
+const Button = ({
+  children,
+  title_button,
+  title_button_sent_out,
+  isSubmitted = false,
+  disabled = false,
+  variant = "primary",
+  size = "medium",
+  fullWidth = false,
+  onClick,
+  type = "button",
+  className = "",
+  ...props
+}) => {
+  // Determine button text
+  const buttonText = children || (isSubmitted ? title_button_sent_out : title_button);
+  
+  // Build class names
+  const classNames = [
+    styles.btn,
+    styles[variant],
+    styles[size],
+    fullWidth && styles.fullWidth,
+    className
+  ].filter(Boolean).join(" ");
+
   return (
     <button
-      disabled={props.disabledValue || props.isSubmitted} // Встановлюємо кнопку відключеною, якщо відправка вже була здійснена
-      className={styles.btn}
-      type="submit"
-      onClick={props.onClickB}
+      type={type}
+      disabled={disabled || isSubmitted}
+      className={classNames}
+      onClick={onClick}
+      {...props}
     >
-      {props.isSubmitted ? props.title_button_sent_out : props.title_button}
+      <span className={styles.btnText}>
+        {buttonText}
+      </span>
     </button>
   );
-}
+};
 
-export default Button;
+export default React.memo(Button);

@@ -17,7 +17,7 @@ function Contact() {
 
         <div className={styles.contact__info}>
           <ul>
-              <li className={styles.sub__contact__info}>{t('contactus')}</li>
+              <li className={styles.sub__contact__info}><h2>{t('contactus')}</h2></li>
             
             <li>{t('manager')}:+38 097 136-20-00 </li>
             <li>{t('director')}:+38 067 674-58-43 </li>
@@ -40,7 +40,7 @@ function Contact() {
         <div className={styles.contact__info}>
           <ul>
            
-              <li className={styles.sub__contact__info}>{t('findus')}</li>
+              <li className={styles.sub__contact__info}><h2>{t('findus')}</h2></li>
            
             <li>79000</li>
             <li>{t("ukrain")}</li>

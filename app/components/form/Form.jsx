@@ -33,7 +33,7 @@ const Form = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.text}> {t("contactus")} </div>
+      <div className={styles.text}> <h1>{t("contactus")} </h1></div>
       <form className={styles.form} ref={form} onSubmit={sendEmail}>
         <Input typeValue="text" nameValue="name" span={t("name")} />
 

@@ -65,8 +65,8 @@ const LangList = [
   {
     locale: "ru",
     alt: "language Ru",
-    img: "/ru.webp",
-    title: "Руский",
+    img: "/ua.webp",
+    title: "russian",
     id: "9",
   },
 ];

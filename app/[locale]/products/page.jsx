@@ -1,349 +1,128 @@
 "use client";
 import React from "react";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import styles from "@/app/styles/page/products.module.css";
-import Link from "next/link";
+import ProductCard from "@/app/components/ProductCard/ProductCard";
 
-
-const data = [
-  {
+// Дані продуктів винесені в константу для кращої організації
+const productData = {
+  oak: {
     title: "oak",
-    text: "product_oak",
-    img: {
-      src: "/oak-lumber-01.webp",
-      alt: "oak дуб lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна",
-    },
-    board: "board",
-    size: "54 * 110 ММ",
-    link: "/products/oak-lumber#oak__02",
-    linktext: "open",
+    description: "product_oak",
+    products: [
+      {
+        id: "oak-board",
+        image: { src: "/oak-lumber-01.webp", alt: "Oak board lumber" },
+        title: "board",
+        subtitle: "54 × 110 mm",
+        link: "/products/oak-lumber#oak__02",
+        badge: null
+      },
+      {
+        id: "oak-beam",
+        image: { src: "/oak-lumber-02.webp", alt: "Oak beam lumber" },
+        title: "beam", 
+        subtitle: "22-54 × 54-315 mm",
+        link: "/products/oak-lumber#oak__01",
+        badge: null
+      },
+      {
+        id: "oak-curved",
+        image: { src: "/oak-lumber-03.webp", alt: "Oak curved elements" },
+        title: "curvedelements",
+        subtitle: "22-54 × 54-315 mm",
+        link: "/products/oak-lumber#oak__03",
+        badge: null
+      }
+    ]
   },
-];
+  ash: {
+    title: "ash",
+    description: "product_ash",
+    products: [
+      {
+        id: "ash-board",
+        image: { src: "/ash-lumber-03.webp", alt: "Ash board lumber" },
+        title: "board",
+        subtitle: "26-55 × 76-315 mm",
+        link: "/products/ash-lumber#ash__01",
+        badge: null
+      }
+    ]
+  },
+  birch: {
+    title: "birch",
+    description: "product_birch",
+    products: [
+      {
+        id: "birch-beam",
+        image: { src: "/birch-lumber-03.webp", alt: "Birch beam lumber" },
+        title: "beam",
+        subtitle: "36/52 × 52 mm",
+        link: "/products/birch-lumber#birch__01",
+        badge: null
+      }
+    ]
+  },
+  modrina: {
+    title: "modrina",
+    description: "product_modrina",
+    products: [
+      {
+        id: "modrina-terrace",
+        image: { src: "/modrina-lumber-01.webp", alt: "Modrina terrace board" },
+        title: "terraceboard",
+        subtitle: "21-30 × 123-500 mm",
+        link: "/products/modrina-lumber#modrina__01",
+        badge: "NEW"
+      },
+      {
+        id: "modrina-basket",
+        image: { src: "/modrina-lumber-05.webp", alt: "Modrina basket" },
+        title: "basket",
+        subtitle: "285-375 × 312-500 mm",
+        link: "/products/modrina-lumber#modrina__03",
+        badge: null
+      }
+    ]
+  }
+};
 
-function Product() {
+function Products() {
   const t = useTranslations("Index");
 
   return (
-    <>
-      {data.map((item) => (
-        <section>
-          <div id={item.title} className={styles.container}>
-            <div className={styles.row}>
-              <div className={styles.section__title}>
-                <span> {t(`${item.title}`)}</span>
-                <p> {t(`${item.text}`)}</p>
-              </div>
+    <div className={styles.pageContainer}>
+      {Object.entries(productData).map(([key, category]) => (
+        <section key={key} id={key} className={styles.categorySection}>
+          <div className={styles.container}>
+            <div className={styles.categoryHeader}>
+              <h2 className={styles.categoryTitle}>
+                {t(category.title)}
+              </h2>
+              <p className={styles.categoryDescription}>
+                {t(category.description)}
+              </p>
             </div>
 
-            <div className={styles.row}>
-              <div className={styles.col}>
-                <div className={styles.team__member}>
-                  <Image
-                    className={styles.info__img}
-                    src={item.img.src}
-                    width={400}
-                    alt={item.img.alt}
-                    height={400}
-                  />
-                  <div className={styles.team__member__hover}>
-                    <div className={styles.team__member__info}>
-                      <div className={styles.team__member__name}>
-                        {t(`${item.board}`)} {item.size}
-                      </div>
-                      <div className={styles.team__member__job}>
-                        <Link rel='preload' href={item.link}>
-                          {t(`${item.linktext}`)}
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className={styles.col} data-wow-delay='.1s'>
-                <div className={styles.team__member}>
-                  <Image
-                    className={styles.info__img}
-                    src='/oak-lumber-02.webp'
-                    width={400}
-                    alt='oak дуб lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна '
-                    height={400}
-                  />
-                  <div className={styles.team__member__hover}>
-                    <div className={styles.team__member__info}>
-                      <div className={styles.team__member__name}>
-                        {t("beam")} 22-54 * 54-315 ММ
-                      </div>
-                      <div className={styles.team__member__job}>
-                        <Link rel='preload' href='/products/oak-lumber#oak__01'>
-                          {t("open")}
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.col} data-wow-delay='.1s'>
-                <div className={styles.team__member}>
-                  <Image
-                    className={styles.info__img}
-                    src='/oak-lumber-03.webp'
-                    width={400}
-                    alt='oak дуб lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна '
-                    height={400}
-                  />
-                  <div className={styles.team__member__hover}>
-                    <div className={styles.team__member__info}>
-                      <div className={styles.team__member__name}>
-                        {t("curvedelements")} 22-54 * 54-315 ММ
-                      </div>
-                      <div className={styles.team__member__job}>
-                        <Link rel='preload' href='/products/oak-lumber#oak__03'>
-                          {t("open")}
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className={styles.productsGrid}>
+              {category.products.map((product) => (
+                <ProductCard
+                  key={product.id}
+                  image={product.image}
+                  title={t(product.title)}
+                  subtitle={product.subtitle}
+                  link={product.link}
+                  linkText={t("open")}
+                  badge={product.badge}
+                />
+              ))}
             </div>
           </div>
         </section>
       ))}
-      <section>
-        <div id='oak' className={styles.container}>
-          <div className={styles.row}>
-            <div className={styles.section__title}>
-              <span> {t("oak")}</span>
-              <p> {t("product_oak")}</p>
-            </div>
-          </div>
-
-          <div className={styles.row}>
-            <div className={styles.col}>
-              <div className={styles.team__member}>
-                <Image
-                  className={styles.info__img}
-                  src='/oak-lumber-01.webp'
-                  width={400}
-                  alt='oak дуб lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна '
-                  height={400}
-                />
-                <div className={styles.team__member__hover}>
-                  <div className={styles.team__member__info}>
-                    <div className={styles.team__member__name}>
-                      {t("board")} 54 * 110 ММ
-                    </div>
-                    <div className={styles.team__member__job}>
-                      <Link rel='preload' href='/products/oak-lumber#oak__02'>
-                        {t("open")}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className={styles.col} data-wow-delay='.1s'>
-              <div className={styles.team__member}>
-                <Image
-                  className={styles.info__img}
-                  src='/oak-lumber-02.webp'
-                  width={400}
-                  alt='oak дуб lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна '
-                  height={400}
-                />
-                <div className={styles.team__member__hover}>
-                  <div className={styles.team__member__info}>
-                    <div className={styles.team__member__name}>
-                      {t("beam")} 22-54 * 54-315 ММ
-                    </div>
-                    <div className={styles.team__member__job}>
-                      <Link rel='preload' href='/products/oak-lumber#oak__01'>
-                        {t("open")}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.col} data-wow-delay='.1s'>
-              <div className={styles.team__member}>
-                <Image
-                  className={styles.info__img}
-                  src='/oak-lumber-03.webp'
-                  width={400}
-                  alt='oak дуб lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна '
-                  height={400}
-                />
-                <div className={styles.team__member__hover}>
-                  <div className={styles.team__member__info}>
-                    <div className={styles.team__member__name}>
-                      {t("curvedelements")} 22-54 * 54-315 ММ
-                    </div>
-                    <div className={styles.team__member__job}>
-                      <Link rel='preload' href='/products/oak-lumber#oak__03'>
-                        {t("open")}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div id='ash' className={styles.container}>
-          <div className={styles.row}>
-            <div className={styles.section__title}>
-              <span> {t("ash")}</span>
-              <p> {t("product_ash")}</p>
-            </div>
-          </div>
-
-          <div className={styles.row}>
-            <div className={styles.col}>
-              <div className={styles.team__member}>
-                <Image
-                  className={styles.info__img}
-                  alt='ash ясень lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна '
-                  src='/ash-lumber-03.webp'
-                  width={400}
-                  height={400}
-                />
-                <div className={styles.team__member__hover}>
-                  <div className={styles.team__member__info}>
-                    <div className={styles.team__member__name}>
-                      {t("board")} 26-55 * 76-315 ММ
-                    </div>
-                    <div className={styles.team__member__job}>
-                      <Link rel='preload' href='/products/ash-lumber#ash__01'>
-                        {t("open")}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div id='birch' className={styles.container}>
-          <div className={styles.row}>
-            <div className={styles.section__title}>
-              <span> {t("birch")}</span>
-              <p>{t("product_birch")}</p>
-            </div>
-          </div>
-
-          <div className={styles.row}>
-            <div className={styles.col}>
-              <div className={styles.team__member}>
-                <Image
-                  className={styles.info__img}
-                  src='/birch-lumber-03.webp'
-                  alt='береза birch lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна '
-                  width={400}
-                  height={400}
-                />
-                <div className={styles.team__member__hover}>
-                  <div className={styles.team__member__info}>
-                    <div className={styles.team__member__name}>
-                      {t("beam")} 36/52 * 52 ММ
-                    </div>
-                    <div className={styles.team__member__job}>
-                      <Link
-                        rel='preload'
-                        href='/products/birch-lumber#birch__01'
-                      >
-                        {t("open")}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div id='modrina' className={styles.container}>
-          <div className={styles.row}>
-            <div className={styles.section__title}>
-              <span> {t("modrina")}</span>
-              <p>{t("product_modrina")}</p>
-            </div>
-          </div>
-
-          <div className={styles.row}>
-            <div className={styles.col}>
-              <div className={styles.team__member}>
-                <Image
-                  className={styles.info__img}
-                  src='/modrina-lumber-01.webp'
-                  alt='modrina модрина lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна '
-                  width={400}
-                  height={400}
-                />
-                <Image
-                  className={styles.info__img}
-                  src='/modrina-lumber-03.webp'
-                  alt='modrina модрина lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна  '
-                  width={400}
-                  height={400}
-                />
-                <div className={styles.team__member__hover}>
-                  <div className={styles.team__member__info}>
-                    <div className={styles.team__member__name}>
-                      {t("terraceboard")} 21-30 * 123-500ММ
-                    </div>
-                    <div className={styles.team__member__job}>
-                      <Link
-                        rel='preload'
-                        href='/products/modrina-lumber#modrina__01'
-                      >
-                        {t("open")}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className={styles.col}>
-              <div className={styles.team__member}>
-                <Image
-                  className={styles.info__img}
-                  src='/modrina-lumber-05.webp'
-                  alt='modrina модрина lumber sales zubr2000 Ukranian зубр2000 продаж пиломатеріали Україна'
-                  width={400}
-                  height={400}
-                />
-                <div className={styles.team__member__hover}>
-                  <div className={styles.team__member__info}>
-                    <div className={styles.team__member__name}>
-                      {t("basket")} 285-375 * 312-500 ММ
-                    </div>
-                    <div className={styles.team__member__job}>
-                      <Link
-                        rel='preload'
-                        href='/products/modrina-lumber#modrina__03'
-                      >
-                        {t("open")}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+    </div>
   );
 }
 
-export default Product;
+export default Products;

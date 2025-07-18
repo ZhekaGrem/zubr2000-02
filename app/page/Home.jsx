@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import { client } from "@/app/_lib/sanity";
 import MiniBlog from "@/app/components/miniblog/MiniBlog";
 import Button from "@/app/UI/button/button";
-import Loading from "./loading";
+import Loading from "@/app/[locale]/loading";
 
 async function getData() {
   const query = `*[_type == "post"] | order(publication_data desc)`;
@@ -37,7 +37,7 @@ async function getData() {
       <div className={styles.content}>
         <section className={`${styles.right1} `}>
           <div className={styles.title}>
-            <span>{t("aboutus")}</span>
+            <h1>{t("aboutus")}</h1>
           </div>
           <p>{t("title1")}</p>
           <p>{t("title2")}</p>
@@ -58,7 +58,7 @@ async function getData() {
 
         <section className={`${styles.news}`}>
           <div className={styles.title}>
-            <span>{t("news")}</span>
+            <h2>{t("news")}</h2>
             <Suspense fallback={<Loading />}>
               <MiniBlog data={blogData} />
             </Suspense>
@@ -76,7 +76,7 @@ async function getData() {
         </section>
         <section className={`${styles.left2} `}>
           <div className={styles.title}>
-            <span>{t("ourproduct")}</span>
+            <h2>{t("ourproduct")}</h2>
           </div>
           <div className={`${styles.block}`}>
             <ul className={`${styles.list}`}>
@@ -152,7 +152,7 @@ async function getData() {
 
         <section className={`${styles.right3}`}>
           <div className={styles.title}>
-            <span>{t("contactus")}</span>
+            <h2>{t("contactus")}</h2>
           </div>
           <dl className={styles.section__title__us}>
             <dt>

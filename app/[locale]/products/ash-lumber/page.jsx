@@ -3,116 +3,102 @@ import React from "react";
 import styles from "@/app/styles/page/lumber.module.css";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Button from "@/app/UI/button/button";
+import Link from "next-intl/link";
 
-function Lumber() {
+const ashProducts = [
+  {
+    id: "ash__01",
+    title: "board",
+    dimensions: "30-54 × 54-315 mm",
+    image: "/ash-lumber-03.webp",
+    sorts: [
+      { grade: "A", description: "products-title-01" },
+      { grade: "B", description: "products-title-02-ash" }
+    ],
+    specifications: {
+      thickness: "30-54",
+      width: "54-315",
+      length: "220-4000"
+    }
+  }
+];
+
+function AshLumber() {
   const t = useTranslations("Index");
+
   return (
-    <>
-      <section id="ash__01">
-        <div className={styles.container}>
-          <div className={styles.row}>
-            <div className={styles.section__title}>
-              <span>
-                {t("ash")} {t("board")} 30-54 * 54-315 mm
-              </span>
-            </div>
-          </div>
-
-          <div className={styles.row}>
-            <div className={`${styles.col} `}>
-              <h4>{t("sort")} А</h4>
-              <p>{t("products-title-01")}</p>
-
-              <h4>{t("sort")} В</h4>
-              <p>{t("products-title-02-ash")} </p>
-
-              <div className={styles.table__cell__2}>
-                {t("quality-title-27")} mm
-              </div>
-              <div className={styles.table}>
-                <div className={styles.table__row}>
-                  <div className={styles.table__cell}>
-                    {t("products-title-07")}
-                  </div>
-                  <div className={styles.table__cell}>
-                    {t("quality-title-48")}
-                  </div>
-                  <div className={styles.table__cell}>
-                    {t("quality-title-35")}
-                  </div>
-                </div>
-                <div className={styles.table__row}>
-                  <div className={styles.table__cell}>30-54 </div>
-                  <div className={styles.table__cell}>54-315</div>
-                  <div className={styles.table__cell}>220-4000</div>
-                </div>
-              </div>
-              {/* <div className={styles.table__cell__3}>
-                Certificate code FSC 100% - NC-COC-024736
-              </div> */}
-            </div>
-            <div className={styles.col}>
-              <Image
-                className={styles.adaptive__img}
-                src="/ash-lumber-03.webp"
-                width={500}
-                alt="ash lumber 1"
-                height={300}
-              />
-            </div>
-          </div>
+    <div className={styles.lumberPage}>
+      {/* Hero Section */}
+      {/* <section className={styles.hero}>
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroTitle}>{t('ash')} {t('lumber')}</h1>
+          <p className={styles.heroDescription}>{t('product_ash')}</p>
         </div>
-      </section>
-      {/* <section id="ash__02" >
-		<div className={styles.container}>
-			<div className={styles.row}>
-				<div className={styles.section__title}>
-					<span>{t('ash')} {t('beam')} 54 * 110 mm</span>
-					
-				</div>
-			</div>
+      </section> */}
 
-			<div className={styles.row}>
-				<div className={`${styles.col} `}>
-					<h4>{t('sort')} АA/AB</h4>
-					<p >
-					{t('products-title-03')}
-					</p>
-					<h4>{t('sort')} В</h4>
-					<p >
-					{t('products-title-04')}	</p>
-					<h4>{t('sort')} С</h4>
-					<p >
-					{t('products-title-05')}	</p>
-<div className={styles.table__cell__2}>{t('quality-title-27')} mm</div>
-<div className={styles.table}>
-  <div className={styles.table__row}>
-    <div className={styles.table__cell}>{t('products-title-07')}</div>
-    <div className={styles.table__cell}>{t('quality-title-48')}</div>
-    <div className={styles.table__cell}>{t('quality-title-35')}</div>
-  </div>
-  <div className={styles.table__row}>
-    <div className={styles.table__cell}>54</div>
-    <div className={styles.table__cell}>54</div>
-    <div className={styles.table__cell}>220-750
-	<p>222-2222</p>
-	<p>222-2222</p>
-	<p>222-2222</p>
-	</div>
-  </div>
-</div>
-<div className={styles.table__cell__3}>Certificate code FSC 100% - NC-COC-024736</div>
-				</div>
+      {/* Products */}
+      {ashProducts.map((product, index) => (
+        <section key={product.id} id={product.id} className={styles.productSection}>
+          <div className={styles.container}>
+            <div className={`${styles.productGrid} ${index % 2 === 1 ? styles.reverse : ''}`}>
+              {/* Content Column */}
+              <div className={styles.contentColumn}>
+                <h2 className={styles.productTitle}>
+                  {t('ash')} {t(product.title)} 
+                  <span className={styles.dimensions}>{product.dimensions}</span>
+                </h2>
 
-				<div className={styles.col}>
-                <Image className={styles.adaptive__img} src="/ash-lumber-01.webp" alt="ash lumber 2" width={500} height={300} />
+                {/* Grades */}
+                <div className={styles.grades}>
+                  {product.sorts.map((sort) => (
+                    <div key={sort.grade} className={styles.gradeItem}>
+                      <h3 className={styles.gradeTitle}>{t("sort")} {sort.grade}</h3>
+                      <p className={styles.gradeDescription}>{t(sort.description)}</p>
+                    </div>
+                  ))}
+                </div>
 
-				</div>
-			</div>
-		</div>
-                   </section> */}
-    </>
+                {/* Specifications Table */}
+                <div className={styles.specifications}>
+                  <h3 className={styles.specsTitle}>{t("quality-title-27")} mm</h3>
+                  <div className={styles.specsTable}>
+                    <div className={styles.specsRow}>
+                      <div className={styles.specsHeader}>{t("products-title-07")}</div>
+                      <div className={styles.specsHeader}>{t("quality-title-48")}</div>
+                      <div className={styles.specsHeader}>{t("quality-title-35")}</div>
+                    </div>
+                    <div className={styles.specsRow}>
+                      <div className={styles.specsCell}>{product.specifications.thickness}</div>
+                      <div className={styles.specsCell}>{product.specifications.width}</div>
+                      <div className={styles.specsCell}>{product.specifications.length}</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* CTA Button */}
+              
+              </div>
+
+              {/* Image Column */}
+              <div className={styles.imageColumn}>
+                <div className={styles.imageWrapper}>
+                  <Image
+                    className={styles.productImage}
+                    src={product.image}
+                    alt={`${t('ash')} ${t(product.title)}`}
+                    width={600}
+                    height={400}
+                    quality={90}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      ))}
+    </div>
   );
 }
 
-export default Lumber;
+export default AshLumber;

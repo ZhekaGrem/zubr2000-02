@@ -6,6 +6,8 @@
 
 
 .contact__block {
+   max-width: 1200px;
+   margin: auto;
 padding: 30px;
 display: flex;
 justify-content: space-between;
@@ -18,21 +20,7 @@ flex-wrap: wrap;
    align-items: center;
 }
 
-.contact__info li {
 
-   margin: 2% 0;
-
-}
-
-.contact__info p {
-
-   margin: 3% 0;
-
-}
-
-.contact__info ul {
-   margin: 5px;
-}
 
 .contact__form {
    width: 100%;
@@ -63,7 +51,6 @@ flex-wrap: wrap;
       width: 100%;
       justify-content: center;
 	 flex-wrap: wrap;
-   padding: 5px 0px;
    margin-bottom: 30px;
 
 }
@@ -88,7 +75,7 @@ flex-wrap: wrap;
 }
 
 .contact h2 {
-   font-size: var(--span_title);
+   font-size: var(--font-size-2xl);
    color: #60606e;
    padding: 5px 0px;
    margin-bottom: 30px;
@@ -96,7 +83,7 @@ flex-wrap: wrap;
 }
 
 .sub__contact__info {
-   font-size: var(--span_title);
+   font-size: var(--font-size-2xl);
    color: #60606e;
    padding: 5px 0px;
    margin-bottom: 30px;

@@ -13,14 +13,14 @@ function AboutUs() {
           <div className={styles.row}>
             <div className={styles.wi__41} >
               <div className={`${styles.big__title} ${styles.section__title} `}>
-                <span>{t("aboutus")}</span>
+                <h1>{t("aboutus")}</h1>
               </div>
 
               <p>
               {t("aboutus-message1")}
               </p>
 
-              <span>{t("aboutus-message2")}</span>
+              <h2>{t("aboutus-message2")}</h2>
               <ul className={`${styles.list}`}>
                 <li>{t("aboutus-message3")} </li>
                 <li>{t("aboutus-message4")}</li>
@@ -38,7 +38,7 @@ function AboutUs() {
             </div>
             <div className={`${styles.container} ${styles.mini__block}`}>
               <div className={`${styles.pricing__plan}`}>
-                <div className={`${styles.plan__title}`}><span>{t('certificates')}</span></div>
+                <div className={`${styles.plan__title}`}><h2>{t('certificates')}</h2></div>
                 <ul className={`${styles.list}`}>
                   {/* <li>FSC</li> */}
                   <li>Trade Leaders</li>
@@ -48,7 +48,7 @@ function AboutUs() {
             <div className={`${styles.container} ${styles.mini__block}`}>
               <div className={`${styles.pricing__plan}`}>
                 <div className={`${styles.plan__title}`}>
-                  <span>{t('manufacturing')}</span>
+                  <h2>{t('manufacturing')}</h2>
                 </div>
                 <ul className={`${styles.list}`}>
                   <li>{t("aboutus-message11")}</li>
@@ -62,7 +62,7 @@ function AboutUs() {
             </div>
             <div className={`${styles.container} ${styles.mini__block}`}>
               <div className={`${styles.pricing__plan}`}>
-                <div className={`${styles.plan__title}`}><span>{t('quality')}</span></div>
+                <div className={`${styles.plan__title}`}><h2>{t('quality')}</h2></div>
                 <ul className={`${styles.list}`}>
                   <li>{t("aboutus-message17")}</li>
                   <li>{t("aboutus-message18")}</li>

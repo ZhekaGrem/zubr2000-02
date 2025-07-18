@@ -15,11 +15,11 @@ function QualityStandarts() {
         <div className={styles.container}>
           <div className={styles.row}>
             <div className={`${styles.section__title} ${styles.big__title} `}>
-              <span>{t('quality')} </span>
-              <span>{t('quality-title-01')}</span>
+              <h1>{t('quality')} </h1>
+              <h3>{t('quality-title-01')}</h3>
             </div>
             <div className={`${styles.section__title}  ${styles.big__title}`}>
-              <span>{t('quality-title-02')} </span>
+              <h2>{t('quality-title-02')} </h2>
             </div>
             <p>
             {t('quality-title-03')}
@@ -27,19 +27,19 @@ function QualityStandarts() {
           </div>
           <div className={styles.row}>
             <div className={`${styles.sub__section__title} `}>
-              <span className={styles.mini__title}>{t('quality-title-05')} (grade A)</span>
+              <h3 className={styles.mini__title}>{t('quality-title-05')} (grade A)</h3>
               <p>
               {t('quality-title-04')}
               </p>
             </div>
             <div className={`${styles.sub__section__title} `}>
-              <span className={styles.mini__title}>{t('quality-title-06')} (grade B)</span>
+              <h3 className={styles.mini__title}>{t('quality-title-06')} (grade B)</h3>
               <p>
               {t('quality-title-07')}
               </p>
             </div>
             <div className={`${styles.sub__section__title} `}>
-              <span className={styles.mini__title}> {t('quality-title-08')}(grade C) </span>
+              <h3 className={styles.mini__title}> {t('quality-title-08')}(grade C) </h3>
               <p>
               {t('quality-title-09')}
               </p>
@@ -51,7 +51,7 @@ function QualityStandarts() {
         <div className={styles.container}>
           <div className={styles.row}>
             <div className={`${styles.section__title}  ${styles.big__title}`}>
-              <span>{t('quality-title-10')}</span>
+              <h2>{t('quality-title-10')}</h2>
             </div>
             
           </div>
@@ -96,7 +96,7 @@ function QualityStandarts() {
         <div className={styles.container}>
           <div className={styles.row}>
             <div className={`${styles.section__title}  ${styles.big__title}`}>
-              <span>{t('quality-title-23')}</span>
+              <h2>{t('quality-title-23')}</h2>
             </div>
        
          <div className={styles.row}>
@@ -273,7 +273,7 @@ function QualityStandarts() {
         <div className={styles.row}>
         <Link    rel="preload" href="/aboutus/quality-standarts/cubaturnick">
          <div className={`${styles.section__title}  ${styles.section__title__cubaturnic} ${styles.big__title}`}>
-              <span>{t('quality-title-51')}</span>
+              <h2>{t('quality-title-51')}</h2>
             </div>
             </Link>
           </div>

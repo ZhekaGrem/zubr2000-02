@@ -4,27 +4,44 @@ import { notFound } from "next/navigation";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import { BackToTopButton } from "../components/BackToTop/BackToTopButton";
-import { Source_Sans_3 } from "next/font/google";
+import { Source_Sans_3, Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { Suspense } from "react";
 import Loading from "./loading";
 
-export const font = Source_Sans_3({
+export const fontSans = Source_Sans_3({
   weight: ["300", "400", "500", "600"],
   display: "swap",
   subsets: ["latin-ext"],
   variable: "--font-source",
 });
+export const fontSerif = Playfair_Display({
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  subsets: ["latin-ext"],
+  variable: "--font-serif",
+});
+
+
 
 const meta = {
-  title: "ZUBR-2000",
+  title: "ZUBR-2000 | Premium Ukrainian Lumber - Oak, Ash, Birch, Larch | Пиломатеріали України",
   description:
-    "ZUBR-2000 is a high-quality wood from Ukraine. oak lumber, ash lumber, birch lumber, larch lumber. Find the perfect timber for your project. ЗУБР-2000 – високоякісна деревина з України.  пиломатеріали дуб,  пиломатеріали ясен, пиломатеріали береза, пиломатеріали модрина. Знайдіть ідеальну деревину для вашого проекту.",
+    "ZUBR-2000 offers premium Ukrainian lumber since 2000. High-quality oak, ash, birch & larch timber. Direct from manufacturer. Best prices, certified quality. ЗУБР-2000 - провідний виробник пиломатеріалів в Україні. Дуб, ясен, береза, модрина найвищої якості.",
   image: "https://www.zubr-2000.com.ua/photo_tittl_%E2%84%961.1.webp",
 };
 
 export const metadata = {
-  name: "zubr-2000 зубр-2000",
+  alternates: {
+    canonical: '/en',
+    languages: {
+      'en': '/en',
+      'uk': '/uk',
+      'pl': '/pl',
+      'de': '/de',
+    },
+  },
+  name: "ZUBR-2000 | ЗУБР-2000",
   short_name: [
     "зубр",
     "зубр 2000",
@@ -32,94 +49,165 @@ export const metadata = {
     "зубр2000",
     "zubr2000",
     "zubr-2000",
-    "oak",
-    "ash",
-    "lumber",
-    "дерево",
+    "oak lumber",
+    "ash lumber",
+    "ukrainian lumber",
+    "дерево україна",
+    "пиломатеріали",
   ],
   title: meta.title,
   description: meta.description,
+  applicationName: 'ZUBR-2000 Lumber Company',
+  authors: [{ name: 'ZUBR-2000', url: 'https://zubr-2000.com.ua' }],
+  generator: 'Next.js',
+  publisher: 'ZUBR-2000',
+  creator: 'ZUBR-2000',
   openGraph: {
     title: meta.title,
     description: meta.description,
     url: "https://zubr-2000.com.ua/en",
-    locale: "en",
-    siteName: meta.title,
+    locale: "en_US",
+    alternateLocale: ["uk_UA", "pl_PL", "de_DE"],
+    siteName: "ZUBR-2000 Lumber Company",
     type: "website",
-    images: ["https://www.zubr-2000.com.ua/photo_tittl_%E2%84%961.1.webp"],
+    images: [
+      {
+        url: "https://www.zubr-2000.com.ua/photo_tittl_%E2%84%961.1.webp",
+        width: 1200,
+        height: 630,
+        alt: "ZUBR-2000 Premium Ukrainian Lumber",
+        type: "image/webp",
+      },
+      {
+        url: "https://www.zubr-2000.com.ua/lumber-showcase.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Oak, Ash, Birch, Larch Lumber from Ukraine",
+      }
+    ],
   },
-  twitter: {
-    title: meta.title,
-    description: meta.description,
-    images: ["https://www.zubr-2000.com.ua/photo_tittl_%E2%84%961.1.webp"],
-  },
+  
   keywords: [
-    "дерево",
-    "пиломатеріали",
+    // Ukrainian keywords
     "пиломатеріали україна",
-    "дуб україна",
-    "ясин україна",
-    "зубр2000",
-    "зубр 2000",
-    "зубр дерево",
+    "пиломатеріали купити",
+    "дуб пиломатеріали",
+    "ясен пиломатеріали",
+    "береза пиломатеріали",
+    "модрина пиломатеріали",
+    "деревина україна",
+    "дошка дубова",
+    "дошка ясенева",
+    "брус дубовий",
+    "експорт деревини україна",
+    "виробник пиломатеріалів",
+    "лісоматеріали україна",
     "ЗУБР-2000",
-    "Zubr2000",
-    "zubr-2000",
-    "zubr 2000",
-    "lumber oak",
-    "lumber ash",
-    "lumber larch",
-    "lumber sale",
-    "wood sale",
-    "timber sale",
-    "lumber offers",
-    "wood deals",
-    "timber discounts",
-    "продаж деревини",
-    "продаж дерева",
-    "продаж деревляних матеріалів",
-    "акції на деревину",
-    "знижки на дерево",
-    "vente de bois",
-    "offres de bois",
-    "rabais sur le bois",
-    "promotions sur le bois",
-    "vendita di legname",
-    "vendita di legno",
-    "offerte di legname",
-    "sconti sul legno",
-    "promozioni sul legno",
-    "holzverkauf",
-    "holzangebote",
-    "rabatte auf holz",
-    "holzaktionen",
-    "holzdeals",
-    "træsalg",
-    "trætilbud",
-    "rabatter på træ",
-    "trækampagner",
-    "tilbud på træ",
-    "träförsäljning",
-    "träerbjudanden",
-    "rabatter på trä",
-    "träkampanjer",
-    "träaffär",
-    "sprzedaż drewna",
-    "oferty drewna",
-    "zniżki na drewno",
-    "promocje na drewno",
-    "promocje na drewno",
-    "продажа древесины",
-    "предложения по древесине",
-    "скидки на древесину",
-    "акции на древесину",
-    "деревянные сделки",
+    "зубр 2000",
+    "зубр пиломатеріали",
+    
+    // English keywords
+    "ukrainian lumber",
+    "ukraine timber export",
+    "oak lumber ukraine",
+    "ash lumber ukraine",
+    "birch lumber ukraine",
+    "larch lumber ukraine",
+    "hardwood lumber supplier",
+    "european oak lumber",
+    "wholesale lumber ukraine",
+    "lumber manufacturer ukraine",
+    "timber supplier ukraine",
+    "wood export ukraine",
+    "kiln dried lumber",
+    "ZUBR-2000",
+    "zubr lumber",
+    
+    // Polish keywords
+    "tarcica ukraina",
+    "drewno ukraina",
+    "dąb tarcica",
+    "jesion tarcica",
+    "brzoza tarcica",
+    "modrzew tarcica",
+    "eksport drewna ukraina",
+    "producent tarcicy",
+    
+    // German keywords
+    "schnittholz ukraine",
+    "holz ukraine",
+    "eiche schnittholz",
+    "esche schnittholz",
+    "birke schnittholz",
+    "lärche schnittholz",
+    "holzexport ukraine",
+    "sägewerk ukraine",
+    
+    // Italian keywords
+    "legname ucraina",
+    "legno ucraina",
+    "quercia legname",
+    "frassino legname",
+    "betulla legname",
+    "larice legname",
+    
+    // Location-specific
+    "lumber ukraine",
+    "timber ukraine",
+    "wood ukraine",
+    "пиломатеріали львів",
+    "пиломатеріали київ",
+    "lumber lviv",
+    "lumber kyiv",
+    
+    // Product-specific long-tail keywords
+    "buy oak lumber ukraine",
+    "ash wood planks ukraine",
+    "birch timber wholesale",
+    "larch boards supplier",
+    "european hardwood lumber",
+    "certified lumber ukraine",
+    "FSC certified timber",
+    "sustainable wood ukraine",
+    
+    // Commercial intent keywords
+    "lumber prices ukraine",
+    "timber wholesale ukraine",
+    "bulk wood purchase",
+    "lumber factory direct",
+    "wood supplier b2b",
+    "пиломатеріали ціна",
+    "дерево оптом",
+    "купити дошку недорого",
   ],
-  icons: {
-    icon: ["./favicon.ico"],
-    apple: ["./favicon.ico"],
-    shortcut: ["./favicon.ico"],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
+  
+  category: 'business',
+  classification: 'Business',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: ['/favicon.ico'],
+  },
+ 
 };
 
 export function generateStaticParams() {
@@ -209,7 +297,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
           hrefLang='sv-SV'
         />
       </head>
-      <body className={font.className}>
+      <body className={`${fontSans.variable} ${fontSerif.variable}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Suspense fallback={<Loading />}>
             <div className='wrapper'>

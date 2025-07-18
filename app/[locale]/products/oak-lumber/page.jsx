@@ -1,143 +1,140 @@
-"use client"
-
-import React from 'react'
-import styles from '@/app/styles/page/lumber.module.css'
+"use client";
+import React from 'react';
+import styles from '@/app/styles/page/lumber.module.css';
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
+import Button from '@/app/UI/button/button';
+import Link from 'next-intl/link';
 
-function Lumber() {
-	const t = useTranslations("Index");
-    return (
-        <>
-        <section id="oak__01">
-		<div className={styles.container}>
-			<div className={styles.row}>
-				<div className={styles.section__title}>
-					<span>{t('oak')} {t('beam')} 22-54 * 54-315 mm</span>
-					
-				</div>
-			</div>
-			<div className={styles.row}>
-				<div className={`${styles.col} `}>
-				<h4>{t("sort")} А</h4>
-              <p>{t("products-title-01")}</p>
-              <h4>{t("sort")} AA/AB</h4>
-              <p>{t("products-title-03")}</p>
-              <h4>{t("sort")} В</h4>
-              <p>{t("products-title-02-oak")} </p>
-              <h4>{t("sort")} С</h4>
-              <p>{t("products-title-05")} </p>
-<div className={styles.table__cell__2}>{t('quality-title-27')} mm</div>
-<div className={styles.table}>
-  <div className={styles.table__row}>
-    <div className={styles.table__cell}>{t('products-title-07')}</div>
-    <div className={styles.table__cell}>{t('quality-title-48')}</div>
-    <div className={styles.table__cell}>{t('quality-title-35')}</div>
-  </div>
-  <div className={styles.table__row}>
-    <div className={styles.table__cell}>
-	<p>22-54</p>
-	</div>
-    <div className={styles.table__cell}>54-315</div>
-    <div className={styles.table__cell}>220-3050
-	</div>
-  </div>
-</div>
-	{/* <div className={styles.table__cell__3}>Certificate code FSC 100% - NC-COC-024736</div> */}
-				</div>
-				<div className={styles.col}>
-                <Image className={styles.adaptive__img} src="/oak-lumber-02.webp" alt="oak lumber 1" width={500} height={300} />
-				</div>
-			</div>
-		</div>
-                   </section> 
-        <section id="oak__02">
-		<div className={styles.container}>
-			<div className={styles.row}>
-				<div className={styles.section__title}>
-					<span>{t('oak')} {t('board')} 54 * 110 mm</span>
-					
-				</div>
-			</div>
-			<div className={styles.row}>
-				<div className={`${styles.col} `}>
-				<h4>{t("sort")} А</h4>
-              <p>{t("products-title-01")}</p>
-              <h4>{t("sort")} АA/AB</h4>
-              <p>{t("products-title-03")}</p>
-              <h4>{t("sort")} В</h4>
-              <p>{t("products-title-02-oak")} </p>
-              <h4>{t("sort")} С</h4>
-              <p>{t("products-title-05")} </p>
-<div className={styles.table__cell__2}>{t('quality-title-27')} mm</div>
-<div className={styles.table}>
-  <div className={styles.table__row}>
-    <div className={styles.table__cell}>{t('products-title-07')}</div>
-    <div className={styles.table__cell}>{t('quality-title-48')}</div>
-    <div className={styles.table__cell}>{t('quality-title-35')}</div>
-  </div>
-  <div className={styles.table__row}>
-    <div className={styles.table__cell}>54</div>
-    <div className={styles.table__cell}>110</div>
-    <div className={styles.table__cell}>220-3050</div>
-  </div>
-</div>
-{/* <div className={styles.table__cell__3}>Certificate code FSC 100% - NC-COC-024736</div> */}
-				</div>
-				<div className={styles.col}>
-                <Image className={styles.adaptive__img} src="/oak-lumber-01.webp" alt="oak lumber 3" width={500} height={300} />
-				</div>
-			</div>
-		</div>
-                   </section>
-        <section id="oak__03">
-		<div className={styles.container}>
-			<div className={styles.row}>
-				<div className={styles.section__title}>
-					<span>{t('oak')} {t('curvedelements')} 26-55 * 76-315 mm</span>
-					
-				</div>
-			</div>
-			<div className={styles.row}>
-				<div className={`${styles.col} `}>
-				<h4>{t("sort")} А</h4>
-              <p>{t("products-title-01")}</p>
-              <h4>{t("sort")} АA/AB</h4>
-              <p>{t("products-title-03")}</p>
-              <h4>{t("sort")} В</h4>
-              <p>{t("products-title-02-oak")} </p>
-              <h4>{t("sort")} С</h4>
-              <p>{t("products-title-05")} </p>
-<div className={styles.table__cell__2}>{t('quality-title-27')} mm</div>
-<div className={styles.table}>
-  <div className={styles.table__row}>
-    <div className={styles.table__cell}>{t('products-title-07')}</div>
-    <div className={styles.table__cell}>{t('quality-title-48')}</div>
-    <div className={styles.table__cell}>{t('quality-title-35')}</div>
-  </div>
-  <div className={styles.table__row}>
-    <div className={styles.table__cell}>26-55</div>
-    <div className={styles.table__cell}>76-315</div>
-    <div className={styles.table__cell}>420-1000</div>
-  </div>
-  
+const oakProducts = [
+  {
+    id: "oak__01",
+    title: "beam",
+    dimensions: "22-54 × 54-315 mm",
+    image: "/oak-lumber-02.webp",
+    sorts: [
+      { grade: "A", description: "products-title-01" },
+      { grade: "AA/AB", description: "products-title-03" },
+      { grade: "B", description: "products-title-02-oak" },
+      { grade: "C", description: "products-title-05" }
+    ],
+    specifications: {
+      thickness: "22-54",
+      width: "54-315",
+      length: "220-3050"
+    }
+  },
+  {
+    id: "oak__02",
+    title: "board",
+    dimensions: "54 × 110 mm",
+    image: "/oak-lumber-01.webp",
+    sorts: [
+      { grade: "A", description: "products-title-01" },
+      { grade: "AA/AB", description: "products-title-03" },
+      { grade: "B", description: "products-title-02-oak" },
+      { grade: "C", description: "products-title-05" }
+    ],
+    specifications: {
+      thickness: "54",
+      width: "110",
+      length: "220-3050"
+    }
+  },
+  {
+    id: "oak__03",
+    title: "curvedelements",
+    dimensions: "26-55 × 76-315 mm",
+    image: "/oak-lumber-03.webp",
+    sorts: [
+      { grade: "A", description: "products-title-01" },
+      { grade: "AA/AB", description: "products-title-03" },
+      { grade: "B", description: "products-title-02-oak" },
+      { grade: "C", description: "products-title-05" }
+    ],
+    specifications: {
+      thickness: "26-55",
+      width: "76-315",
+      length: "420-1000"
+    }
+  }
+];
 
-</div>
-{/* <div className={styles.table__cell__3}>Certificate code FSC 100% - NC-COC-024736</div> */}
-				</div>
+function OakLumber() {
+  const t = useTranslations("Index");
 
-				<div className={styles.col}>
-                <Image className={styles.adaptive__img} src="/oak-lumber-03.webp" alt="oak lumber 3" width={500} height={300} />
+  return (
+    <div className={styles.lumberPage}>
+      {/* Hero Section */}
+      {/* <section className={styles.hero}>
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroTitle}>{t('oak')} {t('lumber')}</h1>
+          <p className={styles.heroDescription}>{t('product_oak')}</p>
+        </div>
+      </section> */}
 
-				</div>
-			</div>
-		</div>
-                   </section>
-        
-       
-        
-        </>
-    )
+      {/* Products */}
+      {oakProducts.map((product, index) => (
+        <section key={product.id} id={product.id} className={styles.productSection}>
+          <div className={styles.container}>
+            <div className={`${styles.productGrid} ${index % 2 === 1 ? styles.reverse : ''}`}>
+              {/* Content Column */}
+              <div className={styles.contentColumn}>
+                <h2 className={styles.productTitle}>
+                  {t('oak')} {t(product.title)} 
+                  <span className={styles.dimensions}>{product.dimensions}</span>
+                </h2>
+
+                {/* Grades */}
+                <div className={styles.grades}>
+                  {product.sorts.map((sort) => (
+                    <div key={sort.grade} className={styles.gradeItem}>
+                      <h3 className={styles.gradeTitle}>{t("sort")} {sort.grade}</h3>
+                      <p className={styles.gradeDescription}>{t(sort.description)}</p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Specifications Table */}
+                <div className={styles.specifications}>
+                  <h3 className={styles.specsTitle}>{t("quality-title-27")} mm</h3>
+                  <div className={styles.specsTable}>
+                    <div className={styles.specsRow}>
+                      <div className={styles.specsHeader}>{t("products-title-07")}</div>
+                      <div className={styles.specsHeader}>{t("quality-title-48")}</div>
+                      <div className={styles.specsHeader}>{t("quality-title-35")}</div>
+                    </div>
+                    <div className={styles.specsRow}>
+                      <div className={styles.specsCell}>{product.specifications.thickness}</div>
+                      <div className={styles.specsCell}>{product.specifications.width}</div>
+                      <div className={styles.specsCell}>{product.specifications.length}</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* CTA Button */}
+               
+              </div>
+
+              {/* Image Column */}
+              <div className={styles.imageColumn}>
+                <div className={styles.imageWrapper}>
+                  <Image
+                    className={styles.productImage}
+                    src={product.image}
+                    alt={`${t('oak')} ${t(product.title)}`}
+                    width={600}
+                    height={400}
+                    quality={90}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      ))}
+    </div>
+  );
 }
 
-export default Lumber
+export default OakLumber;

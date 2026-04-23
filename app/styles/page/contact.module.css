@@ -1,91 +1,45 @@
-.contact {
-   justify-content: center;
-   align-items: center;
+.formMap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  align-items: stretch;
+  min-height: 52rem;
+  border-bottom: 1px solid var(--color-border);
 }
 
-
-
-.contact__block {
-   max-width: 1200px;
-   margin: auto;
-padding: 30px;
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
+.formWrap {
+  padding: var(--space-2xl) var(--space-xl);
+  background: var(--color-surface-card);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.contact__info {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+.mapWrap {
+  background: var(--color-surface);
+  position: relative;
+  align-self: stretch;
+  height: 100%;
+  min-height: 52rem;
 }
 
-
-
-.contact__form {
-   width: 100%;
-   border-top: 10%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 10px;
+.mapWrap > * {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
 }
 
-
-
-
-
-@media (max-width:882px) {
-   .contact__info {
-      width: 50%;
-      justify-content: center;
-      align-items: center;
-   }
-
-
-
+.mapWrap iframe,
+.mapWrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
-@media(max-width:700px) {
-   .contact__info {
-      width: 100%;
-      justify-content: center;
-	 flex-wrap: wrap;
-   margin-bottom: 30px;
-
-}
-
-
-.contact__block{
-   padding: 10px 100px;
-}
-
-}
-
-
-
-
-
-.contact__findus {
-   margin-top: 2%;
-}
-
-.contact__findus p {
-   margin: 5px;
-}
-
-.contact h2 {
-   font-size: var(--font-size-2xl);
-   color: #60606e;
-   padding: 5px 0px;
-   margin-bottom: 30px;
-
-}
-
-.sub__contact__info {
-   font-size: var(--font-size-2xl);
-   color: #60606e;
-   padding: 5px 0px;
-   margin-bottom: 30px;
-
+@media (max-width: 768px) {
+  .formMap { grid-template-columns: 1fr; min-height: 0; }
+  .formWrap { padding: var(--space-xl) var(--space-md); border-right: 0; border-bottom: 1px solid var(--color-border); }
+  .mapWrap { min-height: 30rem; height: 30rem; }
 }

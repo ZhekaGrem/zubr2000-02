@@ -1,12 +1,22 @@
-import React from 'react'
-import Certificates from '@/app/page/Certificates'
+"use client";
+import React from "react";
+import { useTranslations } from "next-intl";
+import PageIntro from "@/app/components/PageIntro/PageIntro";
+import Certificates from "@/app/page/Certificates";
 
-function page() {
+function CertificatesPage() {
+  const t = useTranslations("Index");
+
   return (
     <>
-    <Certificates/>
+      <PageIntro
+        title={t("certificates")}
+        imageSrc="/certificates_hero.png"
+        imageAlt={t("certificates")}
+      />
+      <Certificates />
     </>
-  )
+  );
 }
 
-export default page
+export default CertificatesPage;

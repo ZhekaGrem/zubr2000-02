@@ -1,0 +1,112 @@
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  padding: var(--space-2xl) 0;
+  border-bottom: 1px solid var(--color-border);
+  align-items: center;
+}
+
+.row.reverse { direction: rtl; }
+.row.reverse > * { direction: ltr; }
+
+.media { position: relative; }
+
+.singleImage {
+  position: relative;
+  width: 100%;
+  height: 42rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.singleImage img { object-fit: cover; }
+
+.gallery {
+  display: grid;
+  grid-template-rows: 1.6fr 1fr;
+  gap: var(--space-xs);
+  height: 42rem;
+}
+
+.galleryMain {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.galleryMain img { object-fit: cover; }
+
+.gallerySmall {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xs);
+}
+
+.galleryThumb {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.galleryThumb img { object-fit: cover; }
+
+.content { display: flex; flex-direction: column; gap: var(--space-sm); }
+
+.index {
+  font-family: var(--font-mono);
+  font-size: var(--text-label-caps);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--color-primary);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-headline-md);
+  font-weight: 500;
+  letter-spacing: var(--tracking-headline);
+  color: var(--color-text);
+  line-height: var(--lh-snug);
+  margin: 0;
+}
+
+.body {
+  font-size: var(--text-body-md);
+  line-height: var(--lh-body);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.chips { display: flex; gap: var(--space-xs); flex-wrap: wrap; margin-top: var(--space-sm); }
+
+.chip {
+  font-family: var(--font-body);
+  font-size: var(--text-label-caps-sm);
+  font-weight: 500;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  padding: 4px 12px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+}
+
+@media (max-width: 1024px) {
+  .singleImage, .gallery { height: 32rem; }
+}
+
+@media (max-width: 768px) {
+  .row { grid-template-columns: 1fr; gap: var(--space-md); padding: var(--space-xl) 0; }
+  .row.reverse { direction: ltr; }
+  .singleImage, .gallery { height: 24rem; }
+}

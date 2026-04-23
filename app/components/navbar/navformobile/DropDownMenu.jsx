@@ -1,17 +1,57 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef, useTransition, useEffect, useCallback } from "react";
 import styles from "@/app/styles/component/navbar.module.css";
 import Image from "next/image";
-import { useTranslations,useLocale } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Link from "next-intl/link";
 import { CSSTransition } from "react-transition-group";
-import { usePathname } from "next-intl/client";
+import { usePathname, useRouter } from "next-intl/client";
+
+const OTHER_LOCALES = ["en", "uk", "pl", "da", "de", "it", "sv", "fr", "ru"];
 
 export const DropDownMenu = (props) => {
   const t = useTranslations("Index");
   const [activeMenu, setactiveMenu] = useState("main");
   const pathname = usePathname();
-const locale = useLocale();
+  const router = useRouter();
+  const locale = useLocale();
+  const [, startTransition] = useTransition();
+
+  const mainRef = useRef(null);
+  const aboutusRef = useRef(null);
+  const productsRef = useRef(null);
+  const langRef = useRef(null);
+
+  const prefetchLocale = useCallback(
+    (nextLocale) => {
+      if (nextLocale === locale) return;
+      try {
+        router.prefetch(pathname, { locale: nextLocale });
+      } catch {}
+      try {
+        router.prefetch(`/${nextLocale}${pathname === "/" ? "" : pathname}`);
+      } catch {}
+    },
+    [pathname, locale, router]
+  );
+
+  useEffect(() => {
+    const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 300));
+    const handle = idle(() => {
+      OTHER_LOCALES.forEach((l) => prefetchLocale(l));
+    });
+    return () => {
+      if (window.cancelIdleCallback) window.cancelIdleCallback(handle);
+    };
+  }, [prefetchLocale]);
+
+  const switchLocale = (nextLocale) => (event) => {
+    event.preventDefault();
+    if (nextLocale === locale) return;
+    startTransition(() => {
+      router.replace(pathname, { locale: nextLocale });
+    });
+  };
 
   function DropdownItem(props) {
     return (
@@ -30,11 +70,12 @@ const locale = useLocale();
     <div className={styles.dropdown} >
       <CSSTransition
         in={activeMenu === "main"}
+        nodeRef={mainRef}
         unmountOnExit
         timeout={500}
         classNames="menu-primary"
       >
-        <div className={styles.menu}>
+        <div ref={mainRef} className={styles.menu}>
           <Link href="/" onClick={() => setactiveMenu(!false)}>
             <DropdownItem> {t("home")}</DropdownItem>
           </Link>
@@ -92,11 +133,12 @@ const locale = useLocale();
 
       <CSSTransition
         in={activeMenu === "aboutus"}
+        nodeRef={aboutusRef}
         unmountOnExit
         timeout={500}
         classNames="menu-aboutus"
       >
-        <div className={styles.menu}>
+        <div ref={aboutusRef} className={styles.menu}>
           <DropdownItem
             leftIcon={
               <Image
@@ -151,11 +193,12 @@ const locale = useLocale();
 
       <CSSTransition
         in={activeMenu === "products"}
+        nodeRef={productsRef}
         unmountOnExit
         timeout={500}
         classNames="menu-products"
       >
-        <div className={styles.menu}>
+        <div ref={productsRef} className={styles.menu}>
           <DropdownItem
             leftIcon={
               <Image
@@ -209,11 +252,12 @@ const locale = useLocale();
 
       <CSSTransition
         in={activeMenu === "lang"}
+        nodeRef={langRef}
         unmountOnExit
         timeout={500}
         classNames="menu-lang"
       >
-        <div className={styles.menu}>
+        <div ref={langRef} className={styles.menu}>
           <DropdownItem
             leftIcon={
               <Image
@@ -225,121 +269,60 @@ const locale = useLocale();
             }
             goToMenu="main"
           ></DropdownItem>
-          <Link
-            prefetch={false}
-            rel="preload"
-            
-            href={usePathname()}
-            locale="en"
-          >
+          <a href={`/en${pathname}`} onClick={switchLocale("en")}>
             <DropdownItem>
               <Image className={styles.menu__item__img} alt="language EN" src="/gb.webp" width={20} height={16} />{" "}
               English
             </DropdownItem>
-          </Link>
-          <Link
-            prefetch={false}
-            rel="preload"
-            
-            href={usePathname()}
-            locale="uk"
-          >
+          </a>
+          <a href={`/uk${pathname}`} onClick={switchLocale("uk")}>
             <DropdownItem>
-              <Image className={styles.menu__item__img} alt="language EN" src="/ua.webp" width={20} height={16} />{" "}
+              <Image className={styles.menu__item__img} alt="language UK" src="/ua.webp" width={20} height={16} />{" "}
               Українська
             </DropdownItem>
-          </Link>
-          <Link
-            prefetch={false}
-            rel="preload"
-            
-            href={usePathname()}
-            locale="pl"
-          >
+          </a>
+          <a href={`/pl${pathname}`} onClick={switchLocale("pl")}>
             <DropdownItem>
               <Image className={styles.menu__item__img} alt="language pl" src="/pl.webp" width={20} height={16} />{" "}
               Polski
             </DropdownItem>
-          </Link>
-
-          <Link
-            prefetch={false}
-            rel="preload"
-            
-            href={usePathname()}
-            locale="da"
-          >
+          </a>
+          <a href={`/da${pathname}`} onClick={switchLocale("da")}>
             <DropdownItem>
               <Image className={styles.menu__item__img} alt="language da" src="/dk.webp" width={20} height={16} />{" "}
               Danmark
             </DropdownItem>
-          </Link>
-
-          <Link
-            prefetch={false}
-            rel="preload"
-            
-            href={usePathname()}
-            locale="de"
-          >
+          </a>
+          <a href={`/de${pathname}`} onClick={switchLocale("de")}>
             <DropdownItem>
               <Image className={styles.menu__item__img} alt="language de" src="/de.webp" width={20} height={16} />{" "}
               Deutsch
             </DropdownItem>
-          </Link>
-
-          <Link
-            prefetch={false}
-            rel="preload"
-            
-            href={usePathname()}
-            locale="it"
-          >
+          </a>
+          <a href={`/it${pathname}`} onClick={switchLocale("it")}>
             <DropdownItem>
               <Image className={styles.menu__item__img} alt="language it" src="/it.webp" width={20} height={16} />{" "}
               Italiano
             </DropdownItem>
-          </Link>
-
-          <Link
-            prefetch={false}
-            rel="preload"
-            
-            href={usePathname()}
-            locale="sv"
-          >
+          </a>
+          <a href={`/sv${pathname}`} onClick={switchLocale("sv")}>
             <DropdownItem>
               <Image className={styles.menu__item__img} alt="language SW" src="/se.webp" width={20} height={16} />{" "}
               Sverige
             </DropdownItem>
-          </Link>
-
-          <Link
-            prefetch={false}
-            rel="preload"
-            
-            href={usePathname()}
-            locale="fr"
-          >
+          </a>
+          <a href={`/fr${pathname}`} onClick={switchLocale("fr")}>
             <DropdownItem>
-              <Image className={styles.menu__item__img}  alt="language FR" src="/fr.webp" width={20} height={16} />{" "}
+              <Image className={styles.menu__item__img} alt="language FR" src="/fr.webp" width={20} height={16} />{" "}
               Français
             </DropdownItem>
-          </Link>
-
-          <Link
-            prefetch={false}
-            rel="preload"
-            
-            href={usePathname()}
-            locale="ru"
-            
-          >
+          </a>
+          <a href={`/ru${pathname}`} onClick={switchLocale("ru")}>
             <DropdownItem>
               <Image className={styles.menu__item__img} alt="language Ru" src="/ru.webp" width={20} height={16} />{" "}
-              Руский
+              Русский
             </DropdownItem>
-          </Link>
+          </a>
         </div>
       </CSSTransition>
     </div>

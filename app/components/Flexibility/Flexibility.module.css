@@ -1,0 +1,100 @@
+.flex {
+  padding: var(--space-3xl) var(--space-xl);
+  background: rgba(140, 166, 0, 0.08);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.caps {
+  font-family: var(--font-body);
+  font-size: var(--text-label-caps);
+  font-weight: 500;
+  letter-spacing: var(--tracking-caps-wide);
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+  margin-bottom: var(--space-md);
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: var(--space-2xl);
+  align-items: flex-start;
+}
+
+.textCol { display: flex; flex-direction: column; gap: var(--space-md); }
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-headline-lg);
+  font-weight: 500;
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-headline);
+  color: var(--color-text);
+  max-width: 52rem;
+  margin: 0;
+}
+
+.intro {
+  font-size: var(--text-body-md);
+  line-height: var(--lh-body);
+  color: var(--color-text-muted);
+  max-width: 52rem;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+}
+
+.card {
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-headline-sm);
+  font-weight: 500;
+  letter-spacing: var(--tracking-headline);
+  color: var(--color-text);
+}
+
+.cardSpec {
+  font-family: var(--font-mono);
+  font-size: var(--text-body-sm);
+  color: var(--color-text-subtle);
+  margin-top: var(--space-xs);
+}
+
+.tags {
+  display: flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+  margin-top: var(--space-xl);
+}
+
+.tag {
+  font-family: var(--font-body);
+  font-size: var(--text-label-caps-sm);
+  font-weight: 500;
+  letter-spacing: var(--tracking-caps-wide);
+  text-transform: uppercase;
+  padding: 7px 14px;
+  background: var(--color-surface-card);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+}
+
+@media (max-width: 1024px) {
+  .top { grid-template-columns: 1fr; gap: var(--space-lg); }
+}
+
+@media (max-width: 768px) {
+  .flex { padding: var(--space-2xl) var(--space-md); }
+  .grid { grid-template-columns: 1fr; }
+}

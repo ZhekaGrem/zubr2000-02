@@ -1,22 +1,40 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    i18n: {
-      locales: ["uk", "de", "fr", "it", "da", "sv", "en", "pl", "ru"],
-      defaultLocale: "uk",
-    },
-    images: {
-      // Указываем долгое время кэширования для изображений, поскольку они уже оптимизированы
-      minimumCacheTTL: 60 * 60 * 24 * 7, // 7 дней
+const securityHeaders = [
+  { key: "X-Content-Type-Options", value: "nosniff" },
+  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  {
+    key: "Permissions-Policy",
+    value: "camera=(), microphone=(), geolocation=(), interest-cohort=()",
+  },
+  { key: "X-Frame-Options", value: "SAMEORIGIN" },
+  {
+    key: "Strict-Transport-Security",
+    value: "max-age=63072000; includeSubDomains; preload",
+  },
+];
 
-      unoptimized: true,
-    },
-    trailingSlash: true,
+const nextConfig = {
+  images: {
+    minimumCacheTTL: 60 * 60 * 24 * 7,
+    unoptimized: true,
+  },
+  trailingSlash: true,
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: securityHeaders,
+      },
+      {
+        source: "/:locale(uk|en|pl|de|ru|fr|it|sv|da)/admin/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
+      {
+        source: "/admin/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
+    ];
   },
 };
 
-
-
-
-
-
+module.exports = nextConfig;

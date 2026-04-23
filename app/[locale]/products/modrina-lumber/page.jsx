@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Button from "@/app/UI/button/button";
 import Link from "next-intl/link";
+import PageIntro from "@/app/components/PageIntro/PageIntro";
 
 const modrinaProducts = [
   {
@@ -49,13 +50,13 @@ function ModrinaLumber() {
 
   return (
     <div className={styles.lumberPage}>
-      {/* Hero Section */}
-      {/* <section className={styles.hero}>
-        <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>{t('modrina')} {t('lumber')}</h1>
-          <p className={styles.heroDescription}>{t('product_modrina')}</p>
-        </div>
-      </section> */}
+      <PageIntro
+        caps="Larix decidua"
+        title={t("modrina")}
+        lead={t("product_modrina")}
+        imageSrc="/modrina-lumber-03.webp"
+        imagePriority
+      />
 
       {/* Products */}
       {modrinaProducts.map((product, index) => (

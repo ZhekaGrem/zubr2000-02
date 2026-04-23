@@ -1,18 +1,20 @@
-/* Base button styles */
+/* Base button — all variants share */
 .btn {
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  border: none;
-  border-radius: var(--border-radius);
-  font-family: inherit;
-  font-weight: 600;
+  border: 0;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: all var(--transition-base);
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
   overflow: hidden;
   white-space: nowrap;
   user-select: none;
@@ -24,81 +26,71 @@
   position: relative;
   z-index: 1;
   display: inline-block;
-  transition: transform var(--transition-base);
 }
 
 /* Size variants */
 .small {
-  min-height: 40px;
+  min-height: 3.6rem;
   padding: 0 var(--space-md);
-  font-size: var(--font-size-sm);
+  font-size: var(--text-label-caps-sm);
 }
 
 .medium {
-  min-height: 48px;
+  min-height: 4.4rem;
   padding: 0 var(--space-lg);
-  font-size: var(--font-size-md);
+  font-size: var(--text-label-caps);
 }
 
 .large {
-  min-height: 56px;
+  min-height: 5.2rem;
   padding: 0 var(--space-xl);
-  font-size: var(--font-size-lg);
+  font-size: var(--text-label-caps);
 }
 
-/* Style variants */
+/* Primary — lime on antrakit */
 .primary {
   background-color: var(--color-primary);
-  color: var(--color-white);
-  box-shadow: var(--shadow-sm);
+  color: var(--color-text);
+  box-shadow: var(--shadow-card);
 }
 
 .primary:hover:not(:disabled) {
-  background-color: var(--color-primary-dark);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  background-color: var(--color-primary-hover);
+  box-shadow: var(--shadow-lift);
 }
 
 .primary:active:not(:disabled) {
-  transform: translateY(0);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-card);
 }
 
+/* Secondary — outline */
 .secondary {
   background-color: transparent;
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
+  color: var(--color-text);
+  border: 1px solid var(--color-text);
 }
 
 .secondary:hover:not(:disabled) {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  background-color: var(--color-text);
+  color: var(--color-surface-card);
 }
 
-.secondary:active:not(:disabled) {
-  transform: translateY(0);
-  box-shadow: var(--shadow-sm);
-}
-
+/* Ghost — subtle */
 .ghost {
   background-color: transparent;
   color: var(--color-text);
-  border: 2px solid var(--color-border);
+  border: 1px solid var(--color-border);
 }
 
 .ghost:hover:not(:disabled) {
   border-color: var(--color-primary);
   color: var(--color-primary);
-  transform: translateY(-2px);
 }
 
 /* States */
 .btn:disabled {
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: not-allowed;
-  transform: none !important;
   box-shadow: none !important;
 }
 
@@ -112,7 +104,7 @@
   width: 100%;
 }
 
-/* Loading state */
+/* Loading state — replaces text with spinner */
 .btn.loading {
   color: transparent;
 }
@@ -120,14 +112,14 @@
 .btn.loading::after {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   top: 50%;
   left: 50%;
-  margin-left: -10px;
-  margin-top: -10px;
-  border: 2px solid currentColor;
-  border-radius: 50%;
+  margin-left: -1rem;
+  margin-top: -1rem;
+  border: 2px solid var(--color-text);
+  border-radius: var(--radius-full);
   border-top-color: transparent;
   animation: spinner 0.8s linear infinite;
 }
@@ -136,9 +128,8 @@
   to { transform: rotate(360deg); }
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
-  .small { min-height: 36px; }
-  .medium { min-height: 44px; }
-  .large { min-height: 52px; }
+  .small { min-height: 3.2rem; }
+  .medium { min-height: 4rem; }
+  .large { min-height: 4.8rem; }
 }

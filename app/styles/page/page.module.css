@@ -3,98 +3,128 @@
   margin-left: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 0.4fr;
-  grid-template-rows: repeat(3, auto); 
-
+  grid-template-rows: repeat(3, auto);
   grid-template-areas:
     'left1 right1 news'
     'left2 right2 news'
-    'left3 right3 news'
-  ;
+    'left3 right3 news';
+}
+.content_mini {
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: repeat(1, auto);
+  grid-template-areas:
+    'left1 right1 '
+   
 }
 
-
-
-.left1 {
-
-  margin: 5px;
-  grid-area: left1;
-  
-}
-
-.right1 {
-  
-  grid-area: right1;
-  padding: 30px;
-}
-
-
-.left2 {
-  grid-area: left2;
-  padding: 30px;
-}
-
-.right2 {
-  margin: 10px;
-  grid-area: right2;
-
-}
-
-.left3 {
- 
-  margin: 10px;
-  grid-area: left3;
-}
-
-.right3 {
-  grid-area: right3;
-  padding: 30px;
-}
-
-.news {
-  grid-area: news;
-
-}
-
-
-
+.left1 { margin: 5px; grid-area: left1; }
+.right1 { grid-area: right1; padding: 30px; }
+.left2 { grid-area: left2; padding: 30px; }
+.right2 { margin: 10px; grid-area: right2; }
+.left3 { margin: 10px; grid-area: left3; }
+.right3 { grid-area: right3; padding: 30px; }
+.news { grid-area: news; padding: 10px; }
 
 .img {
   border-radius: 0.75em;
   width: 100%;
-padding: 5px;
+  height: auto;
+  padding: 5px;
 }
 
-.title {
-  text-align: center;
+.title { text-align: center; }
+
+.title h1,
+.title h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: var(--tracking-headline);
+  color: var(--color-text);
+  margin: 0 0 var(--space-md);
 }
 
-.title>span {
+.title h1 { font-size: var(--text-headline-lg); }
+.title h2 { font-size: var(--text-headline-md); }
 
-  position: relative;
-  z-index: 1;
-  font-weight: 700;
-  font-size: var(--span_title);
-  text-transform: uppercase;
-  color: #60606e;
-  position: relative;
-  display: inline-block;
+.right1 p,
+.left2 p,
+.right3 dd,
+.right3 dt {
+  font-size: var(--text-body-md);
+  line-height: var(--lh-body);
+  color: var(--color-text);
+  margin: 0 0 var(--space-sm);
 }
 
+.block {
+  width: 100%;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
 
+.list,
+.list2 {
+  list-style-position: inside;
+  padding-left: 1em;
+  width: 50%;
+  margin: 0;
+}
+
+.list li,
+.list2 li {
+  list-style-type: disc;
+  margin-bottom: var(--space-xs);
+}
+
+.navbar__link {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.navbar__link:hover { color: var(--color-primary); }
+
+.section__title__us {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-xs) var(--space-sm);
+  align-items: baseline;
+}
+
+.section__title__us dt { margin: 0; }
+.section__title__us dd { margin: 0; }
+
+.section__title__us a {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+.section__title__us a:hover { color: var(--color-primary); }
+
+.btnblock {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-md);
+}
+
+.link_style { color: var(--color-text); }
 
 @media (max-width: 1200px) {
   .content {
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       'left1 right1'
       'news news'
       'left2 right2'
       'left3 right3';
   }
-  .img{
-    max-height:450px ;
-    
-  }
+  .img { max-height: 450px; object-fit: cover; }
 }
 
 @media (max-width: 990px) {
@@ -107,80 +137,122 @@ padding: 5px;
       'right2'
       'left2'
       'left3'
-      'right3'
-    ;
-    .right1,
-      .left2,
-    .right3 {
-      padding: 15px;
-    }
+      'right3';
   }
-  .img{
-    max-height:550px ;
-    
-  }
+  .right1, .left2, .right3 { padding: 15px; }
+  .img { max-height: 550px; object-fit: cover; }
+  .block { flex-direction: column; }
+  .list, .list2 { width: 100%; }
 }
 
-@media (min-width: 576px) {
-  .content {
-    max-width: 540px;
-  }
+@media (min-width: 576px) { .content { max-width: 540px; } }
+@media (min-width: 768px) { .content { max-width: 720px; } }
+@media (min-width: 992px) { .content { max-width: 960px; } }
+@media (min-width: 1200px) { .content { max-width: 1170px; } }
+@media (min-width: 1350px) { .content { max-width: 90%; } }
+
+/* ---------- Species / Catalog section (home redesign) ---------- */
+.species {
+  padding: var(--space-3xl) var(--space-xl);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
 }
 
-@media (min-width: 768px) {
-  .content {
-    max-width: 720px;
-  }
-
-
+.sectionCaps {
+  font-family: var(--font-body);
+  font-size: var(--text-label-caps);
+  font-weight: 500;
+  letter-spacing: var(--tracking-caps-wide);
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+  margin-bottom: var(--space-sm);
 }
 
-@media (min-width: 992px) {
-  .content {
-    max-width: 960px;
-  }
-  
+.sectionHeading {
+  font-family: var(--font-display);
+  font-size: var(--text-headline-lg);
+  font-weight: 500;
+  letter-spacing: var(--tracking-headline);
+  color: var(--color-text);
+  margin: 0;
 }
 
-@media (min-width: 1200px) {
-  .content {
-    max-width: 1170px;
-  }
-
-
+.sectionHint {
+  font-size: var(--text-body-md);
+  line-height: var(--lh-body);
+  color: var(--color-text-muted);
+  margin: var(--space-sm) 0 var(--space-xl);
+  max-width: 52rem;
 }
 
-@media (min-width: 1350px) {
-  .content {
-    max-width: 90%;
-  }
-
-
+.speciesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
 }
 
-
-.block {
-  width: 100%;
-  text-align: start;
+.speciesCard {
   display: flex;
-  justify-content: space-between;
-
-
+  min-height: 20rem;
+  background: var(--color-surface-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
 }
 
-.list li,
-.list2 li {
-  list-style-type: disc;
+.speciesCard:hover {
+  box-shadow: var(--shadow-lift);
+  transform: translateY(-2px);
 }
 
-.list,
-.list2 {
-  list-style-position: inside;
-  padding-left: 1em;
-  width: 50%;
-}
-
-.btnblock {
+.speciesText {
+  flex: 1.1;
+  padding: var(--space-xl);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.speciesLatin {
+  font-family: var(--font-body);
+  font-size: var(--text-label-caps-sm);
+  font-weight: 500;
+  letter-spacing: var(--tracking-caps-wide);
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+}
+
+.speciesName {
+  font-family: var(--font-display);
+  font-size: var(--text-headline-md);
+  font-weight: 500;
+  letter-spacing: var(--tracking-headline);
+  color: var(--color-text);
+  margin: var(--space-xs) 0 var(--space-sm);
+}
+
+.speciesCta {
+  margin-top: auto;
+  font-family: var(--font-body);
+  font-size: var(--text-label-caps);
+  font-weight: 600;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.speciesImage {
+  flex: 1;
+  position: relative;
+  min-height: 20rem;
+}
+
+@media (max-width: 768px) {
+  .species { padding: var(--space-2xl) var(--space-md); }
+  .speciesGrid { grid-template-columns: 1fr; }
+  .speciesCard { flex-direction: column-reverse; }
+  .speciesImage { min-height: 14rem; }
 }

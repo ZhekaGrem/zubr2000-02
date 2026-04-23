@@ -1,13 +1,14 @@
 {
   "Index": {
     "home": "Hjem",
+    "home_h1": "Ukrainsk løvtræ — eg, ask, birk, lærk",
     "aboutus": "Om os",
-    "infous":"Info om os",
+    "infous": "Info om os",
     "product": "Produkter",
     "oak": "Eg",
     "birch": "Birk",
     "ash": "Ask",
-    "modrina":"Lärk",
+    "modrina": "Lärk",
     "beam": "Bjælke",
     "contact": "Kontakt",
     "lang": "Sprog",
@@ -74,7 +75,7 @@
     "product_oak": "Eg træ har en høj styrke koefficient og påvirkes næsten ikke af tidens gang. Eg træ har en densitet på 700 kg/m3, og denne høje værdi er af stor betydning. Jo tættere træet er, desto hårdere og tungere er det, hvilket gør det mere vanskeligt at bearbejde og teknisk tørring. Disse faktorer gør bearbejdningen af Eg brædder mere udfordrende, men de tilbyder også enorme fordele - de resulterende produkter, såsom trapper, gelændere, gulve og andre, er betydeligt mindre tilbøjelige til slid, hvilket karakteriserer Eg træ som langtidsholdbart.",
     "product_ash": "Asketræ er et smukt og ædelt finishmateriale. På grund af dens tydeligt markerede årringe har teksturen enestående og interessante mønstre med en rig række nuancer. Skønheden i dette træ er særligt relevant for indretning af interiører. Forskellige typer brædder anvendes til at løse komplekse opgaver inden for møbelindustrien og andre brancher. Tørre asketræsbrædder med en tykkelse på 30 mm vil derfor fungere som et fremragende materiale både teknisk og æstetisk til at afslutte køkkenfacader, sovemøbler, komponenter til borde og stole, dekorative paneler og beklædning.",
     "product_birch": "Birketræ er et ideelt materiale med talrige fordele. Dets attraktive naturlige skønhed og unikke tekstur giver det en særlig charme, mens dets styrke og holdbarhed sikrer en lang levetid for produkter. Dets lette bearbejdning gør det muligt at skabe forskellige møbler og dekorative genstande. Derudover er birketræ en miljøvenlig og bæredygtig ressource, hvilket gør det til et attraktivt valg for bæredygtig konstruktion og design. Takket være alle disse fordele forbliver det et populært materiale inden for forskellige kreative og praktiske områder.",
-    "product_modrina":"Lærk har på grund af sin enestående naturlige struktur et højt styrkeniveau, der placerer det i en høj position blandt de mest holdbare træsorter. Densiteten af lærketræ, som når op på 800 kg/m³, er imponerende for sin enorme tæthed. Produkter fremstillet af lærketræ er værd at værdsætte som kunstværker, der er modstandsdygtige over for tidens tand. Fra trapper og gulve til møbler og snedkerarbejde viser lærketræ sig at være et pålideligt materiale, der retfærdiggør sin tunge forarbejdning med et uovertruffent, holdbart resultat. Lærkens styrke gør den til et ideelt valg til produktion af genstande, der skal kunne modstå stress og slid over en lang periode.",
+    "product_modrina": "Lærk har på grund af sin enestående naturlige struktur et højt styrkeniveau, der placerer det i en høj position blandt de mest holdbare træsorter. Densiteten af lærketræ, som når op på 800 kg/m³, er imponerende for sin enorme tæthed. Produkter fremstillet af lærketræ er værd at værdsætte som kunstværker, der er modstandsdygtige over for tidens tand. Fra trapper og gulve til møbler og snedkerarbejde viser lærketræ sig at være et pålideligt materiale, der retfærdiggør sin tunge forarbejdning med et uovertruffent, holdbart resultat. Lærkens styrke gør den til et ideelt valg til produktion af genstande, der skal kunne modstå stress og slid over en lang periode.",
     "manufacturing_process_01": "I produktionsprocessen bruger vi moderne udstyr, avancerede træforarbejdnings teknologier og kvalitetskontrol. Kvalitetskontrol af vores produkter begynder fra det øjeblik, hvor træet bliver udvalgt af højt kvalificerede specialister og fortsætter gennem hele forarbejdnings- og tørreprocessen.",
     "manufacturing_process_02": "Indgående kvalitetskontrol",
     "manufacturing_process_03": "Efter ankomst til lageret skæres træstammerne til de ønskede dimensioner på moderne træbearbejdningslinjer, hvorved den oprindelige struktur bevares.",
@@ -148,11 +149,77 @@
     "open": "Åben",
     "offers": " ",
     "ukrain": "Ukraine",
-        "lviv": "Lviv",
-        "street": "20 Mykola Kopernika St.",
-        "terraceboard":"bræt og terrassebræt",
-        "basket":"kurv",
-        "curvedelements":"buede elementer",
-        "board":"bræt"
+    "lviv": "Lviv",
+    "street": "20 Mykola Kopernika St.",
+    "terraceboard": "bræt og terrassebræt",
+    "basket": "kurv",
+    "curvedelements": "buede elementer",
+    "board": "bræt",
+    "ourProfile": "Vores profil",
+    "workingHours": "Man–Fre · 08:00–18:00 · Lør efter aftale",
+    "siteBy": "Websted af",
+    "newsCaps": "Journal",
+    "newsAll": "Alle indlæg",
+    "catalogCaps": "Katalog",
+    "catalogHint": "Andre træsorter — på forespørgsel.",
+    "read": "Læs",
+    "inStock": "På lager",
+    "emailLabel": "E-mail",
+    "onlineLabel": "Online",
+    "metric": {
+      "years": {
+        "value": "24+",
+        "label": "År på markedet"
+      },
+      "species": {
+        "value": "4+",
+        "label": "Træsorter"
+      },
+      "moisture": {
+        "value": "8–10%",
+        "label": "Fugt efter KD"
+      },
+      "custom": {
+        "value": "Efter bestilling",
+        "label": "Mål og kvaliteter"
+      }
+    },
+    "flexibility": {
+      "caps": "Fleksibilitet",
+      "title": "Én leverandør — et bredt udvalg af produkter",
+      "intro": "Fra standard kantskåret brædder til kundespecifikke emner efter tegning. Vi tilpasser os jeres mål, kvaliteter, mængder og leveringstider.",
+      "item1": {
+        "title": "Kantskåret bræt",
+        "spec": "20–50 mm"
+      },
+      "item2": {
+        "title": "Bjælke",
+        "spec": "100×100 — 200×200 mm"
+      },
+      "item3": {
+        "title": "Emner",
+        "spec": "efter tegning"
+      },
+      "item4": {
+        "title": "Specialmål",
+        "spec": "efter forespørgsel"
+      },
+      "tag1": "Individuelle mål",
+      "tag2": "Små og store partier",
+      "tag3": "Kammertørring",
+      "tag4": "Høvling, afkortning",
+      "tag5": "Eksport til EU"
+    },
+    "contactFooter": {
+      "caps": "Kontakt",
+      "heading": "Har du brug for et tilbud på et parti?",
+      "lead": "Send os din specifikation — vi svarer med pris og leveringstid inden for 24 timer."
+    },
+    "address": {
+      "street": "TODO:ADDRESS-STREET",
+      "city": "TODO:ADDRESS-CITY",
+      "region": "TODO:ADDRESS-REGION",
+      "mapUrl": "TODO:MAPURL"
+    }
   }
 }

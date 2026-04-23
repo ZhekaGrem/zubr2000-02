@@ -1,186 +1,101 @@
-.content {
-  margin-right: auto;
-  margin-left: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 0.4fr;
-  grid-template-rows: repeat(3, auto); 
-
-  grid-template-areas:
-    'left1 right1 news'
-    'left2 right2 news'
-    'left3 right3 news'
-  ;
+.species {
+  padding: var(--space-3xl) var(--space-xl);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
 }
 
-
-
-.left1 {
-
-  margin: 5px;
-  grid-area: left1;
-  
-}
-
-.right1 {
-  
-  grid-area: right1;
-  padding: 30px;
-}
-
-
-.left2 {
-  grid-area: left2;
-  padding: 30px;
-}
-
-.right2 {
-  margin: 10px;
-  grid-area: right2;
-
-}
-
-.left3 {
- 
-  margin: 10px;
-  grid-area: left3;
-}
-
-.right3 {
-  grid-area: right3;
-  padding: 30px;
-}
-
-.news {
-  grid-area: news;
-
-}
-
-
-
-
-.img {
-  border-radius: 0.75em;
-  width: 100%;
-padding: 5px;
-}
-
-.title {
-  text-align: center;
-}
-
-.title>span {
-
-  position: relative;
-  z-index: 1;
-  font-weight: 700;
-  font-size: var(--span_title);
+.sectionCaps {
+  font-family: var(--font-body);
+  font-size: var(--text-label-caps);
+  font-weight: 500;
+  letter-spacing: var(--tracking-caps-wide);
   text-transform: uppercase;
-  color: #60606e;
+  color: var(--color-text-subtle);
+  margin-bottom: var(--space-sm);
+}
+
+.sectionHeading {
+  font-family: var(--font-display);
+  font-size: var(--text-headline-lg);
+  font-weight: 500;
+  letter-spacing: var(--tracking-headline);
+  color: var(--color-text);
+  margin: 0;
+}
+
+.sectionHint {
+  font-size: var(--text-body-md);
+  line-height: var(--lh-body);
+  color: var(--color-text-muted);
+  margin: var(--space-sm) 0 var(--space-xl);
+  max-width: 52rem;
+}
+
+.speciesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.speciesCard {
+  display: flex;
+  min-height: 20rem;
+  background: var(--color-surface-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.speciesCard:hover { box-shadow: var(--shadow-lift); transform: translateY(-2px); }
+
+.speciesText {
+  flex: 1.1;
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.speciesLatin {
+  font-family: var(--font-body);
+  font-size: var(--text-label-caps-sm);
+  font-weight: 500;
+  letter-spacing: var(--tracking-caps-wide);
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+}
+
+.speciesName {
+  font-family: var(--font-display);
+  font-size: var(--text-headline-md);
+  font-weight: 500;
+  letter-spacing: var(--tracking-headline);
+  color: var(--color-text);
+  margin: var(--space-xs) 0 var(--space-sm);
+}
+
+.speciesCta {
+  margin-top: auto;
+  font-family: var(--font-body);
+  font-size: var(--text-label-caps);
+  font-weight: 600;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.speciesImage {
+  flex: 1;
   position: relative;
-  display: inline-block;
+  min-height: 20rem;
 }
 
-
-
-@media (max-width: 1200px) {
-  .content {
-    grid-template-columns: 1fr 1fr ;
-    grid-template-areas:
-      'left1 right1'
-      'news news'
-      'left2 right2'
-      'left3 right3';
-  }
-  .img{
-    max-height:450px ;
-    
-  }
-}
-
-@media (max-width: 990px) {
-  .content {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'right1'
-      'left1'
-      'news'
-      'right2'
-      'left2'
-      'left3'
-      'right3'
-    ;
-    .right1,
-      .left2,
-    .right3 {
-      padding: 15px;
-    }
-  }
-  .img{
-    max-height:550px ;
-    
-  }
-}
-
-@media (min-width: 576px) {
-  .content {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .content {
-    max-width: 720px;
-  }
-
-
-}
-
-@media (min-width: 992px) {
-  .content {
-    max-width: 960px;
-  }
-  
-}
-
-@media (min-width: 1200px) {
-  .content {
-    max-width: 1170px;
-  }
-
-
-}
-
-@media (min-width: 1350px) {
-  .content {
-    max-width: 90%;
-  }
-
-
-}
-
-
-.block {
-  width: 100%;
-  text-align: start;
-  display: flex;
-  justify-content: space-between;
-
-
-}
-
-.list li,
-.list2 li {
-  list-style-type: disc;
-}
-
-.list,
-.list2 {
-  list-style-position: inside;
-  padding-left: 1em;
-  width: 50%;
-}
-
-.btnblock {
-  display: flex;
-  justify-content: center;
+@media (max-width: 768px) {
+  .species { padding: var(--space-2xl) var(--space-md); }
+  .speciesGrid { grid-template-columns: 1fr; }
+  .speciesCard { flex-direction: column-reverse; }
+  .speciesImage { min-height: 14rem; }
 }

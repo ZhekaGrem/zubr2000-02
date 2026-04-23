@@ -1,22 +1,24 @@
+/* Mobile navbar — hidden on desktop */
 @media(min-width: 1180px){
    .navbar{
       display: none;
    }
 }
+
 .navbar {
    height: 80px;
    z-index: 50;
-   background-image: url("../../img/wood-1.webp");
- border-bottom:1px solid #181a1b ;
-  box-shadow: 0 2px 16px (220, 32%, 8% , .3);
+   background: var(--color-surface);
+   border-bottom: 1px solid var(--color-border);
+   box-shadow: var(--shadow-card);
 }
 
 
 .navbar p,
 .navbar li,
 .navbar a{
-   color: white;
-   
+   color: var(--color-text);
+
 }
 
 
@@ -58,16 +60,17 @@
 .icon__button:hover{
    filter: brightness(1.2);
 }
+
 .dropdown{
    position: absolute;
-   top:78px;
+   top: 78px;
    width: 300px;
-   transform:translateX(-45%);
-   border-radius: 8px;
-   background-image: url("../../img/wood-2.webp");
-   border: 1px solid #474a4d;
+   transform: translateX(-45%);
+   border-radius: var(--radius-md);
+   background: var(--color-surface);
+   border: 1px solid var(--color-border);
    overflow: hidden;
-   transition: height 500ms ease;
+   transition: height var(--transition-slow) ease;
    z-index: 51;
 }
 
@@ -76,18 +79,17 @@
    height: 50px;
    display: flex;
    align-items: center;
-   border-radius: 8px;
-   transition: var(--speed);
+   border-radius: var(--radius-md);
+   transition: var(--transition-base);
    padding: 0.7rem;
 }
 
 .menu__item:hover{
-   background-color: var(--color_green__02);
+   background-color: var(--color-surface);
 }
 
 .icon__right{
    margin-left: auto;
-
 }
 
 .menu{
@@ -96,30 +98,33 @@
 
 
 .menu-primary-enter{
-position: absolute;
-transform: translateX(-110%);
+   position: absolute;
+   transform: translateX(-110%);
 }
 
 
 .menu-primary-enter-active{
-  
    transform: translateX(0);
-   transition: all 500ms ease;
+   transition: all var(--transition-slow) ease;
 }
+
 .menu-primary-exit{
    position: absolute;
 }
+
 .menu-primary-exit-active{
    transform: translateX(-110%);
 }
+
 .menu__item__img:hover{
    filter: brightness(1.2);
 }
+
 .menu__item__img{
-   --button-size: calc(var(--nav-size) * 0.5);
+   --button-size: calc(var(--nav-height) * 0.5);
    width: var(--button-size);
    height: var(--button-size);
-   background-color: #484a4d;
+   background-color: var(--color-border);
    border-radius: 50%;
    padding: 5px;
    margin: 2px;
@@ -130,7 +135,7 @@ transform: translateX(-110%);
 }
 
 .menu__item__img i {
-   fill: var(--text-color);
+   fill: var(--color-text);
    width: 20px;
    height: 20px;
 }

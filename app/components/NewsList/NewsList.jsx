@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Link from "next-intl/link";
 import { useTranslations } from "next-intl";
 import styles from "./NewsList.module.css";
 
@@ -22,20 +21,19 @@ function NewsList({ data = [] }) {
           <div className={styles.caps}>{t("newsCaps")}</div>
           <h2 className={styles.heading}>{t("news")}</h2>
         </div>
-        <Link href="/aboutus/news" className={styles.seeAll}>
-          {t("newsAll")} →
-        </Link>
       </div>
       <ul className={styles.list}>
-        {data.slice(0, 6).map((post) => (
-          <li key={post._id || post.slug?.current} className={styles.item}>
-            <Link href={`/aboutus/news/${post.slug?.current || ""}`} className={styles.itemLink}>
+        {data.slice(0, 6).map((post, idx) => (
+          <li key={post._id || idx} className={styles.item}>
+            <div className={styles.itemLink}>
               <div className={styles.itemMain}>
-                <div className={styles.itemTitle}>{post.title}</div>
-                {post.category && <div className={styles.itemCategory}>{post.category}</div>}
+                <div className={styles.itemTitle}>{post.meta_title}</div>
+                {post.body_text && (
+                  <div className={styles.itemExcerpt}>{post.body_text}</div>
+                )}
               </div>
               <div className={styles.itemDate}>{formatDate(post.publication_data)}</div>
-            </Link>
+            </div>
           </li>
         ))}
       </ul>

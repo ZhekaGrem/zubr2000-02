@@ -155,45 +155,69 @@
     "basket": "cestino",
     "curvedelements": "elementi curvi",
     "board": "tavola",
-    "metric.years.value": "24+",
-    "metric.years.label": "Років на ринку",
-    "metric.species.value": "4+",
-    "metric.species.label": "Порід деревини",
-    "metric.moisture.value": "8–10%",
-    "metric.moisture.label": "Вологість після KD",
-    "metric.custom.value": "Під замовлення",
-    "metric.custom.label": "Розміри й сорти",
-    "flexibility.caps": "02 · Гнучкість",
-    "flexibility.title": "Один постачальник — широкий спектр виробів",
-    "flexibility.intro": "Від стандартної обрізної дошки до індивідуальних заготовок під креслення замовника. Підлаштовуємось під ваші розміри, сортність, обсяг партії та строки.",
-    "flexibility.item1.title": "Дошка обрізна",
-    "flexibility.item1.spec": "20–50 мм",
-    "flexibility.item2.title": "Брус",
-    "flexibility.item2.spec": "100×100 — 200×200 мм",
-    "flexibility.item3.title": "Заготовки",
-    "flexibility.item3.spec": "під креслення",
-    "flexibility.item4.title": "Нестандарт",
-    "flexibility.item4.spec": "на запит",
-    "flexibility.tag1": "Індивідуальні розміри",
-    "flexibility.tag2": "Малі та великі партії",
-    "flexibility.tag3": "Камерне сушіння",
-    "flexibility.tag4": "Стругання, торцювання",
-    "flexibility.tag5": "Експорт у ЄС",
-    "contactFooter.caps": "04 · Звʼязок",
-    "contactFooter.heading": "Потрібен розрахунок партії?",
-    "contactFooter.lead": "Надішліть специфікацію — відповімо з прайсом і термінами протягом доби.",
     "ourProfile": "Наш профіль",
     "workingHours": "Пн–Пт · 08:00–18:00 · Сб за домовленістю",
     "siteBy": "Сайт створено",
-    "address.street": "TODO:ADDRESS-STREET",
-    "address.city": "TODO:ADDRESS-CITY",
-    "address.region": "TODO:ADDRESS-REGION",
-    "address.mapUrl": "TODO:MAPURL",
     "newsCaps": "03 · Журнал",
     "newsAll": "Усі записи",
     "catalogCaps": "01 · Каталог",
     "catalogHint": "Інші породи — на запит.",
     "read": "Читати",
-    "inStock": "В наявності"
+    "inStock": "В наявності",
+    "metric": {
+      "years": {
+        "value": "24+",
+        "label": "Років на ринку"
+      },
+      "species": {
+        "value": "4+",
+        "label": "Порід деревини"
+      },
+      "moisture": {
+        "value": "8–10%",
+        "label": "Вологість після KD"
+      },
+      "custom": {
+        "value": "Під замовлення",
+        "label": "Розміри й сорти"
+      }
+    },
+    "flexibility": {
+      "caps": "02 · Гнучкість",
+      "title": "Один постачальник — широкий спектр виробів",
+      "intro": "Від стандартної обрізної дошки до індивідуальних заготовок під креслення замовника. Підлаштовуємось під ваші розміри, сортність, обсяг партії та строки.",
+      "item1": {
+        "title": "Дошка обрізна",
+        "spec": "20–50 мм"
+      },
+      "item2": {
+        "title": "Брус",
+        "spec": "100×100 — 200×200 мм"
+      },
+      "item3": {
+        "title": "Заготовки",
+        "spec": "під креслення"
+      },
+      "item4": {
+        "title": "Нестандарт",
+        "spec": "на запит"
+      },
+      "tag1": "Індивідуальні розміри",
+      "tag2": "Малі та великі партії",
+      "tag3": "Камерне сушіння",
+      "tag4": "Стругання, торцювання",
+      "tag5": "Експорт у ЄС"
+    },
+    "contactFooter": {
+      "caps": "04 · Звʼязок",
+      "heading": "Потрібен розрахунок партії?",
+      "lead": "Надішліть специфікацію — відповімо з прайсом і термінами протягом доби."
+    },
+    "address": {
+      "street": "TODO:ADDRESS-STREET",
+      "city": "TODO:ADDRESS-CITY",
+      "region": "TODO:ADDRESS-REGION",
+      "mapUrl": "TODO:MAPURL"
+    }
   }
 }

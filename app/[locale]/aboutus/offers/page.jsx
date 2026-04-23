@@ -5,6 +5,8 @@ import { client } from "@/app/_lib/sanity";
 import Link from "next-intl/link";
 import OfferBlog from "@/app/components/offerblog/OfferBlog";
 import Button from "@/app/UI/button/button";
+import { useTranslations } from "next-intl";
+import PageIntro from "@/app/components/PageIntro/PageIntro";
 
 async function getData() {
   const query = `*[_type == "offer"] | order(publication_data_offer desc)`;
@@ -13,6 +15,7 @@ async function getData() {
 }
 
 export default function Offers() {
+  const t = useTranslations("Index");
   const [blogData, setBlogData] = useState([]);
   useEffect(() => {
     async function fetchData() {
@@ -23,10 +26,11 @@ export default function Offers() {
   }, []);
   return (
     <>
+      <PageIntro caps="2.5" title={t("offers")} />
       <div className={styles.contact}>
         <div className={styles.contact__info}>
           <div className={styles.big__title}>
-            <h1>Запрошуємо до співпраці</h1>
+            <p>Запрошуємо до співпраці</p>
           </div>
           <div>
             <p>

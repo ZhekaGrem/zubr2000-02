@@ -1,24 +1,24 @@
 .body {
-    line-height: 1.6;
-  }
-  
-  .blog__container {
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .blog {
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 10px;
-  }
-  .blog h2{
-    color: #60606e;
+  line-height: var(--lh-body);
+}
 
-  }
-  
-.data{
+.blog__container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: var(--space-md);
+}
+
+.blog {
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+  padding: var(--space-sm);
+}
+
+.blog h2 {
+  color: var(--color-text-muted);
+}
+
+.data {
   font-weight: bold;
 }

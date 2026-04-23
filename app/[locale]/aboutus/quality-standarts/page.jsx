@@ -4,6 +4,7 @@ import styles from "@/app/styles/page/quality-standarts.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from 'next-intl';
+import PageIntro from "@/app/components/PageIntro/PageIntro";
 
 
 function QualityStandarts() {
@@ -11,11 +12,11 @@ function QualityStandarts() {
 
   return (
     <>
+      <PageIntro caps="2.2" title={t("quality")} />
       <section>
         <div className={styles.container}>
           <div className={styles.row}>
             <div className={`${styles.section__title} ${styles.big__title} `}>
-              <h1>{t('quality')} </h1>
               <h3>{t('quality-title-01')}</h3>
             </div>
             <div className={`${styles.section__title}  ${styles.big__title}`}>

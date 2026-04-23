@@ -1,128 +1,47 @@
 "use client";
 import React from "react";
+import Link from "next-intl/link";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
+import PageIntro from "@/app/components/PageIntro/PageIntro";
 import styles from "@/app/styles/page/products.module.css";
-import ProductCard from "@/app/components/ProductCard/ProductCard";
 
-// Дані продуктів винесені в константу для кращої організації
-const productData = {
-  oak: {
-    title: "oak",
-    description: "product_oak",
-    products: [
-      {
-        id: "oak-board",
-        image: { src: "/oak-lumber-01.webp", alt: "Oak board lumber" },
-        title: "board",
-        subtitle: "54 × 110 mm",
-        link: "/products/oak-lumber#oak__02",
-        badge: null
-      },
-      {
-        id: "oak-beam",
-        image: { src: "/oak-lumber-02.webp", alt: "Oak beam lumber" },
-        title: "beam", 
-        subtitle: "22-54 × 54-315 mm",
-        link: "/products/oak-lumber#oak__01",
-        badge: null
-      },
-      {
-        id: "oak-curved",
-        image: { src: "/oak-lumber-03.webp", alt: "Oak curved elements" },
-        title: "curvedelements",
-        subtitle: "22-54 × 54-315 mm",
-        link: "/products/oak-lumber#oak__03",
-        badge: null
-      }
-    ]
-  },
-  ash: {
-    title: "ash",
-    description: "product_ash",
-    products: [
-      {
-        id: "ash-board",
-        image: { src: "/ash-lumber-03.webp", alt: "Ash board lumber" },
-        title: "board",
-        subtitle: "26-55 × 76-315 mm",
-        link: "/products/ash-lumber#ash__01",
-        badge: null
-      }
-    ]
-  },
-  birch: {
-    title: "birch",
-    description: "product_birch",
-    products: [
-      {
-        id: "birch-beam",
-        image: { src: "/birch-lumber-03.webp", alt: "Birch beam lumber" },
-        title: "beam",
-        subtitle: "36/52 × 52 mm",
-        link: "/products/birch-lumber#birch__01",
-        badge: null
-      }
-    ]
-  },
-  modrina: {
-    title: "modrina",
-    description: "product_modrina",
-    products: [
-      {
-        id: "modrina-terrace",
-        image: { src: "/modrina-lumber-01.webp", alt: "Modrina terrace board" },
-        title: "terraceboard",
-        subtitle: "21-30 × 123-500 mm",
-        link: "/products/modrina-lumber#modrina__01",
-        badge: "NEW"
-      },
-      {
-        id: "modrina-basket",
-        image: { src: "/modrina-lumber-05.webp", alt: "Modrina basket" },
-        title: "basket",
-        subtitle: "285-375 × 312-500 mm",
-        link: "/products/modrina-lumber#modrina__03",
-        badge: null
-      }
-    ]
-  }
-};
+const SPECIES = [
+  { key: "oak", href: "/products/oak-lumber", latin: "Quercus robur", image: "/oak-lumber-03.webp" },
+  { key: "ash", href: "/products/ash-lumber", latin: "Fraxinus excelsior", image: "/ash-lumber-03.webp" },
+  { key: "birch", href: "/products/birch-lumber", latin: "Betula pendula", image: "/birch-lumber-03.webp" },
+  { key: "modrina", href: "/products/modrina-lumber", latin: "Larix decidua", image: "/modrina-lumber-03.webp" },
+];
 
-function Products() {
+function ProductsPage() {
   const t = useTranslations("Index");
-
   return (
-    <div className={styles.pageContainer}>
-      {Object.entries(productData).map(([key, category]) => (
-        <section key={key} id={key} className={styles.categorySection}>
-          <div className={styles.container}>
-            <div className={styles.categoryHeader}>
-              <h2 className={styles.categoryTitle}>
-                {t(category.title)}
-              </h2>
-              <p className={styles.categoryDescription}>
-                {t(category.description)}
-              </p>
-            </div>
+    <>
+      <PageIntro
+        caps={t("catalogCaps")}
+        title={t("product")}
+        lead={t("title5")}
+      />
 
-            <div className={styles.productsGrid}>
-              {category.products.map((product) => (
-                <ProductCard
-                  key={product.id}
-                  image={product.image}
-                  title={t(product.title)}
-                  subtitle={product.subtitle}
-                  link={product.link}
-                  linkText={t("open")}
-                  badge={product.badge}
-                />
-              ))}
+      <section className={styles.list}>
+        {SPECIES.map((s) => (
+          <Link key={s.key} href={s.href} className={styles.card}>
+            <div className={styles.text}>
+              <div className={styles.latin}>{s.latin}</div>
+              <h2 className={styles.name}>{t(s.key)}</h2>
+              <div className={styles.chips}>
+                <span className={styles.chipStock}>{t("aboutus-message18")}</span>
+              </div>
+              <div className={styles.cta}>{t("read")} →</div>
             </div>
-          </div>
-        </section>
-      ))}
-    </div>
+            <div className={styles.image}>
+              <Image src={s.image} alt={t(s.key)} fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+            </div>
+          </Link>
+        ))}
+      </section>
+    </>
   );
 }
 
-export default Products;
+export default ProductsPage;

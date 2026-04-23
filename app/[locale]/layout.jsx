@@ -11,7 +11,7 @@ import { Suspense } from "react";
 import Loading from "./loading";
 
 export const fontDisplay = Fraunces({
-  subsets: ["latin", "latin-ext", "cyrillic"],
+  subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600"],
   variable: "--font-display",
   display: "swap",

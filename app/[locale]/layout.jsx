@@ -176,7 +176,6 @@ export const metadata = {
     "larch boards supplier",
     "european hardwood lumber",
     "certified lumber ukraine",
-    "FSC certified timber",
     "sustainable wood ukraine",
     
     // Commercial intent keywords

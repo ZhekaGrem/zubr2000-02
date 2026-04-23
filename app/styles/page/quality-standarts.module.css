@@ -262,7 +262,7 @@
 }
 
 .section__title__cubaturnic:hover {
-  background-color: var(--color_green);
+  background-color: var(--color-primary);
 }
 
 @media (max-width: 500px) {

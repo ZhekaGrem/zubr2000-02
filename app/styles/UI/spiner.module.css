@@ -29,7 +29,7 @@ animation: spin 1.7s linear infinite;
     border-radius: 55px;
     top: -3.5px;
     left: -3.5px;
-    border-right: 3px solid var( --color_green);
+    border-right: 3px solid var( --color-primary);
     position: absolute;
     animation: spin 3s linear infinite;  
   }
@@ -41,7 +41,7 @@ height: var(--spienr-size-s);
 border-radius: 40px;
 top: 4px;
 left: 4px;
-border-bottom: 3px solid var( --color_green__02);
+border-bottom: 3px solid var( --color-primary-dark);
 animation: spin 3.7s linear infinite;
 position: absolute;
 

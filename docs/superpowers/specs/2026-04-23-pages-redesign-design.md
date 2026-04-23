@@ -162,12 +162,59 @@ address.street · address.city · address.region · address.mapUrl
 - **Функціональне:** форма `/contact` надсилає, Sanity-новини тягнуться, навігація `next-intl` між локалями працює, `/admin` (Sanity Studio) відкривається.
 - **Contrast:** пройти `lighthouse --only-categories=accessibility` на головній і `/products/oak-lumber`. Цілимося ≥95.
 
-## Відкриті запитання (вирішити перед writing-plans)
+## Вирішення відкритих запитань (2026-04-23)
 
-- **Адреса офісу** — поточний код містить лише `postal: 79000 · lviv · ukrain · street` як токени. Потрібна реальна адреса для i18n-ключів. До вирішення: `TODO:ADDRESS` у `uk.json`, решта локалей дзеркалять.
-- **Google Maps URL** — який саме координатний лінк використовувати для «Відкрити на мапі»?
-- **Галерея в блоці 03 manufacturing-process** — клік відкриває лайтбокс чи просто swipe без збільшення? Рекомендація: на першій ітерації без лайтбокса (swipe на mobile, просто 3 фото на desktop).
-- **Ключі `metric.*` і `flexibility.*`** — тексти пишу я-як-імплементатор чи чекаємо від замовника?
+- **Адреса офісу** — реальна буде надана замовником. Поки не отримано: у `uk.json` значення `TODO:ADDRESS` як плейсхолдер, у решті 8 локалей той самий рядок. Після отримання — замінити в усіх 9 файлах.
+- **Google Maps URL** — реальний лінк буде надано замовником. До отримання: у `uk.json` значення `TODO:MAPURL`; у UI кнопка «Відкрити на мапі» в такому стані не-клікабельна (`pointer-events: none`) або прихована.
+- **Галерея в блоці 03 manufacturing-process** — **з лайтбоксом**. Клік по мініатюрі відкриває модальне вікно на всю ширину вʼюпорта з затемненим overlay, клавіатурною навігацією (←/→/Esc), індикаторами 1/3 і закриттям по кліку поза зображенням. Компонент: `app/components/Lightbox/Lightbox.jsx` (мінімальна реалізація, без сторонніх бібліотек — звичайне портальне модальне вікно). На mobile — той самий лайтбокс, swipe-left/right для перегортання.
+- **Тексти для `metric.*` і `flexibility.*`** — я пропоную **UA-драфти** у `uk.json`; замовник править після першої візуальної збірки. Решта 8 локалей отримують ті самі UA-рядки як fallback.
+
+### UA-драфти нових ключів (під зміну)
+
+```json
+"metric.years.value": "24+",
+"metric.years.label": "Років на ринку",
+"metric.species.value": "4+",
+"metric.species.label": "Порід деревини",
+"metric.moisture.value": "8–10%",
+"metric.moisture.label": "Вологість після KD",
+"metric.custom.value": "Під замовлення",
+"metric.custom.label": "Розміри й сорти",
+
+"flexibility.caps": "02 · Гнучкість",
+"flexibility.title": "Один постачальник — широкий спектр виробів",
+"flexibility.intro": "Від стандартної обрізної дошки до індивідуальних заготовок під креслення замовника. Підлаштовуємось під ваші розміри, сортність, обсяг партії та строки.",
+
+"flexibility.item1.title": "Дошка обрізна",
+"flexibility.item1.spec": "20–50 мм",
+"flexibility.item2.title": "Брус",
+"flexibility.item2.spec": "100×100 — 200×200 мм",
+"flexibility.item3.title": "Заготовки",
+"flexibility.item3.spec": "під креслення",
+"flexibility.item4.title": "Нестандарт",
+"flexibility.item4.spec": "на запит",
+
+"flexibility.tag1": "Індивідуальні розміри",
+"flexibility.tag2": "Малі та великі партії",
+"flexibility.tag3": "Камерне сушіння",
+"flexibility.tag4": "Стругання, торцювання",
+"flexibility.tag5": "Експорт у ЄС",
+
+"contactFooter.caps": "04 · Звʼязок",
+"contactFooter.heading": "Потрібен розрахунок партії?",
+"contactFooter.lead": "Надішліть специфікацію — відповімо з прайсом і термінами протягом доби.",
+
+"ourProfile": "Наш профіль",
+"workingHours": "Пн–Пт · 08:00–18:00 · Сб за домовленістю",
+"siteBy": "Сайт створено",
+
+"address.street": "TODO:ADDRESS-STREET",
+"address.city":   "TODO:ADDRESS-CITY",
+"address.region": "TODO:ADDRESS-REGION",
+"address.mapUrl": "TODO:MAPURL"
+```
+
+Усі ключі додаються у всі 9 файлів `messages/*.json` (у 8 не-UA — ідентичні UA-значення як fallback до професійного перекладу).
 
 ## Ризики
 

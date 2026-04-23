@@ -29,9 +29,6 @@ const LangDropBar = () => {
       try {
         router.prefetch(pathname, { locale: nextLocale });
       } catch {}
-      try {
-        router.prefetch(`/${nextLocale}${pathname === "/" ? "" : pathname}`);
-      } catch {}
     },
     [pathname, activeLocale, router]
   );

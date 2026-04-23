@@ -28,9 +28,6 @@ export const DropDownMenu = (props) => {
       try {
         router.prefetch(pathname, { locale: nextLocale });
       } catch {}
-      try {
-        router.prefetch(`/${nextLocale}${pathname === "/" ? "" : pathname}`);
-      } catch {}
     },
     [pathname, locale, router]
   );

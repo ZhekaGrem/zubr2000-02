@@ -4,22 +4,30 @@ import { notFound } from "next/navigation";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import { BackToTopButton } from "../components/BackToTop/BackToTopButton";
-import { Source_Sans_3, Playfair_Display } from "next/font/google";
+import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { Suspense } from "react";
 import Loading from "./loading";
 
-export const fontSans = Source_Sans_3({
-  weight: ["300", "400", "500", "600"],
+export const fontDisplay = Fraunces({
+  subsets: ["latin", "latin-ext", "cyrillic"],
+  weight: ["400", "500", "600"],
+  variable: "--font-display",
   display: "swap",
-  subsets: ["latin-ext"],
-  variable: "--font-source",
 });
-export const fontSerif = Playfair_Display({
+
+export const fontBody = Inter({
+  subsets: ["latin", "latin-ext", "cyrillic"],
   weight: ["400", "500", "600", "700"],
+  variable: "--font-body",
   display: "swap",
-  subsets: ["latin-ext"],
-  variable: "--font-serif",
+});
+
+export const fontMono = JetBrains_Mono({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500", "600"],
+  variable: "--font-mono",
+  display: "swap",
 });
 
 
@@ -297,7 +305,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
           hrefLang='sv-SV'
         />
       </head>
-      <body className={`${fontSans.variable} ${fontSerif.variable}`}>
+      <body className={`${fontDisplay.variable} ${fontBody.variable} ${fontMono.variable}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Suspense fallback={<Loading />}>
             <div className='wrapper'>

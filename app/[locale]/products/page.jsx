@@ -30,7 +30,7 @@ function ProductsPage() {
               <div className={styles.latin}>{s.latin}</div>
               <h2 className={styles.name}>{t(s.key)}</h2>
               <div className={styles.chips}>
-                <span className={styles.chipStock}>{t("aboutus-message18")}</span>
+                <span className={styles.chipStock}>{t("inStock")}</span>
               </div>
               <div className={styles.cta}>{t("read")} →</div>
             </div>

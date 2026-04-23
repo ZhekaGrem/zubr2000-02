@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Button from "@/app/UI/button/button";
 import Link from "next-intl/link";
+import PageIntro from "@/app/components/PageIntro/PageIntro";
 
 const ashProducts = [
   {
@@ -29,13 +30,13 @@ function AshLumber() {
 
   return (
     <div className={styles.lumberPage}>
-      {/* Hero Section */}
-      {/* <section className={styles.hero}>
-        <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>{t('ash')} {t('lumber')}</h1>
-          <p className={styles.heroDescription}>{t('product_ash')}</p>
-        </div>
-      </section> */}
+      <PageIntro
+        caps="Fraxinus excelsior"
+        title={t("ash")}
+        lead={t("product_ash")}
+        imageSrc="/ash-lumber-03.webp"
+        imagePriority
+      />
 
       {/* Products */}
       {ashProducts.map((product, index) => (

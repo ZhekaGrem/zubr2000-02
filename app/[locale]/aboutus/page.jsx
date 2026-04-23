@@ -1,85 +1,65 @@
 "use client";
 import React from "react";
 import { useTranslations } from "next-intl";
+import PageIntro from "@/app/components/PageIntro/PageIntro";
 import styles from "@/app/styles/page/aboutus.module.css";
+
+const PRINCIPLES = ["aboutus-message3", "aboutus-message4", "aboutus-message5", "aboutus-message6", "aboutus-message7"];
+const MANUFACTURING = ["aboutus-message11", "aboutus-message12", "aboutus-message13", "aboutus-message14", "aboutus-message15", "aboutus-message16"];
+const QUALITY = ["aboutus-message17", "aboutus-message18", "aboutus-message19", "aboutus-message20"];
 
 function AboutUs() {
   const t = useTranslations("Index");
 
   return (
     <>
-      <section>
-        <div className={`${styles.container} `}>
-          <div className={styles.row}>
-            <div className={styles.wi__41} >
-              <div className={`${styles.big__title} ${styles.section__title} `}>
-                <h1>{t("aboutus")}</h1>
-              </div>
+      <PageIntro
+        title={t("aboutus")}
+        lead={t("aboutus-message1")}
+        imageSrc="/photo_tittl_№2.webp"
+      />
 
-              <p>
-              {t("aboutus-message1")}
-              </p>
-
-              <h2>{t("aboutus-message2")}</h2>
-              <ul className={`${styles.list}`}>
-                <li>{t("aboutus-message3")} </li>
-                <li>{t("aboutus-message4")}</li>
-                <li>{t("aboutus-message5")}</li>
-                <li>{t("aboutus-message6")}</li>
-                <li>{t("aboutus-message7")}
-                </li>
-              </ul>
-              <p>
-              {t("aboutus-message8")}
-              </p>
-              <p>
-              {t("aboutus-message9")}
-              </p>
-            </div>
-            <div className={`${styles.container} ${styles.mini__block}`}>
-              <div className={`${styles.pricing__plan}`}>
-                <div className={`${styles.plan__title}`}><h2>{t('certificates')}</h2></div>
-                <ul className={`${styles.list}`}>
-                  {/* <li>FSC</li> */}
-                  <li>Trade Leaders</li>
-                </ul>
-              </div>
-            </div>
-            <div className={`${styles.container} ${styles.mini__block}`}>
-              <div className={`${styles.pricing__plan}`}>
-                <div className={`${styles.plan__title}`}>
-                  <h2>{t('manufacturing')}</h2>
-                </div>
-                <ul className={`${styles.list}`}>
-                  <li>{t("aboutus-message11")}</li>
-                  <li>{t("aboutus-message12")}</li>
-                  <li>{t("aboutus-message13")}</li>
-                  <li>{t("aboutus-message14")}</li>
-                  <li>{t("aboutus-message15")}</li>
-                  <li>{t("aboutus-message16")}</li>
-                </ul>
-              </div>
-            </div>
-            <div className={`${styles.container} ${styles.mini__block}`}>
-              <div className={`${styles.pricing__plan}`}>
-                <div className={`${styles.plan__title}`}><h2>{t('quality')}</h2></div>
-                <ul className={`${styles.list}`}>
-                  <li>{t("aboutus-message17")}</li>
-                  <li>{t("aboutus-message18")}</li>
-                  <li>{t("aboutus-message19")} <br /> {t("aboutus-message20")}</li>
-
-                  
-                </ul>
-              </div>
-            </div>
-
-            <div className={styles.wi__41}>
-              <p>{t("aboutus-message10")}
-                
-              </p>
-            </div>
-          </div>
+      <section className={styles.principles}>
+        <h2 className={styles.sectionHeading}>{t("aboutus-message2")}</h2>
+        <ul className={styles.principleList}>
+          {PRINCIPLES.map((key, i) => (
+            <li key={key} className={styles.principleItem}>
+              <span className={styles.principleIndex}>{String(i + 1).padStart(2, "0")}</span>
+              <span className={styles.principleBody}>{t(key)}</span>
+            </li>
+          ))}
+        </ul>
+        <div className={styles.paragraphs}>
+          <p>{t("aboutus-message8")}</p>
+          <p>{t("aboutus-message9")}</p>
         </div>
+      </section>
+
+      <section className={styles.cards}>
+        <div className={styles.card}>
+          <div className={styles.cardKind}>{t("certificates")}</div>
+          <ul className={styles.cardList}>
+            <li className={styles.cardRow}>Trade Leaders</li>
+          </ul>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.cardKind}>{t("manufacturing")}</div>
+          <ul className={styles.cardList}>
+            {MANUFACTURING.map((k) => <li key={k} className={styles.cardRow}>{t(k)}</li>)}
+          </ul>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.cardKind}>{t("quality")}</div>
+          <ul className={styles.cardList}>
+            <li className={styles.cardRow}>{t(QUALITY[0])}</li>
+            <li className={styles.cardRow}>{t(QUALITY[1])}</li>
+            <li className={styles.cardRow}>{t(QUALITY[2])} {t(QUALITY[3])}</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className={styles.outro}>
+        <p>{t("aboutus-message10")}</p>
       </section>
     </>
   );

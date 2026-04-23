@@ -118,7 +118,7 @@
   left: 50%;
   margin-left: -1rem;
   margin-top: -1rem;
-  border: 2px solid currentColor;
+  border: 2px solid var(--color-text);
   border-radius: var(--radius-full);
   border-top-color: transparent;
   animation: spinner 0.8s linear infinite;

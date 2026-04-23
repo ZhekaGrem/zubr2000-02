@@ -1,0 +1,24 @@
+# ZUBR-2000
+
+> ZUBR-2000 is a Ukrainian manufacturer and exporter of hardwood lumber (oak, ash, birch, larch), operating since 2000. Kiln-dried, planed, and cut to customer specifications. Exports across the European Union.
+
+## About
+- [About ZUBR-2000](https://www.zubr-2000.com.ua/en/aboutus): founded in 2000, hardwood lumber manufacturer in Ukraine, serving Italy, Sweden, Slovakia, Poland, Estonia, and Denmark.
+- [Manufacturing process](https://www.zubr-2000.com.ua/en/aboutus/manufacturing-process): raw-material selection, woodworking line, kiln drying, packaging, finished-goods warehouse.
+- [Quality standards](https://www.zubr-2000.com.ua/en/aboutus/quality-standarts): technical specifications for lumber, raw material, pallet packaging.
+- [Certificates](https://www.zubr-2000.com.ua/en/aboutus/certificates): compliance with the State Forest Management of Ukraine and European standards.
+
+## Products
+- [Oak lumber (Quercus robur)](https://www.zubr-2000.com.ua/en/products/oak-lumber): beams 22–54 × 54–315 mm, boards 54 × 110 mm, curved elements 26–55 × 76–315 mm. Grades A, AA/AB, B, C. Density 700 kg/m³.
+- [Ash lumber (Fraxinus excelsior)](https://www.zubr-2000.com.ua/en/products/ash-lumber): beams and boards, multiple grades. Distinctive grain, used for interior finishing, kitchen facades, furniture.
+- [Birch lumber (Betula pendula)](https://www.zubr-2000.com.ua/en/products/birch-lumber): furniture-grade, renewable, multiple sizes.
+- [Larch lumber (Larix decidua)](https://www.zubr-2000.com.ua/en/products/modrina-lumber): density up to 800 kg/m³, resistant to moisture and decay, suited to flooring, cladding, joinery.
+
+## Contact
+- [Contact page](https://www.zubr-2000.com.ua/en/contact): enquiry form, email, production site location.
+
+## Languages
+The site is available in 9 languages: Ukrainian (default), English, Polish, German, Russian, French, Italian, Swedish, Danish. URL pattern: `/{locale}/{path}`.
+
+## Sitemap
+- https://www.zubr-2000.com.ua/sitemap.xml

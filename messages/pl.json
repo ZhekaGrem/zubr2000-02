@@ -1,6 +1,7 @@
 {
   "Index": {
     "home": "Dom",
+    "home_h1": "Ukraińska tarcica liściasta — dąb, jesion, brzoza, modrzew",
     "aboutus": "O nas",
     "infous": "Informacje o nas",
     "product": "Wyroby",
@@ -155,63 +156,65 @@
     "basket": "koszyk",
     "curvedelements": "elementy zakrzywione",
     "board": "deska",
-    "ourProfile": "Наш профіль",
-    "workingHours": "Пн–Пт · 08:00–18:00 · Сб за домовленістю",
-    "siteBy": "Сайт створено",
-    "newsCaps": "03 · Журнал",
-    "newsAll": "Усі записи",
-    "catalogCaps": "01 · Каталог",
-    "catalogHint": "Інші породи — на запит.",
-    "read": "Читати",
-    "inStock": "В наявності",
+    "ourProfile": "Nasz profil",
+    "workingHours": "Pon–Pt · 08:00–18:00 · Sob po uzgodnieniu",
+    "siteBy": "Strona wykonana przez",
+    "newsCaps": "Dziennik",
+    "newsAll": "Wszystkie wpisy",
+    "catalogCaps": "Katalog",
+    "catalogHint": "Inne gatunki — na zapytanie.",
+    "read": "Czytaj",
+    "inStock": "W magazynie",
+    "emailLabel": "E-mail",
+    "onlineLabel": "Online",
     "metric": {
       "years": {
         "value": "24+",
-        "label": "Років на ринку"
+        "label": "Lat na rynku"
       },
       "species": {
         "value": "4+",
-        "label": "Порід деревини"
+        "label": "Gatunków drewna"
       },
       "moisture": {
         "value": "8–10%",
-        "label": "Вологість після KD"
+        "label": "Wilgotność po KD"
       },
       "custom": {
-        "value": "Під замовлення",
-        "label": "Розміри й сорти"
+        "value": "Na zamówienie",
+        "label": "Wymiary i klasy"
       }
     },
     "flexibility": {
-      "caps": "02 · Гнучкість",
-      "title": "Один постачальник — широкий спектр виробів",
-      "intro": "Від стандартної обрізної дошки до індивідуальних заготовок під креслення замовника. Підлаштовуємось під ваші розміри, сортність, обсяг партії та строки.",
+      "caps": "Elastyczność",
+      "title": "Jeden dostawca — szeroki zakres produktów",
+      "intro": "Od standardowej tarcicy obrzynanej po zamówienia według rysunków klienta. Dostosowujemy się do Państwa wymiarów, klas, wielkości partii i terminów.",
       "item1": {
-        "title": "Дошка обрізна",
-        "spec": "20–50 мм"
+        "title": "Tarcica obrzynana",
+        "spec": "20–50 mm"
       },
       "item2": {
-        "title": "Брус",
-        "spec": "100×100 — 200×200 мм"
+        "title": "Belka",
+        "spec": "100×100 — 200×200 mm"
       },
       "item3": {
-        "title": "Заготовки",
-        "spec": "під креслення"
+        "title": "Półfabrykaty",
+        "spec": "wg rysunku"
       },
       "item4": {
-        "title": "Нестандарт",
-        "spec": "на запит"
+        "title": "Nietypowe",
+        "spec": "na zapytanie"
       },
-      "tag1": "Індивідуальні розміри",
-      "tag2": "Малі та великі партії",
-      "tag3": "Камерне сушіння",
-      "tag4": "Стругання, торцювання",
-      "tag5": "Експорт у ЄС"
+      "tag1": "Wymiary na zamówienie",
+      "tag2": "Małe i duże partie",
+      "tag3": "Suszenie komorowe",
+      "tag4": "Struganie, przycinanie",
+      "tag5": "Eksport do UE"
     },
     "contactFooter": {
-      "caps": "04 · Звʼязок",
-      "heading": "Потрібен розрахунок партії?",
-      "lead": "Надішліть специфікацію — відповімо з прайсом і термінами протягом доби."
+      "caps": "Kontakt",
+      "heading": "Potrzebujesz wyceny partii?",
+      "lead": "Prześlij specyfikację — odpowiemy z ceną i terminem w ciągu 24 godzin."
     },
     "address": {
       "street": "TODO:ADDRESS-STREET",

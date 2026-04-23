@@ -25,7 +25,11 @@ export default function News() {
 
   return (
     <>
-      <PageIntro caps="2.4" title={t("news")} />
+      <PageIntro 
+        title={t("news")} 
+        imageSrc="/news_hero_real.png"
+        imageAlt={t("news")}
+      />
       <section className={styles.body}>
         <div className={styles.App}>
           <div className={styles.blog__container}>

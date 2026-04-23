@@ -1,6 +1,7 @@
 {
   "Index": {
     "home": "Lz casa",
+    "home_h1": "Legname di latifoglie dall’Ucraina — rovere, frassino, betulla, larice",
     "aboutus": "Chi siamo",
     "infous": "Info su di noi",
     "product": "Prodotti",
@@ -155,63 +156,65 @@
     "basket": "cestino",
     "curvedelements": "elementi curvi",
     "board": "tavola",
-    "ourProfile": "Наш профіль",
-    "workingHours": "Пн–Пт · 08:00–18:00 · Сб за домовленістю",
-    "siteBy": "Сайт створено",
-    "newsCaps": "03 · Журнал",
-    "newsAll": "Усі записи",
-    "catalogCaps": "01 · Каталог",
-    "catalogHint": "Інші породи — на запит.",
-    "read": "Читати",
-    "inStock": "В наявності",
+    "ourProfile": "Il nostro profilo",
+    "workingHours": "Lun–Ven · 08:00–18:00 · Sab su appuntamento",
+    "siteBy": "Sito realizzato da",
+    "newsCaps": "Giornale",
+    "newsAll": "Tutti gli articoli",
+    "catalogCaps": "Catalogo",
+    "catalogHint": "Altre specie — su richiesta.",
+    "read": "Leggi",
+    "inStock": "Disponibile",
+    "emailLabel": "Email",
+    "onlineLabel": "Online",
     "metric": {
       "years": {
         "value": "24+",
-        "label": "Років на ринку"
+        "label": "Anni sul mercato"
       },
       "species": {
         "value": "4+",
-        "label": "Порід деревини"
+        "label": "Specie di legno"
       },
       "moisture": {
         "value": "8–10%",
-        "label": "Вологість після KD"
+        "label": "Umidità dopo KD"
       },
       "custom": {
-        "value": "Під замовлення",
-        "label": "Розміри й сорти"
+        "value": "Su ordinazione",
+        "label": "Dimensioni e qualità"
       }
     },
     "flexibility": {
-      "caps": "02 · Гнучкість",
-      "title": "Один постачальник — широкий спектр виробів",
-      "intro": "Від стандартної обрізної дошки до індивідуальних заготовок під креслення замовника. Підлаштовуємось під ваші розміри, сортність, обсяг партії та строки.",
+      "caps": "Flessibilità",
+      "title": "Un fornitore — un'ampia gamma di prodotti",
+      "intro": "Dalle tavole squadrate standard ai semilavorati su disegno del cliente. Ci adattiamo a misure, qualità, volumi e tempi.",
       "item1": {
-        "title": "Дошка обрізна",
-        "spec": "20–50 мм"
+        "title": "Tavola squadrata",
+        "spec": "20–50 mm"
       },
       "item2": {
-        "title": "Брус",
-        "spec": "100×100 — 200×200 мм"
+        "title": "Travetto",
+        "spec": "100×100 — 200×200 mm"
       },
       "item3": {
-        "title": "Заготовки",
-        "spec": "під креслення"
+        "title": "Semilavorati",
+        "spec": "su disegno"
       },
       "item4": {
-        "title": "Нестандарт",
-        "spec": "на запит"
+        "title": "Fuori standard",
+        "spec": "su richiesta"
       },
-      "tag1": "Індивідуальні розміри",
-      "tag2": "Малі та великі партії",
-      "tag3": "Камерне сушіння",
-      "tag4": "Стругання, торцювання",
-      "tag5": "Експорт у ЄС"
+      "tag1": "Dimensioni personalizzate",
+      "tag2": "Piccoli e grandi lotti",
+      "tag3": "Essiccazione in camera",
+      "tag4": "Piallatura, testatura",
+      "tag5": "Export in UE"
     },
     "contactFooter": {
-      "caps": "04 · Звʼязок",
-      "heading": "Потрібен розрахунок партії?",
-      "lead": "Надішліть специфікацію — відповімо з прайсом і термінами протягом доби."
+      "caps": "Contatti",
+      "heading": "Serve un preventivo per un lotto?",
+      "lead": "Inviaci la specifica — rispondiamo con prezzo e tempi entro 24 ore."
     },
     "address": {
       "street": "TODO:ADDRESS-STREET",

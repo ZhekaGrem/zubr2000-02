@@ -35,10 +35,10 @@ function Home() {
     <>
       <PageIntro
         caps="Zubr2000"
-        title={t("aboutus")}
+        title={t("home_h1")}
         lead={[t("title1"), t("title6")].join(" ")}
         imageSrc="/photo_tittl_№1.1.webp"
-        imageAlt={t("aboutus")}
+        imageAlt={t("home_h1")}
         imagePriority
       />
 

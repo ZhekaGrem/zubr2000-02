@@ -1,6 +1,7 @@
 {
   "Index": {
     "home": "Hem",
+    "home_h1": "Ukrainska lövträvaror — ek, ask, björk, lärk",
     "aboutus": "Om oss",
     "infous": "Information om oss",
     "product": "Vår produkt",
@@ -155,63 +156,65 @@
     "basket": "korg",
     "curvedelements": "böjda element",
     "board": "bräda",
-    "ourProfile": "Наш профіль",
-    "workingHours": "Пн–Пт · 08:00–18:00 · Сб за домовленістю",
-    "siteBy": "Сайт створено",
-    "newsCaps": "03 · Журнал",
-    "newsAll": "Усі записи",
-    "catalogCaps": "01 · Каталог",
-    "catalogHint": "Інші породи — на запит.",
-    "read": "Читати",
-    "inStock": "В наявності",
+    "ourProfile": "Vår profil",
+    "workingHours": "Mån–Fre · 08:00–18:00 · Lör enligt överenskommelse",
+    "siteBy": "Webbplats av",
+    "newsCaps": "Journal",
+    "newsAll": "Alla inlägg",
+    "catalogCaps": "Katalog",
+    "catalogHint": "Andra träslag — på förfrågan.",
+    "read": "Läs",
+    "inStock": "I lager",
+    "emailLabel": "E-post",
+    "onlineLabel": "Online",
     "metric": {
       "years": {
         "value": "24+",
-        "label": "Років на ринку"
+        "label": "År på marknaden"
       },
       "species": {
         "value": "4+",
-        "label": "Порід деревини"
+        "label": "Träslag"
       },
       "moisture": {
         "value": "8–10%",
-        "label": "Вологість після KD"
+        "label": "Fukt efter KD"
       },
       "custom": {
-        "value": "Під замовлення",
-        "label": "Розміри й сорти"
+        "value": "På beställning",
+        "label": "Mått och kvaliteter"
       }
     },
     "flexibility": {
-      "caps": "02 · Гнучкість",
-      "title": "Один постачальник — широкий спектр виробів",
-      "intro": "Від стандартної обрізної дошки до індивідуальних заготовок під креслення замовника. Підлаштовуємось під ваші розміри, сортність, обсяг партії та строки.",
+      "caps": "Flexibilitet",
+      "title": "En leverantör — ett brett sortiment",
+      "intro": "Från standardkantat virke till kundspecifika ämnen efter ritning. Vi anpassar oss till era mått, kvaliteter, volymer och tidsramar.",
       "item1": {
-        "title": "Дошка обрізна",
-        "spec": "20–50 мм"
+        "title": "Kantat bräde",
+        "spec": "20–50 mm"
       },
       "item2": {
-        "title": "Брус",
-        "spec": "100×100 — 200×200 мм"
+        "title": "Balk",
+        "spec": "100×100 — 200×200 mm"
       },
       "item3": {
-        "title": "Заготовки",
-        "spec": "під креслення"
+        "title": "Ämnen",
+        "spec": "efter ritning"
       },
       "item4": {
-        "title": "Нестандарт",
-        "spec": "на запит"
+        "title": "Specialmått",
+        "spec": "på förfrågan"
       },
-      "tag1": "Індивідуальні розміри",
-      "tag2": "Малі та великі партії",
-      "tag3": "Камерне сушіння",
-      "tag4": "Стругання, торцювання",
-      "tag5": "Експорт у ЄС"
+      "tag1": "Anpassade mått",
+      "tag2": "Små och stora partier",
+      "tag3": "Kammartorkning",
+      "tag4": "Hyvling, kapning",
+      "tag5": "Export till EU"
     },
     "contactFooter": {
-      "caps": "04 · Звʼязок",
-      "heading": "Потрібен розрахунок партії?",
-      "lead": "Надішліть специфікацію — відповімо з прайсом і термінами протягом доби."
+      "caps": "Kontakt",
+      "heading": "Behöver du en offert för ett parti?",
+      "lead": "Skicka oss din specifikation — vi svarar med pris och leveranstid inom 24 timmar."
     },
     "address": {
       "street": "TODO:ADDRESS-STREET",

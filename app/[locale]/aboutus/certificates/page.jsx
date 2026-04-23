@@ -9,7 +9,11 @@ function CertificatesPage() {
 
   return (
     <>
-      <PageIntro caps="2.1" title={t("certificates")} />
+      <PageIntro
+        title={t("certificates")}
+        imageSrc="/certificates_hero.png"
+        imageAlt={t("certificates")}
+      />
       <Certificates />
     </>
   );

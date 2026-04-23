@@ -9,14 +9,15 @@ node_modules
 
 # testing
 /coverage
-
+/tasks
+/.claude
 # next.js
 /.next/
 /out/
-
+/seo-audit-output
 # production
 /build
-
+/docs
 # misc
 .DS_Store
 *.pem

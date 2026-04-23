@@ -18,9 +18,10 @@ function ProductsPage() {
   return (
     <>
       <PageIntro
-        caps={t("catalogCaps")}
         title={t("product")}
         lead={t("title5")}
+        imageSrc="/products_hero_real.png"
+        imageAlt={t("product")}
       />
 
       <section className={styles.list}>

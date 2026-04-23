@@ -12,7 +12,11 @@ function QualityStandarts() {
 
   return (
     <>
-      <PageIntro caps="2.2" title={t("quality")} />
+      <PageIntro
+        title={t("quality")}
+        imageSrc="/quality_hero.png"
+        imageAlt={t("quality")}
+      />
       <section>
         <div className={styles.container}>
           <div className={styles.row}>

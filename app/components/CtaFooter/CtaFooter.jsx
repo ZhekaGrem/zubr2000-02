@@ -23,6 +23,13 @@ function CtaFooter() {
   const t = useTranslations("Index");
   const mapUrl = t("address.mapUrl");
   const mapActive = mapUrl && !mapUrl.startsWith("TODO");
+  const addressStreet = t("address.street");
+  const addressCity = t("address.city");
+  const addressRegion = t("address.region");
+  const addressActive =
+    addressStreet && !addressStreet.startsWith("TODO") &&
+    addressCity && !addressCity.startsWith("TODO") &&
+    addressRegion && !addressRegion.startsWith("TODO");
 
   return (
     <section className={styles.cta}>
@@ -55,7 +62,7 @@ function CtaFooter() {
         </div>
 
         <div className={styles.col}>
-          <div className={styles.colTitle}>Email</div>
+          <div className={styles.colTitle}>{t("emailLabel")}</div>
           <div className={styles.stack}>
             {EMAILS.map((email) => (
               <a key={email} href={`mailto:${email}`} className={styles.emailLink}>
@@ -65,22 +72,24 @@ function CtaFooter() {
           </div>
         </div>
 
-        <div className={styles.col}>
-          <div className={styles.colTitle}>{t("findus")}</div>
-          <address className={styles.address}>
-            <span>{t("address.street")}</span>
-            <span>{t("address.city")}</span>
-            <span>{t("address.region")}</span>
-          </address>
-          {mapActive && (
-            <a href={mapUrl} target="_blank" rel="noopener" className={styles.mapLink}>
-              {t("findus")} →
-            </a>
-          )}
-        </div>
+        {addressActive && (
+          <div className={styles.col}>
+            <div className={styles.colTitle}>{t("findus")}</div>
+            <address className={styles.address}>
+              <span>{addressStreet}</span>
+              <span>{addressCity}</span>
+              <span>{addressRegion}</span>
+            </address>
+            {mapActive && (
+              <a href={mapUrl} target="_blank" rel="noopener" className={styles.mapLink}>
+                {t("findus")} →
+              </a>
+            )}
+          </div>
+        )}
 
         <div className={styles.col}>
-          <div className={styles.colTitle}>Online</div>
+          <div className={styles.colTitle}>{t("onlineLabel")}</div>
           <a href={FORDAQ_URL} target="_blank" rel="noopener" className={styles.fordaqCard}>
             <Image
               src="/fordaq-logo-02.webp"

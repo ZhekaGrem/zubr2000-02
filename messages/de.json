@@ -1,6 +1,7 @@
 {
   "Index": {
     "home": "Startseite",
+    "home_h1": "Ukrainisches Hartholz-Schnittholz — Eiche, Esche, Birke, Lärche",
     "aboutus": "Über uns",
     "infous": "Informationen über uns",
     "product": "Produkte",
@@ -155,63 +156,65 @@
     "basket": "Korb",
     "curvedelements": "gebogene Elemente",
     "board": "bretter",
-    "ourProfile": "Наш профіль",
-    "workingHours": "Пн–Пт · 08:00–18:00 · Сб за домовленістю",
-    "siteBy": "Сайт створено",
-    "newsCaps": "03 · Журнал",
-    "newsAll": "Усі записи",
-    "catalogCaps": "01 · Каталог",
-    "catalogHint": "Інші породи — на запит.",
-    "read": "Читати",
-    "inStock": "В наявності",
+    "ourProfile": "Unser Profil",
+    "workingHours": "Mo–Fr · 08:00–18:00 · Sa nach Vereinbarung",
+    "siteBy": "Website von",
+    "newsCaps": "Journal",
+    "newsAll": "Alle Beiträge",
+    "catalogCaps": "Katalog",
+    "catalogHint": "Weitere Holzarten — auf Anfrage.",
+    "read": "Lesen",
+    "inStock": "Auf Lager",
+    "emailLabel": "E-Mail",
+    "onlineLabel": "Online",
     "metric": {
       "years": {
         "value": "24+",
-        "label": "Років на ринку"
+        "label": "Jahre am Markt"
       },
       "species": {
         "value": "4+",
-        "label": "Порід деревини"
+        "label": "Holzarten"
       },
       "moisture": {
         "value": "8–10%",
-        "label": "Вологість після KD"
+        "label": "Feuchte nach KD"
       },
       "custom": {
-        "value": "Під замовлення",
-        "label": "Розміри й сорти"
+        "value": "Auf Bestellung",
+        "label": "Maße & Güteklassen"
       }
     },
     "flexibility": {
-      "caps": "02 · Гнучкість",
-      "title": "Один постачальник — широкий спектр виробів",
-      "intro": "Від стандартної обрізної дошки до індивідуальних заготовок під креслення замовника. Підлаштовуємось під ваші розміри, сортність, обсяг партії та строки.",
+      "caps": "Flexibilität",
+      "title": "Ein Lieferant — ein breites Produktspektrum",
+      "intro": "Von Standard-Besäumware bis zu maßgefertigten Zuschnitten nach Kundenzeichnung. Wir passen uns Ihren Maßen, Qualitäten, Mengen und Fristen an.",
       "item1": {
-        "title": "Дошка обрізна",
-        "spec": "20–50 мм"
+        "title": "Besäumtes Brett",
+        "spec": "20–50 mm"
       },
       "item2": {
-        "title": "Брус",
-        "spec": "100×100 — 200×200 мм"
+        "title": "Kantholz",
+        "spec": "100×100 — 200×200 mm"
       },
       "item3": {
-        "title": "Заготовки",
-        "spec": "під креслення"
+        "title": "Zuschnitte",
+        "spec": "nach Zeichnung"
       },
       "item4": {
-        "title": "Нестандарт",
-        "spec": "на запит"
+        "title": "Sondermaße",
+        "spec": "auf Anfrage"
       },
-      "tag1": "Індивідуальні розміри",
-      "tag2": "Малі та великі партії",
-      "tag3": "Камерне сушіння",
-      "tag4": "Стругання, торцювання",
-      "tag5": "Експорт у ЄС"
+      "tag1": "Individuelle Maße",
+      "tag2": "Kleine und große Chargen",
+      "tag3": "Kammertrocknung",
+      "tag4": "Hobeln, Kappen",
+      "tag5": "Export in die EU"
     },
     "contactFooter": {
-      "caps": "04 · Звʼязок",
-      "heading": "Потрібен розрахунок партії?",
-      "lead": "Надішліть специфікацію — відповімо з прайсом і термінами протягом доби."
+      "caps": "Kontakt",
+      "heading": "Brauchen Sie ein Angebot für eine Charge?",
+      "lead": "Senden Sie uns Ihre Spezifikation — wir antworten mit Preis und Lieferzeit innerhalb von 24 Stunden."
     },
     "address": {
       "street": "TODO:ADDRESS-STREET",

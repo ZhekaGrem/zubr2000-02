@@ -11,8 +11,9 @@ function Contact() {
   return (
     <>
       <PageIntro
-        caps={t("contactFooter.caps")}
         title={t("contactus")}
+        imageSrc="/contact_hero_real.png"
+        imageAlt={t("contactus")}
       />
 
       <section className={styles.formMap}>

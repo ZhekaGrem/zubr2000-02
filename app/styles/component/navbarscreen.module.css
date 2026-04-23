@@ -5,10 +5,19 @@
   left: 0;
   right: 0;
   height: var(--nav-height);
-  background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
-  box-shadow: var(--shadow-card);
+  background-image: url("../../img/wood-1.webp");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid #181a1b;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
   z-index: 1000;
+}
+
+.navbar p,
+.navbar li,
+.navbar a,
+.navbar button {
+  color: #ffffff;
 }
 
 .container {
@@ -63,10 +72,10 @@
   align-items: center;
   gap: var(--space-xs);
   padding: var(--space-xs) var(--space-sm);
-  color: var(--color-text);
+  color: #ffffff;
   font-family: var(--font-body);
   font-size: var(--text-label-caps);
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: var(--tracking-caps);
   background: transparent;
@@ -74,13 +83,14 @@
   border-radius: var(--radius-md);
   cursor: pointer;
   transition: all var(--transition-base);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7), 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .navLink:hover,
 .langButton:hover,
 .svgImg:hover {
-  color: var(--color-primary);
-  background: rgba(140, 166, 0, 0.08);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /* Dropdown styles */
@@ -92,8 +102,10 @@
   min-width: 220px;
   margin-top: var(--space-xs);
   padding: var(--space-sm);
-  background: var(--color-surface-card);
-  border: 1px solid var(--color-border);
+  background-image: url("../../img/wood-2.webp");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #474a4d;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lift);
   opacity: 0;
@@ -115,18 +127,19 @@
 .dropdownLink {
   display: block;
   padding: var(--space-xs) var(--space-sm);
-  color: var(--color-text);
+  color: #ffffff;
   font-family: var(--font-body);
   font-size: var(--text-body-sm);
-  font-weight: 400;
+  font-weight: 500;
   text-transform: none;
   border-radius: calc(var(--radius-md) / 2);
   transition: all var(--transition-fast);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .dropdownLink:hover {
-  color: var(--color-primary);
-  background: rgba(140, 166, 0, 0.08);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
   transform: translateX(4px);
 }
 
@@ -145,7 +158,22 @@
 
 .sub__menu__link {
   text-justify: center;
-  color: var(--color-text);
+  color: #ffffff;
+  display: block;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: calc(var(--radius-md) / 2);
+  transition: all var(--transition-fast);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.sub__menu__link:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.sub__menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu__lang {

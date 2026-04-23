@@ -1,6 +1,7 @@
 {
   "Index": {
     "home": "Accueil",
+    "home_h1": "Bois feuillu ukrainien — chêne, frêne, bouleau, mélèze",
     "aboutus": "A notre sujet",
     "infous": "Informations sur nous",
     "product": "Produits",
@@ -155,63 +156,65 @@
     "basket": "corbeille",
     "curvedelements": "éléments courbes",
     "board": "planche",
-    "ourProfile": "Наш профіль",
-    "workingHours": "Пн–Пт · 08:00–18:00 · Сб за домовленістю",
-    "siteBy": "Сайт створено",
-    "newsCaps": "03 · Журнал",
-    "newsAll": "Усі записи",
-    "catalogCaps": "01 · Каталог",
-    "catalogHint": "Інші породи — на запит.",
-    "read": "Читати",
-    "inStock": "В наявності",
+    "ourProfile": "Notre profil",
+    "workingHours": "Lun–Ven · 08:00–18:00 · Sam sur rendez-vous",
+    "siteBy": "Site réalisé par",
+    "newsCaps": "Journal",
+    "newsAll": "Toutes les publications",
+    "catalogCaps": "Catalogue",
+    "catalogHint": "Autres essences — sur demande.",
+    "read": "Lire",
+    "inStock": "En stock",
+    "emailLabel": "Courriel",
+    "onlineLabel": "En ligne",
     "metric": {
       "years": {
         "value": "24+",
-        "label": "Років на ринку"
+        "label": "Ans sur le marché"
       },
       "species": {
         "value": "4+",
-        "label": "Порід деревини"
+        "label": "Essences de bois"
       },
       "moisture": {
         "value": "8–10%",
-        "label": "Вологість після KD"
+        "label": "Humidité après KD"
       },
       "custom": {
-        "value": "Під замовлення",
-        "label": "Розміри й сорти"
+        "value": "Sur commande",
+        "label": "Dimensions et qualités"
       }
     },
     "flexibility": {
-      "caps": "02 · Гнучкість",
-      "title": "Один постачальник — широкий спектр виробів",
-      "intro": "Від стандартної обрізної дошки до індивідуальних заготовок під креслення замовника. Підлаштовуємось під ваші розміри, сортність, обсяг партії та строки.",
+      "caps": "Flexibilité",
+      "title": "Un fournisseur — une large gamme de produits",
+      "intro": "De la planche avivée standard aux pièces sur plan du client. Nous nous adaptons à vos dimensions, qualités, volumes et délais.",
       "item1": {
-        "title": "Дошка обрізна",
-        "spec": "20–50 мм"
+        "title": "Planche avivée",
+        "spec": "20–50 mm"
       },
       "item2": {
-        "title": "Брус",
-        "spec": "100×100 — 200×200 мм"
+        "title": "Poutre",
+        "spec": "100×100 — 200×200 mm"
       },
       "item3": {
-        "title": "Заготовки",
-        "spec": "під креслення"
+        "title": "Ébauches",
+        "spec": "selon plan"
       },
       "item4": {
-        "title": "Нестандарт",
-        "spec": "на запит"
+        "title": "Sur mesure",
+        "spec": "sur demande"
       },
-      "tag1": "Індивідуальні розміри",
-      "tag2": "Малі та великі партії",
-      "tag3": "Камерне сушіння",
-      "tag4": "Стругання, торцювання",
-      "tag5": "Експорт у ЄС"
+      "tag1": "Dimensions sur mesure",
+      "tag2": "Petits et grands lots",
+      "tag3": "Séchage en chambre",
+      "tag4": "Rabotage, tronçonnage",
+      "tag5": "Export vers l'UE"
     },
     "contactFooter": {
-      "caps": "04 · Звʼязок",
-      "heading": "Потрібен розрахунок партії?",
-      "lead": "Надішліть специфікацію — відповімо з прайсом і термінами протягом доби."
+      "caps": "Contact",
+      "heading": "Besoin d'un devis pour un lot ?",
+      "lead": "Envoyez-nous votre cahier des charges — nous répondons avec prix et délais sous 24 heures."
     },
     "address": {
       "street": "TODO:ADDRESS-STREET",

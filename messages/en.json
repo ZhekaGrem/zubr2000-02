@@ -1,6 +1,7 @@
 {
   "Index": {
     "home": "Home",
+    "home_h1": "Ukrainian hardwood lumber — oak, ash, birch, larch",
     "aboutus": "About Us",
     "infous": "Info about us",
     "product": "Prodycts",
@@ -155,63 +156,65 @@
     "basket": "basket",
     "curvedelements": "curved elements",
     "board": "board",
-    "ourProfile": "Наш профіль",
-    "workingHours": "Пн–Пт · 08:00–18:00 · Сб за домовленістю",
-    "siteBy": "Сайт створено",
-    "newsCaps": "03 · Журнал",
-    "newsAll": "Усі записи",
-    "catalogCaps": "01 · Каталог",
-    "catalogHint": "Інші породи — на запит.",
-    "read": "Читати",
-    "inStock": "В наявності",
+    "ourProfile": "Our profile",
+    "workingHours": "Mon–Fri · 08:00–18:00 · Sat by appointment",
+    "siteBy": "Site by",
+    "newsCaps": "Journal",
+    "newsAll": "All entries",
+    "catalogCaps": "Catalog",
+    "catalogHint": "Other species — on request.",
+    "read": "Read",
+    "inStock": "In stock",
+    "emailLabel": "Email",
+    "onlineLabel": "Online",
     "metric": {
       "years": {
         "value": "24+",
-        "label": "Років на ринку"
+        "label": "Years on the market"
       },
       "species": {
         "value": "4+",
-        "label": "Порід деревини"
+        "label": "Wood species"
       },
       "moisture": {
         "value": "8–10%",
-        "label": "Вологість після KD"
+        "label": "Moisture after KD"
       },
       "custom": {
-        "value": "Під замовлення",
-        "label": "Розміри й сорти"
+        "value": "To order",
+        "label": "Sizes & grades"
       }
     },
     "flexibility": {
-      "caps": "02 · Гнучкість",
-      "title": "Один постачальник — широкий спектр виробів",
-      "intro": "Від стандартної обрізної дошки до індивідуальних заготовок під креслення замовника. Підлаштовуємось під ваші розміри, сортність, обсяг партії та строки.",
+      "caps": "Flexibility",
+      "title": "One supplier — a broad range of products",
+      "intro": "From standard edged boards to custom blanks made to the client's drawings. We adapt to your dimensions, grade, batch size and deadlines.",
       "item1": {
-        "title": "Дошка обрізна",
-        "spec": "20–50 мм"
+        "title": "Edged board",
+        "spec": "20–50 mm"
       },
       "item2": {
-        "title": "Брус",
-        "spec": "100×100 — 200×200 мм"
+        "title": "Beam",
+        "spec": "100×100 — 200×200 mm"
       },
       "item3": {
-        "title": "Заготовки",
-        "spec": "під креслення"
+        "title": "Blanks",
+        "spec": "to drawing"
       },
       "item4": {
-        "title": "Нестандарт",
-        "spec": "на запит"
+        "title": "Custom",
+        "spec": "on request"
       },
-      "tag1": "Індивідуальні розміри",
-      "tag2": "Малі та великі партії",
-      "tag3": "Камерне сушіння",
-      "tag4": "Стругання, торцювання",
-      "tag5": "Експорт у ЄС"
+      "tag1": "Custom dimensions",
+      "tag2": "Small and large batches",
+      "tag3": "Kiln drying",
+      "tag4": "Planing, cross-cutting",
+      "tag5": "Export to EU"
     },
     "contactFooter": {
-      "caps": "04 · Звʼязок",
-      "heading": "Потрібен розрахунок партії?",
-      "lead": "Надішліть специфікацію — відповімо з прайсом і термінами протягом доби."
+      "caps": "Contact",
+      "heading": "Need a quote for a batch?",
+      "lead": "Send us your specification — we'll reply with price and lead times within 24 hours."
     },
     "address": {
       "street": "TODO:ADDRESS-STREET",

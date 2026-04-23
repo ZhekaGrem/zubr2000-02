@@ -1,6 +1,7 @@
 {
   "Index": {
     "home": "Hjem",
+    "home_h1": "Ukrainsk løvtræ — eg, ask, birk, lærk",
     "aboutus": "Om os",
     "infous": "Info om os",
     "product": "Produkter",
@@ -154,63 +155,65 @@
     "basket": "kurv",
     "curvedelements": "buede elementer",
     "board": "bræt",
-    "ourProfile": "Наш профіль",
-    "workingHours": "Пн–Пт · 08:00–18:00 · Сб за домовленістю",
-    "siteBy": "Сайт створено",
-    "newsCaps": "03 · Журнал",
-    "newsAll": "Усі записи",
-    "catalogCaps": "01 · Каталог",
-    "catalogHint": "Інші породи — на запит.",
-    "read": "Читати",
-    "inStock": "В наявності",
+    "ourProfile": "Vores profil",
+    "workingHours": "Man–Fre · 08:00–18:00 · Lør efter aftale",
+    "siteBy": "Websted af",
+    "newsCaps": "Journal",
+    "newsAll": "Alle indlæg",
+    "catalogCaps": "Katalog",
+    "catalogHint": "Andre træsorter — på forespørgsel.",
+    "read": "Læs",
+    "inStock": "På lager",
+    "emailLabel": "E-mail",
+    "onlineLabel": "Online",
     "metric": {
       "years": {
         "value": "24+",
-        "label": "Років на ринку"
+        "label": "År på markedet"
       },
       "species": {
         "value": "4+",
-        "label": "Порід деревини"
+        "label": "Træsorter"
       },
       "moisture": {
         "value": "8–10%",
-        "label": "Вологість після KD"
+        "label": "Fugt efter KD"
       },
       "custom": {
-        "value": "Під замовлення",
-        "label": "Розміри й сорти"
+        "value": "Efter bestilling",
+        "label": "Mål og kvaliteter"
       }
     },
     "flexibility": {
-      "caps": "02 · Гнучкість",
-      "title": "Один постачальник — широкий спектр виробів",
-      "intro": "Від стандартної обрізної дошки до індивідуальних заготовок під креслення замовника. Підлаштовуємось під ваші розміри, сортність, обсяг партії та строки.",
+      "caps": "Fleksibilitet",
+      "title": "Én leverandør — et bredt udvalg af produkter",
+      "intro": "Fra standard kantskåret brædder til kundespecifikke emner efter tegning. Vi tilpasser os jeres mål, kvaliteter, mængder og leveringstider.",
       "item1": {
-        "title": "Дошка обрізна",
-        "spec": "20–50 мм"
+        "title": "Kantskåret bræt",
+        "spec": "20–50 mm"
       },
       "item2": {
-        "title": "Брус",
-        "spec": "100×100 — 200×200 мм"
+        "title": "Bjælke",
+        "spec": "100×100 — 200×200 mm"
       },
       "item3": {
-        "title": "Заготовки",
-        "spec": "під креслення"
+        "title": "Emner",
+        "spec": "efter tegning"
       },
       "item4": {
-        "title": "Нестандарт",
-        "spec": "на запит"
+        "title": "Specialmål",
+        "spec": "efter forespørgsel"
       },
-      "tag1": "Індивідуальні розміри",
-      "tag2": "Малі та великі партії",
-      "tag3": "Камерне сушіння",
-      "tag4": "Стругання, торцювання",
-      "tag5": "Експорт у ЄС"
+      "tag1": "Individuelle mål",
+      "tag2": "Små og store partier",
+      "tag3": "Kammertørring",
+      "tag4": "Høvling, afkortning",
+      "tag5": "Eksport til EU"
     },
     "contactFooter": {
-      "caps": "04 · Звʼязок",
-      "heading": "Потрібен розрахунок партії?",
-      "lead": "Надішліть специфікацію — відповімо з прайсом і термінами протягом доби."
+      "caps": "Kontakt",
+      "heading": "Har du brug for et tilbud på et parti?",
+      "lead": "Send os din specifikation — vi svarer med pris og leveringstid inden for 24 timer."
     },
     "address": {
       "street": "TODO:ADDRESS-STREET",

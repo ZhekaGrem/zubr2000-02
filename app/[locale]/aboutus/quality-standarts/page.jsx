@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from 'next-intl';
 import PageIntro from "@/app/components/PageIntro/PageIntro";
+import Reveal from "@/app/components/Reveal/Reveal";
 
 
 function QualityStandarts() {
@@ -30,13 +31,14 @@ function QualityStandarts() {
   return (
     <>
       <PageIntro
+        variant="minimal"
+        caps={t("qualityCaps")}
         title={t("quality")}
-        imageSrc="/quality_hero.webp"
-        imageAlt={t("quality")}
+        lead={t("qualityLead")}
       />
 
       {/* Intro + grades */}
-      <section className={styles.section}>
+      <Reveal as="section" className={styles.section}>
         <div className={styles.container}>
           <header className={styles.sectionHead}>
             <span className={styles.kicker}>{t('quality-title-01')}</span>
@@ -56,10 +58,10 @@ function QualityStandarts() {
             ))}
           </div>
         </div>
-      </section>
+      </Reveal>
 
       {/* Acceptable defects */}
-      <section className={`${styles.section} ${styles.sectionAlt}`}>
+      <Reveal as="section" className={`${styles.section} ${styles.sectionAlt}`}>
         <div className={styles.container}>
           <header className={styles.sectionHead}>
             <h2 className={styles.sectionTitle}>{t('quality-title-10')}</h2>
@@ -102,10 +104,10 @@ function QualityStandarts() {
             </div>
           </div>
         </div>
-      </section>
+      </Reveal>
 
       {/* Pallet standards */}
-      <section className={styles.section}>
+      <Reveal as="section" className={styles.section}>
         <div className={styles.container}>
           <header className={styles.sectionHead}>
             <h2 className={styles.sectionTitle}>{t('quality-title-23')}</h2>
@@ -220,10 +222,10 @@ function QualityStandarts() {
             </li>
           </ol>
         </div>
-      </section>
+      </Reveal>
 
       {/* Cubaturnick CTA */}
-      <section className={`${styles.section} ${styles.ctaSection}`}>
+      <Reveal as="section" className={`${styles.section} ${styles.ctaSection}`}>
         <div className={styles.container}>
           <Link href="/aboutus/quality-standarts/cubaturnick" className={styles.ctaCard} rel="preload">
             <span className={styles.ctaKicker}>→</span>
@@ -231,7 +233,7 @@ function QualityStandarts() {
             <span className={styles.ctaArrow} aria-hidden>↗</span>
           </Link>
         </div>
-      </section>
+      </Reveal>
     </>
   );
 }

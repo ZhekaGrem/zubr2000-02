@@ -2,6 +2,7 @@
   "Index": {
     "home": "Accueil",
     "home_h1": "Bois feuillu ukrainien, chêne, frêne, bouleau, mélèze",
+    "hero_sub": "Bois de feuillus séché en étuve. Découpé sur mesure, exporté en Europe depuis 2000.",
     "aboutus": "A notre sujet",
     "infous": "Informations sur nous",
     "product": "Produits",
@@ -230,6 +231,23 @@
       "title": "Une erreur est survenue",
       "text": "Une erreur s'est produite. Veuillez réessayer.",
       "retry": "Réessayer"
-    }
+    },
+    "certificatesCaps": "Certification",
+    "certificatesLead": "Reconnaissance internationale de la qualité ZUBR-2000. Distinctions et certificats qui confirment notre approche du bois.",
+    "newsLead": "Actualités de l'entreprise, mises à jour de production et événements du secteur ZUBR-2000.",
+    "contactLead": "Contactez l'équipe ZUBR-2000. Nous répondrons à vos questions sur les produits, les prix et les délais de livraison.",
+    "qualityCaps": "Qualité",
+    "cubaturnickLead": "Tableau de référence du volume des planches délignées par section et longueur, m³.",
+    "offersCaps": "Partenariat",
+    "cert_trade_title": "Trophée international de la qualité",
+    "cert_fsc_title": "Certificat de chaîne de contrôle FSC",
+    "newsEmpty": "Pas encore d’actualités. Mises à jour à venir.",
+    "qualityLead": "Exigences de qualité et de dimensions pour le bois et les produits de palette. Selon DSTU EN 1315 et les normes du secteur.",
+    "feat1_title": "Bois durs d’Ukraine",
+    "feat1_body": "Chêne, frêne, bouleau, mélèze. Bois durs sélectionnés d’une qualité constante, lot après lot.",
+    "feat2_title": "Séchage en étuve à 8–10%",
+    "feat2_body": "Étuves internes et contrôle de l’humidité à chaque étape. Bois prêt à être transformé et exporté.",
+    "feat3_title": "Sciage et usinage sur mesure",
+    "feat3_body": "Planches délignées, poutres et ébauches selon vos plans. Des dimensions standard aux commandes sur mesure et grands lots."
   }
 }

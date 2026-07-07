@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import PageIntro from "@/app/components/PageIntro/PageIntro";
 import JsonLd from "@/app/components/JsonLd/JsonLd";
+import Reveal from "@/app/components/Reveal/Reveal";
 import { breadcrumbJsonLd } from "@/app/_lib/seo";
 import styles from "@/app/styles/page/products.module.css";
 
@@ -35,7 +36,7 @@ function ProductsPage() {
         imageAlt={t("product")}
       />
 
-      <section className={styles.list}>
+      <Reveal as="section" className={styles.list}>
         {SPECIES.map((s) => (
           <Link key={s.key} href={s.href} className={styles.card}>
             <div className={styles.text}>
@@ -51,7 +52,7 @@ function ProductsPage() {
             </div>
           </Link>
         ))}
-      </section>
+      </Reveal>
     </>
   );
 }

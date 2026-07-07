@@ -2,6 +2,7 @@
   "Index": {
     "home": "Hem",
     "home_h1": "Ukrainska lövträvaror, ek, ask, björk, lärk",
+    "hero_sub": "Kammartorkat lövträvirke. Sågat efter mått, exporterat till Europa sedan 2000.",
     "aboutus": "Om oss",
     "infous": "Information om oss",
     "product": "Vår produkt",
@@ -230,6 +231,23 @@
       "title": "Något gick fel",
       "text": "Ett fel uppstod. Försök igen.",
       "retry": "Försök igen"
-    }
+    },
+    "certificatesCaps": "Certifiering",
+    "certificatesLead": "Internationellt erkännande av ZUBR-2000:s kvalitet. Utmärkelser och certifikat som bekräftar vår syn på trä.",
+    "newsLead": "Företagsnyheter, produktionsuppdateringar och branschhändelser från ZUBR-2000.",
+    "contactLead": "Kontakta ZUBR-2000-teamet. Vi svarar på frågor om produkter, priser och leveranstider.",
+    "qualityCaps": "Kvalitet",
+    "cubaturnickLead": "Referenstabell för volymen av kantade brädor efter tvärsnitt och längd, m³.",
+    "offersCaps": "Samarbete",
+    "cert_trade_title": "Internationellt kvalitetstrofé",
+    "cert_fsc_title": "FSC-spårbarhetscertifikat",
+    "newsEmpty": "Inga nyheter ännu. Uppdateringar kommer snart.",
+    "qualityLead": "Kvalitets- och måttkrav för virke och pallprodukter. Enligt DSTU EN 1315 och branschstandarder.",
+    "feat1_title": "Lövträ från Ukraina",
+    "feat1_body": "Ek, ask, björk och lärk. Utvalt lövträ med jämn kvalitet parti efter parti.",
+    "feat2_title": "Kammartorkning till 8–10%",
+    "feat2_body": "Egna torkkammare och fuktkontroll i varje steg. Virke redo för bearbetning och export.",
+    "feat3_title": "Sågning och bearbetning efter mått",
+    "feat3_body": "Kantade brädor, balkar och ämnen efter ritning. Från standardmått till specialbeställningar och stora partier."
   }
 }

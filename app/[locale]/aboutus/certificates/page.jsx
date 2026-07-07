@@ -10,7 +10,10 @@ function CertificatesPage() {
   return (
     <>
       <PageIntro
+        variant="split"
+        caps={t("certificatesCaps")}
         title={t("certificates")}
+        lead={t("certificatesLead")}
         imageSrc="/certificates_hero.webp"
         imageAlt={t("certificates")}
       />

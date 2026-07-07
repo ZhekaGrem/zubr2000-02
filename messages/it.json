@@ -2,6 +2,7 @@
   "Index": {
     "home": "Lz casa",
     "home_h1": "Legname di latifoglie dall’Ucraina, rovere, frassino, betulla, larice",
+    "hero_sub": "Legname di latifoglie essiccato in forno. Tagliato su misura, esportato in Europa dal 2000.",
     "aboutus": "Chi siamo",
     "infous": "Info su di noi",
     "product": "Prodotti",
@@ -230,6 +231,23 @@
       "title": "Qualcosa è andato storto",
       "text": "Si è verificato un errore. Riprova.",
       "retry": "Riprova"
-    }
+    },
+    "certificatesCaps": "Certificazione",
+    "certificatesLead": "Riconoscimento internazionale della qualità ZUBR-2000. Premi e certificati che confermano il nostro approccio al legno.",
+    "newsLead": "Notizie aziendali, aggiornamenti sulla produzione ed eventi di settore di ZUBR-2000.",
+    "contactLead": "Contatta il team di ZUBR-2000. Risponderemo a domande su prodotti, prezzi e tempi di consegna.",
+    "qualityCaps": "Qualità",
+    "cubaturnickLead": "Tabella di riferimento del volume delle tavole rifilate per sezione e lunghezza, m³.",
+    "offersCaps": "Collaborazione",
+    "cert_trade_title": "Trofeo Internazionale per la Qualità",
+    "cert_fsc_title": "Certificato di catena di custodia FSC",
+    "newsEmpty": "Ancora nessuna notizia. Aggiornamenti in arrivo.",
+    "qualityLead": "Requisiti di qualità e dimensioni per legname e prodotti per pallet. Secondo DSTU EN 1315 e gli standard di settore.",
+    "feat1_title": "Legni duri dall’Ucraina",
+    "feat1_body": "Rovere, frassino, betulla, larice. Legno duro selezionato con qualità costante lotto dopo lotto.",
+    "feat2_title": "Essiccazione in cella a 8–10%",
+    "feat2_body": "Celle di essiccazione proprie e controllo dell’umidità in ogni fase. Legno pronto per lavorazione ed esportazione.",
+    "feat3_title": "Taglio e lavorazione su misura",
+    "feat3_body": "Tavole rifilate, travi e semilavorati su disegno. Dalle misure standard agli ordini personalizzati e grandi lotti."
   }
 }

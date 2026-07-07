@@ -3,14 +3,32 @@ import styles from "@/app/styles/component/navbarscreen.module.css";
 import Image from "next/image";
 import Link from "next-intl/link";
 import { useTranslations, useLocale } from "next-intl";
-import React, { useState, useCallback, lazy, Suspense } from "react";
+import { usePathname } from "next/navigation";
+import React, { useState, useEffect, useCallback, lazy, Suspense } from "react";
 
 const LangDropBar = lazy(() => import("./LangDropBar"));
 
 export const NavbarListDesktop = () => {
   const t = useTranslations("Index");
   const locale = useLocale();
+  const pathname = usePathname();
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [scrolled, setScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  const cleanPath = (pathname || "").replace(/\/+$/, "");
+  const isHome = cleanPath === `/${locale}` || cleanPath === "" || cleanPath === "/";
+
+  useEffect(() => {
+    setMounted(true);
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // gated by mounted → SSR і перший клієнтський рендер однакові (без hydration mismatch)
+  const transparent = mounted && isHome && !scrolled;
 
   const handleMouseEnter = useCallback((dropdown) => {
     setActiveDropdown(dropdown);
@@ -57,7 +75,7 @@ export const NavbarListDesktop = () => {
   ];
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} ${transparent ? styles.transparent : ""}`}>
       <div className={styles.container}>
         <Link href="/" className={styles.logoLink}>
           <div className={styles.logo}>
@@ -73,6 +91,7 @@ export const NavbarListDesktop = () => {
               width={240}
               height={56}
               alt="ZUBR-2000"
+              className={styles.logoWord}
               priority
             />
             
@@ -126,6 +145,12 @@ export const NavbarListDesktop = () => {
                 <LangDropBar />
               </Suspense>
             </div>
+          </li>
+
+          <li className={styles.navItem}>
+            <Link href="/contact#contact_name" className={styles.cta}>
+              {t("writeus")}
+            </Link>
           </li>
         </ul>
       </div>

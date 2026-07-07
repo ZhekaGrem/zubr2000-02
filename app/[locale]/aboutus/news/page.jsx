@@ -25,15 +25,16 @@ export default function News() {
 
   return (
     <>
-      <PageIntro 
-        title={t("news")} 
-        imageSrc="/news_hero_real.webp"
-        imageAlt={t("news")}
+      <PageIntro
+        variant="minimal"
+        caps={t("newsCaps")}
+        title={t("news")}
+        lead={t("newsLead")}
       />
       <section className={styles.body}>
         <div className={styles.App}>
           <div className={styles.blog__container}>
-            <NewsBlog data={blogData} />
+            <NewsBlog data={blogData} emptyText={t("newsEmpty")} />
           </div>
         </div>
       </section>

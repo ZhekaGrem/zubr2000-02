@@ -2,6 +2,7 @@
   "Index": {
     "home": "Startseite",
     "home_h1": "Ukrainisches Hartholz-Schnittholz, Eiche, Esche, Birke, Lärche",
+    "hero_sub": "Kammergetrocknetes Laubschnittholz. Nach Maß geschnitten, Export nach Europa seit 2000.",
     "aboutus": "Über uns",
     "infous": "Informationen über uns",
     "product": "Produkte",
@@ -230,6 +231,23 @@
       "title": "Etwas ist schiefgelaufen",
       "text": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
       "retry": "Erneut versuchen"
-    }
+    },
+    "certificatesCaps": "Zertifizierung",
+    "certificatesLead": "Internationale Anerkennung der ZUBR-2000-Qualität. Auszeichnungen und Zertifikate, die unseren Umgang mit Holz bestätigen.",
+    "newsLead": "Unternehmensnews, Produktionsupdates und Branchenereignisse von ZUBR-2000.",
+    "contactLead": "Kontaktieren Sie das ZUBR-2000-Team. Wir beantworten Fragen zu Produkten, Preisen und Lieferzeiten.",
+    "qualityCaps": "Qualität",
+    "cubaturnickLead": "Referenztabelle für das Volumen von Schnittbrettern nach Querschnitt und Länge, m³.",
+    "offersCaps": "Zusammenarbeit",
+    "cert_trade_title": "Internationale Trophäe für Qualität",
+    "cert_fsc_title": "FSC-Produktkettenzertifikat",
+    "newsEmpty": "Noch keine Neuigkeiten. Updates folgen bald.",
+    "qualityLead": "Qualitäts- und Maßanforderungen für Schnittholz und Palettenprodukte. Gemäß DSTU EN 1315 und Branchenstandards.",
+    "feat1_title": "Hartholz aus der Ukraine",
+    "feat1_body": "Eiche, Esche, Birke, Lärche. Ausgewähltes Hartholz mit gleichbleibender Qualität, Charge für Charge.",
+    "feat2_title": "Kammertrocknung auf 8–10%",
+    "feat2_body": "Eigene Trockenkammern und Feuchtekontrolle in jeder Phase. Holz bereit für Verarbeitung und Export.",
+    "feat3_title": "Schnitt und Bearbeitung nach Maß",
+    "feat3_body": "Besäumte Bretter, Kanthölzer und Rohlinge nach Zeichnung. Von Standardmaßen bis zu Sonderaufträgen und Großmengen."
   }
 }

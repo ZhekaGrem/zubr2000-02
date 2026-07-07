@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import Button from "@/app/UI/button/button";
 import Link from "next-intl/link";
 import PageIntro from "@/app/components/PageIntro/PageIntro";
+import Reveal from "@/app/components/Reveal/Reveal";
 
 const ashProducts = [
   {
@@ -40,7 +41,7 @@ function AshLumber() {
 
       {/* Products */}
       {ashProducts.map((product, index) => (
-        <section key={product.id} id={product.id} className={styles.productSection}>
+        <Reveal key={product.id} as="section" id={product.id} className={styles.productSection}>
           <div className={styles.container}>
             <div className={`${styles.productGrid} ${index % 2 === 1 ? styles.reverse : ''}`}>
               {/* Content Column */}
@@ -96,7 +97,7 @@ function AshLumber() {
               </div>
             </div>
           </div>
-        </section>
+        </Reveal>
       ))}
     </div>
   );

@@ -1,24 +1,80 @@
 .body {
   line-height: var(--lh-body);
+  padding: var(--space-3xl) 0;
+  background: var(--color-surface);
 }
 
 .blog__container {
-  max-width: 80%;
+  max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--space-md);
+  padding: 0 var(--space-md);
 }
 
-.blog {
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius-md);
-  margin-bottom: var(--space-md);
-  padding: var(--space-sm);
-}
-
-.blog h2 {
+.empty {
+  padding: var(--space-2xl);
+  text-align: center;
   color: var(--color-text-muted);
+  font-size: var(--text-body-lg);
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-card);
 }
 
-.data {
-  font-weight: bold;
+/* Редакторський список новин — у стилі нумерованих списків сайту */
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  gap: var(--space-lg);
+  padding: var(--space-xl) 0;
+  border-top: 1px solid var(--color-border);
+  transition: background var(--transition-base);
+}
+
+.item:last-child {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.itemDate {
+  font-family: var(--font-mono);
+  font-size: var(--text-label-caps);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-primary-dark);
+  padding-top: 0.6rem;
+}
+
+.itemBody {
+  min-width: 0;
+}
+
+.itemTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-headline-md);
+  font-weight: 500;
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-headline);
+  color: var(--color-text);
+  margin: 0 0 var(--space-sm);
+}
+
+.itemText {
+  font-size: var(--text-body-md);
+  line-height: var(--lh-body);
+  color: var(--color-text-muted);
+  max-width: 70ch;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .item {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+    padding: var(--space-lg) 0;
+  }
+  .itemDate { padding-top: 0; }
 }

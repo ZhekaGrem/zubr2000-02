@@ -1,4 +1,4 @@
-import { SITE_URL, LOCALES, DEFAULT_LOCALE } from "@/app/_lib/seo";
+import { SITE_URL, LOCALES } from "@/app/_lib/seo";
 
 const ROUTES = [
   { path: "", priority: 1.0 },
@@ -16,23 +16,21 @@ const ROUTES = [
   { path: "/contact", priority: 0.7 },
 ];
 
+// NOTE: Next 13.5's sitemap serializer ignores per-entry `alternates`
+// (see node_modules/next/.../resolve-route-data.js → resolveSitemap), so we do
+// NOT emit hreflang here. hreflang is delivered on every page via <head> link
+// tags (buildMetadata in _lib/seo.js), which Google treats as equivalent.
 export default function sitemap() {
   const now = new Date();
   const entries = [];
 
   for (const { path, priority } of ROUTES) {
-    const languages = { "x-default": `${SITE_URL}/${DEFAULT_LOCALE}${path}` };
-    for (const loc of LOCALES) {
-      languages[loc] = `${SITE_URL}/${loc}${path}`;
-    }
-
     for (const locale of LOCALES) {
       entries.push({
         url: `${SITE_URL}/${locale}${path}`,
         lastModified: now,
         changeFrequency: "weekly",
         priority,
-        alternates: { languages },
       });
     }
   }

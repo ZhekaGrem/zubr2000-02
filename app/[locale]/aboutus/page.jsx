@@ -2,6 +2,7 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import PageIntro from "@/app/components/PageIntro/PageIntro";
+import Reveal from "@/app/components/Reveal/Reveal";
 import styles from "@/app/styles/page/aboutus.module.css";
 
 const PRINCIPLES = ["aboutus-message3", "aboutus-message4", "aboutus-message5", "aboutus-message6", "aboutus-message7"];
@@ -19,7 +20,7 @@ function AboutUs() {
         imageSrc="/photo_tittl_№2.webp"
       />
 
-      <section className={styles.principles}>
+      <Reveal as="section" className={styles.principles}>
         <h2 className={styles.sectionHeading}>{t("aboutus-message2")}</h2>
         <ul className={styles.principleList}>
           {PRINCIPLES.map((key, i) => (
@@ -33,9 +34,9 @@ function AboutUs() {
           <p>{t("aboutus-message8")}</p>
           <p>{t("aboutus-message9")}</p>
         </div>
-      </section>
+      </Reveal>
 
-      <section className={styles.cards}>
+      <Reveal as="section" className={styles.cards}>
         <div className={styles.card}>
           <div className={styles.cardKind}>{t("certificates")}</div>
           <ul className={styles.cardList}>
@@ -56,11 +57,11 @@ function AboutUs() {
             <li className={styles.cardRow}>{t(QUALITY[2])} {t(QUALITY[3])}</li>
           </ul>
         </div>
-      </section>
+      </Reveal>
 
-      <section className={styles.outro}>
+      <Reveal as="section" className={styles.outro}>
         <p>{t("aboutus-message10")}</p>
-      </section>
+      </Reveal>
     </>
   );
 }

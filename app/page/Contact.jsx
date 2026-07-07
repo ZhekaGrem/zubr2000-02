@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import PageIntro from "@/app/components/PageIntro/PageIntro";
 import Form from "@/app/components/form/Form";
 import Googlmap from "@/app/components/googlmaps/Googlmap";
+import Reveal from "@/app/components/Reveal/Reveal";
 import styles from "@/app/styles/page/contact.module.css";
 
 function Contact() {
@@ -11,19 +12,22 @@ function Contact() {
   return (
     <>
       <PageIntro
+        variant="split"
+        caps={t("contact")}
         title={t("contactus")}
+        lead={t("contactLead")}
         imageSrc="/contact_hero_real.webp"
         imageAlt={t("contactus")}
       />
 
-      <section className={styles.formMap}>
+      <Reveal as="section" className={styles.formMap}>
         <div className={styles.formWrap} id="contact_name">
           <Form />
         </div>
         <div className={styles.mapWrap}>
           <Googlmap />
         </div>
-      </section>
+      </Reveal>
     </>
   );
 }

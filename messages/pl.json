@@ -2,6 +2,7 @@
   "Index": {
     "home": "Dom",
     "home_h1": "Ukraińska tarcica liściasta, dąb, jesion, brzoza, modrzew",
+    "hero_sub": "Tarcica liściasta suszona komorowo. Cięta na wymiar, eksport do Europy od 2000 roku.",
     "aboutus": "O nas",
     "infous": "Informacje o nas",
     "product": "Wyroby",
@@ -230,6 +231,23 @@
       "title": "Coś poszło nie tak",
       "text": "Wystąpił błąd. Spróbuj ponownie.",
       "retry": "Spróbuj ponownie"
-    }
+    },
+    "certificatesCaps": "Certyfikacja",
+    "certificatesLead": "Międzynarodowe uznanie jakości ZUBR-2000. Nagrody i certyfikaty potwierdzające nasze podejście do drewna.",
+    "newsLead": "Aktualności firmy, informacje o produkcji i wydarzenia branżowe ZUBR-2000.",
+    "contactLead": "Skontaktuj się z zespołem ZUBR-2000. Odpowiemy na pytania o produkty, ceny i terminy dostaw.",
+    "qualityCaps": "Jakość",
+    "cubaturnickLead": "Tabela pomocnicza objętości deski obrzynanej według przekroju i długości, m³.",
+    "offersCaps": "Współpraca",
+    "cert_trade_title": "Międzynarodowe Trofeum Jakości",
+    "cert_fsc_title": "Certyfikat kontroli pochodzenia produktu FSC",
+    "newsEmpty": "Na razie brak aktualności. Wkrótce dodamy nowości.",
+    "qualityLead": "Wymagania jakościowe i wymiarowe dla tarcicy i produktów paletowych. Zgodnie z DSTU EN 1315 i normami branżowymi.",
+    "feat1_title": "Drewno liściaste z Ukrainy",
+    "feat1_body": "Dąb, jesion, brzoza, modrzew. Selekcjonowane drewno liściaste o stałej jakości partia po partii.",
+    "feat2_title": "Suszenie komorowe do 8–10%",
+    "feat2_body": "Własne komory suszarnicze i kontrola wilgotności na każdym etapie. Drewno gotowe do obróbki i eksportu.",
+    "feat3_title": "Cięcie i obróbka na wymiar",
+    "feat3_body": "Deski obrzynane, belki i półfabrykaty wg rysunku. Od wymiarów standardowych po zamówienia indywidualne i duże partie."
   }
 }

@@ -3,7 +3,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
-import CtaFooter from "@/app/components/CtaFooter/CtaFooter";
 import { BackToTopButton } from "../components/BackToTop/BackToTopButton";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
@@ -70,7 +69,6 @@ export default async function LocaleLayout({ children, params: { locale } }) {
               </main>
               <BackToTopButton />
             </div>
-            <CtaFooter />
             <footer>
               <Footer />
             </footer>

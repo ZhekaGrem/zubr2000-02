@@ -3,6 +3,7 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import PageIntro from "@/app/components/PageIntro/PageIntro";
 import EditorialRow from "@/app/components/EditorialRow/EditorialRow";
+import Reveal from "@/app/components/Reveal/Reveal";
 import styles from "@/app/styles/page/manufacturing-process.module.css";
 
 const STEPS = [
@@ -31,21 +32,22 @@ function ManufacturingProcess() {
 
       <section className={styles.rows}>
         {STEPS.map((s, i) => (
-          <EditorialRow
-            key={i}
-            index={i + 1}
-            reverse={i % 2 === 1}
-            images={s.images}
-            title={t(s.titleKey)}
-            body={t(s.bodyKey)}
-          />
+          <Reveal key={i}>
+            <EditorialRow
+              index={i + 1}
+              reverse={i % 2 === 1}
+              images={s.images}
+              title={t(s.titleKey)}
+              body={t(s.bodyKey)}
+            />
+          </Reveal>
         ))}
       </section>
 
-      <section className={styles.outro}>
+      <Reveal as="section" className={styles.outro}>
         <h2>{t("manufacturing_process_08")}</h2>
         <p>{t("manufacturing_process_09")}</p>
-      </section>
+      </Reveal>
     </>
   );
 }

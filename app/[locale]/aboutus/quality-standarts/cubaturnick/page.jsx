@@ -1,8 +1,11 @@
 "use client";
 import React from "react";
+import { useTranslations } from "next-intl";
+import PageIntro from "@/app/components/PageIntro/PageIntro";
 import styles from "@/app/styles/page/cubaturnick.module.css";
 
 const Cubaturnick = () => {
+  const t = useTranslations("Index");
   const data__01 = [
     [
       " ",
@@ -1573,6 +1576,12 @@ const Cubaturnick = () => {
 
   return (
     <>
+      <PageIntro
+        variant="minimal"
+        caps={t("quality")}
+        title={t("quality-title-51")}
+        lead={t("cubaturnickLead")}
+      />
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <table className={styles.table}>

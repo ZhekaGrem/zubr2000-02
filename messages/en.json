@@ -2,6 +2,7 @@
   "Index": {
     "home": "Home",
     "home_h1": "Ukrainian hardwood lumber, oak, ash, birch, larch",
+    "hero_sub": "Kiln-dried hardwood lumber, cut to your specs and shipped across Europe since 2000.",
     "aboutus": "About Us",
     "infous": "Info about us",
     "product": "Products",
@@ -230,6 +231,23 @@
       "title": "Something went wrong",
       "text": "An error occurred. Please try again.",
       "retry": "Try again"
-    }
+    },
+    "certificatesCaps": "Certification",
+    "certificatesLead": "International recognition of ZUBR-2000 quality. Awards and certificates that confirm our approach to timber.",
+    "newsLead": "Company news, production updates and industry events from ZUBR-2000.",
+    "contactLead": "Get in touch with the ZUBR-2000 team. We'll answer questions about products, prices and delivery times.",
+    "qualityCaps": "Quality",
+    "cubaturnickLead": "Reference table of edged board volume by cross-section and length, m³.",
+    "offersCaps": "Partnership",
+    "cert_trade_title": "International Trophy for Quality",
+    "cert_fsc_title": "FSC Chain of Custody certificate",
+    "newsEmpty": "No news yet. Updates coming soon.",
+    "qualityLead": "Quality and dimension requirements for our lumber and pallet products. Per DSTU EN 1315 and industry standards.",
+    "feat1_title": "Hardwoods from Ukraine",
+    "feat1_body": "Oak, ash, birch and larch. Selected hardwood with consistent quality batch after batch.",
+    "feat2_title": "Kiln drying to 8–10%",
+    "feat2_body": "In-house kilns and moisture control at every stage. Timber ready for processing and export.",
+    "feat3_title": "Sawing and milling to size",
+    "feat3_body": "Edged boards, beams and blanks to your drawings. From standard sizes to custom orders and large batches."
   }
 }

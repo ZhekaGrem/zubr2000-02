@@ -21,8 +21,8 @@
 /* ------- Section header ------- */
 .sectionHead {
   max-width: 72rem;
-  margin: 0 auto var(--space-2xl);
-  text-align: center;
+  margin: 0 0 var(--space-2xl);
+  text-align: left;
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
@@ -52,9 +52,8 @@
 .sectionTitle::after {
   content: "";
   position: absolute;
-  left: 50%;
+  left: 0;
   bottom: 0;
-  transform: translateX(-50%);
   width: 48px;
   height: 2px;
   background: var(--color-primary);
@@ -269,6 +268,9 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+  /* дозволяє grid-треку стискатися, щоб .tableWrap (overflow-x) скролився,
+     а не розпирав сторінку інтринсік-шириною таблиці */
+  min-width: 0;
 }
 
 .specTitle {

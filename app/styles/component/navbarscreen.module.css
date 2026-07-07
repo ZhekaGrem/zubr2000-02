@@ -5,19 +5,62 @@
   left: 0;
   right: 0;
   height: var(--nav-height);
-  background-image: url("../../img/wood-1.webp");
+  background-color: #16211c;
+  background-image: linear-gradient(
+      rgba(15, 22, 18, 0.4),
+      rgba(15, 22, 18, 0.4)
+    ),
+    url("../../img/wood-1.webp");
   background-size: cover;
   background-position: center;
-  border-bottom: 1px solid #181a1b;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow-card);
   z-index: 1000;
+  transition: background var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
-.navbar p,
-.navbar li,
-.navbar a,
-.navbar button {
+/* Прозорий стан — поверх повноекранного hero на головній (десктоп) */
+.navbar.transparent {
+  background: transparent;
+  border-bottom-color: transparent;
+  box-shadow: none;
+}
+.navbar.transparent .navLink,
+.navbar.transparent .langButton {
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+.navbar.transparent .navLink:hover,
+.navbar.transparent .langButton:hover {
   color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+}
+.navbar.transparent .logoWord {
+  filter: brightness(0) invert(1);
+}
+
+/* Дропдаун-панелі світлі → їхній вміст лишається темним (див. .dropdownLink) */
+.navbar p,
+.navbar li {
+  color: var(--color-text);
+}
+
+/* Верхні пункти навбара — світлі поверх темного лісового фону */
+.navbar .navLink,
+.navbar .langButton {
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.navbar .navLink:hover,
+.navbar .langButton:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* Вордмарк-SVG — білий на темному лісовому фоні */
+.logoWord {
+  filter: brightness(0) invert(1);
 }
 
 .container {
@@ -72,7 +115,7 @@
   align-items: center;
   gap: var(--space-xs);
   padding: var(--space-xs) var(--space-sm);
-  color: #ffffff;
+  color: var(--color-text-muted);
   font-family: var(--font-body);
   font-size: var(--text-label-caps);
   font-weight: 600;
@@ -83,14 +126,13 @@
   border-radius: var(--radius-md);
   cursor: pointer;
   transition: all var(--transition-base);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7), 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .navLink:hover,
 .langButton:hover,
 .svgImg:hover {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.12);
+  color: var(--color-primary-dark);
+  background: rgba(140, 166, 0, 0.1);
 }
 
 /* Dropdown styles */
@@ -102,10 +144,8 @@
   min-width: 220px;
   margin-top: var(--space-xs);
   padding: var(--space-sm);
-  background-image: url("../../img/wood-2.webp");
-  background-size: cover;
-  background-position: center;
-  border: 1px solid #474a4d;
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lift);
   opacity: 0;
@@ -127,19 +167,18 @@
 .dropdownLink {
   display: block;
   padding: var(--space-xs) var(--space-sm);
-  color: #ffffff;
+  color: var(--color-text-muted);
   font-family: var(--font-body);
   font-size: var(--text-body-sm);
   font-weight: 500;
   text-transform: none;
   border-radius: calc(var(--radius-md) / 2);
   transition: all var(--transition-fast);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .dropdownLink:hover {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.12);
+  color: var(--color-primary-dark);
+  background: rgba(140, 166, 0, 0.1);
   transform: translateX(4px);
 }
 
@@ -158,16 +197,38 @@
 
 .sub__menu__link {
   text-justify: center;
-  color: #ffffff;
+  color: var(--color-text-muted);
   display: block;
   padding: var(--space-xs) var(--space-sm);
   border-radius: calc(var(--radius-md) / 2);
   transition: all var(--transition-fast);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .sub__menu__link:hover {
-  background: rgba(255, 255, 255, 0.12);
+  color: var(--color-primary-dark);
+  background: rgba(140, 166, 0, 0.1);
+}
+
+/* CTA-кнопка в хедері (t3-патерн) */
+.cta {
+  display: inline-flex;
+  align-items: center;
+  margin-left: var(--space-sm);
+  padding: 10px 18px;
+  background: var(--color-primary);
+  color: var(--color-text) !important;
+  font-family: var(--font-body);
+  font-size: var(--text-label-caps);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+  border-radius: var(--radius-md);
+  transition: background var(--transition-base), transform var(--transition-base);
+}
+
+.cta:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-1px);
 }
 
 .sub__menu__list {

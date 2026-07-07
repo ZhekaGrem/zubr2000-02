@@ -7,6 +7,7 @@ import OfferBlog from "@/app/components/offerblog/OfferBlog";
 import Button from "@/app/UI/button/button";
 import { useTranslations } from "next-intl";
 import PageIntro from "@/app/components/PageIntro/PageIntro";
+import Reveal from "@/app/components/Reveal/Reveal";
 
 async function getData() {
   const query = `*[_type == "offer"] | order(publication_data_offer desc)`;
@@ -17,7 +18,7 @@ async function getData() {
 const ADVANTAGES = [
   {
     title: "Багаторічний досвід",
-    body: "Більше 20 років виробництва пиломатеріалів — стабільна якість і передбачувані строки.",
+    body: "Більше 20 років виробництва пиломатеріалів. Стабільна якість і передбачувані строки.",
   },
   {
     title: "Сировинна база",
@@ -29,7 +30,7 @@ const ADVANTAGES = [
   },
   {
     title: "Гнучкість у виробництві",
-    body: "Стандартні розміри або індивідуальні замовлення — від малих до великих партій.",
+    body: "Стандартні розміри або індивідуальні замовлення, від малих до великих партій.",
   },
   {
     title: "Партнерство",
@@ -54,13 +55,15 @@ export default function Offers() {
   return (
     <>
       <PageIntro
+        variant="split"
+        caps={t("offersCaps")}
         title={t("offers")}
-        lead="Ми відкриті до нових партнерств у виробництві пиломатеріалів обрізних і необрізних — шукаємо надійних партнерів, які поділяють наш підхід до якості."
+        lead="Ми відкриті до нових партнерств у виробництві пиломатеріалів обрізних і необрізних. Шукаємо надійних партнерів, які поділяють наш підхід до якості."
         imageSrc="/photo_tittl_№2.webp"
         imageAlt={t("offers")}
       />
 
-      <section className={styles.section}>
+      <Reveal as="section" className={styles.section}>
         <div className={styles.container}>
           <div className={styles.intro}>
             <h2 className={styles.sectionHeading}>Запрошуємо до співпраці</h2>
@@ -85,16 +88,18 @@ export default function Offers() {
             </ul>
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className={styles.section}>
-        <div className={styles.container}>
-          <h2 className={styles.sectionHeading}>Ми шукаємо</h2>
-          <OfferBlog data={blogData} />
-        </div>
-      </section>
+      {blogData.length > 0 && (
+        <section className={styles.section}>
+          <div className={styles.container}>
+            <h2 className={styles.sectionHeading}>Ми шукаємо</h2>
+            <OfferBlog data={blogData} />
+          </div>
+        </section>
+      )}
 
-      <section className={styles.section}>
+      <Reveal as="section" className={styles.section}>
         <div className={styles.container}>
           <h2 className={styles.sectionHeading}>Контактна інформація</h2>
           <div className={styles.contactGrid}>
@@ -124,7 +129,7 @@ export default function Offers() {
             </Link>
           </div>
         </div>
-      </section>
+      </Reveal>
     </>
   );
 }

@@ -1,5 +1,5 @@
 .flex {
-  padding: var(--space-3xl) var(--space-xl);
+  padding: var(--space-3xl) var(--gutter);
   background: rgba(140, 166, 0, 0.08);
   border-bottom: 1px solid var(--color-border);
 }
@@ -95,6 +95,6 @@
 }
 
 @media (max-width: 768px) {
-  .flex { padding: var(--space-2xl) var(--space-md); }
+  .flex { padding: var(--space-2xl) var(--gutter); }
   .grid { grid-template-columns: 1fr; }
 }

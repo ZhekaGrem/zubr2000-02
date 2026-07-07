@@ -2,6 +2,7 @@
   "Index": {
     "home": "Hjem",
     "home_h1": "Ukrainsk løvtræ, eg, ask, birk, lærk",
+    "hero_sub": "Kammertørret løvtræ. Skåret efter mål, eksporteret til Europa siden 2000.",
     "aboutus": "Om os",
     "infous": "Info om os",
     "product": "Produkter",
@@ -229,6 +230,23 @@
       "title": "Noget gik galt",
       "text": "Der opstod en fejl. Prøv igen.",
       "retry": "Prøv igen"
-    }
+    },
+    "certificatesCaps": "Certificering",
+    "certificatesLead": "International anerkendelse af ZUBR-2000's kvalitet. Priser og certifikater, der bekræfter vores tilgang til træ.",
+    "newsLead": "Virksomhedsnyheder, produktionsopdateringer og branchebegivenheder fra ZUBR-2000.",
+    "contactLead": "Kontakt ZUBR-2000-teamet. Vi besvarer spørgsmål om produkter, priser og leveringstider.",
+    "qualityCaps": "Kvalitet",
+    "cubaturnickLead": "Referencetabel over volumen af kantede brædder efter tværsnit og længde, m³.",
+    "offersCaps": "Samarbejde",
+    "cert_trade_title": "International kvalitetstrofæ",
+    "cert_fsc_title": "FSC-sporbarhedscertifikat",
+    "newsEmpty": "Ingen nyheder endnu. Opdateringer kommer snart.",
+    "qualityLead": "Kvalitets- og målkrav for tømmer og palleprodukter. I henhold til DSTU EN 1315 og branchestandarder.",
+    "feat1_title": "Hårdttræ fra Ukraine",
+    "feat1_body": "Eg, ask, birk og lærk. Udvalgt hårdttræ med ensartet kvalitet parti efter parti.",
+    "feat2_title": "Kammertørring til 8–10%",
+    "feat2_body": "Egne tørrekamre og fugtkontrol i hvert trin. Træ klar til bearbejdning og eksport.",
+    "feat3_title": "Skæring og bearbejdning efter mål",
+    "feat3_body": "Kantede brædder, bjælker og emner efter tegning. Fra standardmål til specialordrer og store partier."
   }
 }

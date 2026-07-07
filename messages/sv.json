@@ -1,7 +1,7 @@
 {
   "Index": {
     "home": "Hem",
-    "home_h1": "Ukrainska lövträvaror — ek, ask, björk, lärk",
+    "home_h1": "Ukrainska lövträvaror, ek, ask, björk, lärk",
     "aboutus": "Om oss",
     "infous": "Information om oss",
     "product": "Vår produkt",
@@ -96,7 +96,6 @@
     "quality-title-08": "3:e klass",
     "quality-title-09": "Följande trädefekter är tillåtna: enkel krökning med dimensioner - förhållandet mellan böjningsböjning på platsen för den största krökningen till den totala längden av stocken över 3% till 5%, friska öppna knutar från 10 till 15 cm, revor förutom sid- och ändrevor från torkning från 1/3 till ? av motsvarande diameter av änden.",
     "quality-title-10": "TEKNISKA VILLKOR FÖR TRÄVAROR",
-    "quality-title-11": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "quality-title-12": "Breddsidan - helt ren.",
     "quality-title-13": "Höjd på träbiten.",
     "quality-title-14": "De fyra sidorna som angränsar till sida A måste vara minst hälften (upp till 1/2 h) rena.",
@@ -162,7 +161,7 @@
     "newsCaps": "Journal",
     "newsAll": "Alla inlägg",
     "catalogCaps": "Katalog",
-    "catalogHint": "Andra träslag — på förfrågan.",
+    "catalogHint": "Andra träslag, på förfrågan.",
     "read": "Läs",
     "inStock": "I lager",
     "emailLabel": "E-post",
@@ -187,7 +186,7 @@
     },
     "flexibility": {
       "caps": "Flexibilitet",
-      "title": "En leverantör — ett brett sortiment",
+      "title": "En leverantör, ett brett sortiment",
       "intro": "Från standardkantat virke till kundspecifika ämnen efter ritning. Vi anpassar oss till era mått, kvaliteter, volymer och tidsramar.",
       "item1": {
         "title": "Kantat bräde",
@@ -195,7 +194,7 @@
       },
       "item2": {
         "title": "Balk",
-        "spec": "100×100 — 200×200 mm"
+        "spec": "100×100–200×200 mm"
       },
       "item3": {
         "title": "Ämnen",
@@ -214,13 +213,23 @@
     "contactFooter": {
       "caps": "Kontakt",
       "heading": "Behöver du en offert för ett parti?",
-      "lead": "Skicka oss din specifikation — vi svarar med pris och leveranstid inom 24 timmar."
+      "lead": "Skicka oss din specifikation, vi svarar med pris och leveranstid inom 24 timmar."
     },
     "address": {
-      "street": "TODO:ADDRESS-STREET",
-      "city": "TODO:ADDRESS-CITY",
-      "region": "TODO:ADDRESS-REGION",
-      "mapUrl": "TODO:MAPURL"
+      "street": "20 Mykola Kopernika St.",
+      "city": "Lviv",
+      "region": "Ukraina",
+      "mapUrl": "https://www.google.com/maps?q=49.838522,24.026000"
+    },
+    "notFound": {
+      "title": "Sidan hittades inte",
+      "text": "Sidan finns inte eller har flyttats.",
+      "back": "Till startsidan"
+    },
+    "error": {
+      "title": "Något gick fel",
+      "text": "Ett fel uppstod. Försök igen.",
+      "retry": "Försök igen"
     }
   }
 }

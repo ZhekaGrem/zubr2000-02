@@ -1,7 +1,7 @@
 {
   "Index": {
     "home": "Accueil",
-    "home_h1": "Bois feuillu ukrainien — chêne, frêne, bouleau, mélèze",
+    "home_h1": "Bois feuillu ukrainien, chêne, frêne, bouleau, mélèze",
     "aboutus": "A notre sujet",
     "infous": "Informations sur nous",
     "product": "Produits",
@@ -96,7 +96,6 @@
     "quality-title-08": "3ème catégorie",
     "quality-title-09": "Les défauts suivants du bois sont autorisés : courbure simple de dimensions - rapport de flèche de flexion à l'endroit de la plus grande courbure à la longueur totale de la bille supérieur à 3% à 5%, nœuds sains ouverts de 10 à 15 cm, fissures autres que latérales et de bout dues au séchage de plus de 1/3 à ? du diamètre correspondant du bout.",
     "quality-title-10": "EXIGENCES TECHNIQUES POUR LES MATÉRIAUX EN BOIS",
-    "quality-title-11": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "quality-title-12": "Large face - complètement propre.",
     "quality-title-13": "Hauteur du morceau de bois.",
     "quality-title-14": "Les quatre côtés adjacents à la face A doivent être propres à au moins la moitié (jusqu'à 1/2 h).",
@@ -162,7 +161,7 @@
     "newsCaps": "Journal",
     "newsAll": "Toutes les publications",
     "catalogCaps": "Catalogue",
-    "catalogHint": "Autres essences — sur demande.",
+    "catalogHint": "Autres essences, sur demande.",
     "read": "Lire",
     "inStock": "En stock",
     "emailLabel": "Courriel",
@@ -187,7 +186,7 @@
     },
     "flexibility": {
       "caps": "Flexibilité",
-      "title": "Un fournisseur — une large gamme de produits",
+      "title": "Un fournisseur, une large gamme de produits",
       "intro": "De la planche avivée standard aux pièces sur plan du client. Nous nous adaptons à vos dimensions, qualités, volumes et délais.",
       "item1": {
         "title": "Planche avivée",
@@ -195,7 +194,7 @@
       },
       "item2": {
         "title": "Poutre",
-        "spec": "100×100 — 200×200 mm"
+        "spec": "100×100–200×200 mm"
       },
       "item3": {
         "title": "Ébauches",
@@ -214,13 +213,23 @@
     "contactFooter": {
       "caps": "Contact",
       "heading": "Besoin d'un devis pour un lot ?",
-      "lead": "Envoyez-nous votre cahier des charges — nous répondons avec prix et délais sous 24 heures."
+      "lead": "Envoyez-nous votre cahier des charges, nous répondons avec prix et délais sous 24 heures."
     },
     "address": {
-      "street": "TODO:ADDRESS-STREET",
-      "city": "TODO:ADDRESS-CITY",
-      "region": "TODO:ADDRESS-REGION",
-      "mapUrl": "TODO:MAPURL"
+      "street": "20 Mykola Kopernika St.",
+      "city": "Lviv",
+      "region": "Ukraine",
+      "mapUrl": "https://www.google.com/maps?q=49.838522,24.026000"
+    },
+    "notFound": {
+      "title": "Page introuvable",
+      "text": "Cette page n'existe pas ou a été déplacée.",
+      "back": "Retour à l'accueil"
+    },
+    "error": {
+      "title": "Une erreur est survenue",
+      "text": "Une erreur s'est produite. Veuillez réessayer.",
+      "retry": "Réessayer"
     }
   }
 }

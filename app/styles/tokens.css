@@ -12,6 +12,7 @@
   --color-border: #E0E0E0;
   --color-border-strong: #C4C4C4;
   --color-overlay: #1A1A1E;
+  --color-on-overlay: #FFFFFF;
 
   /* Typography families (wired up via next/font in Task 2) */
   --font-display: 'Fraunces', Georgia, serif;

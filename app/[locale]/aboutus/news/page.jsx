@@ -27,7 +27,7 @@ export default function News() {
     <>
       <PageIntro 
         title={t("news")} 
-        imageSrc="/news_hero_real.png"
+        imageSrc="/news_hero_real.webp"
         imageAlt={t("news")}
       />
       <section className={styles.body}>

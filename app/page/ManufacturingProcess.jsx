@@ -25,7 +25,7 @@ function ManufacturingProcess() {
       <PageIntro
         title={t("manufacturing")}
         lead={t("manufacturing_process_01")}
-        imageSrc="/manufacturing_hero.png"
+        imageSrc="/manufacturing_hero.webp"
         imageAlt={t("manufacturing")}
       />
 

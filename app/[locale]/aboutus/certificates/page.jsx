@@ -11,7 +11,7 @@ function CertificatesPage() {
     <>
       <PageIntro
         title={t("certificates")}
-        imageSrc="/certificates_hero.png"
+        imageSrc="/certificates_hero.webp"
         imageAlt={t("certificates")}
       />
       <Certificates />

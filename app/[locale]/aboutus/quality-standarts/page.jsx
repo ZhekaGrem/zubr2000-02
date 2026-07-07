@@ -31,7 +31,7 @@ function QualityStandarts() {
     <>
       <PageIntro
         title={t("quality")}
-        imageSrc="/quality_hero.png"
+        imageSrc="/quality_hero.webp"
         imageAlt={t("quality")}
       />
 

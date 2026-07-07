@@ -1,7 +1,7 @@
 {
   "Index": {
     "home": "Lz casa",
-    "home_h1": "Legname di latifoglie dall’Ucraina — rovere, frassino, betulla, larice",
+    "home_h1": "Legname di latifoglie dall’Ucraina, rovere, frassino, betulla, larice",
     "aboutus": "Chi siamo",
     "infous": "Info su di noi",
     "product": "Prodotti",
@@ -96,7 +96,6 @@
     "quality-title-08": "3a categoria",
     "quality-title-09": "Sono ammessi i seguenti difetti del legno: curvatura semplice delle dimensioni - rapporto tra la flessione della curvatura nel punto di maggiore curvatura e la lunghezza totale del tronco superiore al 3% al 5%, nodi sani aperti da 10 a 15 cm, crepe tranne quelle laterali e terminali dovute all'essiccazione da 1/3 a ? del diametro corrispondente dell'estremità.",
     "quality-title-10": "REQUISITI TECNICI PER IL LEGNAME",
-    "quality-title-11": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "quality-title-12": "Faccia larga - completamente pulita.",
     "quality-title-13": "Altezza del pezzo di legno.",
     "quality-title-14": "I quattro lati adiacenti alla faccia A devono essere puliti almeno per metà (fino a 1/2 h).",
@@ -162,7 +161,7 @@
     "newsCaps": "Giornale",
     "newsAll": "Tutti gli articoli",
     "catalogCaps": "Catalogo",
-    "catalogHint": "Altre specie — su richiesta.",
+    "catalogHint": "Altre specie, su richiesta.",
     "read": "Leggi",
     "inStock": "Disponibile",
     "emailLabel": "Email",
@@ -187,7 +186,7 @@
     },
     "flexibility": {
       "caps": "Flessibilità",
-      "title": "Un fornitore — un'ampia gamma di prodotti",
+      "title": "Un fornitore, un'ampia gamma di prodotti",
       "intro": "Dalle tavole squadrate standard ai semilavorati su disegno del cliente. Ci adattiamo a misure, qualità, volumi e tempi.",
       "item1": {
         "title": "Tavola squadrata",
@@ -195,7 +194,7 @@
       },
       "item2": {
         "title": "Travetto",
-        "spec": "100×100 — 200×200 mm"
+        "spec": "100×100–200×200 mm"
       },
       "item3": {
         "title": "Semilavorati",
@@ -214,13 +213,23 @@
     "contactFooter": {
       "caps": "Contatti",
       "heading": "Serve un preventivo per un lotto?",
-      "lead": "Inviaci la specifica — rispondiamo con prezzo e tempi entro 24 ore."
+      "lead": "Inviaci la specifica, rispondiamo con prezzo e tempi entro 24 ore."
     },
     "address": {
-      "street": "TODO:ADDRESS-STREET",
-      "city": "TODO:ADDRESS-CITY",
-      "region": "TODO:ADDRESS-REGION",
-      "mapUrl": "TODO:MAPURL"
+      "street": "20 Mykola Kopernika St.",
+      "city": "Lviv",
+      "region": "Ucraina",
+      "mapUrl": "https://www.google.com/maps?q=49.838522,24.026000"
+    },
+    "notFound": {
+      "title": "Pagina non trovata",
+      "text": "Questa pagina non esiste o è stata spostata.",
+      "back": "Torna alla home"
+    },
+    "error": {
+      "title": "Qualcosa è andato storto",
+      "text": "Si è verificato un errore. Riprova.",
+      "retry": "Riprova"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "Index": {
     "home": "Dom",
-    "home_h1": "Ukraińska tarcica liściasta — dąb, jesion, brzoza, modrzew",
+    "home_h1": "Ukraińska tarcica liściasta, dąb, jesion, brzoza, modrzew",
     "aboutus": "O nas",
     "infous": "Informacje o nas",
     "product": "Wyroby",
@@ -96,7 +96,6 @@
     "quality-title-08": "3 klasa",
     "quality-title-09": "Dozwolone są następujące wady drewna: prosta krzywizna o wymiarach - stosunek gięcia w miejscu największej krzywizny do całkowitej długości pnia powyżej 3% do 5%, zdrowe otwarte sęki o długości od 10 do 15 cm, pęknięcia inne niż boczne i końcowe wynikające z suszenia od 1/3 do ? odpowiedniej średnicy końca.",
     "quality-title-10": "WYMAGANIA TECHNICZNE DLA MATERIAŁÓW DRZEWNYCH",
-    "quality-title-11": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "quality-title-12": "Szeroka strona - całkowicie czysta.",
     "quality-title-13": "Wysokość kawałka drewna.",
     "quality-title-14": "Cztery strony przylegające do strony A muszą być co najmniej w połowie (do 1/2 h) czyste.",
@@ -162,7 +161,7 @@
     "newsCaps": "Dziennik",
     "newsAll": "Wszystkie wpisy",
     "catalogCaps": "Katalog",
-    "catalogHint": "Inne gatunki — na zapytanie.",
+    "catalogHint": "Inne gatunki, na zapytanie.",
     "read": "Czytaj",
     "inStock": "W magazynie",
     "emailLabel": "E-mail",
@@ -187,7 +186,7 @@
     },
     "flexibility": {
       "caps": "Elastyczność",
-      "title": "Jeden dostawca — szeroki zakres produktów",
+      "title": "Jeden dostawca, szeroki zakres produktów",
       "intro": "Od standardowej tarcicy obrzynanej po zamówienia według rysunków klienta. Dostosowujemy się do Państwa wymiarów, klas, wielkości partii i terminów.",
       "item1": {
         "title": "Tarcica obrzynana",
@@ -195,7 +194,7 @@
       },
       "item2": {
         "title": "Belka",
-        "spec": "100×100 — 200×200 mm"
+        "spec": "100×100–200×200 mm"
       },
       "item3": {
         "title": "Półfabrykaty",
@@ -214,13 +213,23 @@
     "contactFooter": {
       "caps": "Kontakt",
       "heading": "Potrzebujesz wyceny partii?",
-      "lead": "Prześlij specyfikację — odpowiemy z ceną i terminem w ciągu 24 godzin."
+      "lead": "Prześlij specyfikację, odpowiemy z ceną i terminem w ciągu 24 godzin."
     },
     "address": {
-      "street": "TODO:ADDRESS-STREET",
-      "city": "TODO:ADDRESS-CITY",
-      "region": "TODO:ADDRESS-REGION",
-      "mapUrl": "TODO:MAPURL"
+      "street": "ul. Mykoły Kopernika 20",
+      "city": "Lwów",
+      "region": "Ukraina",
+      "mapUrl": "https://www.google.com/maps?q=49.838522,24.026000"
+    },
+    "notFound": {
+      "title": "Nie znaleziono strony",
+      "text": "Ta strona nie istnieje lub została przeniesiona.",
+      "back": "Powrót do strony głównej"
+    },
+    "error": {
+      "title": "Coś poszło nie tak",
+      "text": "Wystąpił błąd. Spróbuj ponownie.",
+      "retry": "Spróbuj ponownie"
     }
   }
 }

@@ -1,10 +1,10 @@
 {
   "Index": {
     "home": "Home",
-    "home_h1": "Ukrainian hardwood lumber — oak, ash, birch, larch",
+    "home_h1": "Ukrainian hardwood lumber, oak, ash, birch, larch",
     "aboutus": "About Us",
     "infous": "Info about us",
-    "product": "Prodycts",
+    "product": "Products",
     "contact": "Contact",
     "oak": "Oak",
     "birch": "Birch",
@@ -96,7 +96,6 @@
     "quality-title-08": "3rd grade",
     "quality-title-09": "The following wood defects are allowed: simple curvature with dimensions - the ratio of flexure deflection at the place of the greatest curvature to the total length of the log over 3% to 5%, sound open knots from 10 to 15 cm, cracks except for lateral and end cracks from drying from 1/3 to ? of the corresponding diameter of the end.",
     "quality-title-10": "TECHNICAL CONDITIONS FOR TIMBER",
-    "quality-title-11": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "quality-title-12": "Wide face - completely clean.",
     "quality-title-13": "Wood piece height.",
     "quality-title-14": "The four sides adjacent to face A must be at least half (up to 1/2 h) clean.",
@@ -162,7 +161,7 @@
     "newsCaps": "Journal",
     "newsAll": "All entries",
     "catalogCaps": "Catalog",
-    "catalogHint": "Other species — on request.",
+    "catalogHint": "Other species, on request.",
     "read": "Read",
     "inStock": "In stock",
     "emailLabel": "Email",
@@ -187,7 +186,7 @@
     },
     "flexibility": {
       "caps": "Flexibility",
-      "title": "One supplier — a broad range of products",
+      "title": "One supplier, a broad range of products",
       "intro": "From standard edged boards to custom blanks made to the client's drawings. We adapt to your dimensions, grade, batch size and deadlines.",
       "item1": {
         "title": "Edged board",
@@ -195,7 +194,7 @@
       },
       "item2": {
         "title": "Beam",
-        "spec": "100×100 — 200×200 mm"
+        "spec": "100×100–200×200 mm"
       },
       "item3": {
         "title": "Blanks",
@@ -214,13 +213,23 @@
     "contactFooter": {
       "caps": "Contact",
       "heading": "Need a quote for a batch?",
-      "lead": "Send us your specification — we'll reply with price and lead times within 24 hours."
+      "lead": "Send us your specification, we'll reply with price and lead times within 24 hours."
     },
     "address": {
-      "street": "TODO:ADDRESS-STREET",
-      "city": "TODO:ADDRESS-CITY",
-      "region": "TODO:ADDRESS-REGION",
-      "mapUrl": "TODO:MAPURL"
+      "street": "20 Mykola Kopernika St.",
+      "city": "Lviv",
+      "region": "Ukraine",
+      "mapUrl": "https://www.google.com/maps?q=49.838522,24.026000"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "text": "This page doesn't exist or has been moved.",
+      "back": "Back to home"
+    },
+    "error": {
+      "title": "Something went wrong",
+      "text": "An error occurred. Please try again.",
+      "retry": "Try again"
     }
   }
 }

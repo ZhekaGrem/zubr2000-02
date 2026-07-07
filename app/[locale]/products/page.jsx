@@ -2,8 +2,10 @@
 import React from "react";
 import Link from "next-intl/link";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import PageIntro from "@/app/components/PageIntro/PageIntro";
+import JsonLd from "@/app/components/JsonLd/JsonLd";
+import { breadcrumbJsonLd } from "@/app/_lib/seo";
 import styles from "@/app/styles/page/products.module.css";
 
 const SPECIES = [
@@ -15,12 +17,21 @@ const SPECIES = [
 
 function ProductsPage() {
   const t = useTranslations("Index");
+  const locale = useLocale();
+  const breadcrumb = breadcrumbJsonLd({
+    locale,
+    items: [
+      { name: "ZUBR-2000", path: "" },
+      { name: "Products", path: "/products" },
+    ],
+  });
   return (
     <>
+      <JsonLd data={breadcrumb} id="products-breadcrumb" />
       <PageIntro
         title={t("product")}
         lead={t("title5")}
-        imageSrc="/products_hero_real.png"
+        imageSrc="/products_hero_real.webp"
         imageAlt={t("product")}
       />
 

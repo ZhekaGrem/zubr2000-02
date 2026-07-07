@@ -1,7 +1,7 @@
 {
   "Index": {
     "home": "Hjem",
-    "home_h1": "Ukrainsk løvtræ — eg, ask, birk, lærk",
+    "home_h1": "Ukrainsk løvtræ, eg, ask, birk, lærk",
     "aboutus": "Om os",
     "infous": "Info om os",
     "product": "Produkter",
@@ -95,7 +95,6 @@
     "quality-title-08": "3. kvalitet",
     "quality-title-09": "Følgende trædefekter er tilladt: simpel krumning med dimensioner - forholdet mellem bøjningsbøjning på stedet for den største krumning til den samlede længde af stammen over 3% til 5%, sunde åbne knaster fra 10 til 15 cm, revner undtagen side- og enderevner fra tørring fra 1/3 til ? af den tilsvarende diameter af enden.",
     "quality-title-10": "TEKNISKE BETINGELSER FOR TRÆ",
-    "quality-title-11": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "quality-title-12": "Bred side - helt ren.",
     "quality-title-13": "Træstykkehøjde.",
     "quality-title-14": "De fire sider, der grænser op til side A, skal være mindst halvt (op til 1/2 h) rene.",
@@ -161,7 +160,7 @@
     "newsCaps": "Journal",
     "newsAll": "Alle indlæg",
     "catalogCaps": "Katalog",
-    "catalogHint": "Andre træsorter — på forespørgsel.",
+    "catalogHint": "Andre træsorter, på forespørgsel.",
     "read": "Læs",
     "inStock": "På lager",
     "emailLabel": "E-mail",
@@ -186,7 +185,7 @@
     },
     "flexibility": {
       "caps": "Fleksibilitet",
-      "title": "Én leverandør — et bredt udvalg af produkter",
+      "title": "Én leverandør, et bredt udvalg af produkter",
       "intro": "Fra standard kantskåret brædder til kundespecifikke emner efter tegning. Vi tilpasser os jeres mål, kvaliteter, mængder og leveringstider.",
       "item1": {
         "title": "Kantskåret bræt",
@@ -194,7 +193,7 @@
       },
       "item2": {
         "title": "Bjælke",
-        "spec": "100×100 — 200×200 mm"
+        "spec": "100×100–200×200 mm"
       },
       "item3": {
         "title": "Emner",
@@ -213,13 +212,23 @@
     "contactFooter": {
       "caps": "Kontakt",
       "heading": "Har du brug for et tilbud på et parti?",
-      "lead": "Send os din specifikation — vi svarer med pris og leveringstid inden for 24 timer."
+      "lead": "Send os din specifikation, vi svarer med pris og leveringstid inden for 24 timer."
     },
     "address": {
-      "street": "TODO:ADDRESS-STREET",
-      "city": "TODO:ADDRESS-CITY",
-      "region": "TODO:ADDRESS-REGION",
-      "mapUrl": "TODO:MAPURL"
+      "street": "20 Mykola Kopernika St.",
+      "city": "Lviv",
+      "region": "Ukraine",
+      "mapUrl": "https://www.google.com/maps?q=49.838522,24.026000"
+    },
+    "notFound": {
+      "title": "Siden blev ikke fundet",
+      "text": "Denne side findes ikke eller er blevet flyttet.",
+      "back": "Til forsiden"
+    },
+    "error": {
+      "title": "Noget gik galt",
+      "text": "Der opstod en fejl. Prøv igen.",
+      "retry": "Prøv igen"
     }
   }
 }

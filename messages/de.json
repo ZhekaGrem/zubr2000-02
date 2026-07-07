@@ -1,7 +1,7 @@
 {
   "Index": {
     "home": "Startseite",
-    "home_h1": "Ukrainisches Hartholz-Schnittholz — Eiche, Esche, Birke, Lärche",
+    "home_h1": "Ukrainisches Hartholz-Schnittholz, Eiche, Esche, Birke, Lärche",
     "aboutus": "Über uns",
     "infous": "Informationen über uns",
     "product": "Produkte",
@@ -96,7 +96,6 @@
     "quality-title-08": "3. Klasse",
     "quality-title-09": "Folgende Holzfehler sind erlaubt: einfache Krümmung mit Abmessungen - Verhältnis von Biegebiegung an der Stelle der größten Krümmung zur Gesamtlänge des Stammes über 3% bis 5%, gesunde offene Knoten von 10 bis 15 cm, Risse außer Seiten- und Endrisse von der Trocknung von 1/3 bis ? des entsprechenden Enddurchmessers.",
     "quality-title-10": "TECHNISCHE BEDINGUNGEN FÜR HOLZMATERIAL",
-    "quality-title-11": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "quality-title-12": "Breitseite - komplett sauber.",
     "quality-title-13": "Höhe des Holzstücks.",
     "quality-title-14": "Die vier Seiten, die an Seite A angrenzen, müssen mindestens zur Hälfte (bis zu 1/2 h) sauber sein.",
@@ -141,7 +140,7 @@
     "products-title-01": "Alle vier Seiten sind sauber, ohne Fäulnis.",
     "products-title-02-ash": "Eine Seite ist sauber und 4 angrenzende Seiten sind zu 50% sauber. Verwendet für die Herstellung von Oberflächen von Tischen, Treppen, Stühlen, Möbeln, Böden.",
     "products-title-02-oak": "Eine Seite ist sauber und die 4 angrenzenden Seiten sind zu 50% sauber. Verwendet für die Herstellung von Oberflächen von Tischen, Treppen, Stühlen, Möbeln, Fußböden, usw.",
-    "produkts-title-02-birch": "Eine Seite ist sauber und die 4 angrenzenden Seiten sind zu 50% sauber. Verwendet für die Herstellung von Oberflächen von Tischen, Treppen, Stühlen, usw.",
+    "products-title-02-birch": "Eine Seite ist sauber und die 4 angrenzenden Seiten sind zu 50% sauber. Verwendet für die Herstellung von Oberflächen von Tischen, Treppen, Stühlen, usw.",
     "products-title-03": "Kleine lebendige Äste bis zu 12 mm Durchmesser sind erlaubt, ein Stück pro laufenden Meter des Brettes. Vorhandensein von zwei senkrechten Elementen 120*2200 mm.",
     "products-title-04": "Kleine lebendige Äste bis zu 40 mm Durchmesser sind erlaubt, zwei Stücke pro laufenden Meter, und schwarze Äste bis zu 10 mm, bis zu zwei Stücke. Vorhandensein eines senkrechten Elements mit der Maß 120*2200 mm.",
     "products-title-05": "Kleine lebendige Äste bis zu 60 mm, bis zu vier Stücke pro laufenden Meter, und schwarze Äste bis zu 30 mm, bis zu zwei Stücke pro laufenden Meter.",
@@ -162,7 +161,7 @@
     "newsCaps": "Journal",
     "newsAll": "Alle Beiträge",
     "catalogCaps": "Katalog",
-    "catalogHint": "Weitere Holzarten — auf Anfrage.",
+    "catalogHint": "Weitere Holzarten, auf Anfrage.",
     "read": "Lesen",
     "inStock": "Auf Lager",
     "emailLabel": "E-Mail",
@@ -187,7 +186,7 @@
     },
     "flexibility": {
       "caps": "Flexibilität",
-      "title": "Ein Lieferant — ein breites Produktspektrum",
+      "title": "Ein Lieferant, ein breites Produktspektrum",
       "intro": "Von Standard-Besäumware bis zu maßgefertigten Zuschnitten nach Kundenzeichnung. Wir passen uns Ihren Maßen, Qualitäten, Mengen und Fristen an.",
       "item1": {
         "title": "Besäumtes Brett",
@@ -195,7 +194,7 @@
       },
       "item2": {
         "title": "Kantholz",
-        "spec": "100×100 — 200×200 mm"
+        "spec": "100×100–200×200 mm"
       },
       "item3": {
         "title": "Zuschnitte",
@@ -214,13 +213,23 @@
     "contactFooter": {
       "caps": "Kontakt",
       "heading": "Brauchen Sie ein Angebot für eine Charge?",
-      "lead": "Senden Sie uns Ihre Spezifikation — wir antworten mit Preis und Lieferzeit innerhalb von 24 Stunden."
+      "lead": "Senden Sie uns Ihre Spezifikation, wir antworten mit Preis und Lieferzeit innerhalb von 24 Stunden."
     },
     "address": {
-      "street": "TODO:ADDRESS-STREET",
-      "city": "TODO:ADDRESS-CITY",
-      "region": "TODO:ADDRESS-REGION",
-      "mapUrl": "TODO:MAPURL"
+      "street": "20 Mykola Kopernika St.",
+      "city": "Lemberg",
+      "region": "Ukraine",
+      "mapUrl": "https://www.google.com/maps?q=49.838522,24.026000"
+    },
+    "notFound": {
+      "title": "Seite nicht gefunden",
+      "text": "Diese Seite existiert nicht oder wurde verschoben.",
+      "back": "Zur Startseite"
+    },
+    "error": {
+      "title": "Etwas ist schiefgelaufen",
+      "text": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+      "retry": "Erneut versuchen"
     }
   }
 }

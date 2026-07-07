@@ -57,7 +57,6 @@ export default async function LocaleLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} id="site-ld" />
       </head>
       <body className={`${fontDisplay.variable} ${fontBody.variable} ${fontMono.variable}`}>

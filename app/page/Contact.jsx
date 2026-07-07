@@ -12,7 +12,7 @@ function Contact() {
     <>
       <PageIntro
         title={t("contactus")}
-        imageSrc="/contact_hero_real.png"
+        imageSrc="/contact_hero_real.webp"
         imageAlt={t("contactus")}
       />
 
